@@ -4,9 +4,7 @@ url: "http://www.westhousehotelnewyork.com"
 default_lang: 'en'
 languages: ['en']
 
-exclude: ['sitemap.json']
-keep_files: ['assets']
-rsync_copy: ['_assets']
+exclude: ['sitemap.json'] 
 
 page_gen:
   - data: 'events'
