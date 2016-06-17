@@ -1,5 +1,5 @@
 {"title":
-	{"required":true,"hint":"Write the subject of the instance"},
+	{"required":true},
 "seo_title":
 	{"required":true},
 "seo_description":
