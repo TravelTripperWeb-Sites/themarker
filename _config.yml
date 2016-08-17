@@ -1,10 +1,28 @@
-url: "http://www.westhousehotelnewyork.com"
+# Site settings
+title: Florida Keys Resorts | The Marker Resort Key West Florida
+description: > # Enjoy a luxurious break at Florida Keys with The Marker Key West. Book your luxury stay at The Marker Key West only on the Official hotel website!
+baseurl: ""
+url: "http://www.themarkerkeywest.com/" # the base hostname & protocol for your site
+permalink: pretty
 
-# Build settings
 default_lang: 'en'
 languages: ['en']
 
-exclude: ['sitemap.json'] 
+
+# Build settings
+markdown: kramdown
+
+port: 8080
+
+default_lang: 'en'
+languages: ['en']
+
+exclude:
+  - 'sitemap.json'
+  - 'assets'
+
+keep_files: ['assets']
+rsync_copy: ['_assets']
 
 page_gen:
   - data: 'events'
@@ -12,4 +30,4 @@ page_gen:
     dir: 'calendar-more'
   - data: 'blog'
     template: 'tmp-blog-more'
-    dir: 'blog-details'
+    dir: 'blog-details' 
