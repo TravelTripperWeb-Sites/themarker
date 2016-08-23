@@ -41,7 +41,7 @@
 - key-west-webcam: gallery/key-west-webcam
 - pools: services---amenities/pools
 - fitness-center: services---amenities/fitness-center
-- parking: services---amenities/parking
+- parking: services-and-amenities/parking/
 - view-all: services-and-amenities/view-all/
 - local-design: our-hotel/local-design
 - view-all-images: gallery/view-all-images
