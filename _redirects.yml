@@ -1,4 +1,5 @@
 ---
+- blog: blog/
 - services/pools: pools
 - hotel: about-the-marker
 - hotel/local-design: local-design
