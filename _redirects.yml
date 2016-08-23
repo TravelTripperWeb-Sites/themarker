@@ -1,4 +1,5 @@
 ---
+- reservations: reservations/
 - blog: blog/
 - services/pools: pools
 - hotel: about-the-marker
