@@ -1,4 +1,5 @@
 ---
+- calendar-more/movie-night-at-the-marker-8pm: calendar/
 - home: index.html
 - reservations: reservations/
 - blog: blog/
