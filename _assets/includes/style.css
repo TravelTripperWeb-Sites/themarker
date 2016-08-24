@@ -2246,7 +2246,7 @@ body {
     font-weight:bold;
     margin-bottom:5px;
 }
-.page-content  .blogdetails h2 {
+.page-content  .blogdetails h2, .page-content  .blogdetails h1{
     font-size:24px; 
     margin-bottom:10px;
 }
@@ -2272,9 +2272,10 @@ body {
     dispaly:none;
 }
 @media (min-width: 768px) { 
-    .page-content  .blogdetails h2 {
+    .page-content  .blogdetails h2, .page-content  .blogdetails h1 {
     font-size:32px;  
 }
+
 .blog-article .thumbnail img {
 	width: 300px;
 	margin-top:25px;
