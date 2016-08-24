@@ -1,4 +1,13 @@
 ---
+- services---amenities/view-all/: services-and-amenities/view-all/
+- services---amenities/pools/: services-and-amenities/pools/
+- services---amenities/parking/: services-and-amenities/parking/
+- services---amenities/fitness-center/: services-and-amenities/fitness-center/
+- drinks---dining/viewall/: drinks-and-dining/viewall/
+- drinks---dining/cero-bodega/: drinks-and-dining/cero-bodega/
+- drinks---dining/bar/: drinks-and-dining/bar/
+- weddings---events/meetings/: weddings-and-events/meetings/
+- weddings---events/weddings/: weddings-and-events/weddings/
 - best-things-to-do-in-key-west: blog/
 - calendar-more/movie-night-at-the-marker-8pm: calendar/
 - home: index.html
