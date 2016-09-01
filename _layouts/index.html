@@ -125,7 +125,7 @@
         <h4>Upcoming Events</h4>
         <div class="events-container">
           <article>
-              {% assign home_events = site.data._models.events | sort: 'start_date' | reverse %}
+              {% assign home_events = site.data._models.events | sort: 'start_date' %}
 {% for event_home in home_events | limit: 1 %} 
             <time>{{event_home.start_date | date: "%d/%m/%Y"}} to  {{event_home.end_date | date: "%m/%d/%Y" ng-show="event_home.end_date = null"} </time>
             <div class="thumbnail"> <img src="{{event_home.image.url}}"  title="">    </div>
