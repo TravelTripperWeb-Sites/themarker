@@ -1363,7 +1363,7 @@ body {
 }
  @media (min-width: 992px) {
 #upcoming-events p {
-	height: 45px;
+	height: 43px;
 	overflow: hidden;
 }
 }
