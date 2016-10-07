@@ -21,19 +21,19 @@
 {% endif %}
 {% if page.nav_category == 'amenities' %}
 <li>
-  {% assign this_url =  'services---amenities/view-all' | permalink %}
+  {% assign this_url =  'services-and-amenities/view-all' | permalink %}
   <a href="{{ this_url }}" class="{% if this_url == page.url %}active{% endif %}">View All</a>
 </li>
 <li>
-  {% assign this_url =  'services---amenities/pools' | permalink %}
+  {% assign this_url =  'services-and-amenities/pools' | permalink %}
   <a href="{{ this_url }}" class="{% if this_url == page.url %}active{% endif %}">Pools</a>
 </li>
 <li>
-  {% assign this_url =  'services---amenities/fitness-center' | permalink %}
+  {% assign this_url =  'services-and-amenities/fitness-center' | permalink %}
   <a href="{{ this_url }}" class="{% if this_url == page.url %}active{% endif %}">Fitness Center</a>
 </li>
 <li>
-  {% assign this_url =  'services---amenities/parking' | permalink %}
+  {% assign this_url =  'services-and-amenities/parking' | permalink %}
   <a href="{{ this_url }}" class="{% if this_url == page.url %}active{% endif %}">Parking</a>
 </li>
 <!-- 
@@ -90,15 +90,15 @@
 {% endif %}
 {% if page.nav_category == 'dining' %}
 <li>
-  {% assign this_url =  'drinks---dining/viewall' | permalink %}
+  {% assign this_url =  'drinks-and-dining/viewall' | permalink %}
   <a href="{{ this_url }}" class="{% if this_url == page.url %}active{% endif %}">View All</a>
 </li>
 <li>
-  {% assign this_url =  'drinks---dining/cero-bodega' | permalink %}
+  {% assign this_url =  'drinks-and-dining/cero-bodega' | permalink %}
   <a href="{{ this_url }}" class="{% if this_url == page.url %}active{% endif %}">Cero Bodega</a>
 </li>
 <li>
-  {% assign this_url =  'drinks---dining/bar' | permalink %}
+  {% assign this_url =  'drinks-and-dining/bar' | permalink %}
   <a href="{{ this_url }}" class="{% if this_url == page.url %}active{% endif %}">Bar</a>
 </li>
 {% endif %}
