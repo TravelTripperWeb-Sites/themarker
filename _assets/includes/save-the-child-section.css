@@ -2,6 +2,8 @@
 	.save-the-child-section {
 		padding: 0 20px;
 		background-color: #fff;
+		background-color: #f6f6f6;
+
 	}
 
 
@@ -88,11 +90,12 @@
 .save-the-child-section .save-the-child-container .description-container .description-center h2 {
 	font-family: 'Muli Light';
     color: #0bb7e4;
-    font-weight: 700;
-	font-size: 22px;
+   
+	font-size: 27px;
     line-height: 34px;
     text-transform: uppercase;
     padding: 0px;
+    margin: 0px;
 }
 
 @media (max-width: 767px) {
@@ -124,21 +127,163 @@
 }
 
 .save-the-child-section .save-the-child-container .button-container .button-common {
-	min-width: 210px;
-	color: #000;
-	border: solid 3px #1f4552;
-	padding: 10px 10px;
-	text-transform: uppercase;
-	font-family: "brandon_grotesquemedium";
-	letter-spacing: .2em;
-	text-align: center;
-	font-size: 17px;
-	display: inline-block;
-	text-shadow: none;
-	transition: all 0.1s;
+	color: #fff;
+	background: #0bb7e4;
+    font: 13px 'Muli Light';
+    height: 35px;
+    line-height: 35px;
+    padding: 0 25px;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
 }
 
 .save-the-child-section .save-the-child-container .button-container .button-common:hover {
-	background-color: #1f4552;
+	background-color: #337ab7;
+	color: #fff;
+}
+	.save-the-child-section {
+		padding: 0 20px;
+		background-color: #fff;
+		background-color: #f6f6f6;
+
+	}
+
+
+.save-the-child-section .save-the-child-container {
+	max-width: 1170px;
+	display: table;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+@media (max-width: 1120px) {
+	.save-the-child-section .save-the-child-container {
+		display: block;
+		padding: 20px 0;
+	}
+}
+
+@media (max-width: 767px) {
+	.save-the-child-section .save-the-child-container {
+		padding: 10px 0;
+	}
+}
+
+.save-the-child-section .save-the-child-container .logo-container, .save-the-child-section .save-the-child-container .description-container, .save-the-child-section .save-the-child-container .button-container {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+@media (max-width: 1066px) {
+	.save-the-child-section .save-the-child-container .logo-container, .save-the-child-section .save-the-child-container .description-container, .save-the-child-section .save-the-child-container .button-container {
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+.save-the-child-section .save-the-child-container .logo-container {
+	width: 26%;
+}
+
+@media (max-width: 1066px) {
+	.save-the-child-section .save-the-child-container .logo-container {
+		width: 100%;
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+}
+
+.save-the-child-section .save-the-child-container .logo-container img {
+	width: 100%;
+}
+
+@media (max-width: 1066px) {
+	.save-the-child-section .save-the-child-container .logo-container img {
+		max-width: 300px;
+	}
+}
+
+@media (max-width: 400px) {
+	.save-the-child-section .save-the-child-container .logo-container img {
+		max-width: 265px;
+		margin-top: 20px;
+	}
+}
+
+.save-the-child-section .save-the-child-container .description-container {
+	width: 56%;
+	padding: 0 40px;
+}
+
+@media (max-width: 1130px) {
+	.save-the-child-section .save-the-child-container .description-container {
+		width: 50%;
+		padding: 0 10px;
+	}
+}
+
+@media (max-width: 1066px) {
+	.save-the-child-section .save-the-child-container .description-container {
+		width: 100%;
+	}
+}
+
+.save-the-child-section .save-the-child-container .description-container .description-center h2 {
+	font-family: 'Muli Light';
+    color: #0bb7e4;
+   
+	font-size: 27px;
+    line-height: 34px;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0px;
+}
+
+@media (max-width: 767px) {
+	.save-the-child-section .save-the-child-container .description-container .description-center h2 {
+		font-size: 20px;
+	}
+}
+
+.save-the-child-section .save-the-child-container .description-container .description-center p {
+	color: #434343;
+    font-size: 15px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+    line-height: 1.6;
+    margin: 0px;
+}
+
+.save-the-child-section .save-the-child-container .button-container {
+	width: 18%;
+	text-align: right;
+}
+
+@media (max-width: 1066px) {
+	.save-the-child-section .save-the-child-container .button-container {
+		width: 100%;
+		margin: 20px 0px;
+		text-align: center;
+	}
+}
+
+.save-the-child-section .save-the-child-container .button-container .button-common {
+	color: #fff;
+	background: #0bb7e4;
+    font: 13px 'Muli Light';
+    height: 35px;
+    line-height: 35px;
+    padding: 0 25px;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.save-the-child-section .save-the-child-container .button-container .button-common:hover {
+	background-color: #337ab7;
 	color: #fff;
 }
