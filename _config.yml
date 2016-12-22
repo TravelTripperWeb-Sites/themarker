@@ -19,7 +19,6 @@ languages: ['en']
 
 exclude:
   - 'sitemap.json'
-  - 'sitemap.xml'
   - 'assets'
 
 keep_files: ['assets']
