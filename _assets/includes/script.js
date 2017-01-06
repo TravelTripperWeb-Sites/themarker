@@ -418,3 +418,34 @@ $(document).ready(function () {
 	});
 }
 
+$(document).ready(function() {
+     setTimeout(function(){
+
+       $(" #home-carousel-2,#room-carousel-1").owlCarousel({
+
+
+           navigation : false, // Show next and prev buttons
+           slideSpeed : 500,
+           paginationSpeed : 400,
+           items : 2,
+           paginationNumbers: false,
+            pagination: false,
+            autoPlay: false,
+            navigation: true,
+            navigationText : false,
+
+            itemsDesktop : [1199,2],
+           itemsDesktopSmall : [980,2],
+           itemsTablet: [768,2],
+           itemsTabletSmall: false,
+           itemsMobile : [767,1],
+
+           // "singleItem:true" is a shortcut for:
+           // items : 1,
+           // itemsDesktop : false,
+           // itemsDesktopSmall : false,
+           // itemsTablet: false,
+           // itemsMobile : false
+
+       });
+     }, 2000);

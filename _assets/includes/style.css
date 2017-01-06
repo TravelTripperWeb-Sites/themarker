@@ -2301,3 +2301,27 @@ body {
 @media (max-width: 768px) { 
     	.h-logo{display:none;}
 	}
+
+.home-specials-wrap {
+  background-color: #fbf8ef; }
+  .home-specials-wrap .container {
+    position: relative;
+    padding: 0 70px; }
+    @media (max-width: 1240px) {
+      .home-specials-wrap .container {
+        padding: 0 70px !important; } }
+    @media (max-width: 767px) {
+      .home-specials-wrap .container {
+        padding: 0 15px !important; } }
+    .home-specials-wrap .container .graphic {
+      position: absolute;
+      right: 0px;
+      bottom: 37px;
+      width: 95px; }
+      .home-specials-wrap .container .graphic img {
+        width: 100%; }
+      @media (min-width: 768px) {
+        .home-specials-wrap .container .graphic {
+          right: 15px;
+          bottom: 70px;
+          width: 157px; } }
