@@ -2301,3 +2301,178 @@ body {
 @media (max-width: 768px) { 
     	.h-logo{display:none;}
 	}
+
+
+
+
+.home-specials-wrap {
+	font-family: 'Muli Light';
+  background-color: #fbf8ef; }
+  .home-specials-wrap .container {
+    position: relative;
+    padding: 0 70px; }
+    @media (max-width: 1240px) {
+      .home-specials-wrap .container {
+        padding: 0 70px !important; } }
+    @media (max-width: 767px) {
+      .home-specials-wrap .container {
+        padding: 0 15px !important; } }
+    .home-specials-wrap .container .graphic {
+      position: absolute;
+      right: 0px;
+      bottom: 37px;
+      width: 95px; }
+      .home-specials-wrap .container .graphic img {
+        width: 100%; }
+      @media (min-width: 768px) {
+        .home-specials-wrap .container .graphic {
+          right: 15px;
+          bottom: 70px;
+          width: 157px; } }
+
+.heading-large {
+  font-size: 32px;
+  letter-spacing: 3px;
+  padding: 50px 0;
+  text-transform: uppercase;
+  text-align: center; }
+  @media (max-width: 1023px) {
+    .heading-large {
+      padding: 30px 0; } }
+  @media (max-width: 767px) {
+    .heading-large {
+      padding: 20px 0;
+      font-size: 24px;
+      letter-spacing: 2px; } }
+
+.home-specials-item {
+  background-color: #ffffff;
+  color: #333333;
+  text-align: center;
+  margin: 0 15px;
+  position: relative; }
+  @media (max-width: 767px) {
+    .home-specials-item {
+      margin: 0 0; } }
+  .home-specials-item img {
+    width: 100%; }
+
+.car-content {
+  padding: 35px 15%; }
+  @media (max-width: 1023px) {
+    .car-content {
+      padding: 20px 15px; } }
+  .car-content h3 {
+    letter-spacing: 3px;
+    font-size: 18px;
+	  line-height: 30px;
+    text-transform: uppercase; }
+    @media (max-width: 1023px) {
+      .car-content h3 {
+        letter-spacing: 2px; } }
+    @media (max-width: 767px) {
+      .car-content h3 {
+        letter-spacing: 2px; } }
+  .car-content p {
+    padding-top: 25px;
+    font-size: 16px;
+    line-height: 28px; }
+    @media (max-width: 767px) {
+      .car-content p {
+        padding-top: 10px; } }
+  .car-content a {
+    color: #000;
+font-family: 'Muli Light';
+}
+    .car-content a:hover {
+      opacity: .6; }
+.owl-theme .owl-controls .owl-buttons div,
+.owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 0px;
+  padding: 20px;
+  background-color: #1f4552;
+  opacity: 1;
+  transition: all 0.1s;font-family: 'Muli Light'; }
+  .owl-theme .owl-controls .owl-buttons div:hover,
+  .owl-theme .owl-controls .owl-buttons div:hover {
+    opacity: 0.8 !important; }
+  @media (max-width: 767px) {
+    .owl-theme .owl-controls .owl-buttons div,
+    .owl-theme .owl-controls .owl-buttons div {
+      padding: 14px; } }
+
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+  left: -66px;
+  background-image: url(/assets/images/left-arrow.png);
+  background-repeat: no-repeat;
+  background-position: center center; }
+  @media (max-width: 1240px) {
+    .owl-theme .owl-controls .owl-buttons .owl-prev {
+      left: -50px; } }
+  @media (max-width: 767px) {
+    .owl-theme .owl-controls .owl-buttons .owl-prev {
+      left: -5px; } }
+
+.owl-theme .owl-controls .owl-buttons .owl-next {
+  right: -66px;
+  background-image: url(/assets/images/right-arrow.png);
+  background-repeat: no-repeat;
+  background-position: center center; }
+  @media (max-width: 1240px) {
+    .owl-theme .owl-controls .owl-buttons .owl-next {
+      right: -50px; } }
+  @media (max-width: 767px) {
+    .owl-theme .owl-controls .owl-buttons .owl-next {
+      right: -5px; } }
+
+.btn-holder-with-padding {
+  text-align: center;
+  padding: 50px 0; }
+  @media (max-width: 767px) {
+    .btn-holder-with-padding {
+      padding: 20px 0; } }
+.home-specials-wrap .container{
+	width: auto;
+	max-width: 1170px;
+}
+.btn-top {
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #333333;
+  background-color: #ffffff;
+  padding: 14px 22px; }
+.button-common2 {
+      min-width: 210px;
+      color: #000;
+      border: solid 3px #1f4552;
+      padding: 10px 30px;
+      text-transform: uppercase;
+      font-family: 'Muli Light';
+      letter-spacing: .2em;
+      text-align: center;
+      font-size: 16px;
+      display: inline-block;
+      text-shadow: none;
+      transition: all 0.1s; }
+.button-common2:hover {
+        background-color: #1f4552;
+        color: #fff; text-decoration: none;}
+.btn-top {
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #333333;
+  background-color: #ffffff;
+  padding: 10px 0px;font-family: 'Muli Light'; font-size: 14px; }
+.btn-top:hover{
+	text-decoration: none;
+}
+.home-specials-wrap.two{
+	margin-top:40px;
+}
