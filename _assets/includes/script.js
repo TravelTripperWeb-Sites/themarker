@@ -54,22 +54,24 @@ $(window).on('load resize', function () {
     }
 });
  $(document).ready(function() {
- 
-  $("#owl-promo").owlCarousel({
+  var content = "";
+ setTimeout(function(){ 
+  	$("#owl-promo").owlCarousel({
       items : 3, 
       itemsDesktop:	[1199,3],
       itemsTablet:	[768,2],
 	  itemsMobile:	[479,1],
-      navigation : true,
-    jsonPath : 'https://rt3api-prd.ttaws.com/hotels/special_rates.json?hotel_id=KEYMRK&portal_id=themarkerkeywes&locale=en&currency=USD',
-    jsonSuccess : customDataSuccess
-  });
- 
+      navigation : true
+    //jsonPath : 'https://rt3api-prd.ttaws.com/hotels/special_rates.json?hotel_id=KEYMRK&portal_id=themarkerkeywes&locale=en&currency=USD',
+    //jsonSuccess : customDataSuccess
+  })}, 2000);
+ /*
   function customDataSuccess(data){
+  	console(data);
     var content = "";
     for(var i in data["special_rates"]){
        var title = data["special_rates"][i].rate_plan_name;
-       var img = data["special_rates"][i].images[0].thumb_yankee_large;
+       var img = data["special_rates"][i].lead_photo_url[0].thumb_yankee_large;
        var description = data["special_rates"][i].short_description;
        var rateplan = data["special_rates"][i].rate_plan_code;
        
@@ -78,8 +80,7 @@ $(window).on('load resize', function () {
      content += "<article><a class='thumbnail' ng-show='img.length > 1'  ><img src=\"" +img+ "\"  title=\"" +title+ "\"></a><h4><a href=\"special/special-more#/"+rateplan+"\">"+title+"</a></h4><p>"+description+"</p><a class='button'  href=\"special/special-more#/"+rateplan+"\">Read More</a></article>"
     }
     $("#owl-promo").html(content);
-  }
- 
+  } */
 });
  
 
