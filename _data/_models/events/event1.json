@@ -5,8 +5,9 @@
 	"title": "Key West Brewfest",
 	"seo_title": "Key West Brewfest",
 	"seo_description": "The 8th Annual BrewFest is coming Labor Day Weekend 2017. Taste over 175 beers with your toes in the sand on South Beach, Key West. Enjoy pool parties, beer dinners, seminars and so much more. Details coming soon!",
-	"start_date": "Fri Sep 15 2017 00:00:00 GMT-0400 (EDT)",
-	"end_date": "Sun Sep 17 2017 00:00:00 GMT-0400 (EDT)",
+	"start_date": "Fri Sep 01 2017 00:00:00 GMT-0400 (EDT)",
+	"end_date": "Sun Sep 03 2017 00:00:00 GMT-0400 (EDT)",
 	"short_description": "The 8th Annual BrewFest is coming Labor Day Weekend 2017. Taste over 175 beers with your toes in the sand on South Beach, Key West. Enjoy pool parties, beer dinners, seminars and so much more. Details coming soon!",
-	"contents": "<p>The 8th Annual BrewFest is coming Labor Day Weekend 2017. Taste over 175 beers with your toes in the sand on South Beach, Key West. Enjoy pool parties, beer dinners, seminars and so much more. Details coming soon!</p>"
+	"contents": "<p>The 8th Annual BrewFest is coming Labor Day Weekend 2017. Taste over 175 beers with your toes in the sand on South Beach, Key West. Enjoy pool parties, beer dinners, seminars and so much more. Details coming soon!</p>",
+	"url_friendly_name": "brew-fest"
 }
