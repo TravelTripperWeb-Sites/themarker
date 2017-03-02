@@ -69,8 +69,17 @@
       </div>
     </div>
   </div>
-  <div class="price-wrap1" ng-show="browser.isRate" >
-               <!--<div class="people"> <span>345</span>People booked our hotel in the last 2 days </div>-->
+  
+  <a class="left carousel-control" href="#homeBannerCarousel" role="button" data-slide="prev"> <span class="left" aria-hidden="true"></span> </a> <a class="right carousel-control" href="#homeBannerCarousel" role="button" data-slide="next"> <span class="right" aria-hidden="true"></span> </a>
+  <div class="scroll-to">SCROLL TO EXPLORE</div>
+  <div class="banner-links-wrapper">
+    <div class="banner-links"> <a class="specials-link photos-link anchorLink" href="#promos">Featured Specials </a> <a class="calendar-link photos-link pull-right anchorLink"  href="#upcoming-events">Upcoming Events</a> </div>
+  </div>
+</div>
+<!-- /.Home Banner Carousel Carousel -->
+
+<div class="price-wrap1" ng-show="browser.isRate" >
+     <!--<div class="people"> <span>345</span>People booked our hotel in the last 2 days </div>-->
      <div class="best-rate-ota" ng-show ="browser.otaRates.brgFound" >
         <div class="boxes">
           <div class="tonight-rate ">
@@ -83,22 +92,14 @@
             </ul>
           </div>
         </div>
-      </div>
-      <div class="boxes-small"  ng-show ="!browser.otaRates.brgFound">
+     </div>
+     <div class="boxes-small"  ng-show ="!browser.otaRates.brgFound">
         <div class="tonight-rate " ng-show="browser.isRate">
 
           <h4>Tonight's Rate<a href="#" class="hometonightRate" target="_blank"><span class="price">[[browser.toNightsRate]]</span></a></h4>
         </div>
      </div>
-
-    </div>
-  <a class="left carousel-control" href="#homeBannerCarousel" role="button" data-slide="prev"> <span class="left" aria-hidden="true"></span> </a> <a class="right carousel-control" href="#homeBannerCarousel" role="button" data-slide="next"> <span class="right" aria-hidden="true"></span> </a>
-  <div class="scroll-to">SCROLL TO EXPLORE</div>
-  <div class="banner-links-wrapper">
-    <div class="banner-links"> <a class="specials-link photos-link anchorLink" href="#promos">Featured Specials </a> <a class="calendar-link photos-link pull-right anchorLink"  href="#upcoming-events">Upcoming Events</a> </div>
-  </div>
 </div>
-<!-- /.Home Banner Carousel Carousel -->
 
 <!-- Promo section -->
 <article id="promos">

@@ -2477,13 +2477,9 @@ font-family: 'Muli Light';
 	margin-top:40px;
 }
 .price-wrap1 {
-  position: absolute;
-  bottom: 160px;
-  left: 0;
-  right: 0;
   margin: 0 auto;
   font-family: "Ubuntu Light", "sans-serif";
-
+  background: rgba(42, 159, 192, 1);
 }
 
 .price-wrap1 .best-rate-ota {
@@ -2495,15 +2491,10 @@ font-family: 'Muli Light';
   background: rgba(42, 159, 192, 0.85);
   margin: 0 auto;
 }
-@media (max-width: 768px) {
-  .price-wrap1 .best-rate-ota {
-    width: 100%;
-    bottom: 0px;
-  }
-}
+
 @media (max-width: 815px) {
   .price-wrap1 .best-rate-ota {
-    display: none;
+    
   }
 }
 .price-wrap1 .best-rate-ota .boxes {
@@ -2568,8 +2559,29 @@ font-family: 'Muli Light';
 .price-wrap1 .best-rate-ota .boxes .ota-list ul li:nth-child(even) {
   margin-left: 20px;
 }
-
-
+@media(max-width:768px){
+	.price-wrap1 .best-rate-ota {
+    	width: 100%;
+ 	}
+	.price-wrap1 .best-rate-ota .tonight-rate p{
+		display:none;
+	}
+	.price-wrap1 .best-rate-ota .tonight-rate h4{
+		font-size: 16px !important; line-height: 16px !important; padding: 5px 0 !important;
+	}
+	.price-wrap1 .best-rate-ota .tonight-rate h4  span{
+		 display: block; float: none !important;
+		 font-size: 30px !important;
+    	 display: block;
+		margin-top: 15px;
+	}
+	.price-wrap1 .best-rate-ota .boxes .ota-list ul li{
+		width:auto; font-size: 16px;
+	}
+	.price-wrap1 .best-rate-ota .boxes .ota-list ul li:nth-child(even){
+		margin:0px;
+	}
+}
 #homeBannerCarousel .boxes-small {
   max-width: 285px;
   width: 100%;
