@@ -1,6 +1,6 @@
 
 @charset "utf-8";
-/* CSS Document */ 
+/* CSS Document */
 
 @font-face {
 	font-family: "Muli Regular";
@@ -82,7 +82,7 @@ body {
 	background: #fff;
 }
 .nav-wrapper .phone-number {
-	font-size: 0em; 
+	font-size: 0em;
 	color: #0bb7e4;
 	display:none;
 }
@@ -94,16 +94,16 @@ body {
 	float: left;
 	margin: 3px 0 0 0;
 }
-.phone-number-sm { 
-    position:absolute; 
-	color: #0bb7e4; 	
+.phone-number-sm {
+    position:absolute;
+	color: #0bb7e4;
 	position: absolute;
 	right:190px;
 	top: 20px;
 	text-indent:-99em;
-	
+
 }
- 
+
 .phone-number-sm .phone {
 	background: url("/assets/images/9142/original/phone-icon-sm.png") no-repeat;
 	background-position: 0 0;
@@ -197,13 +197,13 @@ body {
 .navbar-default .navbar-toggle:focus .icon-bar, .navbar-default .navbar-toggle:hover .icon-bar {
 	background-color: #fff;
 }
- 
+
  @media (max-width:420px) {
- 
-.phone-number-sm { 
+
+.phone-number-sm {
 	right:135px;
 	top: 20px;
-	
+
 }
 }
 @media (max-width: 479px) {
@@ -216,7 +216,7 @@ body {
 	height: 45px;
 	background-size: 140px 45px;
 }
- 
+
 }
 @media (min-width: 768px) and (max-width:1180px) {
 .main-nav .navbar-collapse.collapse {
@@ -234,11 +234,11 @@ body {
 .main-nav.navbar>.container .navbar-brand {
 	margin-left: -10px;
 }
- 
-.phone-number-sm { 
+
+.phone-number-sm {
 	right:200px;
 	top: 23px;
-	
+
 }
 }
 @media (max-width: 1180px) {
@@ -330,7 +330,7 @@ body {
 }
 }
 
- 
+
 @media (min-width:1181px) {
 .nav-wrapper {
 	position: relative;
@@ -471,7 +471,7 @@ body {
 }
 .dropdown:hover > .dropdown-menu {
     display:block !important;
-} 
+}
 }
 @media (min-width: 1200px) {
 .container {
@@ -523,12 +523,12 @@ body {
 	right: 20px;
 	top: 0;
 	padding-top: 16px;
- 
+
 }
 #booking p.buttons span{
     display:none;
 }
- 
+
 #booking.collapsed p.buttons {
 	padding-top: 20px
 }
@@ -584,7 +584,7 @@ body {
 	top: 13px;
 	z-index: 10
 }
- #booking .rates { 
+ #booking .rates {
 	font: 11px/1 Arial, sans-serif;
  }
 #booking a.rates {
@@ -849,7 +849,7 @@ body {
 	z-index: 2;
 	display:none;
 }
-#homeBannerCarousel.carousel-fade .carousel-control { 
+#homeBannerCarousel.carousel-fade .carousel-control {
 	display:block;
 }
 .carousel-fade .item {
@@ -917,7 +917,7 @@ body {
 	font-size: 18px;
 	line-height: 22px;
 }
- 
+
 }
  @media (min-width: 768px) {
 .carousel-caption h2 {
@@ -931,7 +931,7 @@ body {
 .scroll-to {
 	font-size: 13px;
 }
- 
+
 }
  @media (min-width: 992px) {
 .carousel-caption h2 {
@@ -939,7 +939,7 @@ body {
 	line-height: 26px;
 	padding: 25px;
 }
- 
+
 .scroll-to {
 	bottom: 20px;
 }
@@ -952,7 +952,7 @@ body {
 .carousel-control {
 	display: block;
 }
- 
+
 }
  @media (min-width: 1120px) {
 .banner-links-wrapper {
@@ -965,7 +965,7 @@ body {
 	line-height: 28px;
 	padding: 25px 30px;
 }
- 
+
 }
 /*-- promosection --*/
 #promos {
@@ -1301,7 +1301,7 @@ body {
 }
 #upcoming-events .feed-container div img {
 	display: inline-block;
-	min-height: 157px; 
+	min-height: 157px;
 	position: relative;
 	width: 276px;
 	color: #cef5fc;
@@ -1381,15 +1381,15 @@ body {
 }
 #footer a:hover {
 	color: #0bb7e4
-} 
+}
 #footer .award {
  display:none;
  padding-top:10px;
-} 
+}
  @media (min-width: 768px) {
   #footer .award {
      text-align:center;
-    display:block;    
+    display:block;
     }
     #footer .img-responsive {
         display:inline-block;
@@ -1534,10 +1534,10 @@ body {
 	padding-bottom: 10px;
 	overflow: hidden;
 	clear:both;
-	
+
 }
  @media (min-width: 768px) {
-.sociallinks { 
+.sociallinks {
 	padding-top: 20px;
 	padding-bottom: 0px;
 }
@@ -2047,7 +2047,7 @@ body {
 
 @media (min-width: 768px) {
 	#map-canvas {
-		height: 444px; 
+		height: 444px;
 	}
 }
 
@@ -2069,13 +2069,13 @@ body {
 .page-content .galleries {
     overflow: hidden;
     border-top: 1px solid #e5e5e5;
-    padding-top: 25px; 
+    padding-top: 25px;
 }
 
 .page-content .galleries .hide{
 	display:none;
 }
-.page-content .galleries ul{ 
+.page-content .galleries ul{
     margin-left: 0px;
 		margin-bottom:30px;
 }
@@ -2116,8 +2116,8 @@ body {
 }
 .page-content .calendar-article {
 	padding-top:25px;}
- 
-@media (min-width: 768px) { 
+
+@media (min-width: 768px) {
     .page-content .thumbnail {
     	float: right;
     	margin: 5px 0 5px 15px;
@@ -2222,18 +2222,18 @@ body {
 #footer .email-signup:hover {
 	color: #2c7a8c;
 }
- 
+
 .page-content .request-btn {
     background:#0bb7e4;
 }
 .page-content .request-btn:hover {
     background:#337ab7;
-} 
+}
 
 /*-- blog page--*/
 .blog-wrapper .blogdetails {
-    padding:10px; 
-    
+    padding:10px;
+
 }
 .page-content  .blogdetails h3 {
     font-size:16px;
@@ -2247,7 +2247,7 @@ body {
     margin-bottom:5px;
 }
 .page-content  .blogdetails h2, .page-content  .blogdetails h1{
-    font-size:24px; 
+    font-size:24px;
     margin-bottom:10px;
 }
 .page-content  .blogdetails a  {
@@ -2266,14 +2266,14 @@ body {
 }
 .blogdetails .socials{
     padding-bottom:20px;
-    
+
 }
 .blog-article .thumbnail img {
     dispaly:none;
 }
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
     .page-content  .blogdetails h2, .page-content  .blogdetails h1 {
-    font-size:32px;  
+    font-size:32px;
 }
 
 .blog-article .thumbnail img {
@@ -2298,7 +2298,7 @@ body {
 }
 .h-logo{ width:100px; text-align:center; margin-left:23%;}
 .m-t-16{ margin-top:12px;}
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
     	.h-logo{display:none;}
 	}
 
@@ -2476,5 +2476,166 @@ font-family: 'Muli Light';
 .home-specials-wrap.two{
 	margin-top:40px;
 }
+.price-wrap1 {
+  margin: 0 auto;
+  font-family: "Ubuntu Light", "sans-serif";
+  background: rgba(42, 159, 192, 1);
+}
 
+.price-wrap1 .best-rate-ota {
+  max-width: 650px;
+  width: 100%;
+  min-height: 80px;
+  left: calc(50% - 300px);
+  display: table;
+  background: rgba(42, 159, 192, 0.85);
+  margin: 0 auto;
+}
 
+@media (max-width: 815px) {
+  .price-wrap1 .best-rate-ota {
+    
+  }
+}
+.price-wrap1 .best-rate-ota .boxes {
+  position: relative;
+}
+.price-wrap1 .best-rate-ota .boxes .tonight-rate {
+  height: 100%;
+  width: 38%;
+  min-height: 80px;
+  padding: 10px 20px;
+  float: left;
+}
+.price-wrap1 .best-rate-ota .boxes .tonight-rate p {
+  font-size: 12px;
+  color: #000;
+  line-height: 16px;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  font-weight: bolder;
+}
+.price-wrap1 .best-rate-ota .boxes .tonight-rate h4 {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  color: #fff;
+}
+.price-wrap1 .best-rate-ota .boxes .tonight-rate h4 .price {
+  color: #fff;
+  font-size: 30px;
+  float: right;
+}
+.price-wrap1 .best-rate-ota .boxes .ota-list {
+  float: right;
+  width: 61.7%;
+  padding: 10px 20px;
+  min-height: 80px;
+  border-left: 1px solid #ccc;
+}
+.price-wrap1 .best-rate-ota .boxes .ota-list ul {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+}
+.price-wrap1 .best-rate-ota .boxes .ota-list ul li {
+  color: #777777;
+  width: 45%;
+  padding: 0px 10px 0px 0px;
+  margin: 0px;
+  display: inline-block;
+  font-size: 17px;
+  border-bottom: 1px solid #ccc;
+  color: #fff;
+}
+.price-wrap1 .best-rate-ota .boxes .ota-list ul li span {
+  text-decoration: line-through;
+  color: #fff;
+  padding-left: 4px;
+}
+.price-wrap1 .best-rate-ota .boxes .ota-list ul li:nth-child(even) {
+  margin-left: 20px;
+}
+@media(max-width:768px){
+	.price-wrap1 .best-rate-ota {
+    	width: 100%;
+ 	}
+	.price-wrap1 .best-rate-ota .tonight-rate p{
+		display:none;
+	}
+	.price-wrap1 .best-rate-ota .tonight-rate h4{
+		font-size: 16px !important; line-height: 16px !important; padding: 5px 0 !important;
+	}
+	.price-wrap1 .best-rate-ota .tonight-rate h4  span{
+		 display: block; float: none !important;
+		 font-size: 30px !important;
+    	 display: block;
+		margin-top: 15px;
+	}
+	.price-wrap1 .best-rate-ota .boxes .ota-list ul li{
+		width:auto; font-size: 16px;
+	}
+	.price-wrap1 .best-rate-ota .boxes .ota-list ul li:nth-child(even){
+		margin:0px;
+	}
+}
+#homeBannerCarousel .boxes-small {
+  max-width: 285px;
+  width: 100%;
+  min-height: 80px;
+  bottom: 0px;
+  left: calc(50% - 143px);
+  position: absolute;
+  display: table;
+  background: rgba(42, 159, 192, 0.85);
+}
+@media (max-width: 768px) {
+  #homeBannerCarousel .boxes-small {
+    width: 100%;
+    bottom: 0px;
+  }
+}
+@media (max-width: 767px) {
+  #homeBannerCarousel .boxes-small {
+    display: none;
+  }
+}
+#homeBannerCarousel .boxes-small .tonight-rate {
+  height: 100%;
+  width: 100%;
+  min-height: 80px;
+  padding: 20px;
+}
+#homeBannerCarousel .boxes-small .tonight-rate p {
+  font-size: 12px;
+  color: #777777;
+  line-height: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+#homeBannerCarousel .boxes-small .tonight-rate h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0px;
+  padding: 0px;
+  color: #fff;
+}
+#homeBannerCarousel .boxes-small .tonight-rate h4 .price, #homeBannerCarousel .boxes-small .tonight-rate h4 a {
+  color: #fff;
+  font-size: 34px;
+  vertical-align: middle;
+  padding-left: 20px;
+}
+#homeBannerCarousel .boxes-small .tonight-rate h4 .price:hover, #homeBannerCarousel .boxes-small .tonight-rate h4 a:hover {
+  text-decoration: none;
+  opacity: .8;
+}
+#homeBannerCarousel .boxes-small .tonight-rate h4 .price:active, #homeBannerCarousel .boxes-small .tonight-rate h4 .price:focus, #homeBannerCarousel .boxes-small .tonight-rate h4 a:active, #homeBannerCarousel .boxes-small .tonight-rate h4 a:focus {
+  text-decoration: none;
+}
