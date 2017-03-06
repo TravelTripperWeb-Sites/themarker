@@ -1,9 +1,9 @@
   {% include tmp-head.html %}
-  <body class="home"> 
+  <body class="home" rt3-rooms-browser="browser">
     {% include tmp-nav.html %}
-     
+
 <!-- Home Banner Carousel Carousel  -->
-<div id="homeBannerCarousel" class="carousel slide  carousel-fade" data-ride="carousel"> 
+<div id="homeBannerCarousel" class="carousel slide  carousel-fade" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#homeBannerCarousel" data-slide-to="0" class="active"></li>
@@ -69,31 +69,56 @@
       </div>
     </div>
   </div>
+  
   <a class="left carousel-control" href="#homeBannerCarousel" role="button" data-slide="prev"> <span class="left" aria-hidden="true"></span> </a> <a class="right carousel-control" href="#homeBannerCarousel" role="button" data-slide="next"> <span class="right" aria-hidden="true"></span> </a>
   <div class="scroll-to">SCROLL TO EXPLORE</div>
   <div class="banner-links-wrapper">
-    <div class="banner-links"> <a class="specials-link photos-link anchorLink" href="#promos">Featured & Specials</a> <a class="calendar-link photos-link pull-right anchorLink"  href="#upcoming-events">Upcoming Events</a> </div>
+    <div class="banner-links"> <a class="specials-link photos-link anchorLink" href="#promos">Featured Specials </a> <a class="calendar-link photos-link pull-right anchorLink"  href="#upcoming-events">Upcoming Events</a> </div>
   </div>
 </div>
-<!-- /.Home Banner Carousel Carousel --> 
+<!-- /.Home Banner Carousel Carousel -->
+
+<div class="price-wrap1" ng-show="browser.isRate" >
+     <!--<div class="people"> <span>345</span>People booked our hotel in the last 2 days </div>-->
+     <div class="best-rate-ota" ng-show ="browser.otaRates.brgFound" >
+        <div class="boxes">
+          <div class="tonight-rate ">
+          <p>Best Rate Guaranteed</p>
+          <h4>Tonight's Rate <a href="#" class=" hometonightRate" target="_blank"><span class="price">[[browser.otaRates.reztripRate]]</span></a></h4>
+          </div>
+          <div class="ota-list" >
+            <ul>
+            <li ng-repeat = "(key, value) in browser.otaRates.brg">[[key]] <span>$[[value]]</span></li>
+            </ul>
+          </div>
+        </div>
+     </div>
+     <div class="boxes-small"  ng-show ="!browser.otaRates.brgFound">
+        <div class="tonight-rate " ng-show="browser.isRate">
+
+          <h4>Tonight's Rate<a href="#" class="hometonightRate" target="_blank"><span class="price">[[browser.toNightsRate]]</span></a></h4>
+        </div>
+     </div>
+</div>
 
 <!-- Promo section -->
 <article id="promos">
   <div class="container">
     <div class="row">
       <div class="col-sm-8">
-        <h3>Featured & Specials</h3>
+        <h3>Featured Specials</h3>
       </div>
       <div class="col-sm-4 social-links ">
         <iframe src="https://www.facebook.com/plugins/like.php?locale=en_US&href=http://www.themarkerkeywest.com/&send=false&layout=button_count&show_faces=false&action=like&colorscheme=light&height=20" class="social-button facebook-like" title="Like" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20"></iframe>
         <iframe src="https://plusone.google.com/_/+1/fastbutton?bsv&annotation=bubble&size=medium&hl=en-US&url=http://www.themarkerkeywest.com/" class="social-button google-plus" title="+1" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20"></iframe>
       </div>
     </div>
-        <div id="owl-promo" class="owl-carousel">
-        </div>
+        <div id="owl-promo" class="owl-carousel" rt3-special-rates= "offers">
+    <article class="item" ng-repeat="offer in offers.special_rates"><a class='thumbnail' ng-show="[[offer.lead_photo_url.thumb_yankee_jumbo != '']]" ><img ng-src="[[offer.lead_photo_url.thumb_yankee_jumbo]] "  title="[[offer.rate_plan_name]]"></a><h4><a ng-href="/special/special-more/#/[[offer.rate_plan_code]]">[[offer.rate_plan_name]]</a></h4><p>[[offer.short_description]]</p><a class='button'  ng-href=special/special-more/#/[[offer.rate_plan_code]]>Read More</a></article>
+    </div>
   </div>
 </article>
-<!-- /.Promo section --> 
+<!-- /.Promo section -->
 
 <!-- page content section -->
 <div class="page-content-wrapper">
@@ -115,7 +140,7 @@
     </div>
   </div>
 </div>
-<!-- /.page content section --> 
+<!-- /.page content section -->
 
 <!--  upcoming events section -->
 <article id="upcoming-events">
@@ -126,14 +151,14 @@
         <div class="events-container">
           <article>
               {% assign home_events = site.data._models.events | sort: 'start_date' %}
-{% for event_home in home_events | limit: 1 %} 
+{% for event_home in home_events | limit: 1 %}
             <time>{{event_home.start_date | date: "%m/%d/%Y"}} to  {{event_home.end_date | date: "%m/%d/%Y"  ng-show="event_home.end_date = null"}} </time>
             <div class="thumbnail"> <img src="{{event_home.image.url}}"  title="{{event_home.title}}"  alt="{{event_home.title}}">    </div>
             <h5>{{event_home.title}}</h5>
-           <p>{{event_home.short_description}}</p> 
+           <p>{{event_home.short_description}}</p>
             <a href="{{ event_home.id | permalink: model_dir: 'calendar-more' }}" class="button">Read More</a> <a class="button morebtn" href="{{ 'calendar' | permalink }}">More Events</a> </article>
-            
-                       
+
+
             {% endfor %}
         </div>
       </div>
@@ -143,7 +168,7 @@
           <div class="feed-container">
             <article>
              {% assign blog_home_list = site.data._models.blog | sort: 'date' | reverse %}
-{% for blog_home in blog_home_list | limit: 1 %} 
+{% for blog_home in blog_home_list | limit: 1 %}
               <time>{{blog_home.date |  date: "%m/%d/%Y"}}</time>
               <div class="blog-description">
                 <div class="thumbnail"> <img width="480" height="360" src="{{blog_home.blogimage.url}}" class="attachment-thumbnail wp-post-image" title="{{blog_home.title}} alt="{{blog_home.title}}"> </div>
