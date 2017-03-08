@@ -97,7 +97,11 @@ module Jekyll
         sub_folders.each do |sub_folder|
           Dir[File.join(abs_folder, sub_folder, '*.json')].map do |f|
             data = JSON.parse File.read(f)
-            hash[sub_folder.to_s] << [name: data['name'], file: File.basename(f)]
+            attrs = {}
+            attrs[:name] = data['name'] if data.has_key?('name')
+            attrs[:title] = data['title'] if data.has_key?('title')
+            attrs[:file] = File.basename(f)
+            hash[sub_folder.to_s] << [attrs]
           end
         end
         save file_name, hash
