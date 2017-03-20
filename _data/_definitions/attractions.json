@@ -33,7 +33,7 @@
     {
       "required": true,
       "type": "image",
-      "label": "Events List Page Thumb Image"
+      "label": "Image"
 
     },
    
