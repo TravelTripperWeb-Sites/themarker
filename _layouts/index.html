@@ -89,7 +89,8 @@
         <iframe src="https://plusone.google.com/_/+1/fastbutton?bsv&annotation=bubble&size=medium&hl=en-US&url=http://www.themarkerkeywest.com/" class="social-button google-plus" title="+1" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20"></iframe>
       </div>
     </div> 
-    <div id="owl-promo" class="owl-carousel">
+    <div id="owl-promo" class="owl-carousel" rt3-special-rates= "offers">
+    <article class="item" ng-repeat="offer in offers.special_rates"><a class='thumbnail' ng-show='img.length > 1'  ><img ng-src="[[offer.lead_photo_url.yankee_large]] "  title="[[offer.rate_plan_name]]"></a><h4><a ng-href="/special/special-more/#/[[offer.rate_plan_code]]">[[offer.rate_plan_name]]</a></h4><p>[[offer.short_description]]</p><a class='button'  ng-href=special/special-more/#/[[offer.rate_plan_code]]>Read More</a></article>
     </div>
   </div>
 </article>

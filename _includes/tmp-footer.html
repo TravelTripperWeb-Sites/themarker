@@ -11,12 +11,13 @@
             <li> <a href="{{ 'privacy' | permalink }}">Privacy Policy</a> </li>
             <li> <a href="{{ 'site-security' | permalink }}">Site Security</a> </li>
             <li> <a href="{{ 'sitemap' | permalink }}">Site Map</a> </li>
+            <li> <a href="/save-the-children/">Charities</a> </li>
           </ul>
         </nav>
          <div class="h-logo"><a href="http://highgate.com" target="_blank"><img src ="/assets/images/highgate-logo.png" alt ="High Gate"></a></div>
       </div>
       <div class ="col-sm-4 award">
-      
+
        <!-- <a href="http://www.cntraveler.com/rca/2016" target="_blank">-->
 
        <img src ="/assets/images/conde-net-logo.png" title ="Conde Nast Traveler Readers Choice Award"  alt ="Conde Nast Traveler Readers Choice Award" class="img-responsive">
@@ -28,7 +29,7 @@
       <div class="col-sm-4 col-sm-push">
         <article id="newsletter">
           <h4><a href="{{ 'signup' | permalink }}#newsletter-form" class="email-signup">Email Offers Sign-Up</span></a></h4>
-           
+
         </article>
          <div class="sociallinks">
         <ul class="socials">
@@ -41,29 +42,43 @@
         </ul>
       </div>
       </div>
-    </div> 
+    </div>
   </div>
 </footer>
-<!-- /.footer --> 
-<a href="#" class="cd-top">Top</a> 
-<!-- Bootstrap core JavaScript    ================================================== --> 
-<!-- Placed at the end of the document so the pages load faster -->  
+<!-- /.footer -->
+<a href="#" class="cd-top">Top</a>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NP28H86"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Bootstrap core JavaScript    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script>
+function getIp(data){
+   sessionStorage.ip_add =  data.ip;
+}
+</script>
+<script src="https://api.ipify.org?format=jsonp&callback=getIp"></script>
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="/assets/includes/bootstrap.min.js"></script>   
- 
- <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>  
-<script src="/assets/includes/owl.carousel.js"></script>   
-  
+<script src="/assets/includes/bootstrap.min.js"></script>
+
+ <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
 <script src="//maps.google.com/maps/api/js?sensor=false"></script>
- 
-    <script src="/assets/includes/lightGallery.js"></script> 
 
-<script src="/assets/includes/script.js"></script>  
+    <script src="/assets/includes/lightGallery.js"></script>
 
+
+<script src="/js/owl.carousel.js"></script>
+<script src="/assets/includes/script.js"></script>
 <!-- Angular application -->
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 {% include include_angular_scripts.html %}
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
-<script src="/assets/includes/ie10-viewport-bug-workaround.js"></script>   
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/assets/includes/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>
