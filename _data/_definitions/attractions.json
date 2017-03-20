@@ -4,19 +4,19 @@
       "required": true,
       "label": "Name"
     },
-    
+
      "seo_title":
     {
       "required": true,
       "type": "richtext",
-      "label": "Events List Page Description"
+      "label": "Seo Title"
     },
 
     "seo_description":
     {
       "required": true,
       "type": "richtext",
-      "label": "Events List Page Description"
+      "label": "Seo Description"
     },
 
     "short_description":
