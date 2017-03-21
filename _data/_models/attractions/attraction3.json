@@ -1,0 +1,12 @@
+{
+	"title": "attraction 3",
+	"seo_title": "attraction 3",
+	"seo_description": "attraction 3",
+	"url_friendly_name": "attraction-3",
+	"short_description": "<p><span style=\"color: #464646; font-family: Arial, sans-serif; font-size: 15px;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget lorem vel lorem luctus consectetur. In in sem laoreet, eleifend est nec, maximus urna.&nbsp;</span></p>",
+	"long_description": "<p><span style=\"color: #464646; font-family: Arial, sans-serif; font-size: 15px;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget lorem vel lorem luctus consectetur. In in sem laoreet, eleifend est nec, maximus urna.&nbsp;</span></p>",
+	"image": {
+		"url": "/assets/images/thebestplace.jpg"
+	},
+	"sort_order": 3
+}
