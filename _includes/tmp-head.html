@@ -6,8 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="icon" href="/assets/images/5402/original/favicon.png"  > 
-    <title>{{page.title}}</title>
-{% if page.meta_description %}<meta name='description' content='{{page.meta_description}}'>{% endif %}
+
+    {% if page.seo_title %}
+    <title>{{page.seo_title}}</title> 
+    <meta name='description' content='{{page.seo_title}}'/>
+    {% elsif page.event_seo_title %}
+    <title>{{page.event_seo_title}}</title> 
+    <meta name='description' content='{{page.event_seo_title}}.'/>
+{% else %}
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+ <meta name="description" content="{% if page.meta_description %}{{ page.meta_description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<!--<link rel='canonical' href='{{page.permalink}}' />-->
+{% endif %}
+
+
 {% if page.meta_keywords %}<meta name='keywords' content='{{page.meta_keywords}}'>{% endif %}
 <link rel='canonical' href='{{ page.url}}' />
     <!-- Bootstrap core CSS -->
