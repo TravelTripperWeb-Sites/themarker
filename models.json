@@ -3,7 +3,13 @@
     [
       {
         "name": null,
-        "file": "attractions1.json"
+        "file": "attraction1.json"
+      }
+    ],
+    [
+      {
+        "name": null,
+        "file": "attraction2.json"
       }
     ]
   ],

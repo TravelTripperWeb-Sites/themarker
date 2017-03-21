@@ -16,7 +16,8 @@
       "required": true,
       "label": "Seo Description"
     },
-
+    "url_friendly_name":
+    {"type":"url_slug"},
     "short_description":
     {
       "required": true,
