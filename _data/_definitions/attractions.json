@@ -2,31 +2,46 @@
     "title":
     {
       "required": true,
-    "type": "text",
-      "label": "Offer Title"
+      "label": "Name"
     },
-    "subtitle":
+
+     "seo_title":
     {
       "required": true,
-      "type": "text",
-      "label": "Sub Title"
+      "label": "Seo Title"
     },
-  "description":
+
+    "seo_description":
+    {
+      "required": true,
+      "label": "Seo Description"
+    },
+
+    "short_description":
     {
       "required": true,
       "type": "richtext",
-      "label": "Offer Description"
+      "label": "Short Description"
     },
-  "btn_text":
-    {
-    "required": true,
-      "type": "text",
-      "label": "Button Text"
-    },
-    "btn_link_url":
+
+    "long_description":
     {
       "required": true,
-      "type": "text",
-      "label": "Button Link URL"
+      "type": "richtext",
+      "label": "Long Description"
+    },
+       
+    "image":
+    {
+      "required": true,
+      "type": "image",
+      "label": "Image"
+
+    },
+   
+     "sort_order":
+    {
+      "type": "integer",
+      "required": true
     }
 }

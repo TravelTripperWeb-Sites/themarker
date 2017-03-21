@@ -1,4 +1,12 @@
 {
+  "attractions": [
+    [
+      {
+        "name": null,
+        "file": "attractions1.json"
+      }
+    ]
+  ],
   "blog": [
     [
       {
