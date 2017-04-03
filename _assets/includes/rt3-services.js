@@ -71,7 +71,7 @@ angular.module('rezTrip')
     // Prams for roomDetails
     Search.prototype.getParams = function() {
       var self = this;
-     
+
       return {
         arrival_date: self.params.arrival_date || today(),
         departure_date: self.params.departure_date || today(1),
@@ -143,6 +143,80 @@ angular.module('rezTrip')
       this.searchParams = {};
     }
 
+    Browser.prototype.tonightRate=function()
+    {
+
+
+       var self = this;
+       self.isRate= true;
+
+       rt3api.getAllAvailableRooms().then(function(response) {
+        $rootScope.$applyAsync(function() {
+         //console.log(response);
+            self.roomsList = response.rooms;
+
+            self.tonightErrors = response.error_info.error_details;
+            if(self.roomsList.length==0)
+            {
+              self.isRate=false;
+            }
+            else
+            {
+                var roomRate;
+                var todayRate ={};
+                this.isRate = false;
+                angular.forEach(self.roomsList, function(room, key ){
+                    roomRate= room.min_discounted_average_price[0] || room.min_average_price[0];
+                    if(room.min_average_price[0] != null && !this.isRate){
+
+                       this.isRate = true;
+                       self.toNightsRate = "$"+Math.round(roomRate);
+
+                    }
+                    if(roomRate == null){
+                       todayRate = {'todayRate': 'CHECK AVAILABILITY'};
+
+                    }
+                    else{
+                      todayRate = {'todayRate': "$"+Math.round(roomRate)};
+
+                    }
+                    angular.extend(self.roomsList[key] , todayRate);
+
+                });
+
+             }
+
+            //console.log(self.tonightErrors);
+            self.loaded = true;
+            //var par = rt3Search.getParams();
+            angular.extend(self , {'otaRates' : {'brgFound' : false}});
+            $q.when(rt3api.getOTARates()).then(function(response){
+                if(response.brgFound ){
+                  if(Object.keys){
+
+                      var len, lastKey;
+
+                      while(Object.keys(response.brg).length > 4){
+                         len = Object.keys(response.brg).length;
+                         lastKey =  Object.keys(response.brg)[len-1];
+                         delete response.brg[lastKey];
+                      }
+
+                  }
+
+                }
+                angular.extend(self , {'otaRates' : response});
+            }, function(response){
+                angular.extend(self , {'otaRates' : {'brgFound' : false}});
+            });
+
+          });
+
+      });
+
+    }
+
     Browser.prototype.search = function(params) {
       var date = new Date();
       var self = this;
@@ -174,7 +248,7 @@ angular.module('rezTrip')
     var browser = new Browser();
 
     browser.search();
-
+    browser.tonightRate();
     return browser;
   }])
 
@@ -183,7 +257,7 @@ angular.module('rezTrip')
       loaded: false,
       locationHash: $location.path().substr(1) || null
     };
-    
+
     specialRates.ready = $q(function(resolve) {
       rt3api.getAllSpecialRates().then(function(response) {
         if (specialRates.locationHash) {
@@ -192,7 +266,7 @@ angular.module('rezTrip')
                     if (value.rate_plan_code == specialRates.locationHash) {
                         angular.extend(specialRates, formatRespone(value));
                         specialRates.loaded = true;
-                        resolve(specialRates);   
+                        resolve(specialRates);
                     }
                 });
             });
@@ -201,7 +275,7 @@ angular.module('rezTrip')
                 angular.extend(specialRates, formatRespone(response));
                 specialRates.loaded = true;
                 resolve(specialRates);
-            }); 
+            });
         }
       });
     });
@@ -221,7 +295,7 @@ angular.module('rezTrip')
       brg = {};
       locationHash = $location.path().substr(1);
     }
-    
+
     RoomDetails.prototype.fetchRoomDetails = function() {
       var self = this;
       var searchParams = rt3Search.getParams();
@@ -245,7 +319,7 @@ angular.module('rezTrip')
     };
 
     var details = new RoomDetails();
-    
+
     $rootScope.$on('$locationChangeSuccess', function() {
       details.fetchRoomDetails();
     });
