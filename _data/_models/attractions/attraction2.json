@@ -1,0 +1,12 @@
+{
+	"title": "Attractions 2",
+	"seo_title": "Attractions two",
+	"seo_description": "Attractions two",
+	"short_description": "<p><span style=\"color: #464646; font-family: Arial, sans-serif; font-size: 15px;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget lorem vel lorem luctus consectetur. In in sem laoreet, eleifend est nec, maximus urna. Pellentesque volutpat pulvinar pulvinar. Curabitur eget augue in sem semper accumsan. Integer euismod urna condimentum magna rhoncus ornare.</span></p>",
+	"long_description": "<p><span style=\"color: #464646; font-family: Arial, sans-serif; font-size: 15px;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget lorem vel lorem luctus consectetur. In in sem laoreet, eleifend est nec, maximus urna. Pellentesque volutpat pulvinar pulvinar. Curabitur eget augue in sem semper accumsan. Integer euismod urna condimentum magna rhoncus ornare. Donec non mi eget odio rhoncus pretium. Donec dignissim arcu hendrerit eros luctus, vitae elementum massa venenatis. Cras blandit diam et tellus imperdiet placerat. Nulla in tortor iaculis, cursus elit in, finibus ligula. Sed a mauris tristique, semper velit vitae, efficitur libero. Nullam placerat est vel molestie elementum.</span></p>\n<p>&nbsp;</p>\n<p><span style=\"color: #464646; font-family: Arial, sans-serif; font-size: 15px;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget lorem vel lorem luctus consectetur. In in sem laoreet, eleifend est nec, maximus urna. Pellentesque volutpat pulvinar pulvinar. Curabitur eget augue in sem semper accumsan. Integer euismod urna condimentum magna rhoncus ornare. Donec non mi eget odio rhoncus pretium. Donec dignissim arcu hendrerit eros luctus, vitae elementum massa venenatis. Cras blandit diam et tellus imperdiet placerat. Nulla in tortor iaculis, cursus elit in, finibus ligula. Sed a mauris tristique, semper velit vitae, efficitur libero. Nullam placerat est vel molestie elementum.</span></p>",
+	"image": {
+		"url": "/assets/images/train_athlete.jpg"
+	},
+	"url_friendly_name": "attractions2",
+	"sort_order": 2
+}

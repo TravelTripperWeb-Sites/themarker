@@ -1,15 +1,81 @@
-$(window).on('load resize', function () { 
-     var wHeight = $( window ).height() -60; 
+
+
+$(document).ready(function() {
+		if(sessionStorage.getItem('mobileOfferShown')){
+			$('.mobile-only-offer').hide();
+			$('.mobile-only').css({
+					'overflow-y': 'auto'
+				});
+
+		}else{
+			if($(window).width() <= 768){
+			sessionStorage.setItem('mobileOfferShown',  true);
+			$('.mobile-only-offer').css({'visibility' : "visible"});
+			}
+		}
+		
+		$('#kill').click(function() {
+			$('.mobile-only-offer').css({
+				'visibility': 'hidden',
+				'opacity': '0',
+				'-webkit-transition': 'all 1s ease-in-out',
+				'-moz-transition': 'all 1s ease-in-out',
+				'-o-transition': 'all 1s ease-in-out',
+				'transition': 'all 1s ease-in-out'
+			});
+		  $('.mobile-only').css({
+				'overflow-y': 'auto'
+			});
+	 	 });
+
+	    $(".mobile-only-offer a").click(function(){
+	        $('#kill').click();
+	    });
+
+       $("#home-carousel-2,#room-carousel-1").owlCarousel({
+
+
+           navigation : false, // Show next and prev buttons
+           slideSpeed : 500,
+           paginationSpeed : 400,
+           items : 2,
+           paginationNumbers: false,
+            pagination: false,
+            autoPlay: false,
+            navigation: true,
+            navigationText : false,
+
+            itemsDesktop : [1199,2],
+           itemsDesktopSmall : [980,2],
+           itemsTablet: [768,2],
+           itemsTabletSmall: false,
+           itemsMobile : [767,1],
+
+           // "singleItem:true" is a shortcut for:
+           // items : 1,
+           // itemsDesktop : false,
+           // itemsDesktopSmall : false,
+           // itemsTablet: false,
+           // itemsMobile : false
+
+       });
+
+ });
+
+
+
+$(window).on('load resize', function () {
+     var wHeight = $( window ).height() -60;
 	 $('#homeBannerCarousel').height(wHeight);
 	 $('#homeBannerCarousel .item').height(wHeight);
-	   var IwHeight = $( window ).height() -175; 
+	   var IwHeight = $( window ).height() -175;
 	 $('#innerCarousel').height(IwHeight);
 	 $('#innerCarousel .item').height(IwHeight);
-	 
-	 var width = $(window).width(); 
-    if (width < 1181){ 
-   
-        
+
+	 var width = $(window).width();
+    if (width < 1181){
+
+
     } else {
       $('ul.nav li.dropdown').hover(function() {
           $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(250);
@@ -19,55 +85,56 @@ $(window).on('load resize', function () {
     }
 });
  $(document).ready(function() {
- 
-  $("#owl-promo").owlCarousel({
-      items : 3, 
+  var content = "";
+ setTimeout(function(){
+  	$("#owl-promo").owlCarousel({
+      items : 3,
       itemsDesktop:	[1199,3],
       itemsTablet:	[768,2],
 	  itemsMobile:	[479,1],
-      navigation : true,
-    jsonPath : 'https://rt3api-prd.ttaws.com/hotels/special_rates.json?hotel_id=KEYMRK&portal_id=themarkerkeywes&locale=en&currency=USD',
-    jsonSuccess : customDataSuccess
-  });
- 
+      navigation : true
+    //jsonPath : 'https://rt3api-prd.ttaws.com/hotels/special_rates.json?hotel_id=KEYMRK&portal_id=themarkerkeywes&locale=en&currency=USD',
+    //jsonSuccess : customDataSuccess
+  })}, 2000);
+ /*
   function customDataSuccess(data){
+  	console(data);
     var content = "";
     for(var i in data["special_rates"]){
        var title = data["special_rates"][i].rate_plan_name;
-       var img = data["special_rates"][i].images[0].thumb_yankee_large;
+       var img = data["special_rates"][i].lead_photo_url[0].thumb_yankee_large;
        var description = data["special_rates"][i].short_description;
        var rateplan = data["special_rates"][i].rate_plan_code;
-       
-       
-       //content += "<h4> "+title+" </h4><img src=\"" +img+ "\" >" 
+
+
+       //content += "<h4> "+title+" </h4><img src=\"" +img+ "\" >"
      content += "<article><a class='thumbnail' ng-show='img.length > 1'  ><img src=\"" +img+ "\"  title=\"" +title+ "\"></a><h4><a href=\"special/special-more#/"+rateplan+"\">"+title+"</a></h4><p>"+description+"</p><a class='button'  href=\"special/special-more#/"+rateplan+"\">Read More</a></article>"
     }
     $("#owl-promo").html(content);
-  }
- 
+  } */
 });
- 
 
 
-$(function() { 
+
+$(function() {
  	$( "#booking" ).hover(function() {
 			$(this).removeClass("collapsed");
 	});
 	$( "#inner-wrapper .sidebar-nav h4" ).click(function() {
 			$(this).toggleClass("active");
-	}); 
-	
+	});
+
 	/*--galelry --*/
-	
-	 $("#exterior-gallery").lightGallery( ); 
+
+	 $("#exterior-gallery").lightGallery( );
 	 $("#gust-gallery").lightGallery( );
-	 $("#lobby-gallery").lightGallery( ); 
-	 $("#pool-gallery").lightGallery( ); 
+	 $("#lobby-gallery").lightGallery( );
+	 $("#pool-gallery").lightGallery( );
 	 $("#cero-gallery").lightGallery( );
-	 $("#events-gallery").lightGallery( ); 
- $("div[data-href='']").hide(); 
- 
-	
+	 $("#events-gallery").lightGallery( );
+ $("div[data-href='']").hide();
+
+
 // Custom link to reztrip search
 var today = new Date();
 var arrival = $.datepicker.formatDate('yy-mm-dd', today);
@@ -83,11 +150,11 @@ $( ".selectbox" ).selectmenu({
         if (event.target.id == 'adults') {
             adults = ui.item.value;
         }
-        
+
         if (event.target.id == 'rooms') {
             rooms = ui.item.value;
         }
-        
+
         createLink();
     }
 });
@@ -98,34 +165,52 @@ $(document).on('change', '#arrival_dates', function() {
 
     var arrivalDateValue = new Date(arrival)
     var departureDateValue = new Date(departure)
-    
+
     var minDepartureDateValue = new Date(arrivalDateValue)
     minDepartureDateValue.setDate(minDepartureDateValue.getDate() + 1)
-    
+
     departureDate.datepicker('option', 'minDate', minDepartureDateValue);
 
     if (minDepartureDateValue.getTime() > departureDateValue.getTime()) {
         departureDate.datepicker('setDate', minDepartureDateValue);
         departure = $.datepicker.formatDate('yy-mm-dd', minDepartureDateValue);
     }
-    
+
 
     searchBarCheckAvailabiliti();
 });
 $(document).on('change', '#departure_dates', function() {
     departure = $('#departure_dates').val();
-    
+
     searchBarCheckAvailabiliti();
 });
 
-function searchBarCheckAvailabiliti() {
-    var linkToSearch = 
-        'https://themarkerkeywest.reztrip.com/search?' + 
-        'arrival_date=' + arrival + 
+$(document).on('click', '.hometonightRate', function() {
+    var today = new Date();
+
+    var arrival = $.datepicker.formatDate('yy-mm-dd', today);
+    var departure = $.datepicker.formatDate('yy-mm-dd', new Date(today.setDate(today.getDate() + 1)));
+
+    var rooms = 1;
+    var adults = 2;
+    var linkToSearch =
+        'https://themarkerkeywest.reztrip.com/search?' +
+        'arrival_date=' + arrival +
         '&departure_date=' + departure +
         '&rooms=' + rooms +
         '&adults=' + adults;
-        
+
+    $('.hometonightRate').attr('href', linkToSearch);
+});
+
+function searchBarCheckAvailabiliti() {
+    var linkToSearch =
+        'https://themarkerkeywest.reztrip.com/search?' +
+        'arrival_date=' + arrival +
+        '&departure_date=' + departure +
+        '&rooms=' + rooms +
+        '&adults=' + adults;
+
     $('.link_to_reztrip_with_search_params').attr('href', linkToSearch);
 }
 searchBarCheckAvailabiliti();
@@ -138,23 +223,23 @@ function createLink(to, item) {
     var rooms = 1;
     var adults = 2;
     var rootLink = 'https://themarkerkeywest.reztrip.com/';
-    
+
     if (to == "Book Now") {
-        var result = 
-            rootLink + 
+        var result =
+            rootLink +
             'search?' +
-            'arrival_date=' + arrival + 
+            'arrival_date=' + arrival +
             '&departure_date=' + departure +
             '&rooms=' + rooms +
-            '&adults=' + adults + 
+            '&adults=' + adults +
             '&selected_room_category=' + item.data('link-to-book-now');
-        
+
         item.attr('href', result);
     }
-    
+
     if (to == "Category") {
         var result = rootLink + '?selected_room_category=' + item.data('link-to-category');
-        
+
         item.attr('href', result);
     }
 }
@@ -186,59 +271,59 @@ departureDate.datepicker({
     dateFormat: 'yy-mm-dd',
 });
 
- 
+
 
 	if ($('#innerCarousel .item').length > 1) {
 				$('.carousel-control').show();
 				var innerCarousel = $(".carousel");
 				innerCarousel.append("<ol class='carousel-indicators'></ol>");
-				var indicators = $(".carousel-indicators"); 
+				var indicators = $(".carousel-indicators");
 				innerCarousel.find(".carousel-inner").children(".item").each(function(index) {
-				(index === 0) ? 
-				indicators.append("<li data-target='#innerCarousel' data-slide-to='"+index+"' class='active'></li>") : 
+				(index === 0) ?
+				indicators.append("<li data-target='#innerCarousel' data-slide-to='"+index+"' class='active'></li>") :
 				indicators.append("<li data-target='#innerCarousel' data-slide-to='"+index+"'></li>");
-		});     
+		});
 		$('.carousel').carousel();
 		}
-	$("a.anchorLink").anchorAnimate() 
-	
+	$("a.anchorLink").anchorAnimate()
+
 	// back to top link is shown
-		var offset = 300, 
-		offset_opacity = 1200, 
-		scroll_top_duration = 700, 
+		var offset = 300,
+		offset_opacity = 1200,
+		scroll_top_duration = 700,
 		$back_to_top = $('.cd-top');
- 
+
 	$(window).scroll(function(){
 		( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
-		if( $(this).scrollTop() > offset_opacity ) { 
+		if( $(this).scrollTop() > offset_opacity ) {
 			$back_to_top.addClass('cd-fade-out');
 		}
 	});
- 
+
 	$back_to_top.on('click', function(event){
 		event.preventDefault();
 		$('body,html').animate({
 			scrollTop: 0 ,
 		 	}, scroll_top_duration
 		);
-	});  
-	 
-       
+	});
+
+
  });
- 
- 
-jQuery.fn.anchorAnimate = function(settings) { 
+
+
+jQuery.fn.anchorAnimate = function(settings) {
  	settings = jQuery.extend({
 		speed : 1100
-	}, settings);	
-	
+	}, settings);
+
 	return this.each(function(){
 		var caller = this
-		$(caller).click(function (event) {	
+		$(caller).click(function (event) {
 			event.preventDefault()
 			var locationHref = window.location.href
 			var elementClick = $(caller).attr("href")
-			
+
 			var destination = $(elementClick).offset().top - 80;
 			$("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
 				window.location.hash = elementClick
@@ -261,11 +346,11 @@ $(document).ready(function() {
       var NCLinkNum = 'tel:' + ReturnNavisNCPhoneNumberFormat("###-###-####");
       $(".NCLink").html(NCDisplayNum).attr("href", NCLinkNum);
 });
-// google map 
+// google map
 $(document).ready(function () {
-	siteInfo = { name: "The Marker Waterfront Resort", country: "USA", state: "Florida", city: "Key West", adr: "200 William Street", zip: "33040", lat: "24.5609239", lng: "-81.80140140000003", phone: "(305) 501-5193" }; 
+	siteInfo = { name: "The Marker Waterfront Resort", country: "USA", state: "Florida", city: "Key West", adr: "200 William Street", zip: "33040", lat: "24.5609239", lng: "-81.80140140000003", phone: "(305) 501-5193" };
 	var isiPad = navigator.userAgent.match(/iPad/i) != null;
-	
+
 	if (typeof poi_json !== "undefined" && $("#poi").length) {
 
 		var map = new google.maps.Map(document.getElementById("poi_map"), {
@@ -339,9 +424,9 @@ $(document).ready(function () {
 		});
 
 		/* Hotel marker, address from site settings */
-		 
+
 			var pointer = "/assets/images/6812/original/pointer.png";
- 
+
 
 		var marker = new google.maps.Marker({
 			position:new google.maps.LatLng(poi_json.hotel_info.lat, poi_json.hotel_info.lng),
@@ -380,12 +465,12 @@ $(document).ready(function () {
 			return false;
 		});
 	}
-	
+
 	if($('#map-canvas').length)	{ initGoogleMap(siteInfo) }
 });
 
 
-	
+
 	function initGoogleMap(siteInfo) {
 	var latLng = new google.maps.LatLng(siteInfo.lat, siteInfo.lng);
 	var content = '<div class="map-content"><h4>' + siteInfo.name+'</h4><p>'+siteInfo.adr+'<br>Phone: '+ siteInfo.phone + '</p><p><a href="http://maps.google.com/maps?f=d&geocode=&daddr=' + siteInfo.lat + ',' + siteInfo.lng + '&z=15" target="_blank">Get directions</a></p></div>';
@@ -399,9 +484,9 @@ $(document).ready(function () {
 
 	var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 
- 
+
 		var pointer = "/assets/images/6812/original/pointer.png";
- 
+
 
 	var marker = new google.maps.Marker({
 		position: latLng,
@@ -417,4 +502,3 @@ $(document).ready(function () {
 		infowindow.open(map, marker);
 	});
 }
-
