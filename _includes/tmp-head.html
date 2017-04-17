@@ -6,18 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="icon" href="/assets/images/5402/original/favicon.png"  > 
-    <title>{{page.title}}</title>
-{% if page.meta_description %}<meta name='description' content='{{page.meta_description}}'>{% endif %}
+
+    {% if page.seo_title %}
+    <title>{{page.seo_title}}</title> 
+    <meta name='description' content='{{page.seo_title}}'/>
+    {% elsif page.event_seo_title %}
+    <title>{{page.event_seo_title}}</title> 
+    <meta name='description' content='{{page.event_seo_title}}.'/>
+{% else %}
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+ <meta name="description" content="{% if page.meta_description %}{{ page.meta_description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<!--<link rel='canonical' href='{{page.permalink}}' />-->
+{% endif %}
+
+
 {% if page.meta_keywords %}<meta name='keywords' content='{{page.meta_keywords}}'>{% endif %}
 <link rel='canonical' href='{{ page.url}}' />
     <!-- Bootstrap core CSS -->
     
     <link rel="stylesheet" href="/assets/includes/bootstrap.min.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> 
-    <link rel="stylesheet" href="/assets/includes/owl.carousel.css">
+    <link rel="stylesheet" href="/css/owl.carousel.css" >
+  <link rel="stylesheet" href="/css/owl.theme.css" >
+  <link rel="stylesheet" href="/css/owl.transitions.css" >
     
     <!-- Custom styles -->
     <link rel="stylesheet" href="/assets/includes/style.css"> 
+    <link rel="stylesheet" href="/assets/includes/mobile-only-offer.css">
     <link rel="stylesheet" href="/assets/includes/save-the-child-section.css"> 
     <link rel="stylesheet" href="/assets/includes/lightGallery.css">  
     <script language="javascript" src="https://www.thenavisway.com/JavascriptPhoneNumber/js.aspx?account=15278&jspass=84ajbd9wo80x2tb00sbo&dflt=8554859291" ></script>
@@ -43,5 +58,5 @@
     </script>
     <!-- End Google Tag Manager -->
     
- <script id="gtsgig-boot" data-hotel-id="themarkerkeywest" src="https://widgets.gtsgig.com/boot.js" async defer></script>  
+<!--<script id="gtsgig-boot" data-hotel-id="themarkerkeywest" src="https://widgets.gtsgig.com/boot.js" async defer></script>-->  
 </head>

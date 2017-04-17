@@ -4,7 +4,7 @@ GEM
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
     colorator (0.1)
-    concurrent-ruby (1.0.3)
+    concurrent-ruby (1.0.4)
     extras (0.1.0)
       forwardable-extended (~> 2.5)
     fastimage (2.0.1)
