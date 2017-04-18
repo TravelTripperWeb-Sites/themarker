@@ -70,6 +70,16 @@
     "git_file_name": "_assets/image_data/site-assets_202_388_1258_media_2017-03-13-005702_somo.jpg.json"
   },
   {
+    "name": "cuban-blog",
+    "file_name": "cuban-blog.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/202_388_1258/media/2017-04-10-025625/cuban-blog.jpg",
+    "date_added": "2017-04-10-025625",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_202_388_1258_media_2017-04-10-025625_cuban-blog.jpg.json"
+  },
+  {
     "name": "All-Day-Menu",
     "file_name": "All-Day-Menu.pdf",
     "file_type": "application/pdf",
@@ -118,6 +128,46 @@
     "tags": "",
     "description": "",
     "git_file_name": "_assets/image_data/site-assets_202_388_1719_media_2017-02-28-231550_marcus-newsletter.pdf.json"
+  },
+  {
+    "name": "tm newsletter_apr-2017",
+    "file_name": "tm newsletter_apr-2017.pdf",
+    "file_type": "application/pdf",
+    "url": "https://cdn.traveltripper.io/site-assets/202_388_2519/media/2017-04-03-114729/tm newsletter_apr-2017.pdf",
+    "date_added": "2017-04-03-114729",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_202_388_2519_media_2017-04-03-114729_tm newsletter_apr-2017.pdf.json"
+  },
+  {
+    "name": "cuban-coffee-queen",
+    "file_name": "cuban-coffee-queen.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/202_388_2603/media/2017-04-10-064556/cuban-coffee-queen.jpg",
+    "date_added": "2017-04-10-064556",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_202_388_2603_media_2017-04-10-064556_cuban-coffee-queen.jpg.json"
+  },
+  {
+    "name": "dinner-at-turtle-kraals",
+    "file_name": "dinner-at-turtle-kraals.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/202_388_2603/media/2017-04-10-064557/dinner-at-turtle-kraals.jpg",
+    "date_added": "2017-04-10-064557",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_202_388_2603_media_2017-04-10-064557_dinner-at-turtle-kraals.jpg.json"
+  },
+  {
+    "name": "marina-pic",
+    "file_name": "marina-pic.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/202_388_2603/media/2017-04-10-064557/marina-pic.jpg",
+    "date_added": "2017-04-10-064558",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_202_388_2603_media_2017-04-10-064557_marina-pic.jpg.json"
   },
   {
     "name": "Marker Conference Room Menu 2016",
