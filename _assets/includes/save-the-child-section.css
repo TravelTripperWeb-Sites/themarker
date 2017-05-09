@@ -87,6 +87,17 @@
 	}
 }
 
+.save-the-child-section .save-the-child-container .description-container .description-center h1 {
+	font-family: 'Muli Light';
+    color: #0bb7e4;
+   
+	font-size: 27px;
+    line-height: 34px;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0px;
+}
+
 .save-the-child-section .save-the-child-container .description-container .description-center h2 {
 	font-family: 'Muli Light';
     color: #0bb7e4;
