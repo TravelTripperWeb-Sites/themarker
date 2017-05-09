@@ -26,7 +26,7 @@
           	<li  ng-repeat="item in items.special_rates" > 
               <h3><a href="{{ 'special/special-more' | permalink }}#[[item.rate_plan_code]]">[[item.rate_plan_name]]</a></h3>
               <p class="thumbnail" ng-show="item.images.length > 0"><a href="{{ 'special/special-more' | permalink }}#[[item.rate_plan_code]]"><img ng-src="[[item.images[0].thumb_yankee_large]]"  alt="[[item.rate_plan_name]]"  title="[[item.rate_plan_name]]"></a></p>
-              <p>[[item.short_description]]</p>
+              <p ng-bind-html="item.short_description | renderHTMLCorrectly"></p>
               <nav><a href="{{ 'special/special-more' | permalink }}#[[item.rate_plan_code]]" class="button">Read More</a> <a href="[[item.promo_url]]" class="button" target="_blank" >Book Package Online</a> </nav>
             </li>
    
