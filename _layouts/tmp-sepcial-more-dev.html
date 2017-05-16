@@ -19,9 +19,9 @@
         <h1>[[special.rate_plan_name]]</h1> 
           <h2></h2> 
            <div class="special-list special-article">
-          <p class="thumbnail"><img  ng-src="[[special.images[0].yankee_large]]" alt="" title="[[special.rate_plan_name]]"></p>
+          <p class="thumbnail"><img ng-src="[[special.images[0].yankee_large]]" alt="" title="[[special.rate_plan_name]]"></p>
           <div class="special-description">
-            <p>[[special.long_description]]</p>  
+            <p ng-bind-html="special.long_description | renderHTMLCorrectly"></p>  
             <p><strong>Terms & Conditions:</strong><br>
              [[special.policy_description | formatpolicydescription]] 
             </p>

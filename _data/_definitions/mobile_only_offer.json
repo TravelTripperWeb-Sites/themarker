@@ -1,0 +1,32 @@
+{
+    "title":
+    {
+      "required": true,
+	  "type": "text",
+      "label": "Offer Title"
+    },
+    "subtitle":
+    {
+      "required": true,
+      "type": "text",
+      "label": "Sub Title"
+    },
+	"description":
+    {
+      "required": true,
+      "type": "richtext",
+      "label": "Offer Description"
+    },
+	"btn_text":
+    {
+	  "required": true,
+      "type": "text",
+      "label": "Button Text"
+    },
+    "btn_link_url":
+    {
+      "required": true,
+      "type": "text",
+      "label": "Button Link URL"
+    }
+}

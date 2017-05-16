@@ -1,0 +1,21 @@
+<!--Mobile only offer code here-->
+
+{% assign mobile_only_offer = site.data._models.mobile_only_offer %}
+
+<section class="mobile-only-offer">
+	<div class="container">
+		<div class="close" id="kill">X</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h1>{{mobile_only_offer[0].title}}</h1>
+				<h4>{{mobile_only_offer[0].subtitle}}</h4>
+				<div class="description">
+					{{mobile_only_offer[0].description}}
+				</div>
+				<a href="{{mobile_only_offer[0].btn_link_url}}" class="m-book-btn" >{{mobile_only_offer[0].btn_text}}</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+

@@ -91,7 +91,10 @@ module Jekyll
       
       # Then load basic instance data into the definition instance lists
       models_abs_folder = absolute_dir(model_dir)
-      models_sub_folders = Dir.entries("#{models_abs_folder}/").select { |entry| File.directory? File.join(models_abs_folder, entry) and !(entry == '.' || entry == '..') }
+      models_sub_folders = []
+      if File.directory?(models_abs_folder)
+        models_sub_folders = Dir.entries("#{models_abs_folder}/").select { |entry| File.directory? File.join(models_abs_folder, entry) and !(entry == '.' || entry == '..') }
+      end
       
       models_sub_folders.each do |sub_folder|
         Dir[File.join(models_abs_folder, sub_folder, '*.json')].map do |f|
