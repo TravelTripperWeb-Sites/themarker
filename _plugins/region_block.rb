@@ -39,8 +39,10 @@ module Jekyll
       @inner_html ||= render_all(@nodelist, context)
     end
     
-    def empty_region_content(include_data_path, context)
-      include(include_data_path, context, 0, {"_template"=>"html", "content"=>"#{inner_html(context)}"})
+    #def empty_region_content(include_data_path, context)
+    def empty_region_content(context)
+      #include(include_data_path, context, 0, {"_template"=>"html", "content"=>"#{inner_html(context)}"})
+      include(context, 0, {"_template"=>"html", "content"=>"#{inner_html(context)}"})
       #inner_html(context)
     end
 

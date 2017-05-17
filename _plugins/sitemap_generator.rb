@@ -6,6 +6,8 @@ end
 class SitemapGenerator
   attr_reader :site
 
+  STANDARD_KEYS=["_definitions", "_models", "_regions", "regions"]
+
   def initialize(site)
     @site = site
   end
@@ -35,6 +37,8 @@ class SitemapGenerator
 
     sitemap['__REGIONS__'] = site.data['regions']
 
+    sitemap['__SETTINGS__'] = site.data.keys.collect{|k| STANDARD_KEYS.include?(k) ? nil : k}.compact
+
     if Dir.exists?('tmp/src')
       Dir.chdir('tmp/src') {
         sitemap['__SHA__'] = sha
@@ -55,7 +59,7 @@ class SitemapGenerator
 
   def save(sitemap)
     File.open('sitemap.json', 'w') do |f|
-      f.write(sitemap.to_json)
+      f.write(JSON.pretty_generate(sitemap, indent: "  "))
     end
   end
 
