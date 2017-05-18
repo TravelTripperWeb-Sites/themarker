@@ -231,7 +231,7 @@
 	}
 }
 
-.save-the-child-section .save-the-child-container .description-container .description-center h2 {
+.save-the-child-section .save-the-child-container .description-container .description-center h1 {
 	font-family: 'Muli Light';
     color: #0bb7e4;
    
@@ -243,7 +243,7 @@
 }
 
 @media (max-width: 767px) {
-	.save-the-child-section .save-the-child-container .description-container .description-center h2 {
+	.save-the-child-section .save-the-child-container .description-container .description-center h1 {
 		font-size: 20px;
 	}
 }
