@@ -1,3 +1,8 @@
+{% capture page_url %}
+  {{ page.url }}
+{% endcapture %}
+{% if page_url contains "save-the-children" %}
+
 <footer id="footer">
   <div class="container">
     <div class="row">
@@ -45,6 +50,79 @@
     </div>
   </div>
 </footer>
+
+{% else %}
+  
+<!-- save the children section start-->
+<section class="save-the-child-section">
+    <div class="save-the-child-container">
+        <div class="logo-container">
+            <img src="/assets/images/save-the-child-logo.png" alt="Save The Children" />
+        </div>
+        <div class="description-container">
+            <div class="description-center">
+                <h2>DONATE TODAY & MAKE A DIFFERENCE</h2>
+                <p>100% of your donation benefits Save The Children. Thank you for your support.</p>
+            </div>
+        </div>
+        <div class="button-container">
+            <a href="/save-the-children" class="button-common">MORE INFO</a>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+</section>
+<!-- save the children section end-->
+
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <nav id="footer-menu">
+          <ul>
+            <li> <a href="http://highgate.com/careers" target="_blank" >Careers</a> </li>
+            <li> <a href="{{ 'news' | permalink }}">News/Press</a> </li>
+            <li> <a href="">Best Rate Guarantee</a> </li>
+            <li> <a href="{{ 'hotel-policy' | permalink }}">Hotel Policy</a> </li>
+            <li> <a href="{{ 'privacy' | permalink }}">Privacy Policy</a> </li>
+            <li> <a href="{{ 'site-security' | permalink }}">Site Security</a> </li>
+            <li> <a href="{{ 'sitemap' | permalink }}">Site Map</a> </li>
+            <li> <a href="/save-the-children/">Charities</a> </li>
+          </ul>
+        </nav>
+         <div class="h-logo"><a href="http://highgate.com" target="_blank"><img src ="/assets/images/highgate-logo.png" alt ="High Gate"></a></div>
+      </div>
+      <div class ="col-sm-4 award">
+
+       <!-- <a href="http://www.cntraveler.com/rca/2016" target="_blank">-->
+
+       <img src ="/assets/images/conde-net-logo.png" title ="Conde Nast Traveler Readers Choice Award"  alt ="Conde Nast Traveler Readers Choice Award" class="img-responsive">
+
+       <!-- </a>-->
+       <div class="m-t-16"> <small class="copyright"> 200 William Street, Key West, Florida 33040, Phone:  (305) 501-5193<br>
+        All Rights Reserved © 2017 </small> </div>
+      </div>
+      <div class="col-sm-4 col-sm-push">
+        <article id="newsletter">
+          <h4><a href="{{ 'signup' | permalink }}#newsletter-form" class="email-signup">Email Offers Sign-Up</span></a></h4>
+
+        </article>
+         <div class="sociallinks">
+        <ul class="socials">
+          <li><a class="facebook" href="https://www.facebook.com/TheMarkerResort" target="_blank" >Facebook</a></li>
+          <li><a class="twitter" href="https://www.twitter.com/TheMarkerResort" target="_blank">Twitter</a></li>
+          <li><a class="instagram" href="http://www.instagram.com/themarkerresort" target="_blank"  >Instagram</a></li>
+          <li><a class="gplus" href="https://plus.google.com/u/0/111033740280620125237/posts" target="_blank" >Google+</a></li>
+          <li><a class="tripadvisor" href="http://www.tripadvisor.com/Hotel_Review-g34345-d6853077-Reviews-The_Marker_Waterfront_Resort_Key_West-Key_West_Florida_Keys_Florida.html" target="_blank" >tripadvisor</a></li>
+          <li><a class="blog" href="https://www.themarkerkeywest.com/blog/">blog</a></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+{% endif %}
+
 <!-- /.footer -->
 <a href="#" class="cd-top">Top</a>
 
