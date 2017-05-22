@@ -97,7 +97,6 @@
 - faq/: index.html
 - gallery/: gallery/view-all-images/
 - gallery/key-west-webcam/: gallery/key-west-webcam/
-- gallery/view-all-images/: gallery/view-all-images/
 - home/contact: contact/index.html
 - home/photos: gallery/view-all-images/
 - hotel-policy/: privacy/
