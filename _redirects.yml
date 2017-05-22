@@ -74,3 +74,11 @@
 - weddings: weddings-and-events/weddings/
 - meetings: weddings-and-events/meetings/
 - marker-resort-video: gallery/marker-resort-video
+- special/special-more/%5b%5bspecial.promo_url%5d%5d: special/
+- special/special-more/%5b%5bspecial.promo_url%5d%5d/: special/
+- Special/special-more/%5b%5bspecial.promo_url%5d%5d: special/
+- Special/special-more/%5b%5bspecial.promo_url%5d%5d/: special/
+- Special/Special-More/%5B%5Bspecial.Promo_Url%5D%5D: special/
+- Special/Special-More/%5B%5Bspecial.Promo_Url%5D%5D/: special/
+- SPECIAL/SPECIAL-MORE/%5B%5BSPECIAL.PROMO_URL%5D%5D: special/
+- SPECIAL/SPECIAL-MORE/%5B%5BSPECIAL.PROMO_URL%5D%5D/: special/
