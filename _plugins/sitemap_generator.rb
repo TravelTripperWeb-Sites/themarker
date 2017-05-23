@@ -23,6 +23,7 @@ class SitemapGenerator
     sitemap['__CONFIG__', 'locales'] = site.config['languages']
 
     pages.each do |page|
+      next if page.sass_file?	 # Don't include sass files in the page tree
       url = page.url
       url += 'index.html' if url.end_with?('/')
       url = '__ROOT__' + url
