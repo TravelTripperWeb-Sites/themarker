@@ -11,12 +11,10 @@
 - best-things-to-do-in-key-west: blog/
 - calendar-more/movie-night-at-the-marker-8pm: calendar/
 - home: index.html
-- reservations: reservations/
-- blog: blog/
 - services/pools: pools
 - hotel: about-the-marker
 - hotel/local-design: local-design
-- hotel/faq: faq
+- hotel/faq: our-hotel/faq/
 - accommodations/marker-classic-rooms: the-marker-classic-rooms
 - services: view-all
 - services/fitness: fitness-center
@@ -41,9 +39,7 @@
 - pool-garden-view-balcony-king-rooms: pool-garden-rooms
 - key-west-harbor-view-balcony-king-rooms: key-west-harbor-rooms
 - the-captains-quarters-balcony-king-rooms: the-captains-quarters
-- services-and-amenities: services-and-amenities
 - meetings-and-events: meetings
-- drinks-and-dining: drinks-and-dining
 - calendar-of-events: calendar
 - about-the-marker: our-hotel/about-the-marker
 - the-marker-classic-rooms: accommodations/the-marker-classic-rooms
@@ -90,7 +86,6 @@
 - SPECIAL/%5B%5BITEM.PROMO_URL%5D%5D: special/
 - SPECIAL/%5B%5BITEM.PROMO_URL%5D%5D/: special/
 - about-the-marker/: our-hotel/about-the-marker/
-- accommodations/accommodations/: accommodations/
 - accommodations/marina-view-rooms: accommodations/
 - accommodations/old-town-rooms: accommodations/
 - accommodations/premium-marina-king-room: accommodations/
@@ -103,7 +98,6 @@
 - calendar/: special/
 - cero-bodega/: drinks-and-dining/cero-bodega/
 - drinks-and-dining/cero-bodega/: drinks-and-dining/bar/
-- faq/: index.html
 - gallery/: gallery/view-all-images/
 - home/photos: gallery/view-all-images/
 - hotel-policy/: privacy/
