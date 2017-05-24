@@ -98,7 +98,6 @@
 - calendar/: special/
 - cero-bodega/: drinks-and-dining/cero-bodega/
 - drinks-and-dining/cero-bodega/: drinks-and-dining/bar/
-- faq/: index.html
 - gallery/: gallery/view-all-images/
 - home/photos: gallery/view-all-images/
 - hotel-policy/: privacy/
