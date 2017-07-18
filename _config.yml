@@ -26,11 +26,40 @@ rsync_copy: ['_assets']
 
 page_gen:
   - data: 'events'
-    template: 'tmp-calendar-more'
+    template: 'templ-calendar-more'
     dir: 'calendar-more'
   - data: 'blog'
-    template: 'tmp-blog-more'
+    template: 'templ-blog-more'
     dir: 'blog-details'
   - data: 'attractions'
     template: 'attractions-details'
     dir: 'attractions'
+
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - media.json
+  - models.json
+  - node_modules
+  - old_media.json
+  - package.json
+  - Rakefile
+  - README
+  - sitemap.json
+  - tmp    

@@ -4,12 +4,12 @@
     "page_gen": [
       {
         "data": "events",
-        "template": "tmp-calendar-more",
+        "template": "templ-calendar-more",
         "dir": "calendar-more"
       },
       {
         "data": "blog",
-        "template": "tmp-blog-more",
+        "template": "templ-blog-more",
         "dir": "blog-details"
       },
       {
@@ -163,37 +163,6 @@
           },
           "data_source": null,
           "source_path": "contact/index.html"
-        }
-      ]
-    },
-    "css": {
-      "__PAGES__": [
-        {
-          "label": "owl.carousel.css",
-          "published": true,
-          "locales": {
-            "en": "/css/owl.carousel.css"
-          },
-          "data_source": null,
-          "source_path": "css/owl.carousel.scss"
-        },
-        {
-          "label": "owl.theme.css",
-          "published": true,
-          "locales": {
-            "en": "/css/owl.theme.css"
-          },
-          "data_source": null,
-          "source_path": "css/owl.theme.scss"
-        },
-        {
-          "label": "owl.transitions.css",
-          "published": true,
-          "locales": {
-            "en": "/css/owl.transitions.css"
-          },
-          "data_source": null,
-          "source_path": "css/owl.transitions.scss"
         }
       ]
     },
@@ -828,5 +797,5 @@
   "__SETTINGS__": [
     "_model_filters"
   ],
-  "__SHA__": "14eb849c95915ca7dfe0471270027d5916a9616b"
+  "__SHA__": "65ea795be834081b766d6350e3326d819d4f9260"
 }
