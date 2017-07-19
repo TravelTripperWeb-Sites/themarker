@@ -415,7 +415,7 @@ $(document).ready(function () {
 
 		$.each(poi_json.points, function (i, point) {
 
-			var thumbnail = point.image_link ? "<img src='" + point.image_link + "'>" : "";
+			var thumbnail = point.image_link ? "<img src='" + point.image_link + "' alt='"+point.name+"'>" : "";
 			var moreExtraClass = "";
 			if (thumbnail == "" && point.descr == "" && point.url_name == "") moreExtraClass = " disabled";
 			var pointContent = "<tr id='point-" + i + "'><td class='name'><span class='poi-expand" + moreExtraClass + "'>" + point.name + "</span></td><td class='address'>" + point.address + "</td><td class='phone'>" + point.phone + "</td><td class='distance'>" + point.distance + "</td><td class='td-showonmap'><span class='show-on-map'>Show on map</span></td></tr><tr id='point-more-" + i + "' class='poi-more'><td colspan='5'><div>" + thumbnail + "<span class='poi-descr'>" + point.descr + "<br><a href='" + point.link + "' target='_blank'>" + point.url_name + "</a><br><a href='#' class='c-show-on-map'>show on map</a></span></div></td></tr>";

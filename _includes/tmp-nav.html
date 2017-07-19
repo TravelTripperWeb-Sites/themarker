@@ -119,17 +119,18 @@
       <section id="booking" class="collapsed">
         <form action="" method="post" target="_blank">
           <fieldset>
+            <legend>Booking: </legend>
             <div class="dates">
-              <label for="checkin" class="date">Check-in:</label>
-              <input type="text" class="text calendar" id="arrival_dates" name="checkin" >
+              <label for="arrival_dates" class="date">Check-in:</label>
+              <input type="text" class="text calendar" id="arrival_dates" name="checkin" aria-label="arrival_dates" />
             </div>
             <div class="dates">
-              <label for="checkout" class="date">Check-out:</label>
-              <input type="text" class="text calendar" id="departure_dates" name="checkout">
+              <label for="departure_dates" class="date">Check-out:</label>
+              <input type="text" class="text calendar" id="departure_dates" name="checkout" aria-label="departure_dates" >
             </div>
             <p>
               <label for="rooms">Rooms:</label>
-              <select id="rooms" name="rooms" class="selectbox">
+              <select id="rooms" name="rooms" class="selectbox" aria-label="rooms">
                 <option value="1" selected>01</option>
                 <option value="2">02</option>
                 <option value="3">03</option>
@@ -138,7 +139,7 @@
             </p>
             <p>
               <label for="adults">People:</label>
-              <select id="adults" name="adults" class="selectbox">
+              <select id="adults" name="adults" class="selectbox" aria-label="adults">
                 <option value="1">01</option>
                 <option value="2" selected>02</option>
                 <option value="3">03</option>
@@ -146,8 +147,8 @@
               </select>
             </p>
             <p class="buttons">
-                
-              <a href="#" class="link_to_reztrip_with_search_params" target="_blank"><span>Check Availability &amp;&nbsp;</span>Book Now</a> 
+               <input type="submit" class="submit-btn" value="submit" />  
+              <a class="link_to_reztrip_with_search_params" target="_blank" type="submit"><span>Check Availability &amp;&nbsp;</span>Book Now</a> 
                 <span class="rates">Best Rate Guaranteed</span> 
             </p>
           </fieldset>
