@@ -2639,3 +2639,8 @@ font-family: 'Muli Light';
 #homeBannerCarousel .boxes-small .tonight-rate h4 .price:active, #homeBannerCarousel .boxes-small .tonight-rate h4 .price:focus, #homeBannerCarousel .boxes-small .tonight-rate h4 a:active, #homeBannerCarousel .boxes-small .tonight-rate h4 a:focus {
   text-decoration: none;
 }
+
+#booking fieldset legend, .submit-btn{
+	visibility: hidden;
+	position: absolute;
+}
