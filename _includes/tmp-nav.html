@@ -1,161 +1,151 @@
-{% include mobile-only-offer.html %}
-<!-- header -->   
+{% include mobile-only-offer.html %} 
+<!-- header -->
 
-  <header class="navbar navbar-default navbar-fixed-top  main-nav">
-    <div class="container header-container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="{{ '/' | permalink }}"><span class="logo"> The Marker Waterfront Resort</span></a> </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <div class="nav-wrapper">
-          <ul class="nav navbar-nav main-menu clearfix">
-            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Hotel</a>
-              <ul class="dropdown-menu">
-                <li> <a href="{{ 'our-hotel/about-the-marker' | permalink }}">About The Marker</a> </li> 
-                <li> <a href="/assets/images/9674/original/the_marker_website_map_2.pdf" target="_blank">Resort Map Download</a> </li>
-                <li> <a href="{{ 'our-hotel/local-design' | permalink }}">Local Design</a> </li>
-                <!--<li> <a href="#">Local Attractions - Illustrated Interactive Map</a> </li>-->
-                <li> <a href="{{ 'news' | permalink }}">Press Room</a> </li>
-                <li> <a href="{{ 'our-hotel/faq' | permalink }}">FAQ</a> </li>
-               
-              </ul> 
-            </li>
-            <li class="dropdown"> 
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Accommodations</a>
-              <ul class="dropdown-menu">
-               <li> <a href="{{ 'accommodations' | permalink }}">View All Rooms</a> </li>
-                <li> <a href="{{ 'accommodations/the-marker-classic-rooms' | permalink }}">The Marker Classic Rooms</a> </li>
-                <li> <a href="{{ 'accommodations/pool-garden-rooms' | permalink }}">Pool Garden Rooms</a> </li>
-                <li> <a href="{{ 'accommodations/key-west-harbor-rooms' | permalink }}">Key West Harbor Rooms</a> </li>
-                <li> <a href="{{ 'accommodations/the-captains-quarters' | permalink }}">The Captain's Quarters</a> </li>
-              </ul>
-            </li>
-            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services & Amenities</a>
-              <ul class="dropdown-menu">
-                <li> <a href="{{ 'services-and-amenities/view-all' | permalink }}">View All</a> </li>
-                <li> <a href="{{ 'services-and-amenities/pools' | permalink }}">Pools</a> </li>
-                <li> <a href="{{ 'services-and-amenities/fitness-center' | permalink }}">Fitness Center</a> </li>
-                <li> <a href="{{ 'services-and-amenities/parking' | permalink }}">Parking</a> </li>
-              </ul>
-            </li>
-            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Experience</a>
-              <ul class="dropdown-menu">
-                <li> <a href="{{ 'experiences/the-marker-experience' | permalink }}" >The Marker Experience</a> </li> 
-                <li> <a href="{{ 'experiences/activities' | permalink }}">Activities</a> </li>
-                 <li> <a href="{{ 'experiences/family' | permalink }}">Family</a> </li>
-                <li> <a href="{{ 'experiences/romance' | permalink }}">Romance</a> </li>
-                 <li> <a href="{{ 'experiences/key-west-art-heritage' | permalink }}" >Key West Art Heritage</a> </li>
-              </ul>
-            </li>
-            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery</a>
-              <ul class="dropdown-menu">
-                <li> <a href="{{ 'gallery/view-all-images' | permalink }}">View All Images</a> </li>
-                <li> <a href="{{ 'gallery/key-west-webcam' | permalink }}">Key West Webcam</a> </li>
-                <li> <a href="{{ 'gallery/marker-resort-video' | permalink }}">Marker Resort Video</a> </li> 
-              </ul>
-            </li>
-             <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Groups & Events</a>
-              <ul class="dropdown-menu">
-                <li> <a href="{{ 'weddings-and-events/weddings' | permalink }}">Weddings</a> </li>
-                <li> <a href="{{ 'weddings-and-events/meetings' | permalink }}">Meetings & Events</a> </li>
-                <li> <a href="{{ 'weddings-and-events/groups'   | permalink }}">Groups</a> </li>
-              </ul>
-            </li>
-            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Drinks & Dining</a>
-              <ul class="dropdown-menu"> 
-               <li> <a href="{{ 'drinks-and-dining/viewall' | permalink }}">View All</a> </li> 
-                <li> <a href="{{ 'drinks-and-dining/cero-bodega' | permalink }}">Cero Bodega</a> </li>
-                <li> <a href="{{ 'drinks-and-dining/bar' | permalink }}">Bar</a> </li>
-              </ul>
-            </li>
-            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Key West</a>
-              <ul class="dropdown-menu right">
-                <li> <a href="{{ 'key-west/local-attractions' | permalink }}">Local Attractions</a> </li>
-               <!-- <li> <a href="#">Area Guide - Interactive Illustrated Map</a> </li>-->
-                <li> <a href="{{ 'calendar' | permalink }}">Calendar of Events</a> </li>
-              </ul>
-            </li>
-          </ul>
-          <div class="top-menu">
-            <ul class="nav navbar-nav clearfix">
-              <li> <a href="{{ 'special' | permalink }}">Specials</a> </li>
-              <li> <a href="{{ 'reservations' | permalink }}">Reservations</a> </li>
-              <li> <a href="{{ 'blog' | permalink }}">BLOG</a> </li>
-              <li> <a href="{{ 'signup' | permalink }}">Connect</a> </li>
-              <li> <a href="{{ 'location' | permalink }}">Location</a> </li>
-              <li> <a href="{{ 'contact' | permalink }}">Contact</a> </li>
-            </ul> 
-            <ul class="socials">
-              <li><a class="facebook" href="https://www.facebook.com/TheMarkerResort" target="_blank"  >Facebook</a></li>
-              <li><a class="twitter" href="https://www.twitter.com/TheMarkerResort" target="_blank"  >Twitter</a></li>
-              <li><a class="instagram" href="http://www.instagram.com/themarkerresort" target="_blank"  >Instagram</a></li>
-              <li><a class="gplus" href="https://plus.google.com/u/0/111033740280620125237/posts" target="_blank"  >Google+</a></li>
-              <li><a class="tripadvisor" href="http://www.tripadvisor.com/Hotel_Review-g34345-d6853077-Reviews-The_Marker_Waterfront_Resort_Key_West-Key_West_Florida_Keys_Florida.html" target="_blank"  >tripadvisor</a></li>
-              <li><a class="newsletter" href="{{ 'signup' | permalink }}">Newsletter</a></li>
+<header class="navbar navbar-default navbar-fixed-top  main-nav">
+  <div class="container header-container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="{{ '/' | permalink }}"><span class="logo"> The Marker Waterfront Resort</span></a> </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <div class="nav-wrapper">
+        <ul class="nav navbar-nav main-menu clearfix">
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Hotel</a>
+            <ul class="dropdown-menu">
+              <li> <a href="{{ 'our-hotel/about-the-marker' | permalink }}">About The Marker</a> </li>
+              <li> <a href="/assets/images/9674/original/the_marker_website_map_2.pdf" target="_blank">Resort Map Download</a> </li>
+              <li> <a href="{{ 'our-hotel/local-design' | permalink }}">Local Design</a> </li>
+              <!--<li> <a href="#">Local Attractions - Illustrated Interactive Map</a> </li>-->
+              <li> <a href="{{ 'news' | permalink }}">Press Room</a> </li>
+              <li> <a href="{{ 'our-hotel/faq' | permalink }}">FAQ</a> </li>
             </ul>
-            <div class="phone-number"> <i class="phone"></i> 
-              <div class="Phone"><span id="NavisTFN">(866) 999-9999</span>
-               <script type="text/javascript">
+          </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Accommodations</a>
+            <ul class="dropdown-menu">
+              <li> <a href="{{ 'accommodations' | permalink }}">View All Rooms</a> </li>
+              <li> <a href="{{ 'accommodations/the-marker-classic-rooms' | permalink }}">The Marker Classic Rooms</a> </li>
+              <li> <a href="{{ 'accommodations/pool-garden-rooms' | permalink }}">Pool Garden Rooms</a> </li>
+              <li> <a href="{{ 'accommodations/key-west-harbor-rooms' | permalink }}">Key West Harbor Rooms</a> </li>
+              <li> <a href="{{ 'accommodations/the-captains-quarters' | permalink }}">The Captain's Quarters</a> </li>
+            </ul>
+          </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services & Amenities</a>
+            <ul class="dropdown-menu">
+              <li> <a href="{{ 'services-and-amenities/view-all' | permalink }}">View All</a> </li>
+              <li> <a href="{{ 'services-and-amenities/pools' | permalink }}">Pools</a> </li>
+              <li> <a href="{{ 'services-and-amenities/fitness-center' | permalink }}">Fitness Center</a> </li>
+              <li> <a href="{{ 'services-and-amenities/parking' | permalink }}">Parking</a> </li>
+            </ul>
+          </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Experience</a>
+            <ul class="dropdown-menu">
+              <li> <a href="{{ 'experiences/the-marker-experience' | permalink }}" >The Marker Experience</a> </li>
+              <li> <a href="{{ 'experiences/activities' | permalink }}">Activities</a> </li>
+              <li> <a href="{{ 'experiences/family' | permalink }}">Family</a> </li>
+              <li> <a href="{{ 'experiences/romance' | permalink }}">Romance</a> </li>
+              <li> <a href="{{ 'experiences/key-west-art-heritage' | permalink }}" >Key West Art Heritage</a> </li>
+            </ul>
+          </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery</a>
+            <ul class="dropdown-menu">
+              <li> <a href="{{ 'gallery/view-all-images' | permalink }}">View All Images</a> </li>
+              <li> <a href="{{ 'gallery/key-west-webcam' | permalink }}">Key West Webcam</a> </li>
+              <li> <a href="{{ 'gallery/marker-resort-video' | permalink }}">Marker Resort Video</a> </li>
+            </ul>
+          </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Groups & Events</a>
+            <ul class="dropdown-menu">
+              <li> <a href="{{ 'weddings-and-events/weddings' | permalink }}">Weddings</a> </li>
+              <li> <a href="{{ 'weddings-and-events/meetings' | permalink }}">Meetings & Events</a> </li>
+              <li> <a href="{{ 'weddings-and-events/groups'   | permalink }}">Groups</a> </li>
+            </ul>
+          </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Drinks & Dining</a>
+            <ul class="dropdown-menu">
+              <li> <a href="{{ 'drinks-and-dining/viewall' | permalink }}">View All</a> </li>
+              <li> <a href="{{ 'drinks-and-dining/cero-bodega' | permalink }}">Cero Bodega</a> </li>
+              <li> <a href="{{ 'drinks-and-dining/bar' | permalink }}">Bar</a> </li>
+            </ul>
+          </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Key West</a>
+            <ul class="dropdown-menu right">
+              <li> <a href="{{ 'key-west/local-attractions' | permalink }}">Local Attractions</a> </li>
+              <!-- <li> <a href="#">Area Guide - Interactive Illustrated Map</a> </li>-->
+              <li> <a href="{{ 'calendar' | permalink }}">Calendar of Events</a> </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="top-menu">
+          <ul class="nav navbar-nav clearfix">
+            <li> <a href="{{ 'special' | permalink }}">Specials</a> </li>
+            <li> <a href="{{ 'reservations' | permalink }}">Reservations</a> </li>
+            <li> <a href="{{ 'blog' | permalink }}">BLOG</a> </li>
+            <li> <a href="{{ 'signup' | permalink }}">Connect</a> </li>
+            <li> <a href="{{ 'location' | permalink }}">Location</a> </li>
+            <li> <a href="{{ 'contact' | permalink }}">Contact</a> </li>
+          </ul>
+          <ul class="socials">
+            <li><a class="facebook" href="https://www.facebook.com/TheMarkerResort" target="_blank"  >Facebook</a></li>
+            <li><a class="twitter" href="https://www.twitter.com/TheMarkerResort" target="_blank"  >Twitter</a></li>
+            <li><a class="instagram" href="http://www.instagram.com/themarkerresort" target="_blank"  >Instagram</a></li>
+            <li><a class="gplus" href="https://plus.google.com/u/0/111033740280620125237/posts" target="_blank"  >Google+</a></li>
+            <li><a class="tripadvisor" href="http://www.tripadvisor.com/Hotel_Review-g34345-d6853077-Reviews-The_Marker_Waterfront_Resort_Key_West-Key_West_Florida_Keys_Florida.html" target="_blank"  >tripadvisor</a></li>
+            <li><a class="newsletter" href="{{ 'signup' | permalink }}">Newsletter</a></li>
+          </ul>
+          <div class="phone-number"> <i class="phone"></i>
+            <div class="Phone"><span id="NavisTFN">(866) 999-9999</span> 
+              <script type="text/javascript">
                  SetElementToNavisNCPhoneNumber("NavisTFN");
-                 </script>
-                 
+                 </script> 
             </div>
-             {% if device == 'publish' %}
-            <!-- <script language="javascript"> ShowNavisNCPhoneNumber(); </script>-->{% endif %}
-              <!--<noscript>(305) 501-5193</noscript>-->
-                </div>
-   
-                
+            {% if device == 'publish' %} 
+            <!-- <script language="javascript"> ShowNavisNCPhoneNumber(); </script>-->{% endif %} 
+            <!--<noscript>(305) 501-5193</noscript>--> 
           </div>
         </div>
-        <!--/.nav-collapse --> 
       </div>
-      
-      <!--Booking  --> 
-      <p class="phone-number-sm">  
-          <a class="NCLink phone"></a>
-         </p>
-      <a href="https://themarkerkeywest.reztrip.com" class="booknow-sm">Book Now</a>
-      <section id="booking" class="collapsed">
-        <form action="" method="post" target="_blank">
-          <fieldset>
-            <legend>Booking: </legend>
-            <div class="dates">
-              <label for="arrival_dates" class="date">Check-in:</label>
-              <input type="text" class="text calendar" id="arrival_dates" name="checkin" aria-label="arrival_dates" />
-            </div>
-            <div class="dates">
-              <label for="departure_dates" class="date">Check-out:</label>
-              <input type="text" class="text calendar" id="departure_dates" name="checkout" aria-label="departure_dates" >
-            </div>
-            <p>
-              <label for="rooms">Rooms:</label>
-              <select id="rooms" name="rooms" class="selectbox" aria-label="rooms">
-                <option value="1" selected>01</option>
-                <option value="2">02</option>
-                <option value="3">03</option>
-                <option value="4">04</option>
-              </select>
-            </p>
-            <p>
-              <label for="adults">People:</label>
-              <select id="adults" name="adults" class="selectbox" aria-label="adults">
-                <option value="1">01</option>
-                <option value="2" selected>02</option>
-                <option value="3">03</option>
-                <option value="4">04</option>
-              </select>
-            </p>
-            <p class="buttons">
-               <input type="submit" class="submit-btn" value="submit" />  
-              <a class="link_to_reztrip_with_search_params" target="_blank" type="submit"><span>Check Availability &amp;&nbsp;</span>Book Now</a> 
-                <span class="rates">Best Rate Guaranteed</span> 
-            </p>
-          </fieldset>
-        </form>
-      </section> 
-      <!--/.Booking  --> 
+      <!--/.nav-collapse --> 
     </div>
-  </header> 
-<!-- ./header -->
-  
+    
+    <!--Booking  -->
+    <p class="phone-number-sm"> <a class="NCLink phone"></a> </p>
+    <a href="https://themarkerkeywest.reztrip.com" class="booknow-sm">Book Now</a>
+    <section id="booking" class="collapsed">
+      <form action="" method="post" target="_blank">
+        <fieldset>
+          <legend>Booking: </legend>
+          <div class="dates">
+            <label for="arrival_dates" class="date">Check-in:</label>
+            <input type="text" class="text calendar" id="arrival_dates" name="checkin" aria-label="arrival_dates" />
+          </div>
+          <div class="dates">
+            <label for="departure_dates" class="date">Check-out:</label>
+            <input type="text" class="text calendar" id="departure_dates" name="checkout" aria-label="departure_dates" >
+          </div>
+          <p>
+            <label for="rooms">Rooms:</label>
+            <select id="rooms" name="rooms" class="selectbox" aria-label="rooms">
+              <option value="1" selected>01</option>
+              <option value="2">02</option>
+              <option value="3">03</option>
+              <option value="4">04</option>
+            </select>
+          </p>
+          <p>
+            <label for="adults">People:</label>
+            <select id="adults" name="adults" class="selectbox" aria-label="adults">
+              <option value="1">01</option>
+              <option value="2" selected>02</option>
+              <option value="3">03</option>
+              <option value="4">04</option>
+            </select>
+          </p>
+          <p class="buttons">
+            <input type="submit" class="submit-btn" value="submit" />
+            <a class="link_to_reztrip_with_search_params" target="_blank" type="submit"><span>Check Availability &amp;&nbsp;</span>Book Now</a> <span class="rates">Best Rate Guaranteed</span> </p>
+        </fieldset>
+      </form>
+    </section>
+    <!--/.Booking  --> 
+  </div>
+</header>
+<!-- ./header --> 
