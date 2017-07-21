@@ -83,7 +83,7 @@ body {
 }
 .nav-wrapper .phone-number {
 	font-size: 0em;
-	color: #0bb7e4;
+	color: #0081a2;
 	display:none;
 }
 .nav-wrapper .phone-number i.phone{
@@ -96,7 +96,7 @@ body {
 }
 .phone-number-sm {
     position:absolute;
-	color: #0bb7e4;
+	color: #0081a2;
 	position: absolute;
 	right:190px;
 	top: 20px;
@@ -186,13 +186,13 @@ body {
 	margin-bottom:15px;
 }
 .navbar-default .navbar-toggle {
-	border-color: #0bb7e4;
+	border-color: #0081a2;
 }
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: #0bb7e4;
+	background-color: #0081a2;
 }
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-	background: #0bb7e4;
+	background: #0081a2;
 }
 .navbar-default .navbar-toggle:focus .icon-bar, .navbar-default .navbar-toggle:hover .icon-bar {
 	background-color: #fff;
@@ -246,10 +246,10 @@ body {
 	border-bottom: #e5e5e5 solid 1px;
 }
 .main-nav .navbar-collapse.in .nav > li a {
-	color: #0bb7e4;
+	color: #0081a2;
 }
 .main-nav .navbar-collapse.in .nav a:hover, .navbar-collapse.in .nav .dropdown.open > a, .navbar-collapse.in .nav > .dropdown-menu a:hover {
-	background: #0bb7e4;
+	background: #0081a2;
 	color: #fff;
 }
 .main-nav.navbar-default .navbar-nav .open .dropdown-menu>li>a {
@@ -261,7 +261,7 @@ body {
 	border: none;
 }
 .main-nav.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
-	color: #0bb7e4;
+	color: #0081a2;
 }
 .main-nav .navbar-nav .open .dropdown-menu {
 	position: static;
@@ -314,7 +314,7 @@ body {
 	right: 10px;
 	top: 10px;
 	position: absolute;
-	color: #0bb7e4;
+	color: #0081a2;
 }
 .main-nav .navbar-collapse.in .nav>li.dropdown:hover:after {
 	color: #fff;
@@ -401,7 +401,7 @@ body {
 	color: #2c7a8c;
 }
 .navbar-default .top-menu .navbar-nav > li> a:hover, .navbar-default .top-menu .navbar-nav > li> a.active {
-	color: #0bb7e4;
+	color: #0081a2;
 }
 .navbar-default .main-menu.navbar-nav > li> a {
 	display: block;
@@ -409,7 +409,7 @@ body {
 	white-space: nowrap;
 	text-decoration: none;
 	text-transform: uppercase;
-	color: #0bb7e4;
+	color: #0081a2;
 	background: none;
 }
 .navbar-default .main-menu.navbar-nav >li> a:hover, .navbar-default .main-menu.navbar-nav > li> a.active {
@@ -432,7 +432,7 @@ body {
 	text-transform: uppercase;
 }
 .navbar-nav > li > .dropdown-menu a:hover {
-	background: #0bb7e4;
+	background: #0081a2;
 	color: #fff;
 }
 .navbar-collapse.in .nav>li {
@@ -444,7 +444,7 @@ body {
 .nav-wrapper .phone-number {
 	font: 15px/22px 'Muli Regular', sans-serif;
 	text-transform: uppercase;
-	color: #0bb7e4;
+	color: #0081a2;
 	float: right;
 	position:relative;
 	right:0;
@@ -606,7 +606,7 @@ body {
 	top: 15px;
 	padding: 7px 10px;
 	font-weight: bold;
-	background: #0bb7e4;
+	background: #0081a2;
 	color: #fff;
 	border-radius: 3px;
 	text-transform: uppercase;
@@ -712,7 +712,7 @@ body {
 	padding: 5px;
 	font-size: 11px;
 	text-transform: uppercase;
-	background: #0bb7e4;
+	background: #0081a2;
 	color: #fff;
 }
 .ui-datepicker th, .ui-datepicker td {
@@ -730,7 +730,7 @@ body {
 	font-size: 10px;
 }
 .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight, .ui-state-hover, .ui-widget-content .ui-state-hover {
-	background: #0bb7e4;
+	background: #0081a2;
 	color: #fff;
 }
 .ui-datepicker .ui-datepicker-prev:hover, .ui-datepicker .ui-datepicker-next:hover {
@@ -763,7 +763,7 @@ body {
 	border: none;
 }
 .ui-widget-content .ui-state-focus {
-	background: #0bb7e4;
+	background: #0081a2;
 	margin: 0px;
 	color: #fff;
 }
@@ -814,7 +814,7 @@ body {
 	background: rgba(41,194,222,0.3);
 }
 .banner-links a:hover {
-	color: #0bb7e4;
+	color: #0081a2;
 	background: #fff;
 	text-decoration: none;
 }
@@ -977,7 +977,7 @@ body {
 	top: -100px;
 }
 #promos h3 {
-	color: #0bb7e4;
+	color: #0081a2;
 	font: 20px 'Muli Light';
 	padding: 20px 0 10px;
 	margin: 0px;
@@ -1008,7 +1008,7 @@ body {
 	overflow: hidden;
 }
 #promos h4 a {
-	color: #0bb7e4;
+	color: #0081a2;
 }
 #promos h4 a:hover {
 	color: #2c7a8c;
@@ -1020,9 +1020,9 @@ body {
 }
 #promos .button {
 	background: transparent;
-	border: 2px solid #0bb7e4;
+	border: 2px solid #0081a2;
 	border-radius: 0;
-	color: #0bb7e4;
+	color: #0081a2;
 	font: 15px/33px 'Muli Regular';
 	height: 36px;
 	line-height: 36px;
@@ -1032,7 +1032,7 @@ body {
 	display: inline-block;
 }
 #promos .button:hover {
-	background: #0bb7e4;
+	background: #0081a2;
 	color: #fff;
 	text-decoration: none;
 }
@@ -1150,7 +1150,7 @@ body {
 .page-content-wrapper h1 {
 	margin-top: 0px;
 	padding-top: 20px;
-	color: #0bb7e4;
+	color: #0081a2;
 	font: 18px/1 'Muli Light';
 	margin-bottom: 1px;
 }
@@ -1380,7 +1380,7 @@ body {
 	color: #898989
 }
 #footer a:hover {
-	color: #0bb7e4
+	color: #0081a2
 }
 #footer .award {
  display:none;
@@ -1418,14 +1418,14 @@ body {
 	color: #2c7a8c
 }
 #footer-menu a:hover, #footer-menu a.active {
-	color: #0bb7e4
+	color: #0081a2
 }
 
 #newsletter h4, #newsletter form {
 	float: left
 }
 #newsletter h4 {
-	color: #0bb7e4;
+	color: #0081a2;
 	font: 13px/34px Arial;
 	padding-right: 10px;
 	margin: 0px;
@@ -1615,15 +1615,15 @@ body {
 	padding: 12px 10px;
 	font: 17px/25px Arial, sans-serif;
 	display: inline-block;
-	color: #0bb7e4;
+	color: #0081a2;
 	font-weight: normal;
 	display: block;
 }
 #inner-wrapper .sidebar-nav h4 a {
-	color: #0bb7e4;
+	color: #0081a2;
 }
 .page-content h1 {
-	color: #0bb7e4;
+	color: #0081a2;
 	font: 24px/1 'Muli Light';
 	padding: 0px;
 	margin: 0 0 0;
@@ -1644,7 +1644,7 @@ body {
 }
 .sidebar-nav .navbar-default li a:hover, .sidebar-nav li a:focus, .sidebar-nav li a.active {
 	background: none;
-	color: #0bb7e4;
+	color: #0081a2;
 }
 .sidebar-nav .navbar-default {
 	border: none;
@@ -1672,7 +1672,7 @@ body {
 	top: 10px;
 	width: 5px;
 	height: 5px;
-	background: #0bb7e4;
+	background: #0081a2;
 	border-radius: 50%;
 }
 .page-content .button, .page-content input[type="submit"] {
@@ -1687,7 +1687,7 @@ body {
 	text-decoration: none;
 }
 .page-content .button:hover, .page-content input[type="submit"]:hover {
-	background: #0bb7e4;
+	background: #0081a2;
 	color: #fff;
 	text-decoration: none;
 }
@@ -1708,7 +1708,7 @@ body {
 	line-height: 20px;
 }
 .page-content a {
-	color: #0bb7e4;
+	color: #0081a2;
 	text-decoration: underline;
 }
 .page-content a:hover {
@@ -1728,7 +1728,7 @@ body {
 	right: 10px;
 	top: 12px;
 	position: absolute;
-	color: #0bb7e4;
+	color: #0081a2;
 }
 #inner-wrapper .sidebar-nav h4.active:after {
 	content: "\e260";
@@ -1835,7 +1835,7 @@ body {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	color: #fff;
-	background: #0bb7e4;
+	background: #0081a2;
 	padding: 10px;
 }
 .pressroom-entry a, .pressroom-entry a:hover {
@@ -1941,7 +1941,7 @@ body {
 	border: none;
 }
 .page-content .button:hover, .page-content input[type="submit"]:hover {
-	background: #0bb7e4;
+	background: #0081a2;
 	color: #fff;
 }
 .page-content .signup-form h3 {margin-top:25px;}
@@ -2082,7 +2082,7 @@ body {
 .page-content .galleries h4 {
     margin-bottom: 5px;
     text-align: center;
-		color: #0bb7e4;
+		color: #0081a2;
 }
 .page-content  .galleries  ul>li {
 	padding-left:0px;
@@ -2146,7 +2146,7 @@ body {
 }
 
 .accommodations-list li.active a {
-    color: #0bb7e4;
+    color: #0081a2;
 }
 
 .room-list {
@@ -2208,7 +2208,7 @@ body {
 }
 #footer .email-signup {
 	position: relative;
-	color: #0bb7e4;
+	color: #0081a2;
 	display: inline-block;
 	padding-right: 20px;
 }
@@ -2224,7 +2224,7 @@ body {
 }
 
 .page-content .request-btn {
-    background:#0bb7e4;
+    background:#0081a2;
 }
 .page-content .request-btn:hover {
     background:#337ab7;
