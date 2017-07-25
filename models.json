@@ -103,6 +103,18 @@
       "file": "blog24.json"
     },
     {
+      "title": "Your Guide To Key West Fishing",
+      "file": "blog25.json"
+    },
+    {
+      "title": "Historic Seaport Happy Hour Stroll",
+      "file": "blog26.json"
+    },
+    {
+      "title": "Key West Sunset: A nightly Celebration at Mallory Square",
+      "file": "blog27.json"
+    },
+    {
       "title": "Best Places to Visit with your Family",
       "file": "blog3.json"
     },
@@ -191,6 +203,10 @@
     {
       "title": "Key West Half Marathon & 5K",
       "file": "events1.json"
+    },
+    {
+      "title": "Key West to Cuba Festival",
+      "file": "events2.json"
     },
     {
       "title": "Key West Food and Wine Festival",
