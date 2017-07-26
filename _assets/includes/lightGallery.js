@@ -368,7 +368,7 @@
                     if (!$this.isVideo(src, index)) {
                         setTimeout(function () {
                             if (!$slide.eq(index).hasClass('loaded')) {
-                                $slide.eq(index).prepend('<img class="object" src="' + src + '" />');
+                                $slide.eq(index).prepend('<img class="object" src="' + src + '" alt="loading" />');
                                 $this.addHtml(index);
                                 $slide.eq(index).addClass('loaded');
                             }
@@ -455,7 +455,7 @@
                     if (settings.dynamic) {
                         for (var i = 0; i < settings.dynamicEl.length; i++) {
                             thumbImg = settings.dynamicEl[i].thumb;
-                            thumbList += '<div class="thumb"><img src="' + thumbImg + '" /></div>';
+                            thumbList += '<div class="thumb"><img src="' + thumbImg + '" alt="thumbimg" /></div>';
                         }
                     } else {
                         $children.each(function () {
@@ -464,7 +464,7 @@
                             } else {
                                 thumbImg = $(this).attr(settings.exThumbImage);
                             }
-                            thumbList += '<div class="thumb"><img src="' + thumbImg + '" /></div>';
+                            thumbList += '<div class="thumb"><img src="' + thumbImg + '" alt="thumbimg" /></div>';
                         });
                     }
                     $thumb_inner.append(thumbList);

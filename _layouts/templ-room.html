@@ -1,16 +1,12 @@
 {% include tmp-head.html %}
 <body class="accommodations" rt3-rooms-browser="browser" rt3-room-details="details" rt3-special-rates="rates" ng-cloak data-room-id={{page.room_id}}>
-
-{% include tmp-nav.html %}
- <!-- Inner Carousel Carousel  -->
+{% include tmp-nav.html %} 
+<!-- Inner Carousel Carousel  -->
 <div id="innerCarousel" class="carousel slide carousel-fade" data-ride="carousel"> 
-  <!-- Indicators -->
- {% region innerbanner %} 
-  <a class="left carousel-control" href="#innerCarousel" role="button" data-slide="prev"> <span class="left" aria-hidden="true"></span> </a> <a class="right carousel-control" href="#innerCarousel" role="button" data-slide="next"> <span class="right" aria-hidden="true"></span> </a>
- 
-</div>
-<!-- /.Inner Carousel Carousel -->   
- 
+  <!-- Indicators --> 
+  {% region innerbanner %} <a class="left carousel-control" href="#innerCarousel" role="button" data-slide="prev" title="Previous"> <span class="left" aria-hidden="true"></span> </a> <a class="right carousel-control" href="#innerCarousel" role="button" data-slide="next" title="Next"> <span class="right" aria-hidden="true"></span> </a> </div>
+<!-- /.Inner Carousel Carousel --> 
+
 <!-- Inner wrapper -->
 <div id="inner-wrapper">
   <div class="container">
@@ -18,23 +14,30 @@
       <div class="col-lg-3 col-md-4 col-sm-4">
         <div class="sidebar-nav">
           <div class="navbar  navbar-default " role="navigation">
-            <div class="navbar-header"> 
+            <div class="navbar-header">
               <h4 data-toggle="collapse" data-target=".sidebar-navbar-collapse">Accommodations</h4>
             </div>
             <div class="navbar-collapse collapse sidebar-navbar-collapse">
-                <ul class="accommodations-list">
-                    <li> <a href="{{ 'accommodations' | permalink }}">View All Rooms</a> </li>
-                    <li {% if page.room_id == 'MC1K' %} class="active" {% endif %}> <a href="{{ 'accommodations/the-marker-classic-rooms' | permalink }}">The Marker Classic Rooms</a> </li>
-                    <li {% if page.room_id == 'PG1K' %} class="active" {% endif %}> <a href="{{ 'accommodations/pool-garden-rooms' | permalink }}">Pool Garden Rooms</a> </li>
-                    <li {% if page.room_id == 'KW1KP' %} class="active" {% endif %}> <a href="{{ 'accommodations/key-west-harbor-rooms' | permalink }}">Key West Harbor Rooms</a> </li>
-                    <li {% if page.room_id == 'CQ1KS' %} class="active" {% endif %}> <a href="{{ 'accommodations/the-captains-quarters' | permalink }}">The Captain's Quarters</a> </li>
-                </ul>
+              <ul class="accommodations-list">
+                <li> <a href="{{ 'accommodations' | permalink }}">View All Rooms</a> </li>
+                <li {% if page.room_id == 'MC1K' %} class="active" {% endif %}>
+                <a href="{{ 'accommodations/the-marker-classic-rooms' | permalink }}">The Marker Classic Rooms</a>
+                </li>
+                <li {% if page.room_id == 'PG1K' %} class="active" {% endif %}>
+                <a href="{{ 'accommodations/pool-garden-rooms' | permalink }}">Pool Garden Rooms</a>
+                </li>
+                <li {% if page.room_id == 'KW1KP' %} class="active" {% endif %}>
+                <a href="{{ 'accommodations/key-west-harbor-rooms' | permalink }}">Key West Harbor Rooms</a>
+                </li>
+                <li {% if page.room_id == 'CQ1KS' %} class="active" {% endif %}>
+                <a href="{{ 'accommodations/the-captains-quarters' | permalink }}">The Captain's Quarters</a>
+                </li>
+              </ul>
             </div>
             <!--/.nav-collapse --> 
           </div>
         </div>
       </div>
-      
       <div class="col-lg-9 col-md-8 col-sm-8 page-content" ng-show="details.name">
         <h1>[[details.name]]</h1>
         <p>[[details.description]]</p>
@@ -42,8 +45,8 @@
         <ul>
           <li ng-repeat="amenities in details.amenities">[[amenities]]</li>
         </ul>
-        <!--<h2 ng-show="details.is_base_room_type && details.brg.discounted_rate">Our Best Rate Guarantee</h2>-->
-        <!-- Book Now button -->
+        <!--<h2 ng-show="details.is_base_room_type && details.brg.discounted_rate">Our Best Rate Guarantee</h2>--> 
+        <!-- Book Now button --> 
         <!-- debug code
         <p>
                 details.params.rooms
@@ -85,20 +88,13 @@
         </p>
         -->
         
-        <div class="rate" ng-show="details.brg.discounted_rate">
-            <span>
-                <sup>Tonight's Rate</sup> [[details.brg.discounted_rate | currency]]
-            </span>
-            <a class="button rate-book_now" data-link-to-book-now="[[details.category]]" href="https://themarkerkeywest.reztrip.com/">Book Now</a>
-        </div>
+        <div class="rate" ng-show="details.brg.discounted_rate"> <span> <sup>Tonight's Rate</sup> [[details.brg.discounted_rate | currency]] </span> <a class="button rate-book_now" data-link-to-book-now="[[details.category]]" href="https://themarkerkeywest.reztrip.com/">Book Now</a> </div>
         <!-- Check Availability -->
-        <div class="rate" ng-show="!details.brg.discounted_rate">
-            <a href="https://themarkerkeywest.reztrip.com/" data-link-to-category="[[details.category]]" class="button rate-book_now">Check Availability</a>  
-        </div>
+        <div class="rate" ng-show="!details.brg.discounted_rate"> <a href="https://themarkerkeywest.reztrip.com/" data-link-to-category="[[details.category]]" class="button rate-book_now">Check Availability</a> </div>
       </div>
     </div>
   </div>
 </div>
 <!-- /.Inner wrapper --> 
-<!-- /.upcoming events section -->
+<!-- /.upcoming events section --> 
 {% include tmp-footer.html %}
