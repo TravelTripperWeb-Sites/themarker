@@ -69,7 +69,7 @@
       </div>
     </div>
   </div>
-  <a class="left carousel-control" href="#homeBannerCarousel" role="button" data-slide="prev"> <span class="left" aria-hidden="true"></span> </a> <a class="right carousel-control" href="#homeBannerCarousel" role="button" data-slide="next"> <span class="right" aria-hidden="true"></span> </a>
+  <a class="left carousel-control" href="#homeBannerCarousel" title="previous" role="button" data-slide="prev"> <span class="left" aria-hidden="true"></span> </a> <a class="right carousel-control" href="#homeBannerCarousel" role="button" title="next" data-slide="next"> <span class="right" aria-hidden="true"></span> </a>
   <div class="scroll-to">SCROLL TO EXPLORE</div>
   <div class="banner-links-wrapper">
     <div class="banner-links"> <a class="specials-link photos-link anchorLink" href="#promos">Featured & Specials</a> <a class="calendar-link photos-link pull-right anchorLink"  href="#upcoming-events">Upcoming Events</a> </div>
@@ -85,12 +85,12 @@
         <h3>Featured & Specialsad</h3>
       </div>
       <div class="col-sm-4 social-links ">
-        <iframe src="https://www.facebook.com/plugins/like.php?locale=en_US&href=http://www.themarkerkeywest.com/&send=false&layout=button_count&show_faces=false&action=like&colorscheme=light&height=20" class="social-button facebook-like" title="Like" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20"></iframe>
-        <iframe src="https://plusone.google.com/_/+1/fastbutton?bsv&annotation=bubble&size=medium&hl=en-US&url=http://www.themarkerkeywest.com/" class="social-button google-plus" title="+1" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20"></iframe>
+        <iframe src="https://www.facebook.com/plugins/like.php?locale=en_US&href=http://www.themarkerkeywest.com/&send=false&layout=button_count&show_faces=false&action=like&colorscheme=light&height=20" class="social-button facebook-like" title="Like" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20" title="Facebook Share"></iframe>
+        <iframe src="https://plusone.google.com/_/+1/fastbutton?bsv&annotation=bubble&size=medium&hl=en-US&url=http://www.themarkerkeywest.com/" class="social-button google-plus" title="+1" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20" title="Twitter Share" ></iframe>
       </div>
     </div> 
     <div id="owl-promo" class="owl-carousel" rt3-special-rates= "offers">
-    <article class="item" ng-repeat="offer in offers.special_rates"><a class='thumbnail' ng-show='img.length > 1'  ><img ng-src="[[offer.lead_photo_url.yankee_large]] "  title="[[offer.rate_plan_name]]"></a><h4><a ng-href="/special/special-more/#/[[offer.rate_plan_code]]">[[offer.rate_plan_name]]</a></h4><p>[[offer.short_description]]</p><a class='button'  ng-href=special/special-more/#/[[offer.rate_plan_code]]>Read More</a></article>
+    <article class="item" ng-repeat="offer in offers.special_rates"><a class='thumbnail' ng-show='img.length > 1' title="[[offer.rate_plan_name]]"><img ng-src="[[offer.lead_photo_url.yankee_large]] "  title="[[offer.rate_plan_name]]" alt="[[offer.rate_plan_name]]"></a><h4><a ng-href="/special/special-more/#/[[offer.rate_plan_code]]">[[offer.rate_plan_name]]</a></h4><p>[[offer.short_description]]</p><a class='button'  ng-href=special/special-more/#/[[offer.rate_plan_code]]>Read More</a></article>
     </div>
   </div>
 </article>
@@ -129,7 +129,7 @@
               {% assign home_events = site.data._models.events | sort: 'start_date' %}
 {% for event_home in home_events | limit: 1 %} 
             <time>{{event_home.start_date | date: "%d/%m/%Y"}} to  {{event_home.end_date | date: "%m/%d/%Y" ng-show="event_home.end_date = null"} </time>
-            <div class="thumbnail"> <img src="{{event_home.image.url}}"  title="">    </div>
+            <div class="thumbnail"> <img src="{{event_home.image.url}}"  title="{{event_home.title}}" alt="{{event_home.title}}">    </div>
             <h5>{{event_home.title}}</h5>
            <p>{{event_home.short_description}}</p> 
             <a href="{{ event_home.id | permalink: model_dir: 'calendar-more' }}" class="button">Read More</a> <a class="button morebtn" href="{{ 'calendar' | permalink }}">More Events</a> </article>
@@ -147,7 +147,7 @@
 {% for blog_home in blog_home_list | limit: 1 %} 
               <time>{{blog_home.date | date: "%d/%m/%Y"}}</time>
               <div class="blog-description">
-                <div class="thumbnail"> <img width="480" height="360" src="{{blog_home.blogimage.url}}" class="attachment-thumbnail wp-post-image" title="{{blog_home.title}}"> </div>
+                <div class="thumbnail"> <img width="480" height="360" src="{{blog_home.blogimage.url}}" alt="{{blog_home.title}}" class="attachment-thumbnail wp-post-image" title=" {{blog_home.title}} " > </div>
                   <h5>{{blog_home.title}}</h5>
                   <p>{{blog_home.short_description}}</p>
                   </div>

@@ -31,7 +31,7 @@
       "file": "art-of-key-west.json"
     },
     {
-      "title": "A Menu You Can&rsquo;t Miss ΓÇô Best Eats in Key West.",
+      "title": "A Menu You Can&rsquo;t Miss – Best Eats in Key West.",
       "file": "best-eats-key-west.json"
     },
     {
@@ -101,6 +101,22 @@
     {
       "title": "Old Dominion, Maren Morris, Cam to Headline the 2017 Key West Songwriters Festival.",
       "file": "blog24.json"
+    },
+    {
+      "title": "Your Guide To Key West Fishing",
+      "file": "blog25.json"
+    },
+    {
+      "title": "Historic Seaport Happy Hour Stroll",
+      "file": "blog26.json"
+    },
+    {
+      "title": "Key West Sunset: A nightly Celebration at Mallory Square",
+      "file": "blog27.json"
+    },
+    {
+      "title": "Touring Key West With The Locals",
+      "file": "blog28.json"
     },
     {
       "title": "Best Places to Visit with your Family",
@@ -181,7 +197,7 @@
       "file": "event1.json"
     },
     {
-      "title": "Key West SongwriterΓÇÖs Festival",
+      "title": "Key West Songwriter’s Festival",
       "file": "event2.json"
     },
     {
@@ -191,6 +207,10 @@
     {
       "title": "Key West Half Marathon & 5K",
       "file": "events1.json"
+    },
+    {
+      "title": "Key West to Cuba Festival",
+      "file": "events2.json"
     },
     {
       "title": "Key West Food and Wine Festival",
