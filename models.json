@@ -15,7 +15,7 @@
   ],
   "blog": [
     {
-      "title": "It&rsquo;s a Six-Pack Celebration at Key West Brewfest!",
+      "title": "It's a Six-Pack Celebration at Key West Brewfest!",
       "file": "10-reasons-to-visit-key-west-in-2015.json"
     },
     {
@@ -31,7 +31,7 @@
       "file": "art-of-key-west.json"
     },
     {
-      "title": "A Menu You Can&rsquo;t Miss ΓÇô Best Eats in Key West.",
+      "title": "A Menu You Can&rsquo;t Miss ÔÇô Best Eats in Key West.",
       "file": "best-eats-key-west.json"
     },
     {
@@ -119,6 +119,10 @@
       "file": "blog28.json"
     },
     {
+      "title": "WhatÔÇÖs New: Key West to Cuba Festival September 7-11",
+      "file": "blog29.json"
+    },
+    {
       "title": "Best Places to Visit with your Family",
       "file": "blog3.json"
     },
@@ -197,7 +201,7 @@
       "file": "event1.json"
     },
     {
-      "title": "Key West SongwriterΓÇÖs Festival",
+      "title": "Key West SongwriterÔÇÖs Festival",
       "file": "event2.json"
     },
     {
