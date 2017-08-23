@@ -1,5 +1,5 @@
 {% include tmp-head.html %}
-<body class="accommodations" rt3-rooms-browser="browser" rt3-hotel-info="info" rt3-room-details="details" rt3-special-rates="rates" ng-cloak>
+<body class="accommodations" rt3-rooms-browser="browser" rt3-hotel-info="info" rt3-room-details="details" rt3-special-rates="rates" ng-cloak data-room-cat="{{page.category}}">
 {% include tmp-nav.html %} 
 
 <!-- Inner Carousel Carousel  -->
@@ -9,7 +9,7 @@
 <!-- /.Inner Carousel Carousel --> 
 
 <!-- Inner wrapper -->
-<div id="inner-wrapper">
+<div id="inner-wrapper" ng-controller="roomController">
   <div class="container">
     <div class="row">
       <div class="col-lg-3 col-md-4 col-sm-4">
@@ -20,17 +20,17 @@
             </div>
             <div class="navbar-collapse collapse sidebar-navbar-collapse">
               <ul class="accommodations-list">
-                <li class="active" > <a href="{{ 'accommodations' | permalink }}">View All Rooms</a> </li>
-                <li {% if page.id == 1872 %} class="active" {% endif %}>
+                <li ng-class="{'active':selectedCat == ''}"> <a href="{{ 'accommodations' | permalink }}">View All Rooms</a> </li>
+                <li ng-class="{'active':selectedCat == 'Marker Classic Rooms'}">
                 <a href="{{ 'accommodations/the-marker-classic-rooms' | permalink }}">The Marker Classic Rooms</a>
                 </li>
-                <li {% if page.id == 3082 %} class="active" {% endif %}>
+                <li ng-class="{'active':selectedCat == 'Pool Garden Rooms'}">
                 <a href="{{ 'accommodations/pool-garden-rooms' | permalink }}">Pool Garden Rooms</a>
                 </li>
-                <li {% if page.id == 3092 %} class="active" {% endif %}>
+                <li ng-class="{'active':selectedCat == 'Key West Harbor Rooms'}">
                 <a href="{{ 'accommodations/key-west-harbor-rooms' | permalink }}">Key West Harbor Rooms</a>
                 </li>
-                <li {% if page.id == 3102 %} class="active" {% endif %}>
+                <li ng-class="{'active':selectedCat == 'The Captain\'s Quarters'}">
                 <a href="{{ 'accommodations/the-captains-quarters' | permalink }}">The Captain's Quarters</a>
                 </li>
               </ul>
@@ -40,18 +40,13 @@
         </div>
       </div>
       <div class="col-lg-9 col-md-8 col-sm-8 page-content">
-        <h1>[[info.name]]</h1>
+        <h1>[[selectedCat]]<span ng-hide="selectedCat">All Rooms</span></h1>
         <p>[[info.description]]</p>
-        <div> <a href="{{ 'accommodations/the-marker-classic-rooms' | permalink }}" style="background: url(https://d31f902anbz5po.cloudfront.net/728/33704_2_master.jpg) 100% 100% no-repeat; background-size: cover;" class="room-list">
-          <div class="room-button">The Marker Classic Rooms</div>
-          </a> <a href="{{ 'accommodations/pool-garden-rooms' | permalink }}" style="background: url(https://d31f902anbz5po.cloudfront.net/728/34342_1_master.jpg) 100% 100% no-repeat; background-size: cover;" class="room-list">
-          <div class="room-button">Pool Garden Rooms</div>
-          </a> <a href="{{ 'accommodations/key-west-harbor-rooms' | permalink }}" style="background: url(https://d31f902anbz5po.cloudfront.net/728/38904_1_master.jpg) 100% 100% no-repeat; background-size: cover;" class="room-list">
-          <div class="room-button">Key West Harbor Rooms</div>
-          </a> <a href="{{ 'accommodations/the-captains-quarters' | permalink }}" style="background: url(https://d31f902anbz5po.cloudfront.net/728/33710_2_yankee_large.jpg) 100% 100% no-repeat; background-size: cover;" class="room-list">
-          <div class="room-button">The Captain's Quarters</div>
-          </a> </div>
-        <div rt3-recent-bookings="recent"> <b>[[recent.totalBookings]]</b> Reservations completed in the last 48 hours. <a class="link_to_reztrip_with_search_params button" href="https://themarkerkeywest.reztrip.com/">Book now</a> </div>
+        <div> <a ng-repeat="room in browser.roomsList | filter: {'category': selectedCat}" ng-href="/accommodation/?[[room.name | formatNameForLink]]" style="background: url([[room.photos[0].large]]) 100% 100% no-repeat; background-size: cover;" class="room-list">
+          <div class="room-button">[[room.name]]</div>
+          </a>
+        </div>
+        <div rt3-recent-bookings="recent" style="clear:both"> <b>[[recent.totalBookings]]</b> Reservations completed in the last 48 hours. <a class="link_to_reztrip_with_search_params button" href="https://themarkerkeywest.reztrip.com/" >Book now</a> </div>
       </div>
     </div>
   </div>
