@@ -29,7 +29,7 @@
 - local-attractions: key-west/local-attractions/
 - location/%5D: location/
 - m: ''
-- m/: test
+- m/: ''
 - m/accommodations: accommodations/
 - m/calendar: calendar/
 - m/calendar/culture-art/53rd-annual-conch-shell-blowing-contest: calendar/
