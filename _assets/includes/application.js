@@ -47,7 +47,15 @@
           scope.$eval(attrs.onSearchChanged);
         }
       };
-    });
+    })
+    .controller('roomController', function($scope){
+        $scope.setCategory = function (cat){
+            $scope.selectedCat = cat;
+            
+
+        }
+    })
+
 
   angular.module('rezTrip', []);
 })();
