@@ -1590,13 +1590,13 @@ body {
 }
 }
 /*-- inner page --*/
-#innerCarousel .carousel-indicators {
+#innerCarousel .carousel-indicators, #innerCarouselRoom .carousel-indicators {
 	display: block;
 }
-#innerCarousel .carousel-indicators li {
+#innerCarousel .carousel-indicators li, #innerCarouselRoom .carousel-indicators li {
 	margin: 0 3px;
 }
-#innerCarousel .carousel-caption {
+#innerCarousel .carousel-caption, #innerCarouselRoom .carousel-caption {
 	font: 20px/24px 'Ubuntu Light', serif;
 	text-transform: uppercase;
 	color: #fff;
@@ -2160,11 +2160,11 @@ body {
 .room-list:hover {
     opacity: .85;
 }
-
+/*
 .room-list:nth-child(3n-2) {
     width: 98%;
 }
-
+*/
 .room-button {
     position: absolute;
     font-size: 14px;
@@ -2582,41 +2582,37 @@ font-family: 'Muli Light';
 		margin:0px;
 	}
 }
-#homeBannerCarousel .boxes-small {
+ .boxes-small {
   max-width: 285px;
   width: 100%;
   min-height: 80px;
-  bottom: 0px;
+  top: 50%;
   left: calc(50% - 143px);
   position: absolute;
   display: table;
   background: rgba(42, 159, 192, 0.85);
 }
 @media (max-width: 768px) {
-  #homeBannerCarousel .boxes-small {
+   .boxes-small {
     width: 100%;
     bottom: 0px;
   }
 }
-@media (max-width: 767px) {
-  #homeBannerCarousel .boxes-small {
-    display: none;
-  }
-}
-#homeBannerCarousel .boxes-small .tonight-rate {
+
+ .boxes-small .tonight-rate {
   height: 100%;
   width: 100%;
   min-height: 80px;
   padding: 20px;
 }
-#homeBannerCarousel .boxes-small .tonight-rate p {
+ .boxes-small .tonight-rate p {
   font-size: 12px;
   color: #777777;
   line-height: 16px;
   margin: 0px;
   padding: 0px;
 }
-#homeBannerCarousel .boxes-small .tonight-rate h4 {
+ .boxes-small .tonight-rate h4 {
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
@@ -2626,17 +2622,17 @@ font-family: 'Muli Light';
   padding: 0px;
   color: #fff;
 }
-#homeBannerCarousel .boxes-small .tonight-rate h4 .price, #homeBannerCarousel .boxes-small .tonight-rate h4 a {
+ .boxes-small .tonight-rate h4 .price,  .boxes-small .tonight-rate h4 a {
   color: #fff;
   font-size: 34px;
   vertical-align: middle;
   padding-left: 20px;
 }
-#homeBannerCarousel .boxes-small .tonight-rate h4 .price:hover, #homeBannerCarousel .boxes-small .tonight-rate h4 a:hover {
+ .boxes-small .tonight-rate h4 .price:hover,  .boxes-small .tonight-rate h4 a:hover {
   text-decoration: none;
   opacity: .8;
 }
-#homeBannerCarousel .boxes-small .tonight-rate h4 .price:active, #homeBannerCarousel .boxes-small .tonight-rate h4 .price:focus, #homeBannerCarousel .boxes-small .tonight-rate h4 a:active, #homeBannerCarousel .boxes-small .tonight-rate h4 a:focus {
+ .boxes-small .tonight-rate h4 .price:active, .boxes-small .tonight-rate h4 .price:focus,  .boxes-small .tonight-rate h4 a:active,  .boxes-small .tonight-rate h4 a:focus {
   text-decoration: none;
 }
 
