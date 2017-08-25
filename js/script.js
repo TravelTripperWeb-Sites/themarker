@@ -232,7 +232,11 @@ function createLink(to, item) {
             '&departure_date=' + departure +
             '&rooms=' + rooms +
             '&adults=' + adults +
-            '&selected_room_category=' + item.data('link-to-book-now');
+			'&selected_room_category=' + item.data('link-to-book-now');
+			var roomcode = item.data('roomcode'); 
+			if(roomcode){
+				result = result + "&selected_room=" + roomcode;
+			}
 
         item.attr('href', result);
     }
@@ -241,7 +245,8 @@ function createLink(to, item) {
         var result = rootLink + '?selected_room_category=' + item.data('link-to-category');
 
         item.attr('href', result);
-    }
+	}
+
 }
 
 $.each($('[data-link-to-book-now]'), function(index, value) {
@@ -271,20 +276,32 @@ departureDate.datepicker({
     dateFormat: 'yy-mm-dd',
 });
 
-
-
-	if ($('#innerCarousel .item').length > 1) {
+	setTimeout(function(){
+		if ($('#innerCarousel .item').length > 1) {
 				$('.carousel-control').show();
 				var innerCarousel = $(".carousel");
 				innerCarousel.append("<ol class='carousel-indicators'></ol>");
 				var indicators = $(".carousel-indicators");
 				innerCarousel.find(".carousel-inner").children(".item").each(function(index) {
-				(index === 0) ?
-				indicators.append("<li data-target='#innerCarousel' data-slide-to='"+index+"' class='active'></li>") :
-				indicators.append("<li data-target='#innerCarousel' data-slide-to='"+index+"'></li>");
-		});
-		$('.carousel').carousel();
+						(index === 0) ?
+						indicators.append("<li data-target='#innerCarousel' data-slide-to='"+index+"' class='active'></li>") :
+						indicators.append("<li data-target='#innerCarousel' data-slide-to='"+index+"'></li>");
+				});
+		
 		}
+		if ($('#innerCarouselRoom .item').length > 1) {
+				$('.carousel-control').show();
+		}
+		$('.carousel').carousel();
+		var IwHeight = $( window ).height() -175;
+		$('#innerCarouselRoom').height(IwHeight);
+		$('#innerCarouselRoom .item').height(IwHeight);
+	},2200);
+
+	setTimeout(function(){
+		$(".price-wrap1").css("display","block");
+	},2800);
+	
 	$("a.anchorLink").anchorAnimate()
 
 	// back to top link is shown

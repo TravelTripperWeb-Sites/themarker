@@ -1,10 +1,19 @@
 {% include tmp-head.html %}
-<body class="accommodations" rt3-rooms-browser="browser" rt3-room-details="details" rt3-special-rates="rates" ng-cloak data-room-id={{page.room_id}}>
+<body  rt3-rooms-browser="browser" rt3-room-details="details" rt3-special-rates="rates" ng-cloak data-room-id={{page.room_id}}>
 {% include tmp-nav.html %} 
 <!-- Inner Carousel Carousel  -->
-<div id="innerCarousel" class="carousel slide carousel-fade" data-ride="carousel"> 
+<div id="innerCarouselRoom" class="carousel slide carousel-fade" data-ride="carousel"> 
   <!-- Indicators --> 
-  {% region innerbanner %} <a class="left carousel-control" href="#innerCarousel" role="button" data-slide="prev" title="Previous"> <span class="left" aria-hidden="true"></span> </a> <a class="right carousel-control" href="#innerCarousel" role="button" data-slide="next" title="Next"> <span class="right" aria-hidden="true"></span> </a> </div>
+  <div class="carousel-inner" role="listbox">
+      <div class="item " ng-class="{'active': $index ==0}" ng-repeat="pic in details.photos" ng-style="{'background-image':'url([[pic.large]])'}"></div>  
+      
+  </div>
+   <a ng-show="details.photos.length >1" class="left carousel-control" href="#innerCarouselRoom" role="button" data-slide="prev" title="Previous"> <span class="left" aria-hidden="true"></span> </a> 
+   <a ng-show="details.photos.length >1" class="right carousel-control" href="#innerCarouselRoom" role="button" data-slide="next" title="Next"> <span class="right" aria-hidden="true"></span> </a> 
+   <ol ng-show="details.photos.length >1" class="carousel-indicators">
+     <li data-target="#innerCarouselRoom" ng-class="{'active': $index ==0}" data-slide-to="[[$index]]" ng-repeat="pic in details.photos" ></li>
+   </ol>
+</div>
 <!-- /.Inner Carousel Carousel --> 
 
 <!-- Inner wrapper -->
@@ -20,16 +29,16 @@
             <div class="navbar-collapse collapse sidebar-navbar-collapse">
               <ul class="accommodations-list">
                 <li> <a href="{{ 'accommodations' | permalink }}">View All Rooms</a> </li>
-                <li {% if page.room_id == 'MC1K' %} class="active" {% endif %}>
+                <li ng-class="{'active':details.category == 'Marker Classic Rooms'}">
                 <a href="{{ 'accommodations/the-marker-classic-rooms' | permalink }}">The Marker Classic Rooms</a>
                 </li>
-                <li {% if page.room_id == 'PG1K' %} class="active" {% endif %}>
+                <li ng-class="{'active':details.category == 'Pool Garden Rooms'}">
                 <a href="{{ 'accommodations/pool-garden-rooms' | permalink }}">Pool Garden Rooms</a>
                 </li>
-                <li {% if page.room_id == 'KW1KP' %} class="active" {% endif %}>
+                <li ng-class="{'active':details.category == 'Key West Harbor Rooms'}">
                 <a href="{{ 'accommodations/key-west-harbor-rooms' | permalink }}">Key West Harbor Rooms</a>
                 </li>
-                <li {% if page.room_id == 'CQ1KS' %} class="active" {% endif %}>
+                <li ng-class="{'active':details.category == 'The Captain\'s Quarters'}">
                 <a href="{{ 'accommodations/the-captains-quarters' | permalink }}">The Captain's Quarters</a>
                 </li>
               </ul>
@@ -88,9 +97,9 @@
         </p>
         -->
         
-        <div class="rate" ng-show="details.brg.discounted_rate"> <span> <sup>Tonight's Rate</sup> [[details.brg.discounted_rate | currency]] </span> <a class="button rate-book_now" data-link-to-book-now="[[details.category]]" href="https://themarkerkeywest.reztrip.com/">Book Now</a> </div>
+        <div class="rate" ng-show="details.todayRate"> <span> <sup>Tonight's Rate</sup> [[details.todayRate | currency]] </span> <a class="button rate-book_now" data-roomcode="[[details.code]]" data-link-to-book-now="[[details.category]]" href="https://themarkerkeywest.reztrip.com/">Book Now</a> </div>
         <!-- Check Availability -->
-        <div class="rate" ng-show="!details.brg.discounted_rate"> <a href="https://themarkerkeywest.reztrip.com/" data-link-to-category="[[details.category]]" class="button rate-book_now">Check Availability</a> </div>
+        <div class="rate" ng-show="!details.todayRate"> <a href="https://themarkerkeywest.reztrip.com/" data-link-to-category="[[details.category]]" class="button rate-book_now">Check Availability</a> </div>
       </div>
     </div>
   </div>
