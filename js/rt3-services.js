@@ -164,12 +164,12 @@ angular.module('rezTrip')
             {
                 var roomRate;
                 var todayRate ={};
-                this.isRate = false;
+                self.isRate = false;
                 angular.forEach(self.roomsList, function(room, key ){
                     roomRate= room.min_discounted_average_price[0] || room.min_average_price[0];
-                    if(room.min_average_price[0] != null && !this.isRate){
+                    if(room.min_average_price[0] != null && !self.isRate){
 
-                       this.isRate = true;
+                       self.isRate = true;
                        self.toNightsRate = "$"+Math.round(roomRate);
 
                     }
@@ -288,12 +288,12 @@ angular.module('rezTrip')
       return response;
     }
   }])
-  .service('rt3RoomDetails', ['$rootScope', '$q', '$location', 'rt3Search', 'rt3api', '$timeout', function($rootScope, $q, $location, rt3Search, rt3api, $timeout) {
+  .service('rt3RoomDetails', ['$rootScope', '$q', '$location', 'rt3Search', 'rt3api', '$timeout','$filter', function($rootScope, $q, $location, rt3Search, rt3api, $timeout, $filter) {
     function RoomDetails() {
       loaded = false;
       params = {};
       brg = {};
-      locationHash = $location.path().substr(1);
+      locationHash = $location.path().substr(1).replace("/","");
     }
 
     RoomDetails.prototype.fetchRoomDetails = function() {
@@ -301,13 +301,17 @@ angular.module('rezTrip')
       var searchParams = rt3Search.getParams();
       var dataRoomId = angular.element('[data-room-id]').data('room-id');
 
-      var roomId = { room_id: dataRoomId || $location.path().substr(1) };
+     // var roomId = { room_id: dataRoomId || $location.path().substr(1) };
+      var roomName = window.location.search;
+      if(roomName){
+        roomName = roomName.replace("?","");
+      }
+      //self.params = $.extend(searchParams, roomId);
 
-      self.params = $.extend(searchParams, roomId);
-
-      $q.when(rt3api.getAllRooms()).then(function(response) {
+      $q.when(rt3api.getAllAvailableRooms()).then(function(response) {
         $.each(response.rooms, function(key, value) {
-          if(value.code == self.params.room_id) {
+          value.todayRate = value.min_discounted_average_price[0] || value.min_average_price[0]
+          if($filter ('formatNameForLink')(value.name) == $filter ('formatNameForLink')(roomName)) {
             angular.extend(self, value);
           }
         });

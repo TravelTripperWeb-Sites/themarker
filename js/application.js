@@ -5,7 +5,7 @@
       $interpolateProvider.endSymbol(']]');
     })
     .value('rt3api', new Rt3Api({
-      portalId: 'themarkerkeywes',
+      portalId: 'themarkerkeywest',
       hotelId: 'KEYMRK',
       defaultLocale: 'en',
       defaultCurrency: 'USD'
@@ -47,7 +47,12 @@
           scope.$eval(attrs.onSearchChanged);
         }
       };
-    });
+    })
+    .controller('roomController', function($scope){
+        
+        $scope.selectedCat = angular.element('[data-room-cat]').data('room-cat') || '';
+      
+    })
 
   angular.module('rezTrip', []);
 })();
