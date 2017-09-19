@@ -133,22 +133,6 @@ function getIp(data){
 <script src="https://api.ipify.org?format=jsonp&callback=getIp"></script> 
 <script type="text/javascript" src="/js/main.min.js"></script> 
 
-<!--New booking widget-->
-<script src="https://plugins.traveltripper.io/v2/rt3api.js"></script>
-<script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
-<script>
-   TTWeb.Config.configure({
-      hotelId: 'KEYMRK', //'orwhatever your values are',
-      portalId: 'themarkerkeywest',
-      defaultTimezone: 'America/New_York', // timezone of site
-      ipAddress: sessionStorage.ip_add,
-      defaultCurrency: 'USD',
-    });
-    $("[show-booking-widget]").bookingWidget({
-         showRateCalendar: true,
-         showOfferCode: true
-    });
-</script>
 
 <script src="//maps.google.com/maps/api/js?sensor=false"></script>
 </body></html>
