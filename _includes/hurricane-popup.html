@@ -1,0 +1,40 @@
+<div id="hurricane-popup" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-wrapper">
+
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+      <div class="modal-content">
+
+        <div class="modal-top">
+          <p>The Marker Waterfront Resort looks forward to re-opening its doors on October 1<sup>st</sup> and continuing to serve our valued guests and community. All reservations during this time have been automatically cancelled and any deposits will be refunded in full. Should you have any questions or would like to reschedule your stay, please contact Leslie Moya our reservations manager at <a href="mailto:lmoya@southernmostresorts.com">lmoya@southernmostresorts.com</a>.</p>
+        </div>
+
+        <div class="modal-middle">
+          <p>POST-IRMA UPDATE</p>
+        </div>
+
+        <div class="modal-bottom">
+          <p class="text-uppercase">Join us in helping our neighbors and communities in the relief efforts by donating to the Save The Children Hurricane Irma Children's Relief Fund.</p>
+          <div class="border"></div>
+          <p><a class="btn white" href="https://secure.savethechildren.org/site/c.8rKLIXMGIpI4E/b.9535143/k.622A/Hurricane_Irma_Childrens_Relief_Fund/apps/ka/sd/donor.asp">DONATE NOW</a></p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<script>
+  $(window).on('load',function(){
+    var hurricanePopup = localStorage.getItem('hurricanePopup');
+    if (hurricanePopup == null) {
+      localStorage.setItem('hurricanePopup', 1);
+      $('#hurricane-popup').show();
+      $('#hurricane-popup').modal();
+    }
+  });
+</script>
