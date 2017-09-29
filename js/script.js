@@ -58,7 +58,10 @@ $(document).ready(function() {
            // itemsTablet: false,
            // itemsMobile : false
 
-       });
+	   });
+	   setTimeout(function(){
+			$(".loading").css("display","none");
+	   },800);
 
  });
 
