@@ -95,7 +95,6 @@
 - key-west-harbor-rooms: ''
 - viewall: services-and-amenities/view-all/
 - calendar-more/movie-night-at-the-marker-8pm/: calendar/
-- special/[[item.promo_url]]: special/
 - experiences/: index.html
 - calendar-list: calendar/
 - experience/: index.html
