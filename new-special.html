@@ -10,8 +10,10 @@ title_localized:
 <!-- Indicators -->
 
 <div class="carousel-inner" role="listbox">
-	
-  <div class="item active" >{% regionblock specials_banner_image, type:image %}<img alt="doubleclick" src="/assets/images/6632/original/special-banner.jpg" class="img-fluid">  {% endregionblock %}</div>
+	{% regionblock specials_banner, type:image %}
+  <div class="item active" style="background-image:url(/assets/images/6632/original/special-banner.jpg)"> 
+    {% endregionblock %}
+  </div>
  
 </div>
 <!-- /.Inner Carousel Carousel --> 
