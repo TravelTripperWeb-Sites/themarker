@@ -522,3 +522,39 @@ $(document).ready(function () {
 		infowindow.open(map, marker);
 	});
 }
+
+
+//Offer Promo Popup
+
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+$(document).ready(function () {
+    var exposedofferPopup = localStorage.getItem('exposedofferPopup');
+    if (!exposedofferPopup) {
+        $('.message').css('display', 'none');
+        $('.signup').css('display', 'block');
+    } else {
+        $('.message').css('display', 'none');
+        $('.unlock').css('display', 'none');
+    } 
+    $('#mclose').click(function(){
+        document.location.href = '/';
+    });
+    if (getParameterByName('submit')) {
+        if (getParameterByName('submit') == 'success') {
+            localStorage.setItem('exposedofferPopup', true);
+            $('.message').css('display', 'block');
+            $('.signup').css('display', 'none');
+            $('#offer-promo-popup').modal('show');
+            $('.unlock').css('display', 'none');
+        }
+    }
+});

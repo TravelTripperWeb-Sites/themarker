@@ -13,12 +13,12 @@
     ],
     "author": "Keywest",
     "engines": {
-    "node": ">= 0.10.0"
+        "node": ">= 0.10.0"
     },
     "devDependencies": {
-    "npm-run-all": "^1.7.0",
-    "onchange": "^2.2.0",
-    "uglify-js": "^2.6.1"
+        "npm-run-all": "^1.7.0",
+        "onchange": "^2.2.0",
+        "uglify-js": "^2.6.1"
     },
     "scripts": {
         "uglify": "uglifyjs js/jquery-1.10.2.js js/bootstrap.min.js js/jquery-ui.js js/lightGallery.js js/owl.carousel.js js/script.js js/angular.min.js js/rt3api.js js/application.js js/rt3-services.js js/rt3-directives.js js/rt3-filters.js js/ie10-viewport-bug-workaround.js -c  -o js/main.min.js",
