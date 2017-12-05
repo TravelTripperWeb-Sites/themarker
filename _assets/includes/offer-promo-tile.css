@@ -1,7 +1,7 @@
 .offer-promo-tile {
     margin: 0px;
     text-align: center;
-    background: rgba(41,194,222,0.3);
+    background: rgba(41, 194, 222, 0.3);
     padding: 20px 0 15px;
     position: absolute;
     top: 100px;
@@ -16,13 +16,15 @@
     display: inline-block;
     margin: 0px 15px;
 }
+
 .offer-promo-tile h3 {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-size: 18px;
     letter-spacing: 1px;
     font-weight: 400;
 }
+
 .offer-promo-tile a {
     font-size: 18px;
 }
@@ -84,17 +86,19 @@
     font-size: 12px;
 }
 
-#offer-promo-popup .modal-dialog .modal-body .signup .input-group .button-blue, #offer-promo-popup .modal-dialog .modal-body .message .button-blue {
+#offer-promo-popup .modal-dialog .modal-body .signup .input-group .button-blue,
+#offer-promo-popup .modal-dialog .modal-body .message .button-blue {
     padding: 11px 20px;
     text-transform: uppercase;
     background: #0bb7e4;
     color: #fff !important;
-    border-color: #0bb7e4; 
+    border-color: #0bb7e4;
 }
 
-#offer-promo-popup .modal-dialog .modal-body .signup .input-group .button-blue:hover{
+#offer-promo-popup .modal-dialog .modal-body .signup .input-group .button-blue:hover {
     opacity: 0.8;
 }
+
 #offer-promo-popup .modal-dialog .modal-body .message .button-blue:hover {
     opacity: 0.8;
 }
@@ -106,7 +110,8 @@
 #offer-promo-popup .modal-dialog .modal-body .message h5 {
     margin-bottom: 20px;
 }
-.offer-promo-tile .button {
+
+.offer-promo-tile .button, .promo-code-reminder .button {
     background: transparent;
     border: 2px solid #fff;
     border-radius: 0;
@@ -119,6 +124,28 @@
     text-transform: uppercase;
     display: inline-block;
 }
-#offer-promo-popup .agree_to_sub input{
+
+#offer-promo-popup .agree_to_sub input {
     margin: 4px 5px 0;
 }
+.promo-code-reminder .reminder-text h4 {
+    font-family: 'Muli Light';
+}
+
+.promo-code-reminder {
+    margin: 0px auto 2px;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    background: rgba(41, 194, 222, 0.3);
+    color: #fff;
+}
+
+.promo-code-reminder .reminder-text h4 span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
