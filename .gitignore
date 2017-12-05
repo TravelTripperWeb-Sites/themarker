@@ -26,5 +26,6 @@ bower_components/
 node_modules/
 .bundle/
 vendor/
+
 old_media.json
 feed.xml

@@ -159,3 +159,11 @@
 - m/calendar/daily/2015/9/5: calendar/
 - m/calendar/daily/2156/11/11: calendar/
 - m/calendar/daily/2014/12/4: calendar/
+- gallery/marker-resort-video: gallery/view-all-images/
+- gallery/marker-resort-video/: gallery/view-all-images/
+- Gallery/marker-resort-video: gallery/view-all-images/
+- Gallery/marker-resort-video/: gallery/view-all-images/
+- Gallery/Marker-Resort-Video: gallery/view-all-images/
+- Gallery/Marker-Resort-Video/: gallery/view-all-images/
+- GALLERY/MARKER-RESORT-VIDEO: gallery/view-all-images/
+- GALLERY/MARKER-RESORT-VIDEO/: gallery/view-all-images/
