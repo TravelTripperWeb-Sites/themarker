@@ -11,10 +11,6 @@ languages: ['en']
 permalink: pretty
 markdown: kramdown
 
-exclude:
-  - 'sitemap.json'
-  - 'assets'
-
 keep_files: ['assets']
 rsync_copy: ['_assets']
 
@@ -29,7 +25,12 @@ page_gen:
     template: 'attractions-details'
     dir: 'attractions'
 
+include:
+  - _pages
+
 exclude:
+  - 'sitemap.json'
+  - 'assets'
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
