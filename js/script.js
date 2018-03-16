@@ -13,7 +13,7 @@ $(document).ready(function() {
 			$('.mobile-only-offer').css({'visibility' : "visible"});
 			}
 		}
-		
+
 		$('#kill').click(function() {
 			$('.mobile-only-offer').css({
 				'visibility': 'hidden',
@@ -236,7 +236,7 @@ function createLink(to, item) {
             '&rooms=' + rooms +
             '&adults=' + adults +
 			'&selected_room_category=' + item.data('link-to-book-now');
-			var roomcode = item.data('roomcode'); 
+			var roomcode = item.data('roomcode');
 			if(roomcode){
 				result = result + "&selected_room=" + roomcode;
 			}
@@ -290,7 +290,7 @@ departureDate.datepicker({
 						indicators.append("<li data-target='#innerCarousel' data-slide-to='"+index+"' class='active'></li>") :
 						indicators.append("<li data-target='#innerCarousel' data-slide-to='"+index+"'></li>");
 				});
-		
+
 		}
 		if ($('#innerCarouselRoom .item').length > 1) {
 				$('.carousel-control').show();
@@ -299,12 +299,15 @@ departureDate.datepicker({
 		var IwHeight = $( window ).height() -175;
 		$('#innerCarouselRoom').height(IwHeight);
 		$('#innerCarouselRoom .item').height(IwHeight);
+        $("#innerCarouselRoom a").click(function(e) {
+            e.preventDefault();
+        })
 	},2200);
 
 	setTimeout(function(){
 		$(".price-wrap1").css("display","block");
 	},2800);
-	
+
 	$("a.anchorLink").anchorAnimate()
 
 	// back to top link is shown
@@ -538,7 +541,7 @@ function getParameterByName(name, url) {
 
 $(document).ready(function () {
     var nowTime = new Date().getTime();
-     
+
     var exposedofferPopup = localStorage.getItem('exposedofferPopup');
     if (!exposedofferPopup) {
         $('.message').css('display', 'none');
@@ -548,7 +551,7 @@ $(document).ready(function () {
         $('.message').css('display', 'none');
         $('.promo-code-reminder').css('display', 'none');
         $('.unlock').css('display', 'none');
-    } 
+    }
     /*$('#mclose').click(function(){
         document.location.href = '/';
     });*/
@@ -564,7 +567,7 @@ $(document).ready(function () {
         if (getParameterByName('submit') == 'success') {
             if(!$.cookie('signupTime')){
                 $.cookie('signupDone', '1', { expires: 5, url:'/'});
-                $.cookie('signupTime', '1', { expires: 3, url:'/'}); 
+                $.cookie('signupTime', '1', { expires: 3, url:'/'});
             }
             localStorage.setItem('exposedofferPopup', true);
             $('.message').css('display', 'block');
@@ -574,5 +577,5 @@ $(document).ready(function () {
             $('.unlock').css('display', 'none');
         }
     }
-    
+
 });
