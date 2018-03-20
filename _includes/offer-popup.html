@@ -1,0 +1,25 @@
+<!-- American Express offer popup -->
+<div id="offer-popup" class="offer-popup modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-wrapper">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-content">
+                <div class="modal-content-inner">
+                    <!-- <img src="/assets/images/5292/original/logo.png" alt="Marker Key West"/> -->
+                    <h2>spring forward offer 20% Off + 25% off F&B</h2>
+                    <a class="button" href="https://themarkerkeywest.reztrip.com/ext/promoRate?property=728&mode=b&pm=true&sr=331760&vr=3" target="_blank" title="Book Now">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    if (!Cookies.get('popup')) {
+      $('#offer-popup').show();
+      $('#offer-popup').modal();
+      Cookies.set('popup', '1', {
+        expires: 1
+      });
+    }
+</script>
+<!-- American Express offer popup -->
