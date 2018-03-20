@@ -2773,7 +2773,7 @@ font-family: 'Muli Light';
 }
 .modal-wrapper {
   display: inline-block;
-  background-color: #da1d30;
+  background-color: #ffffff;
 }
 
 .modal-wrapper .close {
@@ -2854,4 +2854,97 @@ font-family: 'Muli Light';
   color: #fff;
   background-color: #da1d30;
   border: 1px solid;
+}
+
+/* offer popup */
+.offer-popup {
+  align-items: center;
+  background: rgba(255, 255, 255, .90);
+}
+.offer-popup.fade .modal-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  max-width: 500px;
+}
+@media (max-width: 768px) {
+  .offer-popup.fade .modal-dialog {
+    width: 80%;
+  }
+}
+.offer-popup .modal-wrapper {
+  position: relative;
+  max-width: 550px;
+  margin: 0 auto;
+}
+.offer-popup .modal-wrapper .close {
+  position: absolute;
+  top: -10px;
+  right: -6px;
+  z-index: 9;
+  width: 22px;
+  opacity: 1;
+  color: #000;
+}
+.offer-popup .modal-content {
+  margin: 65px auto;
+  text-align: center;
+  border: 0px;
+  background-color: transparent;
+  box-shadow: none;
+}
+.offer-popup .modal-content .modal-content-inner {
+  margin: 50px;
+  color: #fff;
+}
+.offer-popup .modal-content .modal-content-inner h2 {
+  font-family: 'Muli Light';
+  font-size: 28px;
+  text-transform: uppercase;
+  color: rgba(42, 159, 192, 1);
+  margin: 25px auto;
+  letter-spacing: 2px;
+}
+.offer-popup .modal-content .modal-content-inner p {
+  display: block;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  color: #000;
+}
+.offer-popup .modal-content .modal-content-inner p b {
+  font-size: 18px;
+  font-weight: normal;
+}
+.offer-popup .modal-content .modal-content-inner img {
+  padding: 0;
+  display: block;
+  margin: 35px auto;
+}
+.offer-popup .modal-content .modal-content-inner .button {
+	font-size: 18px;
+	background: #000;
+	color: #fff;
+	font: 13px 'Muli Light';
+	height: 35px;
+	line-height: 35px;
+	padding: 10px 25px;
+	text-transform: uppercase;
+	border: none;
+}
+.offer-popup .modal-content .modal-content-inner .button:hover {
+	background: #0bb7e4;
+    color: #fff;
+}
+.offer-popup .modal-content .modal-content-inner .button:after {
+  top: 3px;
+  bottom: 3px;
+  left: 3px;
+  right: 3px;
+}
+.express-card-offer {
+  font-weight: bold;
 }
