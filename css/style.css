@@ -2848,6 +2848,83 @@ font-family: 'Muli Light';
   border: 1px solid;
 }
 
+<<<<<<< HEAD
+.lg-sub-html {
+  padding: 20px 10px;
+  width: 400px;
+  min-height: 200px;
+  max-width: 100%;
+  left: 30%;
+  bottom: calc(50% - 50px) !important;
+  left: calc(50% - 200px);
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  z-index: 1070;
+}
+.lg-sub-html h4 {
+  padding-top: 10px;
+  font-weight: 300;
+  font-family: "GothamHTF-Light";
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+.lg-sub-html h3 {
+  font-family: "GothamHTF-Bold";
+  font-size: 24px;
+  padding: 0;
+}
+.lg-sub-html p {
+  margin-top: 10px;
+}
+.lg-sub-html a {
+  margin-top: 10px;
+  padding: 10px 16px 11px 16px;
+}
+
+.text-block-gal-off {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 0;
+  max-width: 310px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 31px;
+  white-space: normal;
+}
+@media (max-width: 768px) {
+  .text-block-gal-off {
+    padding: 10px;
+  }
+  .text-block-gal-off h4 {
+    font-size: 14px;
+  }
+  .text-block-gal-off h3 {
+    font-size: 18px;
+    margin: 10px auto;
+  }
+}
+.btn-offer-gallery{
+    min-width: 154px;
+    color: #000;
+    border: solid 2px #1f4552;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    font-family: 'Muli Light';
+    letter-spacing: .2em;
+    text-align: center;
+    font-size: 14px;
+    display: inline-block;
+    text-shadow: none;
+    transition: all 0.1s;
+    text-decoration: none;
+}
+.btn-offer-gallery:hover {
+        background-color: #1f4552;
+        color: #fff; text-decoration: none;
+    }
+=======
 /* offer popup */
 .offer-popup {
   align-items: center;
@@ -2940,3 +3017,4 @@ font-family: 'Muli Light';
 .express-card-offer {
   font-weight: bold;
 }
+>>>>>>> ca2f1d0fd97575ed37cff6b1e85b456ad276db11
