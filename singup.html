@@ -1,0 +1,67 @@
+<!-- The following is a very basic eClub form that has reCaptcha integrated. Please read all the comments to fully understand what's going onfor a full understanding of the process. The form itself is set up like a regular eClub. There are only a handful of differences. Each difference is commented below. -->
+<html>
+<head>
+<!-- This is Google's reCaptcha script. It's responsible for doing all the heavy lifting here. This is required and belongs in the HTML. <head> section of the document -->
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<!-- This verifies all is checked and won't let it the user submit the form until reCaptcha is checked. This is required and belongs in the HTML <head> section of the document -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type='text/javascript'>
+var captcha_submitted = false;	
+			
+	 function captcha_checked() {
+	 captcha_submitted = true;
+			}
+			
+	 function captcha_expired() {
+	 captcha_submitted = false;
+			}
+			
+	 $(document).ready(function() {
+	 $('#eclubCheck').submit(function(e) {
+	 if (!captcha_submitted){
+	 e.preventDefault();
+	 alert('Please fill out the reCaptcha field');
+					}
+				});
+			});
+</script>
+</head>
+<body>
+<!-- The form action will be supplied on a PER customer basis -->
+<form method="post" id="eclubCheck" action="https://web.data2gold.com/?530O42011L021J2Q436X196L724V17151J4M275K6O3J271U45542Z4K136G565S60293Y0T190S5D4E382H011A" class="eClub">
+  <div class="form">
+    <p> <strong>*</strong>First Name<br>
+      <input type="text" maxlength="80" name="FIRSTNAME" required>
+    </p>
+    <p> <strong>*</strong>Last Name<br>
+      <input type="text" maxlength="80" name="LASTNAME" required>
+    </p>
+    <p> <strong>*</strong>Email Address<br>
+      <input type="email" maxlength="150" name="EMAIL" required>
+    </p>
+    
+    <p> 
+<!-- This div MUST exist. It's the div where the reCaptcha field will render. -->
+    <div class="g-recaptcha" data-callback="captcha_checked" data-expired-callback="captcha_expired" data-sitekey="6LdWgCAUAAAAAJvOai05x8FkahvQcgEDAsAdHq-D"></div>
+    </p>
+    <p> 
+      <input type="submit" value="JOIN OUR LIST" > 
+    </p>
+  </div>
+  <div> </div><!-- This is who gets emailed when this form is filled out -->
+<input type="HIDDEN" name="PEA"                          value="your email address here" />
+<input type="HIDDEN" name="PEACC"                     value="" />
+<input type="HIDDEN" name="PEABC"                     value="" />
+<!-- This is the subject line of the email -->
+<input type="HIDDEN" name="PEASUBJECT"          value="LOOKUP" />
+<input type="HIDDEN" name="NewUser"                   value="1">
+<input type="HIDDEN" name="PrThanksPage"          value="1">
+<!-- This is a value that is supplied by on a customer basis -->
+<input type="HIDDEN" name="ftpbox"                        value="01629">
+ <!-- This is the NAME of the template that shows when the form has been saved. Alternately, this may also be a URL. If it is a URL, then, after saving the form data, the specified URL will be redirected to. -->
+<input type="HIDDEN" name="PRThanksTemplate"  value="https://www.themarkerkeywest.com/signup/thankyou/">
+<input type="HIDDEN" name="sys_formtype"             value="eClub">
+<input type="HIDDEN" name="hv_preftype"               value="eClub" />
+</form>
+</body>
+</html>
