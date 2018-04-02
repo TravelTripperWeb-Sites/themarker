@@ -20,7 +20,7 @@
         <p>Sign up for The Marker's newsletter to receive exclusive offers, the latest news, and instant alerts on our Key West hotel deals and interactive sweepstakes and giveaways.&nbsp; From email-only offers to mobile SMS text deals and updates, staying connected with The Marker Resort means enjoying endless savings.</p>
         <p><strong>We're very social</strong></p>
         <p>Follow our social media pages and be the first to receive the latest specials and Florida Keys hotel deals as well as social media-only offers.&nbsp; Enjoy exclusive interactive contests and win great prizes.&nbsp; Share your thoughts, memories and photos with us.&nbsp; The Marker would love to mix and mingle with you...so get social with us!</p>
-        <form method="post" action="http://www.data2gold.com/cc3/safeandsecure.wow?6O521I55494X2X2G6G1O0L216R693Q5H3Z5E"  class="form signup-form"  id="newsletter-form"   >
+        <form method="post" id="eclubCheck" action="https://web.data2gold.com/?530O42011L021J2Q436X196L724V17151J4M275K6O3J271U45542Z4K136G565S60293Y0T190S5D4E382H011A" class="eClub form signup-form" >
           <fieldset>
            <legend class="hidden">Your Information: </legend>
             <div class="row">
@@ -52,6 +52,14 @@
                 <input type="email" class="col-xs-12 col-sm-7 col-md-5" required name="EMAIL" id="EMAIL" value=""  maxlength="150" aria-label="Email">
               </div>
             </div>
+
+            <div class="row odd">
+              <div  class="col-xs-12  col-sm-5 form-title"> &nbsp;</div>
+                      <div  class="col-xs-12  col-sm-7 field">
+        <!-- This div MUST exist. It's the div where the reCaptcha field will render. -->
+            <div class="g-recaptcha" data-callback="captcha_checked" data-expired-callback="captcha_expired" data-sitekey="6LdWgCAUAAAAAJvOai05x8FkahvQcgEDAsAdHq-D"></div>
+            </div>
+          </div>
             <div class="row button-wrapper">
               <div Class="col-xs-12 col-sm-7 field col-sm-push-5">
                 <input type="submit" id="submit" class="button" value="Join Our List" aria-label="Submit">
@@ -79,3 +87,25 @@
 <!-- /.Inner wrapper --> 
 
 {% include tmp-footer.html %}
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script type='text/javascript'>
+var captcha_submitted = false;  
+      
+   function captcha_checked() {
+   captcha_submitted = true;
+      }
+      
+   function captcha_expired() {
+   captcha_submitted = false;
+      }
+      
+   $(document).ready(function() {
+   $('#eclub').submit(function(e) {
+   if (!captcha_submitted){
+   e.preventDefault();
+   alert('Please fill out the reCaptcha field');
+          }
+        });
+      });
+</script>
