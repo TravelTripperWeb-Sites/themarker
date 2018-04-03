@@ -1,20 +1,29 @@
 require 'date'
 
 class DataObject
-  attr_reader :data, :definitions, :storage
+  attr_reader :data, :definition, :storage
 
-  def initialize(data, definitions, storage)
+  def initialize(data, definition, storage)
     @data = data
-    @definitions = definitions
+    @definition = definition
     @storage = storage
   end
+  
+  def rich_data
+    rd = {}
+    definition.each do |key, details|
+      rd[key] = self.send(key)
+    end
+    rd
+  end
+  
 
   def match?(key, values)
     key = key.to_s
     values = values.map(&:to_s)
 
-    if definitions.has_key?(key) && definitions[key].has_key?('type') && definitions[key]['type'] == 'model'
-      storage.send "find_#{definitions[key]['model_name']}_by_#{definitions[key]['foreign_key'] || 'id'}", values
+    if definition.has_key?(key) && definition[key].has_key?('type') && definition[key]['type'] == 'model'
+      storage.send "find_#{definition[key]['model_name']}_by_#{definition[key]['foreign_key'] || 'id'}", values
     else
       values.include? data[key].to_s
     end
@@ -25,18 +34,19 @@ class DataObject
       return nil
     else
       name = name.to_s
-      value = if definitions.has_key?(name) && definitions[name].has_key?('type') && definitions[name]['type'] == 'model'
-        storage.send "find_#{definitions[name]['model_name']}_by_#{definitions[name]['foreign_key'] || 'id'}", data[name]
-      elsif definitions.has_key?(name) && definitions[name].has_key?('type') && definitions[name]['type'] == 'date'
+      value = if definition.has_key?(name) && definition[name].has_key?('type') && definition[name]['type'] == 'model'
+        storage.send "find_#{definition[name]['model_name']}_by_#{definition[name]['foreign_key'] || 'id'}", data[name]
+      elsif definition.has_key?(name) && definition[name].has_key?('type') && definition[name]['type'] == 'date'
         Date.parse data[name]
-      elsif definitions.has_key?(name) && definitions[name].has_key?('type') && definitions[name]['type'] == 'datetime'
+      elsif definition.has_key?(name) && definition[name].has_key?('type') && definition[name]['type'] == 'datetime'
         DateTime.parse data[name]
       else
         data[name]
       end
-
-      definitions.has_key?(name) && definitions[name].has_key?('localizable') && definitions[name]['localizable'] ?
-        value[storage.locale] || value[storage.default_locale] : value
+      return value
+      # The current copy of [data] has the appropriate values stored for the current locale already
+      # definition.has_key?(name) && definition[name].has_key?('localizable') && definition[name]['localizable'] ?
+      #  value[storage.locale] || value[storage.default_locale] : value
     end
   end
 
