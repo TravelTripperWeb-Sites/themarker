@@ -110,6 +110,10 @@ module Jekyll
           data = JSON.parse File.read(f)
           attrs = {}
           attrs[:name] = data['name'] if data.has_key?('name')
+          attrs[:name] = data['name_localized']['en'] if attrs[:name].nil? && data.has_key?('name_localized')
+          attrs[:name] = data['title'] if attrs[:name].nil? && data.has_key?('title')
+          attrs[:name] = data['title_localized']['en'] if attrs[:name].nil? && data.has_key?('title_localized')
+
           attrs[:title] = data['title'] if data.has_key?('title')
           attrs[:file] = File.basename(f)
           models_hash[sub_folder.to_s] << attrs
