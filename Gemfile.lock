@@ -3,6 +3,7 @@ GEM
   specs:
     addressable (2.4.0)
     colorator (0.1)
+    ffi (1.9.18)
     ffi (1.9.18-x86-mingw32)
     i18n (0.8.6)
     jekyll (3.1.6)
@@ -39,6 +40,7 @@ GEM
     xkeys (2.2.0)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES
@@ -48,4 +50,4 @@ DEPENDENCIES
   xkeys
 
 BUNDLED WITH
-   1.13.1
+   1.16.1
