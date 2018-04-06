@@ -132,8 +132,10 @@ function getIp(data){
 </script>
 <script src="https://api.ipify.org?format=jsonp&callback=getIp"></script>
 <script type="text/javascript" src="/js/main.min.js"></script>
+<script src="/js/rez-gallery.js"></script>
 <script type="text/javascript" src="/js/utm-tracking.js"></script>
 <script src="//maps.google.com/maps/api/js?sensor=false"></script>
+<script src="/js/js.cookie.js"></script>
 
 <script src="https://plugins.traveltripper.io/v2/rt3api.min.js"></script>
 <script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
@@ -155,5 +157,23 @@ function getIp(data){
   $(".ttweb-booking-widget form").removeAttr('target');
 </script>
 
+<script type="text/javascript">
+  $(document).ready(function(){
+    // get rt3 offers in gallery
+     $('#exterior-gallery, #gust-gallery, #lobby-gallery, #pool-gallery, #cero-gallery, #events-gallery').rezGallery({
+                hotelID : 'KEYMRK',
+                portalID : 'themarkerkeywes',
+                galleryselector : 'li',
+                buttonClass :'btn-offer-gallery',
+                pageLink : true,
+                description : true,
+                offerdetailPage : '/special/special-more/'
+     });
+  });
+
+
+
+
+</script>
 </body>
 </html>
