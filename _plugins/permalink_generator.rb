@@ -16,9 +16,9 @@ module Jekyll
     attr_reader :permalinks_table
     attr_accessor :unfiltered_pages
 
-    alias_method :reset_orig, :reset
+    alias_method :reset_without_page_reader, :reset
     def reset
-      reset_orig
+      reset_without_page_reader
       self.unfiltered_pages = []
     end
     

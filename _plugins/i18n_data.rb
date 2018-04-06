@@ -1,4 +1,5 @@
 require 'json'
+require_relative 'allow_submodules'
 
 module Jekyll
   class DataReader
