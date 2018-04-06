@@ -252,6 +252,24 @@
     "git_file_name": "_assets/image_data/h-t-r.json"
   },
   {
+    "name": "hemingwayhouse",
+    "file_name": "hemingwayhouse.png",
+    "file_type": "image/png",
+    "url": "//cdn.traveltripper.io/site-assets/202_388_14133/media/2018-04-02-012936/hemingwayhouse.png",
+    "tags": "",
+    "file_size": 760554.0,
+    "width": 768,
+    "height": 384,
+    "description": "",
+    "date_added": "2018-04-02-012936",
+    "url_large": "//cdn.traveltripper.io/site-assets/202_388_14133/media/2018-04-02-012936/large_hemingwayhouse.png",
+    "url_medium": "//cdn.traveltripper.io/site-assets/202_388_14133/media/2018-04-02-012936/medium_hemingwayhouse.png",
+    "url_small": "//cdn.traveltripper.io/site-assets/202_388_14133/media/2018-04-02-012936/small_hemingwayhouse.png",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/202_388_14133/media/2018-04-02-012936/xsmall_hemingwayhouse.png",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/202_388_14133/media/2018-04-02-012936/thumb_hemingwayhouse.png",
+    "git_file_name": "_assets/image_data/hemingwayhouse.json"
+  },
+  {
     "name": "Hot-Tin-Roof",
     "file_name": "Hot-Tin-Roof.jpg",
     "file_type": "image/jpeg",
@@ -466,6 +484,24 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/202_388_13280/media/2018-03-08-063854/xsmall_megan.jpg",
     "url_thumb": "//cdn.traveltripper.io/site-assets/202_388_13280/media/2018-03-08-063854/thumb_megan.jpg",
     "git_file_name": "_assets/image_data/megan.json"
+  },
+  {
+    "name": "melfishermuseum",
+    "file_name": "melfishermuseum.png",
+    "file_type": "image/png",
+    "url": "//cdn.traveltripper.io/site-assets/202_388_14133/media/2018-04-02-020536/melfishermuseum.png",
+    "tags": "",
+    "file_size": 647100.0,
+    "width": 768,
+    "height": 384,
+    "description": "",
+    "date_added": "2018-04-02-020536",
+    "url_large": "//cdn.traveltripper.io/site-assets/202_388_14133/media/2018-04-02-020536/large_melfishermuseum.png",
+    "url_medium": "//cdn.traveltripper.io/site-assets/202_388_14133/media/2018-04-02-020536/medium_melfishermuseum.png",
+    "url_small": "//cdn.traveltripper.io/site-assets/202_388_14133/media/2018-04-02-020536/small_melfishermuseum.png",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/202_388_14133/media/2018-04-02-020536/xsmall_melfishermuseum.png",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/202_388_14133/media/2018-04-02-020536/thumb_melfishermuseum.png",
+    "git_file_name": "_assets/image_data/melfishermuseum.json"
   },
   {
     "name": "mikaylajusticee",
@@ -1394,6 +1430,19 @@
     "git_file_name": "_assets/image_data/the-view.json"
   },
   {
+    "name": "tm newsletter_april 18 FINAL",
+    "file_name": "tm newsletter_april 18 FINAL.pdf",
+    "file_type": "application/pdf",
+    "url": "//cdn.traveltripper.io/site-assets/202_388_14199/media/2018-04-03-064607/tm-newsletter-april-18-FINAL.pdf",
+    "tags": "",
+    "file_size": 1021211.0,
+    "width": null,
+    "height": null,
+    "description": "",
+    "date_added": "2018-04-03-064607",
+    "git_file_name": "_assets/image_data/tm newsletter_april 18 FINAL.json"
+  },
+  {
     "name": "tm newsletter_feb 18 FINAL",
     "file_name": "tm newsletter_feb 18 FINAL.pdf",
     "file_type": "application/pdf",
@@ -1418,6 +1467,24 @@
     "description": "",
     "date_added": "2018-01-03-020606",
     "git_file_name": "_assets/image_data/tm newsletter_jan 18 rd02.json"
+  },
+  {
+    "name": "trumanwhitehouse",
+    "file_name": "trumanwhitehouse.png",
+    "file_type": "image/png",
+    "url": "//cdn.traveltripper.io/site-assets/202_388_14133/media/2018-04-02-015723/trumanwhitehouse.png",
+    "tags": "",
+    "file_size": 354596.0,
+    "width": 768,
+    "height": 384,
+    "description": "",
+    "date_added": "2018-04-02-015723",
+    "url_large": "//cdn.traveltripper.io/site-assets/202_388_14133/media/2018-04-02-015723/large_trumanwhitehouse.png",
+    "url_medium": "//cdn.traveltripper.io/site-assets/202_388_14133/media/2018-04-02-015723/medium_trumanwhitehouse.png",
+    "url_small": "//cdn.traveltripper.io/site-assets/202_388_14133/media/2018-04-02-015723/small_trumanwhitehouse.png",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/202_388_14133/media/2018-04-02-015723/xsmall_trumanwhitehouse.png",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/202_388_14133/media/2018-04-02-015723/thumb_trumanwhitehouse.png",
+    "git_file_name": "_assets/image_data/trumanwhitehouse.json"
   },
   {
     "name": "tuesday-vibes",

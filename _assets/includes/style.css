@@ -334,6 +334,7 @@ body {
 @media (min-width:1181px) {
 .nav-wrapper {
 	position: relative;
+	padding-right: 8rem;
 }
 .navbar-collapse.collapse {
 	height: 65px !important;
