@@ -137,6 +137,25 @@ function getIp(data){
 <script src="//maps.google.com/maps/api/js?sensor=false"></script>
 <script src="/js/js.cookie.js"></script>
 
+<script src="https://plugins.traveltripper.io/v2/rt3api.min.js"></script>
+<script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
+<script>
+  TTWeb.Config.configure({
+    portalId: 'themarkerkeywest',
+    hotelId: 'KEYMRK',
+    defaultTimezone: 'America/New_York', // timezone of site
+    ipAddress: sessionStorage.ip_add,
+    defaultCurrency: 'USD',
+    //rootPath: 'https://rt3api-prd-ase.ttaws.com' // include this line only if site is on asian server i.e elite and cristalhospitality
+  });
+
+  $("[show-booking-widget]").bookingWidget({
+      // showRateCalendar: true,
+       showOfferCode: true
+  });
+  // remove target attr of booking widget form to open it in same window.
+  $(".ttweb-booking-widget form").removeAttr('target');
+</script>
 
 <script type="text/javascript">
   $(document).ready(function(){
