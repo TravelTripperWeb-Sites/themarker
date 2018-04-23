@@ -55,6 +55,29 @@ module Jekyll
       end
       @content
     end
+    def read_data_to(dir, data)
+      return unless File.directory?(dir) && (!site.safe || !File.symlink?(dir))
+
+      entries = Dir.chdir(dir) do
+        Dir['*.{yaml,yml,json,csv}'] + Dir['*'].select { |fn| File.directory?(fn) }
+      end
+
+      entries.each do |entry|
+        path = @site.in_source_dir(dir, entry)
+        next if File.symlink?(path) && site.safe
+
+        key = sanitize_filename(File.basename(entry, '.*'))
+        if File.directory?(path)
+          # These are the two lines we're changing from the original version
+          # because we don't want to explicitly rewrite the key for a dir if it already has content in it.
+          data[key] ||= {} 
+          read_data_to(path, data[key])
+        else
+          data[key] = read_data_file(path)
+        end
+      end
+    end
+    
   end
   class LayoutReader
     

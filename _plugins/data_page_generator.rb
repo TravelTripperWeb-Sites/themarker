@@ -14,12 +14,19 @@ module Jekyll
       @data_source = source_dir + '/' + (dataObj.data['__INSTANCE__'] || "#{name}.json")
       file_name = sanitize_filename(self.url_friendly_name(dataObj.data) || name)
       @name = file_name  + ".html"
-      @source_path = '_layouts/' + template + '.html'
+      if site.layouts[template]
+        @source_path = site.layouts[template].path
+      else
+        @source_path = File.join(File.join(base, '_layouts'), template + ".html")
+      end
+
 
       self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), template + ".html")
+      paths = @source_path.split('/')
+      template_file_name = paths.pop
+      self.read_yaml(paths.join('/'), template_file_name)
       self.data.merge!(dataObj.rich_data)
-      self.data['data'] = dataObj.data
+      self.data['data'] = dataObj.rich_data # Rich data includes the model relations
       self.data['title'] ||= name
       permalink = self.data_permalink || File.join(dir, file_name)
       if permalink && !(permalink.end_with?('/') || permalink.end_with?('.html'))
@@ -56,9 +63,9 @@ module Jekyll
           # todo: check input data correctness
           template = data_spec['template'] || data_spec['data']
           dir = data_spec['dir'] || data_spec['data']
-
+          
           if site.layouts.key? template
-            records = site.data['_models'].send(data_spec['data'])
+            records = (site.data['_models'].has_key?(data_spec['data']) ? site.data['_models'][data_spec['data']] : []) || []
             records.each do |record|
               page = DataPage.new(site, site.source, dir, record, record.id, template, data_spec['data'])
               site.pages << page
