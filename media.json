@@ -69,6 +69,24 @@
     "git_file_name": "_assets/image_data/site-assets_202_388_3514_media_2017-07-19-022237_group.jpg.json"
   },
   {
+    "name": "eTrevh",
+    "file_name": "eTrevh.png",
+    "file_type": "image/png",
+    "url": "//cdn.traveltripper.io/site-assets/202_388_14474/media/2018-04-11-011829/eTrevh.png",
+    "tags": "",
+    "file_size": 1324395.0,
+    "width": 1024,
+    "height": 512,
+    "description": "",
+    "date_added": "2018-04-11-011829",
+    "url_large": "//cdn.traveltripper.io/site-assets/202_388_14474/media/2018-04-11-011829/large_eTrevh.png",
+    "url_medium": "//cdn.traveltripper.io/site-assets/202_388_14474/media/2018-04-11-011829/medium_eTrevh.png",
+    "url_small": "//cdn.traveltripper.io/site-assets/202_388_14474/media/2018-04-11-011829/small_eTrevh.png",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/202_388_14474/media/2018-04-11-011829/xsmall_eTrevh.png",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/202_388_14474/media/2018-04-11-011829/thumb_eTrevh.png",
+    "git_file_name": "_assets/image_data/eTrevh.json"
+  },
+  {
     "name": "pool-parties",
     "file_name": "pool-parties.jpg",
     "file_type": "image/jpeg",
@@ -517,6 +535,24 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/202_388_9871/media/2017-12-05-032800/xsmall_Besame---Blog.jpg",
     "url_thumb": "//cdn.traveltripper.io/site-assets/202_388_9871/media/2017-12-05-032800/thumb_Besame---Blog.jpg",
     "git_file_name": "_assets/image_data/Besame---Blog.json"
+  },
+  {
+    "name": "songwriters",
+    "file_name": "songwriters.png",
+    "file_type": "image/png",
+    "url": "//cdn.traveltripper.io/site-assets/202_388_14474/media/2018-04-11-014433/songwriters.png",
+    "tags": "",
+    "file_size": 253961.0,
+    "width": 560,
+    "height": 315,
+    "description": "",
+    "date_added": "2018-04-11-014433",
+    "url_large": "//cdn.traveltripper.io/site-assets/202_388_14474/media/2018-04-11-014433/large_songwriters.png",
+    "url_medium": "//cdn.traveltripper.io/site-assets/202_388_14474/media/2018-04-11-014433/medium_songwriters.png",
+    "url_small": "//cdn.traveltripper.io/site-assets/202_388_14474/media/2018-04-11-014433/small_songwriters.png",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/202_388_14474/media/2018-04-11-014433/xsmall_songwriters.png",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/202_388_14474/media/2018-04-11-014433/thumb_songwriters.png",
+    "git_file_name": "_assets/image_data/songwriters.json"
   },
   {
     "name": "tm_newsletter_may",
@@ -1391,6 +1427,24 @@
     "tags": "",
     "description": "",
     "git_file_name": "_assets/image_data/site-assets_202_388_1258_media_2017-01-11-062000_key-lime-tart.jpg.json"
+  },
+  {
+    "name": "marker-festival",
+    "file_name": "marker-festival.png",
+    "file_type": "image/png",
+    "url": "//cdn.traveltripper.io/site-assets/202_388_14474/media/2018-04-11-012906/marker-festival.png",
+    "tags": "",
+    "file_size": 174062.0,
+    "width": 560,
+    "height": 315,
+    "description": "",
+    "date_added": "2018-04-11-012906",
+    "url_large": "//cdn.traveltripper.io/site-assets/202_388_14474/media/2018-04-11-012906/large_marker-festival.png",
+    "url_medium": "//cdn.traveltripper.io/site-assets/202_388_14474/media/2018-04-11-012906/medium_marker-festival.png",
+    "url_small": "//cdn.traveltripper.io/site-assets/202_388_14474/media/2018-04-11-012906/small_marker-festival.png",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/202_388_14474/media/2018-04-11-012906/xsmall_marker-festival.png",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/202_388_14474/media/2018-04-11-012906/thumb_marker-festival.png",
+    "git_file_name": "_assets/image_data/marker-festival.json"
   },
   {
     "name": "somo",
