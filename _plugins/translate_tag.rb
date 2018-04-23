@@ -14,7 +14,7 @@ module Jekyll
 
     def render(context)
       site = context.registers[:site]
-      load_translations(site.source)
+      load_translations(site.source, site.config['i18n_dir'])
       locale = context[@locale] || @locale || site.active_lang || site.default_lang || 'en'
       I18n.available_locales = site.languages || [site.default_lang || 'en']
       
@@ -27,9 +27,13 @@ module Jekyll
     end
 
     private
-      def load_translations(path)
+      def load_translations(path, i18n_dir=nil)
         unless I18n::backend.instance_variable_get(:@translations)
-          I18n.backend.load_translations Dir[File.join(path, '_locales/*.yml')]
+          # Load from all submodules too!
+          locales_directories = [i18n_dir || '_locales'].flatten
+          locales_directories.each do |locale_dir|
+            I18n.backend.load_translations Dir[File.join(path, "#{locale_dir}/*.yml")]
+          end
         end
       end
   end
