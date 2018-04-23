@@ -22,9 +22,21 @@ module Jekyll
       site.data['regions'] << File.join(page_folder, @filename)
 
       region_type = @options['type'] || 'html'
-      region_classes = get_region_classes(context)    
-      
-      wrap('div', 'class' => 'tt-region', 'data-region' => File.join(site.active_lang, page_folder, @filename), 'data-region-type' => region_type, 'data-region-classes'=>region_classes) do
+      region_classes = get_region_classes(context)
+
+      tt_region_options = {
+                            'class' => 'tt-region',
+                            'data-region' => File.join(site.active_lang, page_folder, @filename),
+                            'data-region-type' => region_type,
+                            'data-region-classes'=>region_classes
+                          }
+
+      if region_type == 'image'
+         tt_region_options['data-suggested-height'] = @options['suggested_height']
+         tt_region_options['data-suggested-width'] = @options['suggested_width']
+      end
+
+      wrap('div', tt_region_options) do
         if region_items.size == 0
           #empty_region_content(include_data_path, context)
           empty_region_content(context)
@@ -35,9 +47,12 @@ module Jekyll
           end.join
         end
       end
+    
     rescue Exception => error
+      print "\n\n"
       print error.message, "\n"
       print error.backtrace.join("\n")
+      print "\n\n"
       return 'Error: ' + error.message
     end
 
@@ -81,15 +96,16 @@ module Jekyll
     #   end
     # end
 
-    def read_data_json_from(context)
+    def read_data_json_from(context, locale=nil)
       site = context.registers[:site]
+      locale ||= site.active_lang
       root_path = site.source
       page_folder = context['page']['path']
       
       
       data_dirs = [site.config['data_dir']].flatten
       data_dirs.reverse.each do |dir|
-        region_data_path = File.join(root_path, dir, '_regions', site.active_lang, page_folder)
+        region_data_path = File.join(root_path, dir, '_regions', locale, page_folder)
         path = File.join(region_data_path, @filename)
         if File.exists?(path)
           File.open(path, 'r') do |file|
@@ -97,7 +113,11 @@ module Jekyll
           end
         end
       end
-      return []
+      if locale != site.default_lang 
+        return read_data_json_from(context, site.default_lang)
+      else
+        return []
+      end
     end
 
     def wrap(tag, options)
