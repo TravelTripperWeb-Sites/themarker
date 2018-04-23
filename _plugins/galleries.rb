@@ -37,11 +37,14 @@ module Jekyll
                   site.photo_tags[t_name] << image_data
                 end
               end
-              # Do same with galleries
-              #rescue
             end
           end
         end
+      end
+      (site.data['_galleries'] || []).each do |gallery|
+        g_id = gallery[0]
+        g_content = gallery[1]
+        site.photo_galleries[g_id] = g_content
       end
     end
   end
