@@ -35,35 +35,37 @@
         var currentUrl = window.location.origin;
 
         var this_href = $(this).attr("href");
+        if(this_href && (source || medium || campaign || term || content )) {
+            if(this_href.indexOf('?') != -1 )
+                this_href = this_href +"&";
+            else
+                this_href = this_href +"?";
 
-        if(this_href.indexOf('?') != -1 )
-            this_href = this_href +"&";
-        else
-            this_href = this_href +"?";
+            if(source != null && source != '' && this_href.indexOf('utm_source') == -1){
+                this_href = this_href + 'utm_source='+source+'&';
+            }
+            if(medium != null && medium != '' && this_href.indexOf('utm_medium') == -1) {
+                this_href = this_href + 'utm_medium='+medium+'&';
+            }
+            if(campaign != null && campaign != '' && this_href.indexOf('utm_campaign') == -1){
+                this_href = this_href + 'utm_campaign='+campaign+'&';
+            }
+            if(term != null && term != '' && this_href.indexOf('utm_term') == -1){
+                this_href = this_href + 'utm_term='+term+'&';
+            }
+            if(content != null && content != '' && this_href.indexOf('utm_content') == -1){
+                this_href = this_href + 'utm_content='+content;
+            }
 
-        if(source != null && source != '' && this_href.indexOf('utm_source') == -1){
-            this_href = this_href + 'utm_source='+source+'&';
-        }
-        if(medium != null && medium != '' && this_href.indexOf('utm_medium') == -1) {
-            this_href = this_href + 'utm_medium='+medium+'&';
-        }
-        if(campaign != null && campaign != '' && this_href.indexOf('utm_campaign') == -1){
-            this_href = this_href + 'utm_campaign='+campaign+'&';
-        }
-        if(term != null && term != '' && this_href.indexOf('utm_term') == -1){
-            this_href = this_href + 'utm_term='+term+'&';
-        }
-        if(content != null && content != '' && this_href.indexOf('utm_content') == -1){
-            this_href = this_href + 'utm_content='+content;
-        }
-
-        if(this.href.indexOf(currentUrl) == -1){
-           $(this).attr('href',this_href);
+            if(this.href.indexOf(currentUrl) == -1){
+               $(this).attr('href',this_href);
+            }
         }
 
 
 
-    })
+
+    });
     // pass utm params on form submission;
     $(document).on('submit', 'form', function(){
         var this_action = $(this).attr("action");
