@@ -155,6 +155,29 @@ function getIp(data){
   });
   // remove target attr of booking widget form to open it in same window.
   $(".ttweb-booking-widget form").removeAttr('target');
+
+  setTimeout(function() {
+    /* set focus to book now button wehn user close the booking widget by mouse click
+       as by plugin based booking widget's close event, focus is shifting at page link at bottom
+    */
+    $(".ttweb-booking-widget__header__close").on("click", function (){
+        $('html, body').scrollTop(0);
+        $("[show-booking-widget]").focus();
+
+    });
+    // if booking widget is closed using ener key then set focus to next anchor tag for screen reader
+    $(".ttweb-booking-widget").on("keydown", ".ttweb-booking-widget__header__close, .ttweb-booking-widget__footer__powered-by__close-widget", function (e){
+        var keycode = e.which || e.keyCode;
+        if(keycode == 13) {
+          setTimeout(function() {
+            $('header').nextAll().find('a:visible').first().focus();
+          } ,110);
+        }
+    });
+  },1000);
+
+
+
 </script>
 
 <script type="text/javascript">
