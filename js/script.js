@@ -14,6 +14,7 @@ $(document).ready(function() {
 			}
 		}
 
+
 		$('#kill').click(function() {
 			$('.mobile-only-offer').css({
 				'visibility': 'hidden',
@@ -555,6 +556,7 @@ $(document).ready(function () {
     /*$('#mclose').click(function(){
         document.location.href = '/';
     });*/
+
    if($.cookie('signupTime')){
         if($.cookie('signupTime')){
             $('.promo-code-reminder').css('display', 'block');
@@ -575,7 +577,10 @@ $(document).ready(function () {
             $('.signup').css('display', 'none');
             $('#offer-promo-popup').modal('show');
             $('.unlock').css('display', 'none');
+
         }
     }
-
+    $("#offer-promo-popup, #offer-popup").on("hidden.bs.modal", function () {
+        $('header').find('a:visible').first().focus();
+    });
 });
