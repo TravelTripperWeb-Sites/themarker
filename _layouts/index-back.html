@@ -1,8 +1,8 @@
 {% include tmp-head.html %}
 <body class="home" rt3-rooms-browser="browser">
-{% include tmp-nav.html %} 
+{% include tmp-nav.html %}
 <!-- Home Banner Carousel Carousel  -->
-<div id="homeBannerCarousel" class="carousel slide  carousel-fade" data-ride="carousel"> 
+<div id="homeBannerCarousel" class="carousel slide  carousel-fade" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#homeBannerCarousel" data-slide-to="0" class="active"></li>
@@ -68,7 +68,7 @@
       </div>
     </div>
   </div>
-  <a class="left carousel-control" href="#homeBannerCarousel" title="previous" role="button" data-slide="prev"> <span class="left" aria-hidden="true"></span> </a> <a class="right carousel-control" href="#homeBannerCarousel" title="next" role="button" data-slide="next"> <span class="right" aria-hidden="true"></span> </a>
+  <a class="left carousel-control" href="#homeBannerCarousel" title="previous" data-slide="prev"> <span class="left" aria-hidden="true"></span> </a> <a class="right carousel-control" href="#homeBannerCarousel" title="next" data-slide="next"> <span class="right" aria-hidden="true"></span> </a>
   <div class="scroll-to">SCROLL TO EXPLORE</div>
   <div class="banner-links-wrapper">
     <div class="banner-links"> <a class="specials-link photos-link anchorLink" href="#promos">Featured Specials </a> <a class="calendar-link photos-link pull-right anchorLink"  href="#upcoming-events">Upcoming Events</a> </div>
@@ -76,7 +76,7 @@
 </div>
 <!-- /.Home Banner Carousel Carousel -->
 
-<div class="price-wrap1" ng-show="browser.isRate" style="display:none"> 
+<div class="price-wrap1" ng-show="browser.isRate" style="display:none">
   <!--<div class="people"> <span>345</span>People booked our hotel in the last 2 days </div>-->
   <div class="best-rate-ota" ng-show ="browser.otaRates.brgFound" >
     <div class="boxes">
@@ -118,7 +118,7 @@
     </div>
   </div>
 </article>
-<!-- /.Promo section --> 
+<!-- /.Promo section -->
 
 <!-- page content section -->
 <div class="page-content-wrapper">
@@ -140,7 +140,7 @@
     </div>
   </div>
 </div>
-<!-- /.page content section --> 
+<!-- /.page content section -->
 
 <!--  upcoming events section -->
 <article id="upcoming-events">
@@ -178,7 +178,7 @@
   </div>
 </article>
 
-<!-- /.upcoming events section --> 
+<!-- /.upcoming events section -->
 
-{% include tmp-footer.html %} 
+{% include tmp-footer.html %}
 {% include offer-popup.html %}
