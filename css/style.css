@@ -75,6 +75,7 @@ body {
 	overflow: hidden;
 	background: url(/assets/images/5292/original/logo.png) 0 0 no-repeat;
 	background-size: 180px 58px;
+  color: #0081a2;
 }
 .main-nav.navbar-default {
 	height: 65px;
@@ -792,7 +793,7 @@ body {
 	font-size: 14px;
 	padding: 10px;
 	line-height: 18px;
-	background: rgba(0, 130, 154, 0.7);
+	background: rgba(0, 130, 154, 1);
 	text-shadow: none;
 }
 .carousel .item {
@@ -819,7 +820,7 @@ body {
 	padding: 10px 15px;
 	display: inline-block;
 	color: #fff;
-	background: rgba(0, 130, 154, 0.7);
+	background: rgba(0, 130, 154, 1);
 }
 .banner-links a:hover {
 	color: #0081a2;
@@ -852,6 +853,9 @@ body {
 }
 .carousel-fade .carousel-inner {
 	background: #000;
+}
+.carousel-fade .carousel-inner .item {
+  background-color: #000;
 }
 .carousel-fade .carousel-control {
 	z-index: 2;
@@ -950,7 +954,7 @@ body {
 
 .scroll-to {
 	bottom: 10px;
-	background:rgba(0, 130, 154, 0.7);
+	background:rgba(0, 130, 154, 1);
     padding: 10px;
     display: inline-block;
     text-align: center;
@@ -1354,7 +1358,7 @@ body {
 }
 @media (min-width: 768px) {
 #upcoming-events {
-	background: url(/assets/images/5392/original/upcoming-events-bg.jpg) no-repeat top center;
+	background: #000 url(/assets/images/5392/original/upcoming-events-bg.jpg) no-repeat top center;
 	background-size: cover;
 	padding: 60px 0 40px;
 }
@@ -1726,6 +1730,9 @@ body {
 }
 .page-content a:hover {
 	color: #2c7a8c;
+}
+.page-content .map-content p a {
+  color: #000;
 }
  @media (max-width: 768px) {
 #innerCarousel .carousel-control {
