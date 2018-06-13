@@ -1,12 +1,12 @@
 {% include tmp-head.html %}
 <body class="accommodations" rt3-rooms-browser="browser" rt3-hotel-info="info" rt3-room-details="details" rt3-special-rates="rates" ng-cloak data-room-cat="{{page.category}}">
-{% include tmp-nav.html %} 
+{% include tmp-nav.html %}
 
 <!-- Inner Carousel Carousel  -->
-<div id="innerCarousel" class="carousel slide carousel-fade" data-ride="carousel"> 
-  <!-- Indicators --> 
-  {% region innerbanner %} <a class="left carousel-control" href="#innerCarousel" role="button" data-slide="prev" title="Previous"> <span class="left" aria-hidden="true"></span> </a> <a class="right carousel-control" href="#innerCarousel" role="button" data-slide="next" title="Next"> <span class="right" aria-hidden="true"></span> </a> </div>
-<!-- /.Inner Carousel Carousel --> 
+<div id="innerCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+  <!-- Indicators -->
+  {% region innerbanner %} <a class="left carousel-control" href="#innerCarousel" data-slide="prev" title="Previous"> <span class="left" aria-hidden="true"></span> </a> <a class="right carousel-control" href="#innerCarousel" data-slide="next" title="Next"> <span class="right" aria-hidden="true"></span> </a> </div>
+<!-- /.Inner Carousel Carousel -->
 
 <!-- Inner wrapper -->
 <div id="inner-wrapper" ng-controller="roomController">
@@ -35,7 +35,7 @@
                 </li>
               </ul>
             </div>
-            <!--/.nav-collapse --> 
+            <!--/.nav-collapse -->
           </div>
         </div>
       </div>
@@ -51,6 +51,6 @@
     </div>
   </div>
 </div>
-<!-- /.Inner wrapper --> 
-<!-- /.upcoming events section --> 
+<!-- /.Inner wrapper -->
+<!-- /.upcoming events section -->
 {% include tmp-footer.html %}
