@@ -1,20 +1,20 @@
 {% include tmp-head.html %}
 <body  rt3-rooms-browser="browser" rt3-room-details="details" rt3-special-rates="rates" ng-cloak data-room-id={{page.room_id}}>
-{% include tmp-nav.html %} 
+{% include tmp-nav.html %}
 <!-- Inner Carousel Carousel  -->
-<div id="innerCarouselRoom" class="carousel slide carousel-fade" data-ride="carousel"> 
-  <!-- Indicators --> 
+<div id="innerCarouselRoom" class="carousel slide carousel-fade" data-ride="carousel">
+  <!-- Indicators -->
   <div class="carousel-inner" role="listbox">
-      <div class="item " ng-class="{'active': $index ==0}" ng-repeat="pic in details.photos" ng-style="{'background-image':'url([[pic.large]])'}"></div>  
-      
+      <div class="item " ng-class="{'active': $index ==0}" ng-repeat="pic in details.photos" ng-style="{'background-image':'url([[pic.large]])'}"></div>
+
   </div>
-   <a ng-show="details.photos.length >1" class="left carousel-control" href="#innerCarouselRoom" role="button" data-slide="prev" title="Previous"> <span class="left" aria-hidden="true"></span> </a> 
-   <a ng-show="details.photos.length >1" class="right carousel-control" href="#innerCarouselRoom" role="button" data-slide="next" title="Next"> <span class="right" aria-hidden="true"></span> </a> 
+   <a ng-show="details.photos.length >1" class="left carousel-control" href="#innerCarouselRoom" data-slide="prev" title="Previous"> <span class="left" aria-hidden="true"></span> </a>
+   <a ng-show="details.photos.length >1" class="right carousel-control" href="#innerCarouselRoom" data-slide="next" title="Next"> <span class="right" aria-hidden="true"></span> </a> 
    <ol ng-show="details.photos.length >1" class="carousel-indicators">
      <li data-target="#innerCarouselRoom" ng-class="{'active': $index ==0}" data-slide-to="[[$index]]" ng-repeat="pic in details.photos" ></li>
    </ol>
 </div>
-<!-- /.Inner Carousel Carousel --> 
+<!-- /.Inner Carousel Carousel -->
 
 <!-- Inner wrapper -->
 <div id="inner-wrapper">
@@ -43,7 +43,7 @@
                 </li>
               </ul>
             </div>
-            <!--/.nav-collapse --> 
+            <!--/.nav-collapse -->
           </div>
         </div>
       </div>
@@ -54,8 +54,8 @@
         <ul>
           <li ng-repeat="amenities in details.amenities">[[amenities]]</li>
         </ul>
-        <!--<h2 ng-show="details.is_base_room_type && details.brg.discounted_rate">Our Best Rate Guarantee</h2>--> 
-        <!-- Book Now button --> 
+        <!--<h2 ng-show="details.is_base_room_type && details.brg.discounted_rate">Our Best Rate Guarantee</h2>-->
+        <!-- Book Now button -->
         <!-- debug code
         <p>
                 details.params.rooms
@@ -93,10 +93,10 @@
                 <br/>
                 details.brg.dpr_name
                 [[details.brg.dpr_name]]
-            
+
         </p>
         -->
-        
+
         <div class="rate" ng-show="details.todayRate"> <span> <sup>Tonight's Rate</sup> [[details.todayRate | currency]] </span> <a class="button rate-book_now" data-roomcode="[[details.code]]" data-link-to-book-now="[[details.category]]" href="https://themarkerkeywest.reztrip.com/">Book Now</a> </div>
         <!-- Check Availability -->
         <div class="rate" ng-show="!details.todayRate"> <a href="https://themarkerkeywest.reztrip.com/" data-link-to-category="[[details.category]]" class="button rate-book_now">Check Availability</a> </div>
@@ -104,6 +104,6 @@
     </div>
   </div>
 </div>
-<!-- /.Inner wrapper --> 
-<!-- /.upcoming events section --> 
+<!-- /.Inner wrapper -->
+<!-- /.upcoming events section -->
 {% include tmp-footer.html %}
