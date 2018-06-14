@@ -4,19 +4,19 @@ title_localized:
 ---
 {% include tmp-head.html %}
 <body class="specials">
-{% include tmp-nav.html %} 
+{% include tmp-nav.html %}
 <!-- Inner Carousel Carousel  -->
 <div id="innerCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 <!-- Indicators -->
 
 <div class="carousel-inner" role="listbox">
 	{% regionblock specials_banner, type:image %}
-  <div class="item active" style="background-image:url(/assets/images/6632/original/special-banner.jpg)"> 
+  <div class="item active" style="background-image:url(/assets/images/6632/original/special-banner.jpg)">
     {% endregionblock %}
   </div>
- 
+
 </div>
-<!-- /.Inner Carousel Carousel --> 
+<!-- /.Inner Carousel Carousel -->
 <!-- Inner wrapper -->
 <div id="inner-wrapper">
   <div class="container">
@@ -29,7 +29,7 @@ title_localized:
           <div class="special-list special-article">
           	{% regionblock specials_thumb_image, type:image %}
             <p class="thumbnail">
-            	
+
             	<img src="https://d31f902anbz5po.cloudfront.net/728/143045_3_yankee_large.jpg" alt="image-offer" title="image-offer">
             </p>
             {% endregionblock %}
@@ -37,7 +37,7 @@ title_localized:
               {% regionblock specials_text, type:text %}
               <p><b>Stay longer and save up to 20%! Book direct for best rates! </b><br></p>
               <br><br>
-			  <p><font size="2">The Stay &amp; Save Rate includes free cancellation if cancelled at least 10 days prior to arrival. Free cancellation for Fantasy Fest and Christmas-New Year’s reservations requires a 30-day notice. Deposit of one night room and tax is required at the time of booking to secure the room. Restrictions and black-out dates might apply. </font></p>
+			  <p>The Stay &amp; Save Rate includes free cancellation if cancelled at least 10 days prior to arrival. Free cancellation for Fantasy Fest and Christmas-New Year’s reservations requires a 30-day notice. Deposit of one night room and tax is required at the time of booking to secure the room. Restrictions and black-out dates might apply. </p>
 				{% endregionblock %}
               <!--p><strong>Terms & Conditions:</strong><br>
                 [[special.policy_description | formatpolicydescription]] </p-->
@@ -55,6 +55,6 @@ title_localized:
   </div>
 </div>
 
-<!-- /.Inner wrapper --> 
+<!-- /.Inner wrapper -->
 
 {% include tmp-footer.html %}
