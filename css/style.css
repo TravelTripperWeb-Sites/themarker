@@ -2871,7 +2871,7 @@ font-family: 'Muli Light';
   border: 1px solid;
 }
 
-<<<<<<< HEAD
+
 .lg-sub-html {
   padding: 20px 10px;
   width: 400px;
@@ -2947,7 +2947,7 @@ font-family: 'Muli Light';
         background-color: #1f4552;
         color: #fff; text-decoration: none;
     }
-=======
+
 /* offer popup */
 .offer-popup {
   align-items: center;
@@ -3040,4 +3040,58 @@ font-family: 'Muli Light';
 .express-card-offer {
   font-weight: bold;
 }
->>>>>>> ca2f1d0fd97575ed37cff6b1e85b456ad276db11
+.slider-baner-carasoul{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 30px;
+	max-width: 100%;
+	transform: translate(-50%, -50%);
+	 background: rgb(87, 191, 241,0.7);
+}
+.inner-wrap{
+	margin: 0px;
+	padding: 20px;
+	border:2px solid white;
+}
+.wrap-heading strong{
+	color:#fff;
+	font-size: 30px;
+}
+.inner-wrap p{
+	color:#fff;
+	font-size: 20px
+}
+@media (max-width: 768px) {
+	.inner-wrap{
+		padding: 10px;
+	}
+	.wrap-heading strong{
+		font-size: 20px;
+	}
+	.inner-wrap p{
+			font-size: 14px
+	}
+	.slider-baner-carasoul{
+		width:78%;
+	}
+}
+
+.button-banner{
+	background: transparent;
+	border: 2px solid #fff;
+	border-radius: 0;
+	color: #fff;
+	font: 15px/33px 'Muli Regular';
+	height: 36px;
+	margin: 12px 0 20px 0;
+	padding: 0 10px;
+	text-shadow: none;
+	text-transform: uppercase;
+	display: inline-block;
+}
+.button-banner:hover{
+	color: #1ab9e4;
+	background: #fff;
+	text-decoration: none;
+}
