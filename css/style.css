@@ -2512,6 +2512,10 @@ font-family: 'Muli Light';
   margin: 0 auto;
 }
 
+.price-wrap1 .boxes-small {
+	top: 75%;
+}
+
 @media (max-width: 815px) {
   .price-wrap1 .best-rate-ota {
 
