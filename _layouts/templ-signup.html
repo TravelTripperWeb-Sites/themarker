@@ -1,6 +1,6 @@
 {% include tmp-head.html %}
 <body class="signup">
-{% include tmp-nav.html %} 
+{% include tmp-nav.html %}
 
 <!-- Inner Carousel Carousel  -->
 <div id="innerCarousel" class="carousel slide carousel-fade" data-ride="carousel">
@@ -9,7 +9,7 @@
 <div class="carousel-inner" role="listbox">
   <div class="item active" style="background-image:url(/assets/images/6032/original/signup-banner.jpg)"> </div>
 </div>
-<!-- /.Inner Carousel Carousel --> 
+<!-- /.Inner Carousel Carousel -->
 
 <!-- Inner wrapper -->
 <div id="inner-wrapper">
@@ -52,17 +52,25 @@
                 <input type="email" class="col-xs-12 col-sm-7 col-md-5" required name="EMAIL" id="EMAIL" value=""  maxlength="150" aria-label="Email">
               </div>
             </div>
-
+            <div class="row even tnc">
+              <div  class="col-xs-12  col-sm-5 form-title">
+              <label class="form-check-label" for="agree">I agree to the <a href="/terms-of-use/" target="_blank">Terms of Service</a> and <a href="/privacy/" target="_blank">Privacy Policy</a>.</label>
+            </div>
+            <div  class="col-xs-12 col-sm-7 field">
+              <input type="checkbox" class="form-check-input" id="agree" name="q2_iAgree[]" value="agree" required>
+            </div>
+            </div>
             <div class="row odd">
               <div  class="col-xs-12  col-sm-5 form-title"> &nbsp;</div>
-                      <div  class="col-xs-12  col-sm-7 field">
+              <div  class="col-xs-12  col-sm-7 field">
         <!-- This div MUST exist. It's the div where the reCaptcha field will render. -->
             <div class="g-recaptcha" data-callback="captcha_checked" data-expired-callback="captcha_expired" data-sitekey="6LdWgCAUAAAAAJvOai05x8FkahvQcgEDAsAdHq-D"></div>
             </div>
           </div>
+
             <div class="row button-wrapper">
               <div Class="col-xs-12 col-sm-7 field col-sm-push-5">
-                <input type="submit" id="submit" class="button" value="Join Our List" aria-label="Submit">
+                <input type="submit" id="submit" class="button subscribe-btn" value="Join Our List" aria-label="Submit">
                 <input type="HIDDEN" name="PEA"					value="jayme@digital-alchemy.com" aria-label="Hidden"/>
                 <input type="HIDDEN" name="PEACC" 				value="" aria-label="Hidden"/>
                 <input type="HIDDEN" name="PEABC"					value="" aria-label="Hidden"/>
@@ -84,22 +92,22 @@
     </div>
   </div>
 </div>
-<!-- /.Inner wrapper --> 
+<!-- /.Inner wrapper -->
 
 {% include tmp-footer.html %}
 
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <script type='text/javascript'>
-var captcha_submitted = false;  
-      
+var captcha_submitted = false;
+
    function captcha_checked() {
    captcha_submitted = true;
       }
-      
+
    function captcha_expired() {
    captcha_submitted = false;
       }
-      
+
    $(document).ready(function() {
    $('#eclub').submit(function(e) {
    if (!captcha_submitted){
