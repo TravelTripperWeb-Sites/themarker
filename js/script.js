@@ -583,4 +583,59 @@ $(document).ready(function () {
     $("#offer-promo-popup, #offer-popup").on("hidden.bs.modal", function () {
         $('header').find('a:visible').first().focus();
     });
+
+
 });
+
+
+
+// Restrict form submission by disabling submit button until all required fields are filled (W.r.t GDPR Guidelines)
+
+function checkForm() {
+  // here, "this" is an input element
+  var isValidForm = true;
+  $(this.form)
+    .find(':input[required]:visible')
+    .each(function() {
+      if (!this.value.trim()) {
+        isValidForm = false;
+      }
+    });
+  $(this.form)
+    .find('input[type="checkbox"]:required')
+    .each(function() {
+      if (!$(this)
+        .is(':checked')) {
+        isValidForm = false;
+      }
+    });
+  $(this.form)
+    .find('select:required')
+    .each(function() {
+      if (!$(this)
+        .find('option:selected')
+        .val()
+        .trim()) {
+        isValidForm = false;
+      }
+    });
+
+  $(this.form)
+    .find('.subscribe-btn') // Button class names should be unique for every form
+    .prop('disabled', !isValidForm);
+  return isValidForm;
+}
+
+$('.subscribe-btn') // Button class names should be unique for every form
+  .closest('form')
+  // indirectly bind the handler to form
+  .submit(function() {
+    return checkForm.apply($(this)
+      .find(':input')[0]);
+  })
+  // look for input elements
+  .find(':input[required]:visible')
+  // bind the handler to input elements
+  .on('change keyup', checkForm)
+  // immediately fire it to initialize buttons state
+  .keyup();
