@@ -1708,6 +1708,10 @@ body {
 	color: #fff;
 	text-decoration: none;
 }
+.page-content input[type="submit"]:disabled {
+	opacity: .5;
+	cursor: not-allowed;
+}
 .page-content h2, .page-content h3, .page-content h4, .page-content h5, .page-content h6 {
 	color: #006e8b;
 	font-family: 'Muli Light';
