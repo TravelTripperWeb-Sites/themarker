@@ -213,6 +213,24 @@
     "git_file_name": "_assets/image_data/site-assets_202_388_4200_media_2017-06-15-021458_marker.jpg.json"
   },
   {
+    "name": "last-hemingway-blog-pic",
+    "file_name": "last-hemingway-blog-pic.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_388_17187/media/2018-07-03-024756/last-hemingway-blog-pic.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-07-03-024756",
+    "file_type": "image/jpeg",
+    "width": 1000,
+    "height": 667,
+    "file_size": 96519,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_388_17187/media/2018-07-03-024756/large_last-hemingway-blog-pic.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_388_17187/media/2018-07-03-024756/medium_last-hemingway-blog-pic.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_388_17187/media/2018-07-03-024756/small_last-hemingway-blog-pic.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_388_17187/media/2018-07-03-024756/xsmall_last-hemingway-blog-pic.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_388_17187/media/2018-07-03-024756/thumb_last-hemingway-blog-pic.jpg",
+    "git_file_name": "_assets/image_data/last-hemingway-blog-pic.json"
+  },
+  {
     "name": "songwriters",
     "file_name": "songwriters.png",
     "file_type": "image/png",
@@ -584,6 +602,24 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/202_388_10839/media/2018-01-09-045544/xsmall_fishingwithluiza.jpg",
     "url_thumb": "//cdn.traveltripper.io/site-assets/202_388_10839/media/2018-01-09-045544/thumb_fishingwithluiza.jpg",
     "git_file_name": "_assets/image_data/fishingwithluiza.json"
+  },
+  {
+    "name": "Hemingway 1st blog pic",
+    "file_name": "Hemingway 1st blog pic.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_388_17187/media/2018-07-03-022636/Hemingway_1st_blog_pic.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-07-03-022636",
+    "file_type": "image/jpeg",
+    "width": 640,
+    "height": 425,
+    "file_size": 82480,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_388_17187/media/2018-07-03-022636/large_Hemingway_1st_blog_pic.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_388_17187/media/2018-07-03-022636/medium_Hemingway_1st_blog_pic.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_388_17187/media/2018-07-03-022636/small_Hemingway_1st_blog_pic.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_388_17187/media/2018-07-03-022636/xsmall_Hemingway_1st_blog_pic.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_388_17187/media/2018-07-03-022636/thumb_Hemingway_1st_blog_pic.jpg",
+    "git_file_name": "_assets/image_data/Hemingway-1st-blog-pic.json"
   },
   {
     "name": "tm cero bodega menu APR2018 FINAL",
@@ -1546,6 +1582,24 @@
     "git_file_name": "_assets/image_data/site-assets_202_388_4971_media_2017-07-06-034112_Untitled-1.jpg.json"
   },
   {
+    "name": "hemingway-2nd-blog-pic",
+    "file_name": "hemingway-2nd-blog-pic.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_388_17187/media/2018-07-03-024935/hemingway-2nd-blog-pic.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-07-03-024935",
+    "file_type": "image/jpeg",
+    "width": 1000,
+    "height": 667,
+    "file_size": 118367,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_388_17187/media/2018-07-03-024935/large_hemingway-2nd-blog-pic.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_388_17187/media/2018-07-03-024935/medium_hemingway-2nd-blog-pic.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_388_17187/media/2018-07-03-024935/small_hemingway-2nd-blog-pic.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_388_17187/media/2018-07-03-024935/xsmall_hemingway-2nd-blog-pic.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_388_17187/media/2018-07-03-024935/thumb_hemingway-2nd-blog-pic.jpg",
+    "git_file_name": "_assets/image_data/hemingway-2nd-blog-pic.json"
+  },
+  {
     "name": "Jan-Marker-blog-photo-1",
     "file_name": "Jan-Marker-blog-photo-1.jpg",
     "file_type": "image/jpeg",
@@ -1616,6 +1670,24 @@
     "height": 401,
     "description": "",
     "git_file_name": "_assets/image_data/site-assets_202_388_4200_media_2017-06-15-021459_hh-pic-2.jpg.json"
+  },
+  {
+    "name": "3rd-hemingway-blog-pic",
+    "file_name": "3rd-hemingway-blog-pic.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_388_17187/media/2018-07-03-024840/3rd-hemingway-blog-pic.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-07-03-024840",
+    "file_type": "image/jpeg",
+    "width": 1000,
+    "height": 667,
+    "file_size": 132771,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_388_17187/media/2018-07-03-024840/large_3rd-hemingway-blog-pic.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_388_17187/media/2018-07-03-024840/medium_3rd-hemingway-blog-pic.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_388_17187/media/2018-07-03-024840/small_3rd-hemingway-blog-pic.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_388_17187/media/2018-07-03-024840/xsmall_3rd-hemingway-blog-pic.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_388_17187/media/2018-07-03-024840/thumb_3rd-hemingway-blog-pic.jpg",
+    "git_file_name": "_assets/image_data/3rd-hemingway-blog-pic.json"
   },
   {
     "name": "marker sunset key image",

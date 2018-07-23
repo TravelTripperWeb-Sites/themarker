@@ -1,0 +1,73 @@
+---
+title_localized:
+  en: Key West Hotel Deals & Offers | Special Offers at The Marker
+label_localized:
+  en: Specials
+layout_localized:
+  en:
+permalink_localized:
+  en: /fury/
+meta_description_localized:
+  en: ''
+meta_keywords_localized:
+  en: ''
+published_localized:
+  en: true
+---
+{% include tmp-head.html %}
+
+<body class="specials" rt3-special-rates="special">
+  {% include tmp-nav.html %}
+  <!-- Inner Carousel Carousel  -->
+  <div id="innerCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <!-- Indicators -->
+
+    <div class="carousel-inner" role="listbox">
+      <div class="item active" style="background-image:url(/assets/images/fury/header.jpg)"> </div>
+    </div>
+    <!-- /.Inner Carousel Carousel -->
+
+    <!-- Inner wrapper -->
+    <div id="inner-wrapper">
+      <div class="container">
+        <div class="row">
+          <div>
+            <div class="col-lg-12 col-md-12 col-sm-12 page-content single-col">
+              {% regionblock spring_header, type:header %}
+                <h1>Fury Water Adventure</h1>
+              {% endregionblock %}
+              <br>
+              <div class="special-list special-article">
+                <div class="thumbnail" style ="width:55%;">
+                  {% regionblock fury_image, type:image %}
+                    <img src="/assets/images/fury/fury-catamaran-hr-3.jpg" style ="width:311px;" alt="Special Offer Image">
+                    <img src="/assets/images/fury/800_7907.jpg" style ="width:311px;" alt="Special Offer Image">
+                    <img src="/assets/images/fury/800_4972.jpg" style ="width:311px;" alt="Special Offer Image">
+                    <img src="/assets/images/fury/800_4092.jpg" style ="width:311px;" alt="Special Offer Image">
+                  {% endregionblock %}
+                </div>
+                <div class="special-description" style ="width:40%;">
+                  {% regionblock fury_content1, type:text %}
+                    <p>When in Key West one of the must’s on your to do list is to enjoy the waters of the Atlantic and Gulf.</p>
+
+                      <p>  With special offers from Fury Water Adventures as one of our premier partners, you can do just that! Fury gets you out on the water with snorkeling trips, eco-tours, parasailing, jet-ski adventures and sunset cruises. Feeling water saavy? Rent a boat and see the keys water like a local.
+                        
+                        
+                    </p>
+                  {% endregionblock %}
+                  {% regionblock fury-logo, type:image %}
+                    <a href ="https://www.furycat.com/?nck=summer&utm_source=bing&utm_medium=cpc&utm_term=%2Bfury%20%2Bwater%20%2Badventures&utm_campaign=Branded-%20Fury"><img class ="fury-logo" src = "/assets/images/fury/fury-logo.png" style="margin-left:20%;"></img></a>
+                    {% endregionblock %}
+                </div>
+                <nav>
+                
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.Inner wrapper -->
+
+    {% include tmp-footer.html %}
