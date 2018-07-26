@@ -231,6 +231,24 @@
     "git_file_name": "_assets/image_data/last-hemingway-blog-pic.json"
   },
   {
+    "name": "seaport-spotlight-half-shell-raw-bar",
+    "file_name": "seaport-spotlight-half-shell-raw-bar.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_388_17585/media/2018-07-24-024057/seaport-spotlight-half-shell-raw-bar.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-07-24-024057",
+    "file_type": "image/jpeg",
+    "width": 1000,
+    "height": 500,
+    "file_size": 198180,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_388_17585/media/2018-07-24-024057/large_seaport-spotlight-half-shell-raw-bar.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_388_17585/media/2018-07-24-024057/medium_seaport-spotlight-half-shell-raw-bar.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_388_17585/media/2018-07-24-024057/small_seaport-spotlight-half-shell-raw-bar.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_388_17585/media/2018-07-24-024057/xsmall_seaport-spotlight-half-shell-raw-bar.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_388_17585/media/2018-07-24-024057/thumb_seaport-spotlight-half-shell-raw-bar.jpg",
+    "git_file_name": "_assets/image_data/seaport-spotlight-half-shell-raw-bar.json"
+  },
+  {
     "name": "songwriters",
     "file_name": "songwriters.png",
     "file_type": "image/png",
@@ -535,6 +553,24 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/202_388_6475/media/2017-08-22-021719/xsmall_palace.jpg",
     "url_thumb": "//cdn.traveltripper.io/site-assets/202_388_6475/media/2017-08-22-021719/thumb_palace.jpg",
     "git_file_name": "_assets/image_data/site-assets_202_388_6475_media_2017-08-22-021719_palace.jpg.json"
+  },
+  {
+    "name": "seaport-spotlight-local-color",
+    "file_name": "seaport-spotlight-local-color.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_388_17585/media/2018-07-24-024910/seaport-spotlight-local-color.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-07-24-024910",
+    "file_type": "image/jpeg",
+    "width": 1000,
+    "height": 500,
+    "file_size": 89749,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_388_17585/media/2018-07-24-024910/large_seaport-spotlight-local-color.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_388_17585/media/2018-07-24-024910/medium_seaport-spotlight-local-color.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_388_17585/media/2018-07-24-024910/small_seaport-spotlight-local-color.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_388_17585/media/2018-07-24-024910/xsmall_seaport-spotlight-local-color.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_388_17585/media/2018-07-24-024910/thumb_seaport-spotlight-local-color.jpg",
+    "git_file_name": "_assets/image_data/seaport-spotlight-local-color.json"
   },
   {
     "name": "marker-keywest-bicycle",
@@ -1397,6 +1433,24 @@
     "git_file_name": "_assets/image_data/site-assets_202_388_3514_media_2017-07-19-022239_members.jpg.json"
   },
   {
+    "name": "seaport-spotlight-eat-shop-and-sail",
+    "file_name": "seaport-spotlight-eat-shop-and-sail.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_388_17585/media/2018-07-24-023222/seaport-spotlight-eat-shop-and-sail.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-07-24-023222",
+    "file_type": "image/jpeg",
+    "width": 1000,
+    "height": 500,
+    "file_size": 112575,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_388_17585/media/2018-07-24-023222/large_seaport-spotlight-eat-shop-and-sail.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_388_17585/media/2018-07-24-023222/medium_seaport-spotlight-eat-shop-and-sail.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_388_17585/media/2018-07-24-023222/small_seaport-spotlight-eat-shop-and-sail.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_388_17585/media/2018-07-24-023222/xsmall_seaport-spotlight-eat-shop-and-sail.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_388_17585/media/2018-07-24-023222/thumb_seaport-spotlight-eat-shop-and-sail.jpg",
+    "git_file_name": "_assets/image_data/seaport-spotlight-eat-shop-and-sail.json"
+  },
+  {
     "name": "drink",
     "file_name": "drink.jpg",
     "file_type": "image/jpeg",
@@ -1744,6 +1798,24 @@
     "tags": "",
     "description": "",
     "git_file_name": "_assets/image_data/site-assets_202_388_1115_media_2016-12-22-025924_Truman-Blog.jpg.json"
+  },
+  {
+    "name": "seaport-spotlight-danger-charters",
+    "file_name": "seaport-spotlight-danger-charters.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_388_17585/media/2018-07-24-025259/seaport-spotlight-danger-charters.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-07-24-025259",
+    "file_type": "image/jpeg",
+    "width": 1000,
+    "height": 500,
+    "file_size": 108172,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_388_17585/media/2018-07-24-025259/large_seaport-spotlight-danger-charters.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_388_17585/media/2018-07-24-025259/medium_seaport-spotlight-danger-charters.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_388_17585/media/2018-07-24-025259/small_seaport-spotlight-danger-charters.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_388_17585/media/2018-07-24-025259/xsmall_seaport-spotlight-danger-charters.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_388_17585/media/2018-07-24-025259/thumb_seaport-spotlight-danger-charters.jpg",
+    "git_file_name": "_assets/image_data/seaport-spotlight-danger-charters.json"
   },
   {
     "name": "tm newsletter_june 18 FINAL",
