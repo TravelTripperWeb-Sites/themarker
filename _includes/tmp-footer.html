@@ -1,7 +1,7 @@
 {% capture page_url %}
   {{ page.url }}
 {% endcapture %}
-{% if page_url contains "save-the-children" %}
+{% if page_url contains "save-the-children" or page_url contains "fury" %}
 <footer id="footer">
   <div class="container">
     <div class="row">
@@ -49,6 +49,7 @@
   </div>
 </footer>
 {% else %}
+
 
 <!-- save the children section start-->
 <section class="save-the-child-section">
