@@ -228,6 +228,11 @@
       "file": "blog11.json"
     },
     {
+      "name": "Seaport Spotlight: Eat, Shop & Sail",
+      "title": "Seaport Spotlight: Eat, Shop & Sail",
+      "file": "blog46.json"
+    },
+    {
       "name": "New and Noteworthy at Fantasy Fest Key West",
       "title": "New and Noteworthy at Fantasy Fest Key West",
       "file": "blog31.json"
@@ -341,6 +346,11 @@
       "name": "Bridal Essentials in Key West",
       "title": "Bridal Essentials in Key West",
       "file": "bridal-essentials-in-key-west.json"
+    },
+    {
+      "name": "IT LOOKS LIKE HEMINGWAY!",
+      "title": "IT LOOKS LIKE HEMINGWAY!",
+      "file": "blog45.json"
     },
     {
       "name": "Conch Architecture",
