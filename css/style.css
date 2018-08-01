@@ -3103,3 +3103,14 @@ font-family: 'Muli Light';
 	background: #fff;
 	text-decoration: none;
 }
+
+/*Fury styles*/
+
+#fury-offer{
+	
+	float: right;
+    margin-top: -340px;
+    position: relative;
+    margin-right: 10px;
+
+}
