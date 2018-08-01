@@ -1829,6 +1829,17 @@
     "git_file_name": "_assets/image_data/tm-newsletter-june-18-FINAL.json"
   },
   {
+    "name": "tm newsletter_aug 18 FINAL",
+    "file_name": "tm newsletter_aug 18 FINAL.pdf",
+    "url": "//cdn.traveltripper.io/site-assets/192_388_17758/media/2018-07-31-015024/tm-newsletter-aug-18-FINAL.pdf",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-07-31-015024",
+    "file_size": 1126551,
+    "file_type": "application/pdf",
+    "git_file_name": "_assets/image_data/tm-newsletter-aug-18-FINAL.json"
+  },
+  {
     "name": "somo",
     "file_name": "somo.jpg",
     "file_type": "image/jpeg",
