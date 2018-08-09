@@ -1,5 +1,23 @@
 [
   {
+    "name": "Marker Aug blog 1",
+    "file_name": "Marker Aug blog 1.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_388_18038/media/2018-08-07-030353/Marker_Aug_blog_1.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-08-07-030353",
+    "file_type": "image/jpeg",
+    "width": 1200,
+    "height": 600,
+    "file_size": 192273,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_388_18038/media/2018-08-07-030353/large_Marker_Aug_blog_1.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_388_18038/media/2018-08-07-030353/medium_Marker_Aug_blog_1.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_388_18038/media/2018-08-07-030353/small_Marker_Aug_blog_1.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_388_18038/media/2018-08-07-030353/xsmall_Marker_Aug_blog_1.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_388_18038/media/2018-08-07-030353/thumb_Marker_Aug_blog_1.jpg",
+    "git_file_name": "_assets/image_data/Marker-Aug-blog-1.json"
+  },
+  {
     "name": "cuban-blog",
     "file_name": "cuban-blog.jpg",
     "file_type": "image/jpeg",
@@ -254,6 +272,35 @@
     "description": "",
     "date_added": "2018-01-30-002249",
     "git_file_name": "_assets/image_data/tm newsletter_feb 18 FINAL.json"
+  },
+  {
+    "name": "Marker aug blog 3",
+    "file_name": "Marker aug blog 3.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_388_18038/media/2018-08-07-033137/Marker_aug_blog_3.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-08-07-033137",
+    "file_type": "image/jpeg",
+    "width": 1200,
+    "height": 600,
+    "file_size": 180924,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_388_18038/media/2018-08-07-033137/large_Marker_aug_blog_3.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_388_18038/media/2018-08-07-033137/medium_Marker_aug_blog_3.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_388_18038/media/2018-08-07-033137/small_Marker_aug_blog_3.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_388_18038/media/2018-08-07-033137/xsmall_Marker_aug_blog_3.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_388_18038/media/2018-08-07-033137/thumb_Marker_aug_blog_3.jpg",
+    "git_file_name": "_assets/image_data/Marker-aug-blog-3.json"
+  },
+  {
+    "name": "tm newsletter_aug 18 FINAL",
+    "file_name": "tm newsletter_aug 18 FINAL.pdf",
+    "url": "//cdn.traveltripper.io/site-assets/192_388_17758/media/2018-07-31-015024/tm-newsletter-aug-18-FINAL.pdf",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-07-31-015024",
+    "file_size": 1126551,
+    "file_type": "application/pdf",
+    "git_file_name": "_assets/image_data/tm-newsletter-aug-18-FINAL.json"
   },
   {
     "name": "swimming",
@@ -551,6 +598,24 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/202_388_9327/media/2017-11-15-004257/xsmall_line-up-header.jpg",
     "url_thumb": "//cdn.traveltripper.io/site-assets/202_388_9327/media/2017-11-15-004257/thumb_line-up-header.jpg",
     "git_file_name": "_assets/image_data/line-up-header.json"
+  },
+  {
+    "name": "Marker aug blog 2",
+    "file_name": "Marker aug blog 2.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_388_18038/media/2018-08-07-031153/Marker_aug_blog_2.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-08-07-031153",
+    "file_type": "image/jpeg",
+    "width": 1200,
+    "height": 600,
+    "file_size": 256619,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_388_18038/media/2018-08-07-031153/large_Marker_aug_blog_2.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_388_18038/media/2018-08-07-031153/medium_Marker_aug_blog_2.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_388_18038/media/2018-08-07-031153/small_Marker_aug_blog_2.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_388_18038/media/2018-08-07-031153/xsmall_Marker_aug_blog_2.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_388_18038/media/2018-08-07-031153/thumb_Marker_aug_blog_2.jpg",
+    "git_file_name": "_assets/image_data/Marker-aug-blog-2.json"
   },
   {
     "name": "Old-Dominion-Concert",
@@ -1706,6 +1771,24 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/202_388_10351/media/2017-12-18-011333/xsmall_mike.jpg",
     "url_thumb": "//cdn.traveltripper.io/site-assets/202_388_10351/media/2017-12-18-011333/thumb_mike.jpg",
     "git_file_name": "_assets/image_data/mike.json"
+  },
+  {
+    "name": "Marker aug blog 4",
+    "file_name": "Marker aug blog 4.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_388_18038/media/2018-08-07-033451/Marker_aug_blog_4.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-08-07-033451",
+    "file_type": "image/jpeg",
+    "width": 1200,
+    "height": 600,
+    "file_size": 194421,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_388_18038/media/2018-08-07-033451/large_Marker_aug_blog_4.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_388_18038/media/2018-08-07-033451/medium_Marker_aug_blog_4.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_388_18038/media/2018-08-07-033451/small_Marker_aug_blog_4.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_388_18038/media/2018-08-07-033451/xsmall_Marker_aug_blog_4.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_388_18038/media/2018-08-07-033451/thumb_Marker_aug_blog_4.jpg",
+    "git_file_name": "_assets/image_data/Marker-aug-blog-4.json"
   },
   {
     "name": "hh pic 2",
