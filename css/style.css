@@ -3118,12 +3118,13 @@ font-family: 'Muli Light';
 .fury-offer{
 	margin-top: -620px;
    
-    margin-right: 60px;
+	margin-right: 160px;
+	
 
 }
 }
 
-@media (min-width: 1366px) {
+@media (min-width: 1366px) and (max-width:1919px) {
 	.fury-offer{
 		margin-top: -400px;
 	   
