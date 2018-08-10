@@ -2645,3 +2645,14 @@ font-family: 'Muli Light';
 	visibility: hidden;
 	position: absolute;
 }
+
+/*Fury styles*/
+
+.fury-offer{
+	
+	float: right;
+    margin-top: -340px;
+    position: relative;
+    margin-right: 10px;
+
+}
