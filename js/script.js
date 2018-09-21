@@ -497,7 +497,7 @@ $(document).ready(function () {
 
 	function initGoogleMap(siteInfo) {
 	var latLng = new google.maps.LatLng(siteInfo.lat, siteInfo.lng);
-	var content = '<div class="map-content"><h4>' + siteInfo.name+'</h4><p>'+siteInfo.adr+'<br>Phone: '+ siteInfo.phone + '</p><p><a href="http://maps.google.com/maps?f=d&geocode=&daddr=' + siteInfo.lat + ',' + siteInfo.lng + '&z=15" target="_blank">Get directions</a></p></div>';
+	var content = '<div class="map-content"><h4>' + siteInfo.name+'</h4><p>'+siteInfo.adr+'<br>Phone: '+ siteInfo.phone + '</p><p><a href="https://maps.google.com/maps?f=d&geocode=&daddr=' + siteInfo.lat + ',' + siteInfo.lng + '&z=15" target="_blank">Get directions</a></p></div>';
 
 	var mapOptions = {
 		zoom: 16,
