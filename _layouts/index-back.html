@@ -161,7 +161,7 @@
         {% assign home_events = site.data._models.events | sort: 'start_date' %}
           {% for event_home in home_events | limit: 1 %}
             <time>{{event_home.start_date | date: "%m/%d/%Y"}} to  {{event_home.end_date | date: "%m/%d/%Y"  ng-show="event_home.end_date = null"}} </time>
-            <div class="thumbnail"> <img src="{{event_home.image.url_small}}"  title="{{event_home.title}}"  alt="{{event_home.title}}"> </div>
+            <div class="thumbnail"> <img src="{{event_home.image.url_xsmall}}"  title="{{event_home.title}}"  alt="{{event_home.title}}"> </div>
             <h5>{{event_home.title}}</h5>
             <p>{{event_home.short_description}}</p>
             <a href="{{ event_home.id | permalink: model_dir: 'calendar-more' }}" class="button">Read More</a> <a class="button morebtn" href="{{ 'calendar' | permalink }}">More Events</a> </article>
