@@ -13,13 +13,12 @@
     <li data-target="#homeBannerCarousel" data-slide-to="5"></li>
   </ol>
   <div class="carousel-inner" role="listbox">
-    <div class="item active" style="background-image:url(/assets/images/5152/original/banner1.jpg)">
+    <div class="item active" style="background-image:url('/assets/images/5152/original/banner1.jpg')">
       <div class="container">
         <div class="slider-baner-carasoul text-center">
               <div class="inner-wrap">
                 <h4 class="wrap-heading"><strong>BOOK DIRECT & SAVE</strong></h4>
-                <p>Receive up to 15% off our best available rate when you book directly through our site
-                </p>
+                <p>Receive up to 15% off our best available rate when you book directly through our site</p>
                 <a href=" https://themarkerkeywest.reztrip.com/classic/en/special_offer?action=show&controller=landings&locale=en&rate_code[]=BDAS&rate_code[]=BDAS&starting_page=special_offer&vr=3
 " class="button-banner" target="_blank">Learn More</a>
               </div>
@@ -31,7 +30,7 @@
         </div>
       </div>
     </div>
-    <div class="item" style="background-image:url(/assets/images/5142/original/banner2.jpg)">
+    <div class="item" style="background-image:url('/assets/images/5142/original/banner2.jpg')">
       <div class="container">
         <div class="carousel-caption row">
           <div class="col-lg-6 col-md-12 col-lg-push-3">
@@ -40,7 +39,7 @@
         </div>
       </div>
     </div>
-    <div class="item" style="background-image:url(/assets/images/5162/original/banner3.jpg)">
+    <div class="item" style="background-image:url('/assets/images/5162/original/banner3.jpg')">
       <div class="container">
         <div class="carousel-caption row">
           <div class="col-lg-6 col-md-12 col-lg-push-3">
@@ -49,7 +48,7 @@
         </div>
       </div>
     </div>
-    <div class="item" style="background-image:url(/assets/images/5172/original/banner4.jpg)">
+    <div class="item" style="background-image:url('/assets/images/5172/original/banner4.jpg')">
       <div class="container">
         <div class="carousel-caption row">
           <div class="col-lg-6 col-md-12 col-lg-push-3">
@@ -58,7 +57,7 @@
         </div>
       </div>
     </div>
-    <div class="item" style="background-image:url(/assets/images/5182/original/banner5.jpg)">
+    <div class="item" style="background-image:url('/assets/images/5182/original/banner5.jpg')">
       <div class="container">
         <div class="carousel-caption row">
           <div class="col-lg-6 col-md-12 col-lg-push-3">
@@ -67,7 +66,7 @@
         </div>
       </div>
     </div>
-    <div class="item" style="background-image:url(/assets/images/5192/original/banner6.jpg)">
+    <div class="item" style="background-image:url('/assets/images/5192/original/banner6.jpg')">
       <div class="container">
         <div class="carousel-caption row">
           <div class="col-lg-6 col-md-12 col-lg-push-3">
@@ -158,10 +157,11 @@
       <div class="col-sm-6 events">
         <h4>Upcoming Events</h4>
         <div class="events-container">
-          <article> {% assign home_events = site.data._models.events | sort: 'start_date' %}
-            {% for event_home in home_events | limit: 1 %}
+          <article>
+        {% assign home_events = site.data._models.events | sort: 'start_date' %}
+          {% for event_home in home_events | limit: 1 %}
             <time>{{event_home.start_date | date: "%m/%d/%Y"}} to  {{event_home.end_date | date: "%m/%d/%Y"  ng-show="event_home.end_date = null"}} </time>
-            <div class="thumbnail"> <img src="{{event_home.image.url}}"  title="{{event_home.title}}"  alt="{{event_home.title}}"> </div>
+            <div class="thumbnail"> <img src="{{event_home.image.url_small}}"  title="{{event_home.title}}"  alt="{{event_home.title}}"> </div>
             <h5>{{event_home.title}}</h5>
             <p>{{event_home.short_description}}</p>
             <a href="{{ event_home.id | permalink: model_dir: 'calendar-more' }}" class="button">Read More</a> <a class="button morebtn" href="{{ 'calendar' | permalink }}">More Events</a> </article>
@@ -175,7 +175,7 @@
               {% for blog_home in blog_home_list | limit: 1 %}
               <time>{{blog_home.date |  date: "%m/%d/%Y"}}</time>
               <div class="blog-description">
-                <div class="thumbnail"> <img width="480" height="360" src="{{blog_home.blogimage.url}}" class="attachment-thumbnail wp-post-image" title="{{blog_home.title}}" alt="{{blog_home.title}}"> </div>
+                <div class="thumbnail"> <img width="480" height="360" src="{{blog_home.blogimage.url_small}}" class="attachment-thumbnail wp-post-image" title="{{blog_home.title}}" alt="{{blog_home.title}}"> </div>
                 <h5>{{blog_home.title}}</h5>
                 <p>{{blog_home.short_description}}</p>
               </div>
