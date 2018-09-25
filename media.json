@@ -36,6 +36,24 @@
     "git_file_name": "_assets/image_data/Besame---Blog.json"
   },
   {
+    "name": "babymoon-pic3",
+    "file_name": "babymoon-pic3.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-051751/babymoon-pic3.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-09-21-051751",
+    "file_type": "image/jpeg",
+    "width": 1000,
+    "height": 1000,
+    "file_size": 157603,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-051751/large_babymoon-pic3.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-051751/medium_babymoon-pic3.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-051751/small_babymoon-pic3.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-051751/xsmall_babymoon-pic3.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-051751/thumb_babymoon-pic3.jpg",
+    "git_file_name": "_assets/image_data/babymoon-pic3.json"
+  },
+  {
     "name": "cero",
     "file_name": "cero.jpg",
     "url": "//cdn.traveltripper.io/site-assets/192_388_18492/media/2018-08-24-034931/cero.jpg",
@@ -83,6 +101,24 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/202_388_9871/media/2017-12-05-033105/xsmall_Vignette---blog.jpg",
     "url_thumb": "//cdn.traveltripper.io/site-assets/202_388_9871/media/2017-12-05-033105/thumb_Vignette---blog.jpg",
     "git_file_name": "_assets/image_data/Vignette---blog.json"
+  },
+  {
+    "name": "babymoon-pic1",
+    "file_name": "babymoon-pic1.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-045936/babymoon-pic1.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-09-21-045936",
+    "file_type": "image/jpeg",
+    "width": 1000,
+    "height": 500,
+    "file_size": 74258,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-045936/large_babymoon-pic1.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-045936/medium_babymoon-pic1.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-045936/small_babymoon-pic1.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-045936/xsmall_babymoon-pic1.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-045936/thumb_babymoon-pic1.jpg",
+    "git_file_name": "_assets/image_data/babymoon-pic1.json"
   },
   {
     "name": "east-martello",
@@ -1443,6 +1479,24 @@
     "git_file_name": "_assets/image_data/site-assets_202_388_973_media_Thankful.json"
   },
   {
+    "name": "babymoon-pic4",
+    "file_name": "babymoon-pic4.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-051648/babymoon-pic4.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-09-21-051648",
+    "file_type": "image/jpeg",
+    "width": 640,
+    "height": 640,
+    "file_size": 137111,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-051648/large_babymoon-pic4.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-051648/medium_babymoon-pic4.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-051648/small_babymoon-pic4.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-051648/xsmall_babymoon-pic4.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-051648/thumb_babymoon-pic4.jpg",
+    "git_file_name": "_assets/image_data/babymoon-pic4.json"
+  },
+  {
     "name": "papas-pilar-rum",
     "file_name": "papas-pilar-rum.jpg",
     "url": "//cdn.traveltripper.io/site-assets/192_388_16286/media/2018-06-01-030558/papas-pilar-rum.jpg",
@@ -1612,6 +1666,24 @@
     "height": null,
     "description": "",
     "git_file_name": "_assets/image_data/site-assets_202_388_6878_media_2017-09-01-162820_All-Day-Menu.pdf.json"
+  },
+  {
+    "name": "babymoon-pic5",
+    "file_name": "babymoon-pic5.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-051611/babymoon-pic5.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-09-21-051611",
+    "file_type": "image/jpeg",
+    "width": 598,
+    "height": 598,
+    "file_size": 107059,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-051611/large_babymoon-pic5.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-051611/medium_babymoon-pic5.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-051611/small_babymoon-pic5.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-051611/xsmall_babymoon-pic5.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-051611/thumb_babymoon-pic5.jpg",
+    "git_file_name": "_assets/image_data/babymoon-pic5.json"
   },
   {
     "name": "tm newsletter_apr-2017",
@@ -2136,6 +2208,24 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/202_388_4971/media/2017-07-06-034123/xsmall_marker_conch_republic.jpg",
     "url_thumb": "//cdn.traveltripper.io/site-assets/202_388_4971/media/2017-07-06-034123/thumb_marker_conch_republic.jpg",
     "git_file_name": "_assets/image_data/site-assets_202_388_4971_media_2017-07-06-034123_marker-conch-republic.jpg.json"
+  },
+  {
+    "name": "babymoon-pic2",
+    "file_name": "babymoon-pic2.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-051837/babymoon-pic2.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-09-21-051837",
+    "file_type": "image/jpeg",
+    "width": 1000,
+    "height": 667,
+    "file_size": 208301,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-051837/large_babymoon-pic2.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-051837/medium_babymoon-pic2.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-051837/small_babymoon-pic2.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-051837/xsmall_babymoon-pic2.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_388_19151/media/2018-09-21-051837/thumb_babymoon-pic2.jpg",
+    "git_file_name": "_assets/image_data/babymoon-pic2.json"
   },
   {
     "name": "Marker Conference Room Menu 2016",
