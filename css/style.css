@@ -3107,17 +3107,17 @@ font-family: 'Muli Light';
 
 
 .fury-offer{
-	float: right; 
-	margin-top: -350px; 
-	position: relative; 
-	margin-right: 10px; 
+	float: right;
+	margin-top: -350px;
+	position: relative;
+	margin-right: 10px;
 	width:50%;
-	
+
 }
 @media (min-width: 1920px) {
 .fury-offer{
 	margin-top: -620px;
-   
+
 	margin-right: 160px;
 	width:725px;
 
@@ -3126,16 +3126,16 @@ font-family: 'Muli Light';
 
 @media (min-width: 1366px) and (max-width:1919px) {
 	.fury-offer{
-		margin-top: -400px;
-	   
+		/* margin-top: -400px; */
+
 		margin-right: 40px;
-	
+
 	}
 	}
 
 	@media (max-width: 375px) {
 		.fury-offer{
 			margin-top: -300px;
-		   
+
 		}
 		}

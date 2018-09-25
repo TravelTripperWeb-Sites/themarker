@@ -2495,7 +2495,7 @@ font-family: 'Muli Light';
 
 @media (max-width: 815px) {
   .price-wrap1 .best-rate-ota {
-    
+
   }
 }
 .price-wrap1 .best-rate-ota .boxes {
@@ -2649,9 +2649,9 @@ font-family: 'Muli Light';
 /*Fury styles*/
 
 .fury-offer{
-	
+
 	float: right;
-    margin-top: -340px;
+    /* margin-top: -340px; */
     position: relative;
     margin-right: 10px;
 
