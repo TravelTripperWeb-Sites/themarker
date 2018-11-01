@@ -61,18 +61,16 @@ class SitemapGenerator
           sitemap[*page_path] ||= []
           pageorder_lookup = (path[1..-1].join('/'))
           order = page_orders["/#{pageorder_lookup}/"] || default_order 
-          sitemap[*page_path][0] = {order: order}
+          sitemap[*page_path] ||= []
         end      
       end
 
       path += ['__PAGES__']
       source_path = page.is_a?(Jekyll::DataPage) ? page.source_path : page.path
 
-      
-
       sitemap[*path] ||= []
       order = page_orders[page.url] || default_order 
-      sitemap[*path][0] = { label: page.data['label'] || page.data['title'] || label, published: page.data['published']!=false, locales: localized_urls(site, page), data_source: (page.is_a?(Jekyll::DataPage) && page.data_source) || nil, source_path: source_path, order: order } unless page.data['editable'] === false
+      sitemap[*path] << { label: page.data['label'] || page.data['title'] || label, published: page.data['published']!=false, locales: localized_urls(site, page), data_source: (page.is_a?(Jekyll::DataPage) && page.data_source) || nil, source_path: source_path, order: order } unless page.data['editable'] === false
     end
 
     sitemap['__REGIONS__'] = site.data['regions']
