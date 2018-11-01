@@ -64,13 +64,17 @@ module Jekyll
     def process_language(lang)
       @active_lang = lang
       config['active_lang'] = @active_lang
-      return process_orig if @active_lang == @default_lang
-      process_active_language
+      return process_orig
+      # return process_orig if @active_lang == @default_lang
+      # process_active_language
     end
-
-    def process_active_language
-      @dest = @dest + '/' + @active_lang
-      process_orig
+    
+    def dest
+      if @active_lang == @default_lang
+        return @dest
+      else
+        return @dest + '/' + @active_lang
+      end
     end
 
     # hook to coordinate blog posts into distinct urls,
