@@ -11,6 +11,7 @@ module Jekyll
       system("mkdir -p #{site.config['destination']}");
 
       root = site.config['source']
+      
       (site.config['rsync_copy'] || ['_assets']).each do |path|
         new_path = path[1..-1]
         system "mkdir -p #{site.config['destination']}/#{new_path}/"

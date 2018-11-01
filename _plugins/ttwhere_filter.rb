@@ -20,6 +20,20 @@ module Jekyll
       end || []
     end
     
+    def print_json(input)
+      return input.to_json.to_s
+      return input unless input.respond_to?(:select)
+      input = input.values if input.is_a?(Hash) # FIXME
+
+      input.select do |object|
+        object_val = object
+        property.split('.').each do |m|
+          object_val = object_val.send(m)
+        end
+        Array(object_val).map(&:to_s).include?(value.to_s)
+      end || []
+    end
+    
   end
 end
     
