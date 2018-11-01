@@ -17,5 +17,5 @@
 "contents":
 	{"type":"richtext","required":true,"hint":"Write the detailed description"},
 "book_now":
-  {"type":"url_slug"}
+  {"type":"text"}
 }
