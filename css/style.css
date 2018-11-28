@@ -3128,7 +3128,7 @@ font-family: 'Muli Light';
 
 @media (min-width: 1366px) and (max-width:1919px) {
 	.fury-offer{
-		margin-top: -400px;
+		/* margin-top: -400px; */
 
 		margin-right: 40px;
 
