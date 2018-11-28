@@ -2257,7 +2257,9 @@ body {
 /*-- blog page--*/
 .blog-wrapper .blogdetails {
     padding:10px;
-
+}
+.page-content .blogdetails img{
+	max-width: 100%;
 }
 .page-content  .blogdetails h3 {
     font-size:16px;
