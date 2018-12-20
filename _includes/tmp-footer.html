@@ -15,7 +15,9 @@
             <li> <a href="{{ 'privacy' | permalink }}">Privacy Policy</a> </li>
             <li> <a href="{{ 'site-security' | permalink }}">Site Security</a> </li>
             <li> <a href="{{ 'sitemap' | permalink }}">Site Map</a> </li>
+            {% comment %}
             <li> <a href="/save-the-children/">Charities</a> </li>
+            {% endcomment %}
             <li> <a href="/accessibility/">Accessibility Statement</a> </li>
           </ul>
         </nav>
@@ -51,7 +53,8 @@
 </footer>
 {% else %}
 
-
+{% comment %}
+Remove Save the children from all Highgate sites
 <!-- save the children section start-->
 <section class="save-the-child-section">
   <div class="save-the-child-container">
@@ -67,6 +70,7 @@
   </div>
 </section>
 <!-- save the children section end-->
+{% endcomment %}
 
 <footer id="footer">
   <div class="container">
@@ -80,7 +84,9 @@
             <li> <a href="{{ 'privacy' | permalink }}">Privacy Policy</a> </li>
             <li> <a href="{{ 'terms-of-use' | permalink }}">Terms of Use</a> </li>
             <li> <a href="{{ 'sitemap' | permalink }}">Site Map</a> </li>
+            {% comment %}
             <li> <a href="/save-the-children/">Charities</a> </li>
+            {% endcomment %}
             <li> <a href="/accessibility/">Accessibility Statement</a> </li>
           </ul>
         </nav>
