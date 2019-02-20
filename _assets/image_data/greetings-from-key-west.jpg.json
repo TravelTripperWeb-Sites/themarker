@@ -1,0 +1,22 @@
+{
+  "name": "greetings-from-key-west",
+  "content_type": "image/jpeg",
+  "date_added": "2019-02-20-012748",
+  "url_thumb": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1550644068/oolbbhw3qr14eo4eq7wp.jpg",
+  "url_xsmall": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1550644068/oolbbhw3qr14eo4eq7wp.jpg",
+  "url_small": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1550644068/oolbbhw3qr14eo4eq7wp.jpg",
+  "url_medium": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1550644068/oolbbhw3qr14eo4eq7wp.jpg",
+  "url_large": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1550644068/oolbbhw3qr14eo4eq7wp.jpg",
+  "width": 1000,
+  "height": 625,
+  "format": "jpg",
+  "url": "https://res.cloudinary.com/traveltripperweb/image/upload/v1550644068/oolbbhw3qr14eo4eq7wp.jpg",
+  "resource_type": "image",
+  "size": 168292,
+  "s3_url": "//cdn.traveltripper.io/site-assets/192_388_23705/media/2019-02-20-012749/oolbbhw3qr14eo4eq7wp.jpg",
+  "s3_url_large": "//cdn.traveltripper.io/site-assets/192_388_23705/media/2019-02-20-012749/large_oolbbhw3qr14eo4eq7wp.jpg",
+  "s3_url_medium": "//cdn.traveltripper.io/site-assets/192_388_23705/media/2019-02-20-012749/medium_oolbbhw3qr14eo4eq7wp.jpg",
+  "s3_url_small": "//cdn.traveltripper.io/site-assets/192_388_23705/media/2019-02-20-012749/small_oolbbhw3qr14eo4eq7wp.jpg",
+  "s3_url_xsmall": "//cdn.traveltripper.io/site-assets/192_388_23705/media/2019-02-20-012749/xsmall_oolbbhw3qr14eo4eq7wp.jpg",
+  "s3_url_thumb": "//cdn.traveltripper.io/site-assets/192_388_23705/media/2019-02-20-012749/thumb_oolbbhw3qr14eo4eq7wp.jpg"
+}
