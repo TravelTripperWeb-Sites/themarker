@@ -1,0 +1,22 @@
+{
+  "name": "walk-in-the-park",
+  "content_type": "image/jpeg",
+  "date_added": "2019-02-20-012717",
+  "url_thumb": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1550644037/cyymwsmq8xzc6spa5jxa.jpg",
+  "url_xsmall": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1550644037/cyymwsmq8xzc6spa5jxa.jpg",
+  "url_small": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1550644037/cyymwsmq8xzc6spa5jxa.jpg",
+  "url_medium": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1550644037/cyymwsmq8xzc6spa5jxa.jpg",
+  "url_large": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1550644037/cyymwsmq8xzc6spa5jxa.jpg",
+  "width": 1000,
+  "height": 750,
+  "format": "jpg",
+  "url": "https://res.cloudinary.com/traveltripperweb/image/upload/v1550644037/cyymwsmq8xzc6spa5jxa.jpg",
+  "resource_type": "image",
+  "size": 169676,
+  "s3_url": "//cdn.traveltripper.io/site-assets/192_388_23705/media/2019-02-20-012718/cyymwsmq8xzc6spa5jxa.jpg",
+  "s3_url_large": "//cdn.traveltripper.io/site-assets/192_388_23705/media/2019-02-20-012718/large_cyymwsmq8xzc6spa5jxa.jpg",
+  "s3_url_medium": "//cdn.traveltripper.io/site-assets/192_388_23705/media/2019-02-20-012718/medium_cyymwsmq8xzc6spa5jxa.jpg",
+  "s3_url_small": "//cdn.traveltripper.io/site-assets/192_388_23705/media/2019-02-20-012718/small_cyymwsmq8xzc6spa5jxa.jpg",
+  "s3_url_xsmall": "//cdn.traveltripper.io/site-assets/192_388_23705/media/2019-02-20-012718/xsmall_cyymwsmq8xzc6spa5jxa.jpg",
+  "s3_url_thumb": "//cdn.traveltripper.io/site-assets/192_388_23705/media/2019-02-20-012718/thumb_cyymwsmq8xzc6spa5jxa.jpg"
+}
