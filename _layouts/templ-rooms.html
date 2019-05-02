@@ -45,6 +45,7 @@
       <div class="col-lg-9 col-md-8 col-sm-8 page-content">
         <h1>[[selectedCat]]<span ng-hide="selectedCat">All Rooms</span></h1>
         <p>[[info.description]]</p>
+        <p>The hotel is ADA compliant under the Department of Justice ADA Title III Regulation 28 CFR Part 36, 1991. For information about accessible features, please view our <a href="/accessibility/">Accessibility Statement.</a> </p>
         <div> <a ng-repeat="room in browser.roomsList | filter: {'category': selectedCat}" ng-href="/accommodation/?[[room.name | formatNameForLink]]" style="background: url([[room.photos[0].large]]) 100% 100% no-repeat; background-size: cover;" class="room-list">
           <div class="room-button">[[room.name]]</div>
           </a>
