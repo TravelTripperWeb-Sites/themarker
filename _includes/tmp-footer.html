@@ -242,5 +242,21 @@ function getIp(data){
 
 
 </script>
+
+<!-- Kipsu Integration -->
+<script>
+  if(sessionStorage.ip_add == '162.251.177.162' || sessionStorage.ip_add == '162.251.177.163' ) {
+    addScript('https://d1emxpt2ul0h01.cloudfront.net/widget/js/kipsu-chat-highgate.min.js');
+  }
+
+  function addScript( src ) {
+    var s = document.createElement( 'script' );
+    s.setAttribute( 'src', src );
+    s.setAttribute( 'env', 'secure' );
+    s.setAttribute( 'widget', '1585/97b3' );
+    document.body.appendChild( s );
+  }
+</script>
+
 </body>
 </html>
