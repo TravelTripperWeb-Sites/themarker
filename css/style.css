@@ -462,7 +462,7 @@ body {
 }
 @media (max-width:1180px) {
 .dropdown .dropdown-menu {
-    display:none !important;
+    display:contents !important;
 }
 .dropdown.open > .dropdown-menu {
     display:block !important;
