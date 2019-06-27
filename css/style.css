@@ -1542,6 +1542,14 @@ body {
 #footer .socials li a.blog:hover {
 	background-color: #DBA805
 }
+
+#footer .ada-logo {
+	width: 180px;
+	margin-top: 20px;
+}
+#footer .ada-logo img {
+	width: 100%;
+}
 #footer small {
 	font-size: 100%;
 }
