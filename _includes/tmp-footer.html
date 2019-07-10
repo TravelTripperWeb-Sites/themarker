@@ -184,25 +184,8 @@ function getIp(data){
 <script src="/js/js.cookie.js"></script>
 
 <script>window.cookieConsentConfig = {location: false}</script>
-<script src="https://plugins.traveltripper.io/v2/rt3api.min.js"></script>
-<script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
+{% include reztrip/setup-ttweb-plugins.html %}
 <script>
-  TTWeb.Config.configure({
-    portalId: 'themarkerkeywest',
-    hotelId: 'KEYMRK',
-    defaultTimezone: 'America/New_York', // timezone of site
-    ipAddress: sessionStorage.ip_add,
-    defaultCurrency: 'USD',
-    //rootPath: 'https://rt3api-prd-ase.ttaws.com' // include this line only if site is on asian server i.e elite and cristalhospitality
-  });
-
-  $("[show-booking-widget]").bookingWidget({
-      // showRateCalendar: true,
-       showOfferCode: true
-  });
-  // remove target attr of booking widget form to open it in same window.
-  $(".ttweb-booking-widget form").removeAttr('target');
-
   setTimeout(function() {
     /* set focus to book now button wehn user close the booking widget by mouse click
        as by plugin based booking widget's close event, focus is shifting at page link at bottom

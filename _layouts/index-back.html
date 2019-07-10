@@ -15,11 +15,18 @@
   <div class="carousel-inner" role="listbox">
     <div class="item active" style="background-image:url('/assets/images/5152/original/banner1.jpg')">
       <div class="container">
-        <div class="slider-baner-carasoul text-center">
+        <div class="slider-baner-carasoul text-center" ttweb-component="Offer" data-tt-rate-code="BDAS">
               <div class="inner-wrap">
                 <h4 class="wrap-heading"><strong>BOOK DIRECT & SAVE</strong></h4>
                 <p>Receive up to 20% off our best available rate when you book directly through our site</p>
-                <a href=" https://themarkerkeywest.reztrip.com/classic/en/special_offer?action=show&controller=landings&locale=en&rate_code[]=BDAS&rate_code[]=BDAS&starting_page=special_offer&vr=3" class="button-banner" target="_blank">Learn More</a>
+                
+                
+                <span ttweb-offer-component="CrossOutRate" data-tt-post-html="per night"></span>
+                <span ttweb-offer-component="SelectedDates" data-tt-i18n-namespace="offers"></span>        
+                <a id="top_banner_offer_dynamic" ttweb-offer-component="BookingButton" class="button-banner" title="Book Now" target="_blank" >Book Now</a>
+                
+                
+                <a id="top_banner_offer" href=" https://themarkerkeywest.reztrip.com/classic/en/special_offer?action=show&controller=landings&locale=en&rate_code[]=BDAS&rate_code[]=BDAS&starting_page=special_offer&vr=3" class="button-banner" target="_blank">Learn More</a>
               </div>
             </div>
         <div class="carousel-caption row">
@@ -83,27 +90,6 @@
 </div>
 <!-- /.Home Banner Carousel Carousel -->
 
-<div class="price-wrap1" ng-show="browser.isRate" style="display:none">
-  <!--<div class="people"> <span>345</span>People booked our hotel in the last 2 days </div>-->
-  <div class="best-rate-ota" ng-show ="browser.otaRates.brgFound" >
-    <div class="boxes">
-      <div class="tonight-rate ">
-        <p>Best Rate Guaranteed</p>
-        <h4>Tonight's Rate <a href="#" class=" hometonightRate" target="_blank" title="Tonight's Rate"><span class="price">[[browser.otaRates.reztripRate]]</span></a></h4>
-      </div>
-      <div class="ota-list" >
-        <ul>
-          <li ng-repeat = "(key, value) in browser.otaRates.brg">[[key]] <span>$[[value]]</span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="boxes-small"  ng-show ="!browser.otaRates.brgFound">
-    <div class="tonight-rate " ng-show="browser.isRate">
-      <h4>Tonight's Rate<a href="#" class="hometonightRate" target="_blank" title="Tonight's Rate"><span class="price">[[browser.toNightsRate]]</span></a></h4>
-    </div>
-  </div>
-</div>
 
 <!-- Promo section -->
 <article id="promos">

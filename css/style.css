@@ -827,6 +827,11 @@ body {
 	background: #fff;
 	text-decoration: none;
 }
+
+
+
+
+
 /* Carousel  */
 .carousel-control {
 	width: 10%;
@@ -3066,7 +3071,72 @@ font-family: 'Muli Light';
 	max-width: 100%;
 	transform: translate(-50%, -50%);
 	 background: rgb(87, 191, 241,0.7);
+   
 }
+.slider-baner-carasoul > *, .slider-baner-carasoul #top_banner_offer, .slider-baner-carasoul   .ttweb-booking-button {
+  display: none;
+}
+.slider-baner-carasoul.ttweb-component--processed > * {
+  display: block;
+}
+.slider-baner-carasoul.ttweb-component--processed #top_banner_offer, .slider-baner-carasoul.ttweb-component--processed .ttweb-booking-button {
+  display: table;
+  margin: 12px auto 20px;
+}
+
+.ttweb-offer {
+  color: white;
+}
+.ttweb-offer .ttweb-cross-out-rate  {
+  display: none;
+  font-size: 13px;
+  font-weight: normal;
+}
+.ttweb-offer .ttweb-cross-out-rate--user-dates {
+    display: inline-block;
+}
+  
+.ttweb-offer .ttweb-cross-out-rate__actual {
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1.3em;      
+    margin-right: 5px;
+}
+
+  
+.ttweb-offer .ttweb-cross-out-rate__crossout {
+    display: none;
+}
+.ttweb-offer .ttweb-selected-dates--default-dates + .ttweb-booking-button {
+  display: none;
+}
+.ttweb-offer .ttweb-selected-dates--user-dates + .ttweb-booking-button + #top_banner_offer {
+  display: none;
+}
+.ttweb-offer .ttweb-selected-dates {
+    margin-left: 5px;
+    margin-right: 24px;
+    display: none;
+}
+.ttweb-offer .ttweb-selected-dates--user-dates {
+      display: inline-block;
+      font-family: inherit;
+      font-weight: bold;
+}
+  
+@media (max-width: 768px) {
+}
+  
+
+.slider-baner-carasoul.ttweb-component--processed .ttweb-offer--unavailable .ttweb-cross-out-rate, .slider-baner-carasoul.ttweb-component--processed .ttweb-offer--unavailable .ttweb-selected-dates, .slider-baner-carasoul.ttweb-component--processed .ttweb-offer--unavailable .ttweb-booking-button {
+      display: none;
+}
+.ttweb-offer--unavailable  .ttweb-selected-dates--user-dates + .ttweb-booking-button + #top_banner_offer {
+    display: table;
+}
+
+
+
 .inner-wrap{
 	margin: 0px;
 	padding: 20px;
