@@ -11,7 +11,7 @@
   "short_description": "The 9th annual BrewFest is coming Labor Day weekend.",
   "image_id": "9511",
   "_delete_image": "0",
-  "url_friendly_name": "",
+  "url_friendly_name": "test3",
   "contents": "<p>The 9th annual BrewFest is coming Labor Day weekend 2018. Taste over 200 beers with your toes in the sand on South Beach, Key West. Enjoy pool parties, including one hosted on property Sunday, September 2nd here at the Marker, beer dinners, seminars and so much more!</p>",
   "definition": "",
   "image": {
@@ -36,5 +36,5 @@
     "caption": "",
     "description": ""
   },
-  "book_now": ""
+  "book_now": "#"
 }
