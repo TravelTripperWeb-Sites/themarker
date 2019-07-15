@@ -1417,6 +1417,25 @@ body {
         display:inline-block;
     }
 }
+#footer .travel-award {
+	text-align: center;
+}
+#footer .travel-award img {
+	width: 100%;
+	max-width: 185px;
+	padding-top: 10px;
+}
+#footer .travel-award p {
+	color: #FF690F;
+	font-size: 14px;
+	margin-top: 15px;
+	line-height: normal;
+}
+@media (max-width: 768px) {
+	#footer .travel-award p {
+		text-align: left;
+	}
+}
 #footer-menu {
 	overflow: hidden;
 	margin: 11px 0 10px;
@@ -1549,7 +1568,7 @@ body {
 }
 
 #footer .ada-logo {
-	width: 180px;
+	width: 160px;
 	margin-top: 20px;
 }
 #footer .ada-logo img {
