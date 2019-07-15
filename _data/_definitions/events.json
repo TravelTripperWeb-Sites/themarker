@@ -17,5 +17,7 @@
 "contents":
 	{"type":"richtext","required":true,"hint":"Write the detailed description"},
 "book_now":
-  {"type":"text"}
+  {"type":"text"},
+"publish":
+	{"type":"boolean","instructions": "Check this box to publish it under Upcoming Events"}
 }
