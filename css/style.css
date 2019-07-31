@@ -3090,7 +3090,7 @@ font-family: 'Muli Light';
 	max-width: 100%;
 	transform: translate(-50%, -50%);
 	 background: rgb(87, 191, 241,0.7);
-   
+
 }
 .slider-baner-carasoul > *, .slider-baner-carasoul #top_banner_offer, .slider-baner-carasoul   .ttweb-booking-button {
   display: none;
@@ -3114,15 +3114,15 @@ font-family: 'Muli Light';
 .ttweb-offer .ttweb-cross-out-rate--user-dates {
     display: inline-block;
 }
-  
+
 .ttweb-offer .ttweb-cross-out-rate__actual {
     font-family: inherit;
     font-weight: bold;
-    font-size: 1.3em;      
+    font-size: 1.3em;
     margin-right: 5px;
 }
 
-  
+
 .ttweb-offer .ttweb-cross-out-rate__crossout {
     display: none;
 }
@@ -3142,10 +3142,10 @@ font-family: 'Muli Light';
       font-family: inherit;
       font-weight: bold;
 }
-  
+
 @media (max-width: 768px) {
 }
-  
+
 
 .slider-baner-carasoul.ttweb-component--processed .ttweb-offer--unavailable .ttweb-cross-out-rate, .slider-baner-carasoul.ttweb-component--processed .ttweb-offer--unavailable .ttweb-selected-dates, .slider-baner-carasoul.ttweb-component--processed .ttweb-offer--unavailable .ttweb-booking-button {
       display: none;
@@ -3238,3 +3238,81 @@ font-family: 'Muli Light';
 
 		}
 		}
+
+
+/* CP CSS */
+
+.ttweb-banner {
+  background: #0081a2;
+}
+
+.ttweb-banner__book-now-button {
+  background: #fff;
+  color: #0081a2;
+  text-transform: uppercase;
+}
+
+.ttweb-banner__book-now-button:hover {
+  text-decoration: none;
+}
+
+.ttweb-banner__ad-text, .ttweb-cross-out-rate__actual, .ttweb-banner__sample-rate-details {
+  color: #fff !important;
+}
+
+.ttweb-banner__column, .ttweb-banner__column:nth-child(1), .ttweb-banner__sample-rate-details {
+  text-align: center !important;
+}
+
+.ttweb-ota-rate-table__row {
+	 min-width: 19%;
+	 padding-right: 0;
+	 font-size: 14px;
+}
+ @media (min-width: 1200px) {
+	 .ttweb-ota-rate-table__row {
+		 padding-right: 10px;
+	}
+	 .ttweb-ota-rate-table__row:last-child {
+		 padding-right: 0;
+	}
+}
+ @media (min-width: 991px) and (max-width: 1200px) {
+	 .ttweb-ota-rate-table__row {
+		 min-width: 48%;
+	}
+}
+ @media (min-width: 991px) and (max-width: 1200px) {
+	 .ttweb-ota-rate-table__label {
+		 width: 45%;
+		 text-align: center;
+	}
+}
+ .ttweb-ota-rate-table__cost {
+	 padding: 4px 0 4px 5px;
+}
+ @media (min-width: 991px) and (max-width: 1200px) {
+	 .ttweb-ota-rate-table__cost {
+		 width: 45%;
+		 text-align: center;
+	}
+}
+ @media (min-width: 991px) and (max-width: 1200px) {
+	 .ttweb-ota-rate-table__cost span {
+		 text-align: center;
+	}
+}
+ .ttweb-calendar-month .ttweb-calendar-month__grid .ttweb-day--in-selection {
+	 background-color: #0081a2;
+}
+ .ttweb-booking-widget a.ttweb-booking-widget__submit {
+	 background-color: #0081a2;
+}
+ .ttweb-slide-out-widget__header {
+	 background-color: #0081a2;
+}
+ @media all and (min-width: 1200px) and (-ms-high-contrast: none) {
+	 *::-ms-backdrop, :last-child.ttweb-ota-rate-table__row {
+		 padding-right: 20px;
+	}
+}
