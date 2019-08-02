@@ -3354,3 +3354,86 @@ font-family: 'Muli Light';
   background-color: #fff;
   border: 1px solid #fff;
 }
+
+
+.special-banner-bar *, 
+.special-banner-bar #top_banner_offer, 
+.special-banner-bar #top_banner_offer_dynamic {
+  display: none;
+}
+.special-banner-bar.ttweb-component--processed  *,
+.special-banner-bar.ttweb-component--processed #top_banner_offer,
+.special-banner-bar.ttweb-component--processed #top_banner_offer_dynamic {
+  display: inline-block;
+}
+
+.ttweb-offer {
+  /* font-size: .8rem; */
+}
+.ttweb-offer  .ttweb-cross-out-rate  {
+    display: none;
+    /*font-size: .7rem;
+    font-family: $primary-medium;*/
+    font-weight: normal;
+    padding-left: 12px;
+    border-left: 1px solid transparent;
+    border-color: inherit;
+}
+.ttweb-offer  .ttweb-cross-out-rate--user-dates {
+  display: inline-block;
+}
+    
+.ttweb-offer  .ttweb-cross-out-rate__actual {
+  /*font-family: $primary-bold;*/
+  font-weight: bold;
+  font-size: 1.6rem;      
+  margin-right: 5px;
+}
+    
+.ttweb-offer  .ttweb-cross-out-rate__crossout {
+  display: none;
+}
+.ttweb-offer .ttweb-selected-dates--default-dates + .ttweb-booking-button {
+    display: none;
+}
+.ttweb-offer  .ttweb-selected-dates--user-dates + .ttweb-booking-button + #top_banner_offer {
+    display: none;
+}
+.ttweb-offer .ttweb-selected-dates {
+    margin-left: 5px;
+    margin-right: 24px;
+    display: none;
+}
+.ttweb-offer .ttweb-selected-dates--user-dates {
+      display: inline-block;
+      font-family: $primary-bold;
+      font-weight: bold;
+}
+
+@media (max-width:  992px) {  
+  .ttweb-offer  p.top-banner-message {
+      display: block;
+      margin-bottom: 12px;
+    }
+  .ttweb-offer  .ttweb-booking-button {
+      display: table; // Forces line break but keeps in-line sizing
+      margin: 12px auto 0;
+    }
+  .ttweb-offer  .ttweb-cross-out-rate  {
+      border: none;
+    }
+    .ttweb-offer  .ttweb-cross-out-rate__actual {
+      margin-right: 0;
+    }
+}
+  
+
+.ttweb-offer--unavailable .ttweb-cross-out-rate, 
+.ttweb-offer--unavailable .ttweb-selected-dates,
+.ttweb-offer--unavailable .ttweb-booking-button {
+      display: none;
+}
+.ttweb-offer--unavailable .ttweb-selected-dates--user-dates + .ttweb-booking-button + #top_banner_offer {
+  display: inline-block;
+}
+    

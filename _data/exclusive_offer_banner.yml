@@ -1,6 +1,7 @@
 ---
 title: 'BOOK DIRECT & SAVE'
 button_title: 'LEARN MORE'
+rate_code: BDAS
 button_link: ' https://themarkerkeywest.reztrip.com/classic/en/special_offer?action=show&controller=landings&locale=en&rate_code[]=BDAS&rate_code[]=BDAS&starting_page=special_offer&vr=3'
 publish: true
 __EDITABLE_FIELDS__:
@@ -9,6 +10,8 @@ __EDITABLE_FIELDS__:
   button_title:
     type: string
   button_link:
+    type: string
+  rate_code:
     type: string
   publish:
     type: boolean
