@@ -2,7 +2,7 @@
 {% assign top_banner = site.data.exclusive_offer_banner %}
 {% if top_banner.publish == true and top_banner.title !='' and top_banner.title %}
 <section class="special-banner-bar">
-  <h2>{{ top_banner.title }}</h2>
+  <p>{{ top_banner.title }}</p>
   <a href="{{ top_banner.button_link }}" title="{{ top_banner.button_title }}" target="_blank" class="white-btn" id="top_banner_offer">{{ top_banner.button_title }}</a>
 </section>
 {% endif %}

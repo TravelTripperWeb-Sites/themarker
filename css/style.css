@@ -3316,3 +3316,41 @@ font-family: 'Muli Light';
 		 padding-right: 20px;
 	}
 }
+
+.special-banner-bar {
+  max-width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #0081a2;
+}
+.special-banner-bar a, .special-banner-bar p {
+  display: inline-block;
+  margin: 0 15px;
+}
+.special-banner-bar p {
+  padding-bottom: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.3rem;
+  color: #eee;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+  vertical-align: middle;
+}
+@media (max-width: 767px) {
+  .special-banner-bar p {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+}
+.special-banner-bar a {
+  padding: 10px 17px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #0081a2;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.17em;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
