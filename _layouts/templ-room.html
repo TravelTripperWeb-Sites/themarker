@@ -5,11 +5,11 @@
 <div id="innerCarouselRoom" class="carousel slide carousel-fade" data-ride="carousel">
   <!-- Indicators -->
   <div class="carousel-inner" role="listbox">
-      <div class="item " ng-class="{'active': $index ==0}" ng-repeat="pic in details.photos" ng-style="{'background-image':'url([[pic.large]])'}"></div>
+      <div class="item " ng-class="{'active': $index ==0}" ng-repeat="pic in details.photos" ng-style="{'background-image':'url([[pic.large]])'}" role="option"></div>
 
   </div>
-   <a ng-show="details.photos.length >1" class="left carousel-control" href="#innerCarouselRoom" data-slide="prev" title="Previous"> <span class="left" aria-hidden="true"></span> </a>
-   <a ng-show="details.photos.length >1" class="right carousel-control" href="#innerCarouselRoom" data-slide="next" title="Next"> <span class="right" aria-hidden="true"></span> </a> 
+   <a ng-show="details.photos.length >1" class="left carousel-control" href="#innerCarouselRoom" data-slide="prev" aria-label="Use left arrow on keyboard to view pevious slide"> <span class="left" aria-hidden="true"></span> </a>
+   <a ng-show="details.photos.length >1" class="right carousel-control" href="#innerCarouselRoom" data-slide="next" aria-label="Use right arrow on keyboard to view next slide"> <span class="right" aria-hidden="true"></span> </a>
    <ol ng-show="details.photos.length >1" class="carousel-indicators">
      <li data-target="#innerCarouselRoom" ng-class="{'active': $index ==0}" data-slide-to="[[$index]]" ng-repeat="pic in details.photos" ></li>
    </ol>
