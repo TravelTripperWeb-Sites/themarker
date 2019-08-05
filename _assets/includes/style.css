@@ -35,9 +35,6 @@ a {
 	-webkit-transition: color 200ms;
 	transition: color 200ms;
 }
-a, a:active, a:focus {
-outline: none;
-}
 body {
 	padding-top: 68px;
 	color: #464646;

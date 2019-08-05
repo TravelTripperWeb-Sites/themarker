@@ -2,6 +2,10 @@
 @charset "utf-8";
 /* CSS Document */
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
 	font-family: "Muli Regular";
 	src: url("/assets/images/5572/original/muli-regular.eot");
@@ -34,9 +38,6 @@ a {
 	position: relative;
 	-webkit-transition: color 200ms;
 	transition: color 200ms;
-}
-a, a:active, a:focus {
-outline: none;
 }
 body {
 	padding-top: 68px;
@@ -3160,11 +3161,39 @@ font-family: 'Muli Light';
 		margin-right: 40px;
 
 	}
+}
+
+@media (max-width: 375px) {
+	.fury-offer{
+		margin-top: -300px;
+
 	}
+}
 
-	@media (max-width: 375px) {
-		.fury-offer{
-			margin-top: -300px;
 
-		}
-		}
+.skip-main {
+  position: absolute;
+  top: auto;
+  left: -999px;
+  z-index: -999;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-main:focus, .skip-main:active {
+  top: auto;
+  left: auto;
+  z-index: 99999;
+  width: 30%;
+  height: auto;
+  margin: 10px 35%;
+  padding: 5px;
+  overflow: auto;
+  font-size: 1.2em;
+  color: $white;
+  text-align: center;
+  background-color: $black;
+  border: 4px solid #ff0;
+  border-radius: 15px;
+}
