@@ -10,6 +10,13 @@
       defaultLocale: 'en',
       defaultCurrency: 'USD'
     }))
+    .config(function($locationProvider) {
+       $locationProvider.html5Mode({
+         enabled: true,
+         requireBase: false,
+         rewriteLinks: false
+       });
+     })
     .directive('roomdetailslider', function ($q) {
       return {
         restrict: 'C',
@@ -49,9 +56,9 @@
       };
     })
     .controller('roomController', function($scope){
-        
+
         $scope.selectedCat = angular.element('[data-room-cat]').data('room-cat') || '';
-      
+
     })
 
   angular.module('rezTrip', []);
