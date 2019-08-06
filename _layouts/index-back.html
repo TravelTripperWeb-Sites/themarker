@@ -121,9 +121,9 @@
     </div>
     <div id="owl-promo" class="owl-carousel" rt3-special-rates= "offers">
       <article class="item" ng-repeat="offer in offers.special_rates"><a class='thumbnail' ng-show="[[offer.lead_photo_url.thumb_yankee_jumbo != '']]" title="[[offer.rate_plan_name]]"><img ng-src="[[offer.lead_photo_url.thumb_yankee_jumbo]] "  title="[[offer.rate_plan_name]]" alt="[[offer.rate_plan_name]]"></a>
-        <h4><a ng-href="/special/special-more/#/[[offer.rate_plan_code]]">[[offer.rate_plan_name]]</a></h4>
+        <h4><a ng-href="/special/special-more/#[[offer.rate_plan_code]]">[[offer.rate_plan_name]]</a></h4>
         <p>[[offer.short_description]]</p>
-        <a class='button'  ng-href=special/special-more/#/[[offer.rate_plan_code]]>Read More</a></article>
+        <a class='button'  ng-href=special/special-more/#[[offer.rate_plan_code]]>Read More</a></article>
     </div>
   </div>
 </article>

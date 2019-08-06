@@ -253,9 +253,10 @@ angular.module('rezTrip')
   }])
 
   .service('rt3SpecialRates', ['$rootScope', '$q', '$location', 'rt3api', function($rootScope, $q, $location, rt3api) {
+    var rateCode = window.location.hash.substr(1).replace("/","").replace("%2F", "") || null;
     var specialRates = {
       loaded: false,
-      locationHash: window.location.hash.substr(1) || null
+      locationHash: rateCode
     };
 
     specialRates.ready = $q(function(resolve) {
