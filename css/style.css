@@ -349,11 +349,11 @@ body {
 	position: absolute;
 	left: 0;
 	top: 0;
-	padding: 23px 0 0 24px;
+	padding: 18px 0 0 16px;
 	margin-left: 15px;
 	background: #fff;
-	width: 280px;
-	height: 119px;
+	width: 270px;
+	height: 109px;
 	border-bottom-left-radius: 4px;
 	border-bottom-right-radius: 4px;
 	box-shadow: 0 2px 1px -1px rgba(0,0,0,0.33)
@@ -3329,7 +3329,8 @@ font-family: 'Muli Light';
 }
 .special-banner-bar p {
   padding-bottom: 0;
-  font-size: 1.6rem;
+  margin: 0 8px;
+  font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.3rem;
   color: #eee;
@@ -3344,7 +3345,8 @@ font-family: 'Muli Light';
   }
 }
 .special-banner-bar a {
-  padding: 10px 17px;
+  margin: 0 10px;
+  padding: 7px 14px;
   font-size: 12px;
   font-weight: 700;
   color: #0081a2;
@@ -3355,9 +3357,19 @@ font-family: 'Muli Light';
   border: 1px solid #fff;
 }
 
+@media (max-width: 388px) {
+  .special-banner-bar a {
+    margin-top: 10px;
+  }
+}
 
-.special-banner-bar *, 
-.special-banner-bar #top_banner_offer, 
+.special-banner-bar a:hover {
+  text-decoration: none;
+}
+
+
+.special-banner-bar *,
+.special-banner-bar #top_banner_offer,
 .special-banner-bar #top_banner_offer_dynamic {
   display: none;
 }
@@ -3382,14 +3394,14 @@ font-family: 'Muli Light';
 .ttweb-offer  .ttweb-cross-out-rate--user-dates {
   display: inline-block;
 }
-    
+
 .ttweb-offer  .ttweb-cross-out-rate__actual {
   /*font-family: $primary-bold;*/
   font-weight: bold;
-  font-size: 1.6rem;      
+  font-size: 1.6rem;
   margin-right: 5px;
 }
-    
+
 .ttweb-offer  .ttweb-cross-out-rate__crossout {
   display: none;
 }
@@ -3401,7 +3413,7 @@ font-family: 'Muli Light';
 }
 .ttweb-offer .ttweb-selected-dates {
     margin-left: 5px;
-    margin-right: 24px;
+    margin-right: 0;
     display: none;
 }
 .ttweb-offer .ttweb-selected-dates--user-dates {
@@ -3410,7 +3422,7 @@ font-family: 'Muli Light';
       font-weight: bold;
 }
 
-@media (max-width:  992px) {  
+@media (max-width:  992px) {
   .ttweb-offer  p.top-banner-message {
       display: block;
       margin-bottom: 12px;
@@ -3426,9 +3438,9 @@ font-family: 'Muli Light';
       margin-right: 0;
     }
 }
-  
 
-.ttweb-offer--unavailable .ttweb-cross-out-rate, 
+
+.ttweb-offer--unavailable .ttweb-cross-out-rate,
 .ttweb-offer--unavailable .ttweb-selected-dates,
 .ttweb-offer--unavailable .ttweb-booking-button {
       display: none;
@@ -3436,4 +3448,3 @@ font-family: 'Muli Light';
 .ttweb-offer--unavailable .ttweb-selected-dates--user-dates + .ttweb-booking-button + #top_banner_offer {
   display: inline-block;
 }
-    
