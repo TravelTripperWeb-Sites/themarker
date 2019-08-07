@@ -1145,14 +1145,14 @@ body {
 .page-content-wrapper {
 	font: 13px/13px Arial, sans-serif;
 }
-.page-content-wrapper h1 {
+.page-content-wrapper h1, .page-content-wrapper .h1 {
 	margin-top: 0px;
 	padding-top: 20px;
 	color: #0081a2;
 	font: 18px/1 'Muli Light';
 	margin-bottom: 1px;
 }
-.page-content-wrapper h2 {
+.page-content-wrapper h2, .page-content-wrapper .h2 {
 	font-size: 16px;
 	line-height: 30px;
 	margin-top: 0px;
@@ -1167,25 +1167,25 @@ body {
 .page-content-wrapper {
 	font: 14px/14px Arial, sans-serif;
 }
-.page-content-wrapper h1 {
+.page-content-wrapper h1, .page-content-wrapper .h1 {
 	padding-top: 30px;
 	font: 30px/1 'Muli Light';
 }
 .page-content-wrapper p {
 	margin-bottom: 20px;
 }
-.page-content-wrapper h2 {
+.page-content-wrapper h2, .page-content-wrapper .h2 {
 	font-size: 20px;
 	line-height: 24px;
 	margin-bottom: 13px;
 }
 }
 @media (min-width:992px) {
-.page-content-wrapper h1 {
+.page-content-wrapper h1, .page-content-wrapper .h1 {
 	padding-top: 40px;
 	font: 32px/1 'Muli Light';
 }
-.page-content-wrapper h2 {
+.page-content-wrapper h2, .page-content-wrapper .h2 {
 	font-size: 26px;
 	line-height: 30px;
 	margin-bottom: 15px;
@@ -1195,10 +1195,10 @@ body {
 .page-content-wrapper {
 	font: 15px/16px Arial, sans-serif;
 }
-.page-content-wrapper h1 {
+.page-content-wrapper h1, .page-content-wrapper .h1 {
 	padding-top: 65px;
 }
-.page-content-wrapper h2 {
+.page-content-wrapper h2, .page-content-wrapper .h2 {
 	margin-bottom: 23px;
 }
 .page-content-wrapper p {
@@ -1212,7 +1212,7 @@ body {
 	color: #fff;
 	text-align: center;
 }
-#upcoming-events h4 {
+#upcoming-events h4, #upcoming-events .h4 {
 	color: #fff;
 	font: 16px 'Muli Light';
 	margin: 0;
@@ -1258,7 +1258,7 @@ body {
 	z-index: 10;
 	position: relative;
 }
-#upcoming-events h5, #upcoming-events .title {
+#upcoming-events h5, #upcoming-events .h5, #upcoming-events .title {
 	font: 15px/20px 'Muli Regular';
 	margin: 25px 0 10px;
 	text-transform: uppercase;
@@ -1343,13 +1343,13 @@ body {
 	background-size: cover;
 	padding: 60px 0 40px;
 }
-#upcoming-events h4 {
+#upcoming-events h4, #upcoming-events .h4 {
 	font-size: 18px;
 }
 #upcoming-events time {
 	font-size: 22px;
 }
-#upcoming-events h5, #upcoming-events .title {
+#upcoming-events h5, #upcoming-events .h5, #upcoming-events .title {
 	font-size: 22px;
 }
 #upcoming-events .events {
@@ -1419,10 +1419,10 @@ body {
 	color: #0081a2
 }
 
-#newsletter h4, #newsletter form {
+#newsletter h4, #newsletter .h4, #newsletter form {
 	float: left
 }
-#newsletter h4 {
+#newsletter h4, #newsletter .h4 {
 	color: #0081a2;
 	font: 13px/34px Arial;
 	padding-right: 10px;
@@ -1605,7 +1605,7 @@ body {
 	padding: 20px 0;
 	min-height: 300px;
 }
-.page-content h2, .page-content h3, .page-content h4, .page-content h5, .page-content h6, .page-content p, .page-content ul, .page-content ol, .page-content table {
+.page-content h2, .page-content h3, .page-content h4, .page-content h5, .page-content h6, .page-content .h2, .page-content .h3, .page-content .h4, .page-content .h5, .page-content .h6, .page-content p, .page-content ul, .page-content ol, .page-content table {
 	margin-bottom: 15px;
 }
 #inner-wrapper .sidebar-nav h4 {
@@ -1689,7 +1689,7 @@ body {
 	color: #fff;
 	text-decoration: none;
 }
-.page-content h2, .page-content h3, .page-content h4, .page-content h5, .page-content h6 {
+.page-content h2, .page-content h3, .page-content h4, .page-content h5, .page-content h6, .page-content .h2, .page-content .h3, .page-content .h4, .page-content .h5, .page-content .h6 {
 	color: #2c7a8c;
 	font-family: 'Muli Light';
 }
@@ -1753,7 +1753,7 @@ body {
 #inner-wrapper .page-content h1+p {
 	margin-top: 25px;
 }
-.page-content h2, .page-content h3, .page-content h4, .page-content h5, .page-content h6, .page-content p, .page-content ul, .page-content ol, .page-content table {
+.page-content h2, .page-content h3, .page-content h4, .page-content h5, .page-content h6, .page-content .h2, .page-content .h3, .page-content .h4, .page-content .h5, .page-content .h6, .page-content p, .page-content ul, .page-content ol, .page-content table {
 	margin-bottom: 25px;
 	margin-top: 0px;
 }

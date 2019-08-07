@@ -777,9 +777,9 @@ body {
 	margin: 0px;
 	color: #fff;
 }
-.carousel {
+/* .carousel {
 	height: 180px;
-}
+} */
 .carousel-caption {
 	bottom: 55px;
 	z-index: 10;
@@ -798,7 +798,7 @@ body {
 	text-shadow: none;
 }
 .carousel .item {
-	height: 180px;
+	/* height: 180px; */
 	overflow: hidden;
 }
 .carousel-control {
@@ -855,8 +855,28 @@ body {
 .carousel-fade .carousel-inner {
 	background: #000;
 }
+
 .carousel-fade .carousel-inner .item {
+  height: 50vh;
   background-color: #000;
+  background-size: cover;
+}
+
+#homeBannerCarousel.carousel-fade .carousel-inner .item {
+  height: 70vh;
+  background-color: #000;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .carousel-fade .carousel-inner .item {
+    height: 70vh;
+    background-color: #000;
+  }
+  #homeBannerCarousel.carousel-fade .carousel-inner .item {
+    height: calc(100vh - 65px);
+    background-color: #000;
+  }
 }
 .carousel-fade .carousel-control {
 	z-index: 2;
@@ -1165,14 +1185,14 @@ body {
 .page-content-wrapper {
 	font: 13px/13px Arial, sans-serif;
 }
-.page-content-wrapper h1 {
+.page-content-wrapper h1, .page-content-wrapper .h1 {
 	margin-top: 0px;
 	padding-top: 20px;
 	color: #0081a2;
 	font: 18px/1 'Muli Light';
 	margin-bottom: 1px;
 }
-.page-content-wrapper h2 {
+.page-content-wrapper h2, .page-content-wrapper .h2 {
 	font-size: 16px;
 	line-height: 30px;
 	margin-top: 0px;
@@ -1187,25 +1207,25 @@ body {
 .page-content-wrapper {
 	font: 14px/14px Arial, sans-serif;
 }
-.page-content-wrapper h1 {
+.page-content-wrapper h1, .page-content-wrapper .h1 {
 	padding-top: 30px;
 	font: 30px/1 'Muli Light';
 }
 .page-content-wrapper p {
 	margin-bottom: 20px;
 }
-.page-content-wrapper h2 {
+.page-content-wrapper h2, .page-content-wrapper .h2 {
 	font-size: 20px;
 	line-height: 24px;
 	margin-bottom: 13px;
 }
 }
 @media (min-width:992px) {
-.page-content-wrapper h1 {
+.page-content-wrapper h1, .page-content-wrapper .h1 {
 	padding-top: 40px;
 	font: 32px/1 'Muli Light';
 }
-.page-content-wrapper h2 {
+.page-content-wrapper h2, .page-content-wrapper .h2 {
 	font-size: 26px;
 	line-height: 30px;
 	margin-bottom: 15px;
@@ -1215,10 +1235,10 @@ body {
 .page-content-wrapper {
 	font: 15px/16px Arial, sans-serif;
 }
-.page-content-wrapper h1 {
+.page-content-wrapper h1, .page-content-wrapper .h1 {
 	padding-top: 65px;
 }
-.page-content-wrapper h2 {
+.page-content-wrapper h2, .page-content-wrapper .h2 {
 	margin-bottom: 23px;
 }
 .page-content-wrapper p {
@@ -1232,7 +1252,7 @@ body {
 	color: #fff;
 	text-align: center;
 }
-#upcoming-events h4 {
+#upcoming-events h4, #upcoming-events .h4 {
 	color: #fff;
 	font: 16px 'Muli Light';
 	margin: 0;
@@ -1278,7 +1298,7 @@ body {
 	z-index: 10;
 	position: relative;
 }
-#upcoming-events h5, #upcoming-events .title {
+#upcoming-events h5, #upcoming-events .h5, #upcoming-events .title {
 	font: 15px/20px 'Muli Regular';
 	margin: 25px 0 10px;
 	text-transform: uppercase;
@@ -1363,13 +1383,13 @@ body {
 	background-size: cover;
 	padding: 60px 0 40px;
 }
-#upcoming-events h4 {
+#upcoming-events h4, #upcoming-events .h4 {
 	font-size: 18px;
 }
 #upcoming-events time {
 	font-size: 22px;
 }
-#upcoming-events h5, #upcoming-events .title {
+#upcoming-events h5, #upcoming-events .h5, #upcoming-events .title {
 	font-size: 22px;
 }
 #upcoming-events .events {
@@ -1458,10 +1478,10 @@ body {
 	color: #0081a2
 }
 
-#newsletter h4, #newsletter form {
+#newsletter h4, #newsletter .h4, #newsletter form {
 	float: left
 }
-#newsletter h4 {
+#newsletter h4, #newsletter .h4 {
 	color: #0081a2;
 	font: 13px/34px Arial;
 	padding-right: 10px;
@@ -1652,10 +1672,10 @@ body {
 	padding: 20px 0;
 	min-height: 300px;
 }
-.page-content h2, .page-content h3, .page-content h4, .page-content h5, .page-content h6, .page-content p, .page-content ul, .page-content ol, .page-content table {
+.page-content h2, .page-content h3, .page-content h4, .page-content h5, .page-content h6, .page-content .h2, .page-content .h3, .page-content .h4, .page-content .h5, .page-content .h6, .page-content p, .page-content ul, .page-content ol, .page-content table {
 	margin-bottom: 15px;
 }
-#inner-wrapper .sidebar-nav h4 {
+#inner-wrapper .sidebar-nav h4, #inner-wrapper .sidebar-nav .h4 {
 	margin: 0px;
 	padding: 12px 10px;
 	font: 17px/25px Arial, sans-serif;
@@ -1664,17 +1684,17 @@ body {
 	font-weight: normal;
 	display: block;
 }
-#inner-wrapper .sidebar-nav h4 a {
+#inner-wrapper .sidebar-nav h4 a, #inner-wrapper .sidebar-nav .h4 a {
 	color: #0081a2;
 }
-.page-content h1 {
+.page-content h1, .page-content .h1 {
 	color: #0081a2;
 	font: 24px/1 'Muli Light';
 	padding: 0px;
 	margin: 0 0 0;
 	font-weight: normal;
 }
-#inner-wrapper .page-content h1+p {
+#inner-wrapper .page-content h1+p, #inner-wrapper .page-content .h1+p {
 	margin-top: 15px;
 }
 .sidebar-nav li {
@@ -1740,7 +1760,7 @@ body {
 	opacity: .5;
 	cursor: not-allowed;
 }
-.page-content h2, .page-content h3, .page-content h4, .page-content h5, .page-content h6 {
+.page-content h2, .page-content h3, .page-content h4, .page-content h5, .page-content h6, .page-content .h2, .page-content .h3, .page-content .h4, .page-content .h5, .page-content .h6 {
 	color: #006e8b;
 	font-family: 'Muli Light';
 }
@@ -1748,11 +1768,11 @@ body {
 	font-size: 18px;
 	line-height: 24px;
 }
-.page-content h1+h2 {
+.page-content h1+h2, .page-content .h1+.h2 {
 	margin-top: 10px;
 	margin-bottom: 23px;
 }
-.page-content h3 {
+.page-content h3, .page-content .h3 {
 	font-size: 16px;
 	line-height: 20px;
 }
@@ -1770,11 +1790,11 @@ body {
 #innerCarousel .carousel-control {
 	display: none !important;
 }
-#inner-wrapper .sidebar-nav h4 {
+#inner-wrapper .sidebar-nav h4, #inner-wrapper .sidebar-nav .h4 {
 	position: relative;
 	cursor: pointer;
 }
-#inner-wrapper .sidebar-nav h4:after {
+#inner-wrapper .sidebar-nav h4:after, #inner-wrapper .sidebar-nav .h4:after {
 	font-family: 'Glyphicons Halflings';
 	content: "\e259";
 	right: 10px;
@@ -1782,7 +1802,7 @@ body {
 	position: absolute;
 	color: #0081a2;
 }
-#inner-wrapper .sidebar-nav h4.active:after {
+#inner-wrapper .sidebar-nav h4.active:after, #inner-wrapper .sidebar-nav .h4.active:after {
 	content: "\e260";
 }
 }
@@ -1801,17 +1821,17 @@ body {
 	font: 15px/25px Arial, sans-serif;
 	min-height: inherit;
 }
-.page-content h1 {
+.page-content h1, .page-content .h1 {
 	font: 36px/1 'Muli Light';
 }
-#inner-wrapper .page-content h1+p {
+#inner-wrapper .page-content h1+p, .page-content .h1+p {
 	margin-top: 25px;
 }
-.page-content h2, .page-content h3, .page-content h4, .page-content h5, .page-content h6, .page-content p, .page-content ul, .page-content ol, .page-content table {
+.page-content h2, .page-content h3, .page-content h4, .page-content h5, .page-content h6, .page-content .h2, .page-content .h3, .page-content .h4, .page-content .h5, .page-content .h6, .page-content p, .page-content ul, .page-content ol, .page-content table {
 	margin-bottom: 25px;
 	margin-top: 0px;
 }
-#inner-wrapper .sidebar-nav h4 {
+#inner-wrapper .sidebar-nav h4, #inner-wrapper .sidebar-nav .h4 {
 	margin-top: 0px;
 	padding-top: 0px;
 }
@@ -1835,11 +1855,11 @@ body {
 	float: none;
 	display: block;
 }
-.page-content h2 {
+.page-content h2, .page-content .h2 {
 	font-size: 26px;
 	line-height: 30px;
 }
-.page-content h3 {
+.page-content h3, .page-content .h3 {
 	font-size: 23px;
 	line-height: 29px;
 }
@@ -1909,7 +1929,7 @@ body {
 .pressroom-entry .description .date {
 	margin: 15px 0 0
 }
-.pressroom-entry .description h1 {
+.pressroom-entry .description h1, .pressroom-entry .description .h1{
 	color: #fff;
 	display: block;
 	font-size: 18px;
@@ -1933,7 +1953,7 @@ body {
 	font-size: 23px;
 	line-height: 29px;
 }
-.pressroom-entry .description h1 {
+.pressroom-entry .description h1, .pressroom-entry .description .h1 {
 	font-size: 26px;
 }
 .pressroom-entry .description .centered {
@@ -1996,12 +2016,12 @@ body {
 	background: #0081a2;
 	color: #fff;
 }
-.page-content .signup-form h3 {margin-top:25px;}
+.page-content .signup-form h3, .page-content .signup-form .h3 {margin-top:25px;}
 @media (min-width: 768px) {
 .signup-form .field {
 	padding-left: 0px;
 }
-.signup-form h3, .signup-form .form-title {
+.signup-form h3, .signup-form .h3, .signup-form .form-title {
 	text-align: right;
 }
 }
@@ -2023,11 +2043,11 @@ body {
 .special-list > li:nth-child(odd) {
 	background: #ECFAFF;
 }
-.page-content .special-list h3 a {
+.page-content .special-list h3 a, .page-content .special-list .h3 a {
 	text-decoration: none;
 	color: #2c7a8c;
 }
-.page-content .special-list h3 a:hover {
+.page-content .special-list h3 a:hover, .page-content .special-list .h3 a:hover {
 	color: #808080;
 }
 .page-content .thumbnail {
@@ -2082,7 +2102,7 @@ body {
 	height: 360px;
 	margin-bottom: 25px
 }
-#map-canvas h4, #map-canvas p {
+#map-canvas h4, #map-canvas .h4, #map-canvas p {
 	font-size: 11px;
 	line-height: 13px;
 	margin: 3px 0 0;
@@ -2104,7 +2124,7 @@ body {
 }
 
 
-.page-content.calendar h3 {
+.page-content.calendar h3, .page-content.calendar .h3 {
 	margin-bottom:5px;
 	}
 .calendar-item {
@@ -2115,7 +2135,7 @@ body {
 }
 
 /*-- gallery --*/
-.page-content h4 {
+.page-content h4, .page-content .h4 {
 	font-size:16px;
 }
 .page-content .galleries {
@@ -2131,7 +2151,7 @@ body {
     margin-left: 0px;
 		margin-bottom:30px;
 }
-.page-content .galleries h4 {
+.page-content .galleries h4, .page-content .galleries .h4 {
     margin-bottom: 5px;
     text-align: center;
 		color: #0081a2;
@@ -2147,7 +2167,7 @@ body {
 	display:none;
 }
 @media (min-width: 768px) {
-    .page-content h4 {
+    .page-content h4, .page-content .h4 {
     	font-size:20px;
     }
 }
@@ -2156,14 +2176,14 @@ body {
 	padding-top:25px;
 	border-bottom: 1px solid #eee;
 }
-.page-content .calendar-list h3 {
+.page-content .calendar-list h3, .page-content .calendar-list .h3 {
 	margin-bottom:5px;
 }
-.page-content .calendar-list h3 a {
+.page-content .calendar-list h3 a, .page-content .calendar-list .h3 a {
 	text-decoration: none;
 	color: #2c7a8c;
 }
-.page-content .calendar-list h3 a:hover {
+.page-content .calendar-list h3 a:hover, .page-content .calendar-list .h3 a:hover {
 	color: #808080;
 }
 .page-content .calendar-article {
@@ -2289,7 +2309,7 @@ body {
 .page-content .blogdetails img{
 	max-width: 100%;
 }
-.page-content  .blogdetails h3 {
+.page-content  .blogdetails h3, .page-content  .blogdetails .h3 {
     font-size:16px;
     font-weight:bold;
     margin-bottom:5px;
@@ -2300,7 +2320,7 @@ body {
     font-weight:bold;
     margin-bottom:5px;
 }
-.page-content  .blogdetails h2, .page-content  .blogdetails h1{
+.page-content  .blogdetails h2, .page-content  .blogdetails h1, .page-content  .blogdetails .h2, .page-content  .blogdetails .h1{
     font-size:24px;
     margin-bottom:10px;
 }
@@ -2326,7 +2346,7 @@ body {
     dispaly:none;
 }
 @media (min-width: 768px) {
-    .page-content  .blogdetails h2, .page-content  .blogdetails h1 {
+    .page-content  .blogdetails h2, .page-content  .blogdetails h1, .page-content  .blogdetails .h2, .page-content  .blogdetails .h1 {
     font-size:32px;
 }
 
@@ -2416,16 +2436,16 @@ body {
   @media (max-width: 1023px) {
     .car-content {
       padding: 20px 15px; } }
-  .car-content h3 {
+  .car-content h3, .car-content .h3 {
     letter-spacing: 3px;
     font-size: 18px;
 	  line-height: 30px;
     text-transform: uppercase; }
     @media (max-width: 1023px) {
-      .car-content h3 {
+      .car-content h3, .car-content .h3 {
         letter-spacing: 2px; } }
     @media (max-width: 767px) {
-      .car-content h3 {
+      .car-content h3, .car-content .h3 {
         letter-spacing: 2px; } }
   .car-content p {
     padding-top: 25px;
@@ -2574,7 +2594,7 @@ font-family: 'Muli Light';
   text-align: left;
   font-weight: bolder;
 }
-.price-wrap1 .best-rate-ota .boxes .tonight-rate h4 {
+.price-wrap1 .best-rate-ota .boxes .tonight-rate h4, .price-wrap1 .best-rate-ota .boxes .tonight-rate .h4 {
   font-size: 18px;
   text-decoration: underline;
   line-height: 30px;
@@ -2584,7 +2604,7 @@ font-family: 'Muli Light';
   color: #fff;
   font-weight: bold;
 }
-.price-wrap1 .best-rate-ota .boxes .tonight-rate h4 .price {
+.price-wrap1 .best-rate-ota .boxes .tonight-rate h4 .price, .price-wrap1 .best-rate-ota .boxes .tonight-rate .h4 .price {
   color: #fff;
   font-size: 30px;
   float: right;
@@ -2627,10 +2647,10 @@ font-family: 'Muli Light';
 	.price-wrap1 .best-rate-ota .tonight-rate p{
 		display:none;
 	}
-	.price-wrap1 .best-rate-ota .tonight-rate h4{
+	.price-wrap1 .best-rate-ota .tonight-rate h4, .price-wrap1 .best-rate-ota .tonight-rate .h4{
 		font-size: 16px !important; line-height: 16px !important; padding: 5px 0 !important;
 	}
-	.price-wrap1 .best-rate-ota .tonight-rate h4  span{
+	.price-wrap1 .best-rate-ota .tonight-rate h4  span, .price-wrap1 .best-rate-ota .tonight-rate .h4  span{
 		 display: block; float: none !important;
 		 font-size: 30px !important;
     	 display: block;
@@ -2673,7 +2693,7 @@ font-family: 'Muli Light';
   margin: 0px;
   padding: 0px;
 }
- .boxes-small .tonight-rate h4 {
+ .boxes-small .tonight-rate h4, .boxes-small .tonight-rate .h4 {
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
@@ -2683,17 +2703,17 @@ font-family: 'Muli Light';
   padding: 0px;
   color: #fff;
 }
- .boxes-small .tonight-rate h4 .price,  .boxes-small .tonight-rate h4 a {
+ .boxes-small .tonight-rate h4 .price,  .boxes-small .tonight-rate h4 a, .boxes-small .tonight-rate .h4 .price,  .boxes-small .tonight-rate .h4 a {
   color: #fff;
   font-size: 34px;
   vertical-align: middle;
   padding-left: 20px;
 }
- .boxes-small .tonight-rate h4 .price:hover,  .boxes-small .tonight-rate h4 a:hover {
+ .boxes-small .tonight-rate h4 .price:hover,  .boxes-small .tonight-rate h4 a:hover, .boxes-small .tonight-rate .h4 .price:hover,  .boxes-small .tonight-rate .h4 a:hover {
   text-decoration: none;
   opacity: .8;
 }
- .boxes-small .tonight-rate h4 .price:active, .boxes-small .tonight-rate h4 .price:focus,  .boxes-small .tonight-rate h4 a:active,  .boxes-small .tonight-rate h4 a:focus {
+ .boxes-small .tonight-rate h4 .price:active, .boxes-small .tonight-rate h4 .price:focus,  .boxes-small .tonight-rate h4 a:active, .boxes-small .tonight-rate h4 a:focus, .boxes-small .tonight-rate .h4 .price:active, .boxes-small .tonight-rate .h4 .price:focus, .boxes-small .tonight-rate .h4 a:active, .boxes-small .tonight-rate .h4 a:focus {
   text-decoration: none;
 }
 
@@ -2922,7 +2942,7 @@ font-family: 'Muli Light';
   color: #000;
   z-index: 1070;
 }
-.lg-sub-html h4 {
+.lg-sub-html h4, .lg-sub-html .h4 {
   padding-top: 10px;
   font-weight: 300;
   font-family: "GothamHTF-Light";
@@ -2930,7 +2950,7 @@ font-family: 'Muli Light';
   letter-spacing: 1px;
   padding-bottom: 20px;
 }
-.lg-sub-html h3 {
+.lg-sub-html h3, .lg-sub-html .h3 {
   font-family: "GothamHTF-Bold";
   font-size: 24px;
   padding: 0;
@@ -2958,10 +2978,10 @@ font-family: 'Muli Light';
   .text-block-gal-off {
     padding: 10px;
   }
-  .text-block-gal-off h4 {
+  .text-block-gal-off h4, .text-block-gal-off .h4 {
     font-size: 14px;
   }
-  .text-block-gal-off h3 {
+  .text-block-gal-off h3, .text-block-gal-off .h3 {
     font-size: 18px;
     margin: 10px auto;
   }
@@ -3029,7 +3049,7 @@ font-family: 'Muli Light';
   margin: 50px;
   color: #fff;
 }
-.offer-popup .modal-content .modal-content-inner h2 {
+.offer-popup .modal-content .modal-content-inner h2, .offer-popup .modal-content .modal-content-inner .h2 {
   font-family: 'Muli Light';
   font-size: 28px;
   text-transform: uppercase;
@@ -3196,4 +3216,15 @@ font-family: 'Muli Light';
   background-color: $black;
   border: 4px solid #ff0;
   border-radius: 15px;
+}
+
+img.objectfit, .objectfit img {
+  width: 100%;
+  height: 100%;
+  font-family: 'object-fit: cover;';
+  object-fit: cover;
+}
+.objectfit * {
+  width: 100%;
+  height: 100%;
 }
