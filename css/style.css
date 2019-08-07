@@ -3111,6 +3111,12 @@ font-family: 'Muli Light';
   font-size: 13px;
   font-weight: normal;
 }
+
+@media (max-width: 388px) {
+  .ttweb-offer .ttweb-cross-out-rate {
+    padding-left: 0 !important;
+  }
+}
 .ttweb-offer .ttweb-cross-out-rate--user-dates {
     display: inline-block;
 }
