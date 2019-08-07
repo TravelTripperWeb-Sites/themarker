@@ -64,6 +64,12 @@ $(document).ready(function() {
 			$(".loading").css("display","none");
 	   },800);
 
+
+    $('#homeBannerCarousel').on('slid.bs.carousel', function () {
+      $('#homeBannerCarousel .item.active .h2').focus();
+    });
+
+
  });
 
 

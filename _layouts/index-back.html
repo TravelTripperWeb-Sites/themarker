@@ -82,7 +82,7 @@
       </div>
     </div>
   </div>
-  <a class="left carousel-control" href="#homeBannerCarousel" aria-label="Use left arrow on keyboard to view pevious slide" data-slide="prev"> <span class="left" aria-hidden="true"></span> </a> <a class="right carousel-control" href="#homeBannerCarousel" aria-label="Use right arrow on keyboard to view next slide" data-slide="next"> <span class="right" aria-hidden="true"></span> </a>
+  <a class="left carousel-control" href="#homeBannerCarousel" aria-label="Use left arrow on keyboard to view previous slide" data-slide="prev" tabindex="-1"> <span class="left" aria-hidden="true"></span> </a> <a class="right carousel-control" href="#homeBannerCarousel" aria-label="Use right arrow on keyboard to view next slide or hit tab to skip" data-slide="next"> <span class="right" aria-hidden="true"></span> </a>
   <div class="scroll-to">SCROLL TO EXPLORE</div>
   <div class="banner-links-wrapper">
     <div class="banner-links"> <a class="specials-link photos-link anchorLink" href="#promos">Featured Specials </a> <a class="calendar-link photos-link pull-right anchorLink"  href="#upcoming-events">Upcoming Events</a> </div>
@@ -116,17 +116,17 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-8">
-        <h3>Featured Specials</h3>
+        <h3 class="h3" tabindex="0">Featured Specials</h3>
       </div>
       <div class="col-sm-4 social-links ">
-        <iframe src="https://www.facebook.com/plugins/like.php?locale=en_US&href=https://www.themarkerkeywest.com/&send=false&layout=button_count&show_faces=false&action=like&colorscheme=light&height=20" class="social-button facebook-like" title="Like" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20" title="Facebook Share"></iframe>
-        <iframe src="https://plusone.google.com/_/+1/fastbutton?bsv&annotation=bubble&size=medium&hl=en-US&url=https://www.themarkerkeywest.com/" class="social-button google-plus" title="+1" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20" title="Twitter Share"></iframe>
+        <iframe src="https://www.facebook.com/plugins/like.php?locale=en_US&href=https://www.themarkerkeywest.com/&send=false&layout=button_count&show_faces=false&action=like&colorscheme=light&height=20" class="social-button facebook-like" title="Like" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20" title="Facebook Share" tabindex="-1"></iframe>
+        <iframe src="https://plusone.google.com/_/+1/fastbutton?bsv&annotation=bubble&size=medium&hl=en-US&url=https://www.themarkerkeywest.com/" class="social-button google-plus" title="+1" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20" title="Twitter Share" tabindex="-1"></iframe>
       </div>
     </div>
     <div id="owl-promo" class="owl-carousel" rt3-special-rates= "offers">
       <article class="item" ng-repeat="offer in offers.special_rates"><a class='thumbnail' ng-show="[[offer.lead_photo_url.thumb_yankee_jumbo != '']]" title="[[offer.rate_plan_name]]"><img ng-src="[[offer.lead_photo_url.thumb_yankee_jumbo]] "  title="[[offer.rate_plan_name]]" alt="[[offer.rate_plan_name]]"></a>
-        <h4><a ng-href="/special/special-more/#[[offer.rate_plan_code]]">[[offer.rate_plan_name]]</a></h4>
-        <p>[[offer.short_description]]</p>
+        <h4 class="h4"><a ng-href="/special/special-more/#[[offer.rate_plan_code]]">[[offer.rate_plan_name]]</a></h4>
+        <p tabindex="0">[[offer.short_description]]</p>
         <a class='button'  ng-href=special/special-more/#[[offer.rate_plan_code]]>Read More</a></article>
     </div>
   </div>
@@ -140,13 +140,15 @@
       <div class=" col-lg-5 col-md-5 ">
         <div class="row">
           <div class="col-lg-11 col-lg-push-1">
-            <h1>Unlock a New Treasure at a Gem Among Florida Keys Resorts</h1>
-            <h2>The Marker Resort Key West</h2>
+            <h5 class="h1" tabindex="0">Unlock a New Treasure at a Gem Among Florida Keys Resorts</h5>
+            <div tabindex="0">
+            <p class="h2">The Marker Resort Key West</p>
             <p>Luxury starts here.</p>
             <p>Poised on the pristine waterfront of Key West's historic seaport, The Marker is more than a gleaming new addition to the Florida islands.&nbsp; As the only newly built hotel to grace Old Town Key West in over 20 years, it marks a fresh approach to luxury - seamlessly blending the timeless elegance of classic Florida Keys resorts with an understated air of modern glamour. Featuring 96 state-of-the-art rooms on two lush acres of tropical landscaped seclusion, The Marker is a tropical oasis set within a vibrant, free spirited paradise filled with sun, surf, art and culture.</p>
             <p>Breathe in the ocean air from your private balcony overlooking the picturesque marina. Step out on to legendary Duval Street, the epicenter of Key West dining and nightlife. Sip refreshing cocktails by one of three sparkling pools, and enjoy the resort's&nbsp; dazzling combination of iconic conch architecture with eye-grabbing contemporary artworks. Named in honor of the famous mile markers that lead to the southernmost point of the United States, The Marker, a sought-after resort in the Florida Keys,&nbsp;is a new beacon of luxury in the heart of Key West's Old Town.</p>
             <p>The Marker Waterfront Resort welcomes guests of all abilities. Our property descriptions aim to allow any visitor to make an informed decision on whether the hotel is an appropriate choice for their needs. For more information, please see our <a href="/accessibility/">Accessibility Statement.</a> </p>
             <p>You've found your ideal getaway. Mark the spot.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -161,29 +163,29 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-6 events">
-        <h4>Upcoming Events</h4>
+        <h5 class="h4" tabindex="0">Upcoming Events</h5>
         <div class="events-container">
           <article>
         {% assign home_events = site.data._models.events | sort: 'start_date' %}
           {% for event_home in home_events | limit: 1 %}
-            <time>{{event_home.start_date | date: "%m/%d/%Y"}} to  {{event_home.end_date | date: "%m/%d/%Y"  ng-show="event_home.end_date = null"}} </time>
+            <time tabindex="-1">{{event_home.start_date | date: "%m/%d/%Y"}} to  {{event_home.end_date | date: "%m/%d/%Y"  ng-show="event_home.end_date = null"}} </time>
             <div class="thumbnail"> <img src="{{event_home.image.url_xsmall}}"  title="{{event_home.title}}"  alt="{{event_home.title}}"> </div>
-            <h5>{{event_home.title}}</h5>
-            <p>{{event_home.short_description}}</p>
+            <h6 class="h5" tabindex="0">{{event_home.title}}</h6>
+            <p tabindex="0">{{event_home.short_description}}</p>
             <a href="{{ event_home.id | permalink: model_dir: 'calendar-more' }}" class="button">Read More</a> <a class="button morebtn" href="{{ 'calendar' | permalink }}">More Events</a> </article>
           {% endfor %} </div>
       </div>
       <div class="col-sm-6 blog">
         <div id="blog-feed">
-          <h4>Most Recent Blog Posts</h4>
+          <h5 class="h4" tabindex="0">Most Recent Blog Posts</h5>
           <div class="feed-container">
             <article> {% assign blog_home_list = site.data._models.blog | sort: 'date' | reverse %}
               {% for blog_home in blog_home_list | limit: 1 %}
-              <time>{{blog_home.date |  date: "%m/%d/%Y"}}</time>
+              <time tabindex="-1">{{blog_home.date |  date: "%m/%d/%Y"}}</time>
               <div class="blog-description">
                 <div class="thumbnail"> <img width="480" height="360" src="{{blog_home.blogimage.url_small}}" class="attachment-thumbnail wp-post-image" title="{{blog_home.title}}" alt="{{blog_home.title}}"> </div>
-                <h5>{{blog_home.title}}</h5>
-                <p>{{blog_home.short_description}}</p>
+                <h6 class="h5" tabindex="0">{{blog_home.title}}</h6>
+                <p tabindex="0">{{blog_home.short_description}}</p>
               </div>
               <a href="{{ blog_home.id | permalink: model_dir: 'blog-details' }}" class="button">Read More</a> <a class="button morebtn" href="{{ 'blog' | permalink }}">More Posts</a> </article>
             {% endfor %} </div>
