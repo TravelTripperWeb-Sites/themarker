@@ -2,23 +2,21 @@
 <body class="specials">
 {% include tmp-nav.html %}
 
-<div id="main"></div>
-
 <!-- Inner Carousel Carousel  -->
 <div id="innerCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-<!-- Indicators -->
-
 <div class="carousel-inner" role="listbox">
   <div class="item active" style="background-image:url(/assets/images/6792/original/webcam-banner.jpg)" role="option"> </div>
 </div>
 <!-- /.Inner Carousel Carousel -->
+
+<div id="main"></div>
 
 <!-- Inner wrapper -->
 <div id="inner-wrapper">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 page-content single-col">
-        <h1>THE MARKER RESORT BLOG</h1>
+        <h1 class="h1" tabindex="0">THE MARKER RESORT BLOG</h1>
         <hr>
         <ul class="special-list blog-wrapper">
           {% assign blog_list = site.data._models.blog | sort: 'date' | reverse %}
@@ -27,9 +25,9 @@
             <div class="row">
               <div class=" col-sm-6 col-md-7">
                 <div class="blogdetails">
-                  <h2><a href="{{ blog_filer.id | permalink: model_dir: 'blog-details' }}">{{blog_filer.title}}</a></h2>
-                  <h3>{{blog_filer.date  |  date: "%m/%d/%Y"}}</h3>
-                  <p class="shortdes">{{blog_filer.short_description}}</p>
+                  <h2 class="h2"><a href="{{ blog_filer.id | permalink: model_dir: 'blog-details' }}">{{blog_filer.title}}</a></h2>
+                  <p class="h3" tabindex="0">{{blog_filer.date  |  date: "%m/%d/%Y"}}</p>
+                  <p class="shortdes" tabindex="0">{{blog_filer.short_description}}</p>
                   <nav><a href="{{ blog_filer.id | permalink: model_dir: 'blog-details' }}" class="button">Read More</a> </nav>
                 </div>
               </div>
