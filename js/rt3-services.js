@@ -252,32 +252,28 @@ angular.module('rezTrip')
     return browser;
   }])
 
-  .service('rt3SpecialRates', ['$rootScope', '$q', '$location', 'rt3api', function($rootScope, $q, $location, rt3api) {
+  .service('rt3SpecialRates', ['$rootScope', '$q', 'rt3api', function($rootScope, $q, rt3api) {
     var rateCode = window.location.hash.substr(1).replace("/","").replace("%2F", "") || null;
     var specialRates = {
       loaded: false,
+      sRdetail: {},
       locationHash: rateCode
     };
 
     specialRates.ready = $q(function(resolve) {
       rt3api.getAllSpecialRates().then(function(response) {
-        if (specialRates.locationHash) {
-            $rootScope.$apply(function() {
-                angular.forEach(response.special_rates, function(value, key) {
-                    if (value.rate_plan_code == specialRates.locationHash) {
-                        angular.extend(specialRates, formatRespone(value));
-                        specialRates.loaded = true;
-                        resolve(specialRates);
-                    }
-                });
-            });
-        } else {
-            $rootScope.$apply(function() {
-                angular.extend(specialRates, formatRespone(response));
-                specialRates.loaded = true;
-                resolve(specialRates);
-            });
-        }
+          $rootScope.$apply(function() {
+              angular.forEach(response.special_rates, function(value, key) {
+                  if (value.rate_plan_code == specialRates.locationHash) {
+                      angular.extend(specialRates.sRdetail, formatRespone(value));
+                      specialRates.loaded = true;
+                      resolve(specialRates);
+                  }
+              });
+              angular.extend(specialRates, formatRespone(response));
+              specialRates.loaded = true;
+              resolve(specialRates);
+          });
       });
     });
 

@@ -70,6 +70,15 @@ $(document).ready(function() {
     });
 
 
+    function goToByScroll(id){
+      $('html,body').animate({scrollTop: $(id).offset().top},'fast');
+      $(id).attr('tabindex', 0);
+      $(id).focus();
+    }
+    $(".skip-main").on("click", function(e) {
+      e.preventDefault();
+      goToByScroll($(this).attr('href'));
+    })
  });
 
 
