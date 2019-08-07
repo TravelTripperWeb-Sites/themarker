@@ -775,7 +775,7 @@ body {
 	left: 0px;
 	color: #fff;
 }
-.carousel-caption h2 {
+.carousel-caption h2, .carousel-caption .h2 {
 	margin: 0px;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -911,14 +911,14 @@ body {
 }
 }
  @media (min-width: 480px) {
-.carousel-caption h2 {
+.carousel-caption h2, .carousel-caption .h2 {
 	font-size: 18px;
 	line-height: 22px;
 }
 
 }
  @media (min-width: 768px) {
-.carousel-caption h2 {
+.carousel-caption h2, .carousel-caption .h2 {
 	font-size: 18px;
 	line-height: 24px;
 	padding: 20px;
@@ -932,7 +932,7 @@ body {
 
 }
  @media (min-width: 992px) {
-.carousel-caption h2 {
+.carousel-caption h2, .carousel-caption .h2 {
 	font-size: 22px;
 	line-height: 26px;
 	padding: 25px;
@@ -958,7 +958,7 @@ body {
 }
 }
 @media (min-width: 1200px) {
-.carousel-caption h2 {
+.carousel-caption h2, .carousel-caption .h2 {
 	font-size: 24px;
 	line-height: 28px;
 	padding: 25px 30px;
