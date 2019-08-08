@@ -1439,18 +1439,20 @@ body {
 #footer .travel-award img {
 	width: 100%;
 	max-width: 185px;
+  margin: 0 auto;
 	padding-top: 10px;
 }
 #footer .travel-award p {
 	color: #FF690F;
 	font-size: 14px;
 	margin-top: 15px;
+  text-align: center;
 	line-height: normal;
 }
-@media (max-width: 768px) {
-	#footer .travel-award p {
-		text-align: left;
-	}
+@media (min-width: 768px) {
+  #footer .travel-award img {
+    margin: 0;
+  }
 }
 #footer-menu {
 	overflow: hidden;
@@ -1479,13 +1481,15 @@ body {
 }
 
 #newsletter h4, #newsletter .h4, #newsletter form {
-	float: left
+	float: left;
 }
 #newsletter h4, #newsletter .h4 {
+  width: 100%;
 	color: #0081a2;
 	font: 13px/34px Arial;
 	padding-right: 10px;
 	margin: 0px;
+  text-align: center;
 }
 #newsletter p {
 	position: relative
@@ -1528,7 +1532,16 @@ body {
 #newsletter input[type="submit"]:hover {
 	opacity: 0.8
 }
+
+@media (min-width: 768px) {
+  #newsletter .h4 {
+    width: auto;
+    text-align: left;
+  }
+}
 #footer .socials {
+  width: 150px;
+  margin: 0 auto;
 	padding: 0px;
 	list-style:none;
 }
@@ -1585,13 +1598,19 @@ body {
 
 #footer .ada-logo {
 	width: 160px;
-	margin-top: 20px;
+	margin: 20px auto 0;
 }
 #footer .ada-logo img {
 	width: 100%;
 }
 #footer small {
 	font-size: 100%;
+}
+
+@media (min-width: 768px) {
+  #footer .ada-logo {
+    margin: 20px 0 0;
+  }
 }
 .sociallinks {
 	float: none;
@@ -1602,10 +1621,13 @@ body {
 
 }
  @media (min-width: 768px) {
-.sociallinks {
-	padding-top: 20px;
-	padding-bottom: 0px;
-}
+   #footer .socials {
+     margin: 0;
+   }
+  .sociallinks {
+  	padding-top: 20px;
+  	padding-bottom: 0px;
+  }
 }
 @media (min-width: 992px) {
 #footer-menu {
