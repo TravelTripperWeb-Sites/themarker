@@ -13,7 +13,7 @@ $(document).ready(function() {
 			$('.mobile-only-offer').css({'visibility' : "visible"});
 			}
 		}
-		
+
 		$('#kill').click(function() {
 			$('.mobile-only-offer').css({
 				'visibility': 'hidden',
@@ -65,12 +65,6 @@ $(document).ready(function() {
 
 
 $(window).on('load resize', function () {
-     var wHeight = $( window ).height() -60;
-	 $('#homeBannerCarousel').height(wHeight);
-	 $('#homeBannerCarousel .item').height(wHeight);
-	   var IwHeight = $( window ).height() -175;
-	 $('#innerCarousel').height(IwHeight);
-	 $('#innerCarousel .item').height(IwHeight);
 
 	 var width = $(window).width();
     if (width < 1181){

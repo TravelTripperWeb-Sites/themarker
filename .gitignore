@@ -18,7 +18,6 @@ Icon
 _asset_bundler_cache
 Gemfile.lock
 npm-debug.log*
-sitemap.json
 _site/
 .sass-cache/
 .jekyll-metadata
@@ -26,6 +25,8 @@ bower_components/
 node_modules/
 .bundle/
 vendor/
-
 old_media.json
 feed.xml
+media.json
+models.json
+sitemap.json
