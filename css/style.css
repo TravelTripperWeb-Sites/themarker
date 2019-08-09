@@ -309,14 +309,14 @@ body {
 .main-nav .collapsing {
 	overflow: hidden!important;
 }
-.main-nav .navbar-collapse.in .nav>li.dropdown:after {
+/*.main-nav .navbar-collapse.in .nav>li.dropdown:after {
 	font-family: 'Glyphicons Halflings';
 	content: "\e259";
 	right: 10px;
 	top: 10px;
 	position: absolute;
 	color: #0081a2;
-}
+}*/
 .main-nav .navbar-collapse.in .nav>li.dropdown:hover:after {
 	color: #fff;
 }
@@ -462,7 +462,7 @@ body {
 }
 @media (max-width:1180px) {
 .dropdown .dropdown-menu {
-    display:none !important;
+    display:contents !important;
 }
 .dropdown.open > .dropdown-menu {
     display:block !important;
