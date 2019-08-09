@@ -1,59 +1,36 @@
 {% include tmp-head.html %}
 <body  rt3-rooms-browser="browser" rt3-room-details="details" rt3-special-rates="rates" ng-cloak data-room-id={{page.room_id}}>
 {% include tmp-nav.html %}
+
 <!-- Inner Carousel Carousel  -->
 <div id="innerCarouselRoom" class="carousel slide carousel-fade" data-ride="carousel">
   <!-- Indicators -->
   <div class="carousel-inner" role="listbox">
-      <div class="item " ng-class="{'active': $index ==0}" ng-repeat="pic in details.photos" ng-style="{'background-image':'url([[pic.large]])'}"></div>
-
+      <div class="item " ng-class="{'active': $index ==0}" ng-repeat="pic in details.photos" ng-style="{'background-image':'url([[pic.large]])'}" role="option"></div>
   </div>
-   <a ng-show="details.photos.length >1" class="left carousel-control" href="#innerCarouselRoom" data-slide="prev" title="Previous"> <span class="left" aria-hidden="true"></span> </a>
-   <a ng-show="details.photos.length >1" class="right carousel-control" href="#innerCarouselRoom" data-slide="next" title="Next"> <span class="right" aria-hidden="true"></span> </a> 
+   <a ng-show="details.photos.length >1" class="left carousel-control" href="#innerCarouselRoom" data-slide="prev" aria-label="Use left arrow on keyboard to view previous slide" tabindex="-1"> <span class="left" aria-hidden="true"></span> </a>
+   <a ng-show="details.photos.length >1" class="right carousel-control" href="#innerCarouselRoom" data-slide="next" aria-label="Use right arrow on keyboard to view next slide or hit tab to skip" tabindex="-1"> <span class="right" aria-hidden="true"></span> </a>
    <ol ng-show="details.photos.length >1" class="carousel-indicators">
      <li data-target="#innerCarouselRoom" ng-class="{'active': $index ==0}" data-slide-to="[[$index]]" ng-repeat="pic in details.photos" ></li>
    </ol>
 </div>
 <!-- /.Inner Carousel Carousel -->
 
+<div id="main"></div>
+
 <!-- Inner wrapper -->
 <div id="inner-wrapper">
   <div class="container">
     <div class="row">
-      <div class="col-lg-3 col-md-4 col-sm-4">
-        <div class="sidebar-nav">
-          <div class="navbar  navbar-default " role="navigation">
-            <div class="navbar-header">
-              <h4 data-toggle="collapse" data-target=".sidebar-navbar-collapse">Accommodations</h4>
-            </div>
-            <div class="navbar-collapse collapse sidebar-navbar-collapse">
-              <ul class="accommodations-list">
-                <li> <a href="{{ 'accommodations' | permalink }}">View All Rooms</a> </li>
-                <li ng-class="{'active':details.category == 'Marker Classic Rooms'}">
-                <a href="{{ 'accommodations/the-marker-classic-rooms' | permalink }}">The Marker Classic Rooms</a>
-                </li>
-                <li ng-class="{'active':details.category == 'Pool Garden Rooms'}">
-                <a href="{{ 'accommodations/pool-garden-rooms' | permalink }}">Pool Garden Rooms</a>
-                </li>
-                <li ng-class="{'active':details.category == 'Key West Harbor Rooms'}">
-                <a href="{{ 'accommodations/key-west-harbor-rooms' | permalink }}">Key West Harbor Rooms</a>
-                </li>
-                <li ng-class="{'active':details.category == 'The Captain\'s Quarters'}">
-                <a href="{{ 'accommodations/the-captains-quarters' | permalink }}">The Captain's Quarters</a>
-                </li>
-              </ul>
-            </div>
-            <!--/.nav-collapse -->
-          </div>
-        </div>
-      </div>
       <div class="col-lg-9 col-md-8 col-sm-8 page-content" ng-show="details.name">
-        <h1>[[details.name]]</h1>
-        <p>[[details.description]]</p>
-        <p>Amenities include:</p>
-        <ul>
-          <li ng-repeat="amenities in details.amenities">[[amenities]]</li>
-        </ul>
+        <h1 class="h1" tabindex="0">[[details.name]]</h1>
+        <p tabindex="0">[[details.description]]</p>
+        <div tabindex="0">
+          <p>Amenities include:</p>
+          <ul>
+            <li ng-repeat="amenities in details.amenities">[[amenities]]</li>
+          </ul>
+        </div>
         <!--<h2 ng-show="details.is_base_room_type && details.brg.discounted_rate">Our Best Rate Guarantee</h2>-->
         <!-- Book Now button -->
         <!-- debug code
@@ -97,9 +74,36 @@
         </p>
         -->
 
-        <div class="rate" ng-show="details.todayRate"> <span> <sup>Tonight's Rate</sup> [[details.todayRate | currency]] </span> <a class="button rate-book_now" data-roomcode="[[details.code]]" data-link-to-book-now="[[details.category]]" href="https://themarkerkeywest.reztrip.com/">Book Now</a> </div>
+        <div class="rate" ng-show="details.todayRate" tabindex="0"> <span> <sup>Tonight's Rate</sup> [[details.todayRate | currency]] </span> <a class="button rate-book_now" data-roomcode="[[details.code]]" data-link-to-book-now="[[details.category]]" href="https://themarkerkeywest.reztrip.com/">Book Now</a> </div>
         <!-- Check Availability -->
         <div class="rate" ng-show="!details.todayRate"> <a href="https://themarkerkeywest.reztrip.com/" data-link-to-category="[[details.category]]" class="button rate-book_now">Check Availability</a> </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-4">
+        <div class="sidebar-nav">
+          <div class="navbar  navbar-default " role="navigation">
+            <div class="navbar-header">
+              <h2 class="h4" data-toggle="collapse" data-target=".sidebar-navbar-collapse">Accommodations</h2>
+            </div>
+            <div class="navbar-collapse collapse sidebar-navbar-collapse">
+              <ul class="accommodations-list">
+                <li> <a href="{{ 'accommodations' | permalink }}" tabindex="-1">View All Rooms</a> </li>
+                <li ng-class="{'active':details.category == 'Marker Classic Rooms'}">
+                <a href="{{ 'accommodations/the-marker-classic-rooms' | permalink }}" tabindex="-1">The Marker Classic Rooms</a>
+                </li>
+                <li ng-class="{'active':details.category == 'Pool Garden Rooms'}">
+                <a href="{{ 'accommodations/pool-garden-rooms' | permalink }}" tabindex="-1">Pool Garden Rooms</a>
+                </li>
+                <li ng-class="{'active':details.category == 'Key West Harbor Rooms'}">
+                <a href="{{ 'accommodations/key-west-harbor-rooms' | permalink }}" tabindex="-1">Key West Harbor Rooms</a>
+                </li>
+                <li ng-class="{'active':details.category == 'The Captain\'s Quarters'}">
+                <a href="{{ 'accommodations/the-captains-quarters' | permalink }}" tabindex="-1">The Captain's Quarters</a>
+                </li>
+              </ul>
+            </div>
+            <!--/.nav-collapse -->
+          </div>
+        </div>
       </div>
     </div>
   </div>

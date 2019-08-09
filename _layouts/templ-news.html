@@ -1,31 +1,33 @@
 {% include tmp-head.html %}
 <body class="news">
-{% include tmp-nav.html %} 
+{% include tmp-nav.html %}
+
 <!-- Inner Carousel Carousel  -->
 <div id="innerCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-<!-- Indicators -->
-
-<div class="carousel-inner" role="listbox">
-  <div class="item active" style="background-image:url(/assets/images/6042/original/static-banner.jpg)"> </div>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active" style="background-image:url(/assets/images/6042/original/static-banner.jpg)" role="option"> </div>
+  </div>
 </div>
-<!-- /.Inner Carousel Carousel --> 
+<!-- /.Inner Carousel Carousel -->
+
+<div id="main"></div>
 
 <!-- Inner wrapper -->
 <div id="inner-wrapper">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 page-content single-col">
-        <h1>The Marker Waterfront Resort Press Room </h1>
-        <h2>Read And See What The Press Has To Say About Us</h2>
-        <p>Welcome to the The Marker Resort Press Room, where you can explore Key West hotel news, press releases and more. Keep visiting this page as we will update it frequently.</p>
+        <h1 class="h1" tabindex="0">The Marker Waterfront Resort Press Room </h1>
+        <h2 class="h2" tabindex="0">Read And See What The Press Has To Say About Us</h2>
+        <p tabindex="0">Welcome to the The Marker Resort Press Room, where you can explore Key West hotel news, press releases and more. Keep visiting this page as we will update it frequently.</p>
         <div id="pressroom"> {% assign filtered_news = site.data._models.news | sort: 'date' | reverse %}
           {% for news_filter in filtered_news %}
           <article class="col-md-4 col-sm-6">
             <div class=" pressroom-entry">
               <div class="description">
                 <div class="centered">
-                  <h2 style="color:white">{{news_filter.magazine_name}}</h2>
-                  <p>{{news_filter.description}}</p>
+                  <h3 class="h2" style="color:white" tabindex="0">{{news_filter.magazine_name}}</h3>
+                  <p tabindex="0">{{news_filter.description}}</p>
                   <div data-href="{{news_filter.pdf_link}}"> <a href="{{news_filter.pdf_link}}"  target="_blank" title="{{news_filter.magazine_name}}">Download PDF</a> </div>
                   <p class="date">{{news_filter.date}}</p>
                 </div>
@@ -37,6 +39,6 @@
     </div>
   </div>
 </div>
-<!-- /.Inner wrapper --> 
+<!-- /.Inner wrapper -->
 
 {% include tmp-footer.html %}
