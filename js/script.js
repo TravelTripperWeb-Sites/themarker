@@ -111,7 +111,7 @@ $(window).on('load resize', function () {
       items : 3,
       itemsDesktop:	[1199,3],
       itemsTablet:	[768,2],
-	  itemsMobile:	[479,1],
+	  	itemsMobile:	[480,1],
       navigation : true
     //jsonPath : 'https://rt3api-prd.ttaws.com/hotels/special_rates.json?hotel_id=KEYMRK&portal_id=themarkerkeywes&locale=en&currency=USD',
     //jsonSuccess : customDataSuccess
