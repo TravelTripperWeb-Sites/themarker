@@ -1,0 +1,69 @@
+---
+title_localized:
+  en: Key West Hotel Deals & Offers | Special Offers at The Marker | Key West is Calling
+label_localized:
+  en: Specials
+layout_localized:
+  en:
+permalink_localized:
+  en: /key-west-is-calling/
+meta_description_localized:
+  en: ''
+meta_keywords_localized:
+  en: ''
+published_localized:
+  en: true
+---
+{% include tmp-head.html %}
+
+<body class="specials" rt3-special-rates="special">
+  {% include tmp-nav.html %}
+  <!-- Inner Carousel Carousel  -->
+  <div id="innerCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+      <div class="item active" style="background-image:url('/assets/images/6632/original/special-banner.jpg')"> </div>
+    </div>
+  <!-- /.Inner Carousel Carousel -->
+
+  <!-- Inner wrapper -->
+  <div id="inner-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 page-content single-col">
+          {% regionblock offer_header, type:header %}
+          <h1>Key West is Calling</h1>
+          {% endregionblock %}
+          <br>
+          <div class="special-list special-article">
+            <div class="thumbnail">
+              {% regionblock  offer_image, type:image %}
+              <img src="https://d31f902anbz5po.cloudfront.net/728/285523_3_master.jpg" alt="Special Offer Image">
+              {% endregionblock %}
+            </div>
+            <div class="special-description">
+              {% regionblock  offer_content1, type:text %}
+              <p>
+                <strong>Escape to The Marker and save up to 30% off your stay!</strong>
+              </p>
+              {% endregionblock %}
+              {% regionblock  offer_content2, type:text %}
+              <p>Key West is known for sun-soaked days and fun-filled nights. By day, relax poolside at one of our three pools or sip cocktails at Cero Bodega. By night, enjoy live music, tropical fare, and Key West’s buzzing scene. There’s a reason they call Key West “America’s Caribbean Island.”<br>With our Key West is calling offer, you’ll receive –</p>
+              <ul>
+                <li>Savings of up to 30% off your nightly room rate</li>
+                <li>A complimentary bottle of sparkling wine</li>
+                <li>25% off food and beverage at Cero Bodega</li>
+              </ul>
+              <p><i>This is a strictly limited time offer, and it may be withdrawn with no notice, so book now while this link is active, and secure the very lowest price for your trip to Key West.</i></p>
+              {% endregionblock %}
+              {% regionblock  offer_button, type:text %}
+                <a href="https://themarkerkeywest.reztrip.com/ext/promoRate?property=728&mode=b&pm=true&sr=495321&vr=3 " class="button" target="_blank">Book Now</a>
+              {% endregionblock %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.Inner wrapper -->
+
+  {% include tmp-footer.html %}
