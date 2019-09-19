@@ -1597,7 +1597,7 @@ body {
 }
 
 #footer .ada-logo {
-	width: 230px;
+	max-width: 230px;
 	margin: 20px auto 0;
 }
 #footer .ada-logo img {
@@ -1665,16 +1665,16 @@ body {
 	background: url("/assets/images/5362/original/sprite.png") no-repeat;
 	background-position: -135px -310px;
 }
- @media (max-width:479px) {
-.cd-top {
-	bottom: 0px;
-}
+@media (max-width:767px) {
+  .cd-top {
+  	bottom: 80px;
+  }
 }
 @media (min-width:992px) {
-.cd-top {
-	right: 15px;
-	bottom: 20px
-}
+  .cd-top {
+  	right: 15px;
+  	bottom: 20px
+  }
 }
 /*-- inner page --*/
 #innerCarousel .carousel-indicators, #innerCarouselRoom .carousel-indicators {
@@ -3250,3 +3250,89 @@ img.objectfit, .objectfit img {
   width: 100%;
   height: 100%;
 }
+
+
+/* mobile nav start */
+.mobile-nav {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  z-index: 9998;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  border-top: solid 1px #0081a2;
+}
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+.mobile-nav a {
+  width: 25%;
+  height: 72px;
+  padding-top: 14px;
+  font-family: Muli Regular;
+  color: #0081a2;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.mobile-nav a:hover, .mobile-nav a:focus, .mobile-nav a:active {
+  text-decoration: none;
+  background-color: #0081a2;
+}
+
+.mobile-nav a:hover i, .mobile-nav a:hover strong, .mobile-nav a:focus i, .mobile-nav a:focus strong, .mobile-nav a:active i, .mobile-nav a:active strong {
+  color: #fff;
+}
+
+.mobile-nav a i {
+  display: block;
+  padding-bottom: 6px;
+  font-size: 18px;
+}
+
+.mobile-nav a strong {
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mobile-nav a .stars {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+}
+
+.mobile-nav a .stars .fa-star {
+  position: absolute;
+  font-size: 10px;
+}
+
+.mobile-nav a .stars .fa-star:nth-child(1) {
+  top: 10px;
+  left: 0;
+}
+
+.mobile-nav a .stars .fa-star:nth-child(2) {
+  top: 0;
+  left: 7px;
+}
+
+.mobile-nav a .stars .fa-star:nth-child(3) {
+  top: 10px;
+  right: 0;
+}
+
+@media (max-width: 767px) {
+  footer {
+    margin-bottom: 50px;
+  }
+}
+/* mobile nav end */
