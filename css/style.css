@@ -1297,6 +1297,9 @@ body {
 #upcoming-events .thumbnail img {
 	z-index: 10;
 	position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 #upcoming-events h5, #upcoming-events .h5, #upcoming-events .title {
 	font: 15px/20px 'Muli Regular';
