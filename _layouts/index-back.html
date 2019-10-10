@@ -18,9 +18,9 @@
       <div class="container">
         <div class="slider-baner-carasoul text-center">
           <div class="inner-wrap">
-            <h1 id="main" class="h4 wrap-heading" tabindex="0"><strong>BOOK DIRECT & SAVE</strong></h1>
-            <p tabindex="0">Receive up to 20% off our best available rate when you book directly through our site</p>
-            <a href="https://themarkerkeywest.reztrip.com/ext/promoRate?property=728&mode=b&pm=true&sr=362975&vr=3" class="button-banner" target="_blank">Learn More</a>
+            <h1 id="main" class="h4 wrap-heading" tabindex="0"><strong>SPECIAL PERKS WHEN YOU BOOK DIRECT</strong></h1>
+            <p tabindex="0">Receive special amenities when booking directly through our website.</p>
+            <a href="https://themarkerkeywest.reztrip.com/ext/promoRate?property=728&mode=b&pm=true&sr=362975&vr=3" class="button-banner" id="homepage_hero_overlay" target="_blank">Learn More</a>
           </div>
         </div>
         <!-- <div class="carousel-caption row">
@@ -157,17 +157,40 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-6 events">
-        <h5 class="h4" tabindex="0">Upcoming Events</h5>
+        {% regionblock event_offer_title, type:header %}
+        <h5 class="h4" tabindex="0">Special Offer for October Stays</h5>
+        {% endregionblock %}
         <div class="events-container">
           <article>
-        {% assign home_events = site.data._models.events | sort: 'start_date' %}
-          {% for event_home in home_events | limit: 1 %}
-            <time tabindex="-1">{{event_home.start_date | date: "%m/%d/%Y"}} to  {{event_home.end_date | date: "%m/%d/%Y"  ng-show="event_home.end_date = null"}} </time>
-            <div class="thumbnail"> <img src="{{event_home.image.url_xsmall}}"  title="{{event_home.title}}"  alt="{{event_home.title}}"> </div>
-            <h6 class="h5" tabindex="0">{{event_home.title}}</h6>
-            <p tabindex="0">{{event_home.short_description}}</p>
-            <a href="{{ event_home.id | permalink: model_dir: 'calendar-more' }}" class="button">Read More</a> <a class="button morebtn" href="{{ 'calendar' | permalink }}">More Events</a> </article>
-          {% endfor %} </div>
+            {% comment %}
+            {% assign home_events = site.data._models.events | sort: 'start_date' %}
+              {% for event_home in home_events | limit: 1 %}
+                <time tabindex="-1">{{event_home.start_date | date: "%m/%d/%Y"}} to  {{event_home.end_date | date: "%m/%d/%Y"  ng-show="event_home.end_date = null"}} </time>
+                <div class="thumbnail"> <img src="{{event_home.image.url_xsmall}}"  title="{{event_home.title}}"  alt="{{event_home.title}}"> </div>
+                <h6 class="h5" tabindex="0">{{event_home.title}}</h6>
+                <p tabindex="0">{{event_home.short_description}}</p>
+                <a href="{{ event_home.id | permalink: model_dir: 'calendar-more' }}" class="button">Read More</a> <a class="button morebtn" href="{{ 'calendar' | permalink }}">More Events</a>
+              {% endfor %}
+            {% endcomment %}
+            {% regionblock event_offer_subtitle, type:text %}
+            <div class="time" tabindex="0">SUITE FANTASY</div>
+            {% endregionblock %}
+            <div class="thumbnail">
+              {% regionblock event_offer_image, type:image %}
+              <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1569842387/zo1v20umxv81vdkfrzj4.jpg"  title="SUITE FANTASY"  alt="SUITE FANTASY">
+              {% endregionblock %}
+            </div>
+            {% regionblock event_offer_shortheader, type:header %}
+            <h6 class="h5" tabindex="0">FANTASY FEST’S 40th YEAR</h6>
+            {% endregionblock %}
+            <div>
+              {% regionblock event_offer_text, type:text %}
+              <p tabindex="0">Special savings on our brand new suites for Fantasy Fest stays.</p>
+              <a href="https://themarkerkeywest.reztrip.com/ext/promoRate?property=728&mode=b&pm=true&sr=508046&vr=3" class="button">Learn More</a>
+              {% endregionblock %}
+            </div>
+          </article>
+        </div>
       </div>
       <div class="col-sm-6 blog">
         <div id="blog-feed">
