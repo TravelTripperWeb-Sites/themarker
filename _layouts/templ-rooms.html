@@ -3,20 +3,32 @@
 {% include tmp-nav.html %}
 
 <!-- Inner Carousel Carousel  -->
-<div id="innerCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+<div id="innerCarousel" class="carousel slide carousel-fade" data-ride="carousel" role="listbox" tabindex="-1">
   <!-- Indicators -->
-  {% region innerbanner %} <a class="left carousel-control" href="#innerCarousel" data-slide="prev" title="Previous"> <span class="left" aria-hidden="true"></span> </a> <a class="right carousel-control" href="#innerCarousel" data-slide="next" title="Next"> <span class="right" aria-hidden="true"></span> </a> </div>
+  {% region innerbanner %} <a class="left carousel-control" href="#innerCarousel" data-slide="prev" aria-label="Use left arrow on keyboard to view previous slide" tabindex="-1"> <span class="left" aria-hidden="true"></span> </a> <a class="right carousel-control" href="#innerCarousel" data-slide="next" aria-label="Use right arrow on keyboard to view next slide or hit tab to skip" tabindex="-1"> <span class="right" aria-hidden="true"></span> </a> </div>
 <!-- /.Inner Carousel Carousel -->
+
+<div id="main"></div>
 
 <!-- Inner wrapper -->
 <div id="inner-wrapper" ng-controller="roomController">
   <div class="container">
     <div class="row">
+      <div class="col-lg-9 col-md-8 col-sm-8 page-content">
+        <h2 class="h1" tabindex="0">[[selectedCat]]<span ng-hide="selectedCat">All Rooms</span></h2>
+        <p tabindex="0">[[info.description]]</p>
+        <p tabindex="0">The hotel is ADA compliant under the Department of Justice ADA Title III Regulation 28 CFR Part 36, 1991. For information about accessible features, please view our <a href="/accessibility/">Accessibility Statement.</a> </p>
+        <div> <a ng-repeat="room in browser.roomsList | filter: {'category': selectedCat}" ng-href="/accommodation/?[[room.name | formatNameForLink]]" style="background: url([[room.photos[0].large]]) 100% 100% no-repeat; background-size: cover;" class="room-list">
+          <div class="room-button">[[room.name]]</div>
+          </a>
+        </div>
+        <div rt3-recent-bookings="recent" style="clear:both" tabindex="0"> <b>[[recent.totalBookings]]</b> Reservations completed in the last 48 hours. <a class="link_to_reztrip_with_search_params button" href="https://themarkerkeywest.reztrip.com/" >Book now</a> </div>
+      </div>
       <div class="col-lg-3 col-md-4 col-sm-4">
         <div class="sidebar-nav">
           <div class="navbar  navbar-default " role="navigation">
             <div class="navbar-header">
-              <h4 data-toggle="collapse" data-target=".sidebar-navbar-collapse">Accommodations</h4>
+              <h1 class="h4" data-toggle="collapse" data-target=".sidebar-navbar-collapse" tabindex="0">Other Accommodations</h1>
             </div>
             <div class="navbar-collapse collapse sidebar-navbar-collapse">
               <ul class="accommodations-list">
@@ -41,16 +53,6 @@
             <!--/.nav-collapse -->
           </div>
         </div>
-      </div>
-      <div class="col-lg-9 col-md-8 col-sm-8 page-content">
-        <h1>[[selectedCat]]<span ng-hide="selectedCat">All Rooms</span></h1>
-        <p>[[info.description]]</p>
-        <p>The hotel is ADA compliant under the Department of Justice ADA Title III Regulation 28 CFR Part 36, 1991. For information about accessible features, please view our <a href="/accessibility/">Accessibility Statement.</a> </p>
-        <div> <a ng-repeat="room in browser.roomsList | filter: {'category': selectedCat}" ng-href="/accommodation/?[[room.name | formatNameForLink]]" style="background: url([[room.photos[0].large]]) 100% 100% no-repeat; background-size: cover;" class="room-list">
-          <div class="room-button">[[room.name]]</div>
-          </a>
-        </div>
-        <div rt3-recent-bookings="recent" style="clear:both"> <b>[[recent.totalBookings]]</b> Reservations completed in the last 48 hours. <a class="link_to_reztrip_with_search_params button" href="https://themarkerkeywest.reztrip.com/" >Book now</a> </div>
       </div>
     </div>
   </div>

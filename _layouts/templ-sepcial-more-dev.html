@@ -1,14 +1,15 @@
 {% include tmp-head.html %}
 <body class="specials" rt3-special-rates="special">
-{% include tmp-nav.html %} 
+{% include tmp-nav.html %}
+
 <!-- Inner Carousel Carousel  -->
 <div id="innerCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-<!-- Indicators -->
-
-<div class="carousel-inner" role="listbox">
-  <div class="item active" style="background-image:url(/assets/images/6632/original/special-banner.jpg)"> </div>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active" style="background-image:url(/assets/images/6632/original/special-banner.jpg)" role="option"> </div>
+  </div>
 </div>
-<!-- /.Inner Carousel Carousel --> 
+
+<div id="main"></div>
 
 <!-- Inner wrapper -->
 <div id="inner-wrapper">
@@ -16,19 +17,19 @@
     <div class="row">
       <div>
         <div class="col-lg-12 col-md-12 col-sm-12 page-content single-col"  >
-          <h1>[[special.rate_plan_name]]</h1><br>
+          <h1 class="h1" tabindex="0">[[special.sRdetail.rate_plan_name]]</h1><br>
           <div class="special-list special-article">
-            <p class="thumbnail"><img ng-src="[[special.images[0].yankee_large]]" alt="[[special.rate_plan_name]]" title="[[special.rate_plan_name]]"></p>
+            <p class="thumbnail"><img ng-src="[[special.sRdetail.images[0].yankee_large]]" alt="[[special.sRdetail.rate_plan_name]]" title="[[special.sRdetail.rate_plan_name]]"></p>
             <div class="special-description">
-              <p ng-bind-html="special.long_description | renderHTMLCorrectly"></p>
+              <p ng-bind-html="special.sRdetail.long_description | renderHTMLCorrectly" tabindex="0"></p>
               <!--p><strong>Terms & Conditions:</strong><br>
                 [[special.policy_description | formatpolicydescription]] </p-->
             </div>
-            <nav><a href="[[special.promo_url]]" class="button" target="_blank" >Book Package Online</a> </nav>
+            <nav><a href="[[special.sRdetail.promo_url]]" class="button" target="_blank" >Book Package Online</a> </nav>
             <div class="socials">
-              <iframe src="https://www.facebook.com/plugins/like.php?locale=en_US&amp;href=https://www.themarkerkeywest.com/specials/mark-your-love-romance-package&amp;send=false&amp;layout=button_count&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;height=20" class="social-button facebook-like" title="Like" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20" title="Facebook Share"></iframe>
-              <iframe src="https://platform.twitter.com/widgets/tweet_button.html?lang=en&amp;count=horizontal&amp;url=https://www.themarkerkeywest.com/specials/mark-your-love-romance-package&amp;via=accountname&amp;height=20&amp;text=text" class="social-button tweet" title="Tweet" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20" title="Twitter Share"></iframe>
-              <iframe src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;annotation=bubble&amp;size=medium&amp;hl=en-US&amp;url=https://www.themarkerkeywest.com/specials/mark-your-love-romance-package" class="social-button google-plus" title="+1" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20" title="Google Plus Share"></iframe>
+              <iframe src="https://www.facebook.com/plugins/like.php?locale=en_US&amp;href=https://www.themarkerkeywest.com/specials/mark-your-love-romance-package&amp;send=false&amp;layout=button_count&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;height=20" class="social-button facebook-like" title="Like" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20" title="Facebook Share" tabindex="-1"></iframe>
+              <iframe src="https://platform.twitter.com/widgets/tweet_button.html?lang=en&amp;count=horizontal&amp;url=https://www.themarkerkeywest.com/specials/mark-your-love-romance-package&amp;via=accountname&amp;height=20&amp;text=text" class="social-button tweet" title="Tweet" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20" title="Twitter Share" tabindex="-1"></iframe>
+              <iframe src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;annotation=bubble&amp;size=medium&amp;hl=en-US&amp;url=https://www.themarkerkeywest.com/specials/mark-your-love-romance-package" class="social-button google-plus" title="+1" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20" title="Google Plus Share" tabindex="-1"></iframe>
             </div>
           </div>
         </div>
@@ -36,6 +37,6 @@
     </div>
   </div>
 </div>
-<!-- /.Inner wrapper --> 
+<!-- /.Inner wrapper -->
 
 {% include tmp-footer.html %}

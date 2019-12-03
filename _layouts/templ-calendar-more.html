@@ -6,33 +6,33 @@
 
 <!-- Inner Carousel Carousel  -->
 <div id="innerCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-  <!-- Indicators -->
-
   <div class="carousel-inner" role="listbox">
-    <div class="item active" style="background-image:url(/assets/images/6042/original/static-banner.jpg)"> </div>
+    <div class="item active" style="background-image:url(/assets/images/6042/original/static-banner.jpg)" role="option"> </div>
   </div>
 </div>
 <!-- /.Inner Carousel Carousel -->
+
+<div id="main"></div>
 
 <!-- Inner wrapper -->
 <div id="inner-wrapper">
   <div class="container">
     <div class="col-lg-12 col-md-12 col-sm-12 page-content single-col">
-      <h1>Calendar of Events</h1>
+      <h1 class="h1" tabindex="0">Calendar of Events</h1>
       <div class="calendar">
         <div class="calendar-article clearfix" >
-          <h2>{{events.title}}</h2>
-          <p class="dates">From {{events.start_date  |  date: "%m/%d/%Y"}} to {{events.end_date  |  date: "%m/%d/%Y"}}</p>
-          <p><img src="{{events.image.url}}"  title="{{events.title}}"  alt="{{events.title}}"  class="img-responsive"></p>
-          <p>{{events.contents}}</p>
+          <h2 class="h2" tabindex="0">{{events.title}}</h2>
+          <p class="dates" tabindex="0">From {{events.start_date  |  date: "%m/%d/%Y"}} to {{events.end_date  |  date: "%m/%d/%Y"}}</p>
+          <p tabindex="0"><img src="{{events.image.url}}"  title="{{events.title}}"  alt="{{events.title}}"  class="img-responsive"></p>
+          <div tabindex="0">{{events.contents}}</div>
           {% if events.book_now!='' %}
           <a class="button rate-book_now" href="{{events.book_now}}" title="{{events.title}}" target="_blank">Book Now</a>
           {% endif %}
           <p></p>
           <div class="socials">
-            <iframe src="https://www.facebook.com/plugins/like.php?locale=en_US&amp;href=https://www.themarkerkeywest.com/specials/mark-your-love-romance-package&amp;send=false&amp;layout=button_count&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;height=20" class="social-button facebook-like" title="Like" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20" title="Facebook Share"></iframe>
-            <iframe src="https://platform.twitter.com/widgets/tweet_button.html?lang=en&amp;count=horizontal&amp;url=https://www.themarkerkeywest.com/specials/mark-your-love-romance-package&amp;via=accountname&amp;height=20&amp;text=text" class="social-button tweet" title="Tweet" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20" title="Twitter Share"></iframe>
-            <iframe src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;annotation=bubble&amp;size=medium&amp;hl=en-US&amp;url=https://www.themarkerkeywest.com/specials/mark-your-love-romance-package" class="social-button google-plus" title="+1" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20" title="Google Plus Share"></iframe>
+            <iframe src="https://www.facebook.com/plugins/like.php?locale=en_US&amp;href=https://www.themarkerkeywest.com/specials/mark-your-love-romance-package&amp;send=false&amp;layout=button_count&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;height=20" class="social-button facebook-like" title="Like" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20" title="Facebook Share" tabindex="-1"></iframe>
+            <iframe src="https://platform.twitter.com/widgets/tweet_button.html?lang=en&amp;count=horizontal&amp;url=https://www.themarkerkeywest.com/specials/mark-your-love-romance-package&amp;via=accountname&amp;height=20&amp;text=text" class="social-button tweet" title="Tweet" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20" title="Twitter Share" tabindex="-1"></iframe>
+            <iframe src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;annotation=bubble&amp;size=medium&amp;hl=en-US&amp;url=https://www.themarkerkeywest.com/specials/mark-your-love-romance-package" class="social-button google-plus" title="+1" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20" title="Google Plus Share" tabindex="-1"></iframe>
           </div>
         </div>
       </div>

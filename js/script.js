@@ -64,21 +64,37 @@ $(document).ready(function() {
 			$(".loading").css("display","none");
 	   },800);
 
+
+    $('#homeBannerCarousel').on('slid.bs.carousel', function () {
+      $('#homeBannerCarousel .item.active .h2').focus();
+    });
+
+
+    function goToByScroll(id){
+      $('html,body').animate({scrollTop: $(id).offset().top},'fast');
+      $(id).attr('tabindex', 0);
+      $(id).focus();
+    }
+    $(".skip-main").on("click", function(e) {
+      e.preventDefault();
+      goToByScroll($(this).attr('href'));
+    })
  });
 
 
 
 $(window).on('load resize', function () {
-     var wHeight = $( window ).height() -60;
-	 $('#homeBannerCarousel').height(wHeight);
-	 $('#homeBannerCarousel .item').height(wHeight);
-	   var IwHeight = $( window ).height() -175;
-	 $('#innerCarousel').height(IwHeight);
-	 $('#innerCarousel .item').height(IwHeight);
 
 	 var width = $(window).width();
-    if (width < 1181){
 
+   // var wHeight = $( window ).height() -60;
+   // $('#homeBannerCarousel').height(wHeight);
+   // $('#homeBannerCarousel .item').height(wHeight);
+   //   var IwHeight = $( window ).height() -175;
+   // $('#innerCarousel').height(IwHeight);
+   // $('#innerCarousel .item').height(IwHeight);
+
+    if (width < 1181){
 
     } else {
       $('ul.nav li.dropdown').hover(function() {
@@ -95,7 +111,7 @@ $(window).on('load resize', function () {
       items : 3,
       itemsDesktop:	[1199,3],
       itemsTablet:	[768,2],
-	  itemsMobile:	[479,1],
+	  	itemsMobile:	[480,1],
       navigation : true
     //jsonPath : 'https://rt3api-prd.ttaws.com/hotels/special_rates.json?hotel_id=KEYMRK&portal_id=themarkerkeywes&locale=en&currency=USD',
     //jsonSuccess : customDataSuccess
