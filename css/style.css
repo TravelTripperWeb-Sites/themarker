@@ -3139,7 +3139,8 @@ font-family: 'Muli Light';
 	 background: rgb(87, 191, 241,0.7);
 
 }
-.slider-baner-carasoul > *, .slider-baner-carasoul #top_banner_offer, .slider-baner-carasoul   .ttweb-booking-button {
+
+.slider-baner-carasoul #top_banner_offer, .slider-baner-carasoul   .ttweb-booking-button {
   display: none;
 }
 .slider-baner-carasoul.ttweb-component--processed > * {
