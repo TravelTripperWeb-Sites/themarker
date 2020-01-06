@@ -1,0 +1,11 @@
+<!--Special Banner Bar-->
+{% assign banner = site.data.exclusive_offer_banner %}
+{% if banner.publish == true and banner.title !='' and banner.title %}
+<section class="special-banner-bar" ttweb-component="Offer" data-tt-rate-code="{{ banner.rate_code }}">
+  <p class='top-banner-message'>{{ banner.title }}</p>
+  <span ttweb-offer-component="CrossOutRate" data-tt-post-html="per night"></span>
+  <span ttweb-offer-component="SelectedDates" data-tt-i18n-namespace="offers"></span>
+  <a id="top_banner_offer_dynamic" ttweb-offer-component="BookingButton" class="white-btn" title="{{ banner.button_title }}" target="_blank">{{ banner.button_title }}</a>
+  <a href="{{ banner.button_link }}" title="{{ banner.button_title }}" target="_blank" class="white-btn" id="top_banner_offer">{{ banner.button_title }}</a>
+</section>
+{% endif %}
