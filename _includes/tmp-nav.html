@@ -90,7 +90,8 @@
 
     <!--Booking  -->
     <p class="phone-number-sm"> <a class="NCLink phone"></a> </p>
-    <a show-booking-widget href="javascript:void(0);" class="booknow-sm">Book Now</a>
+    <div class="book-now-section" ttweb-component="BookingWidgetButton"><a class="booknow-sm" href="https://{{site.data.hotel_settings._portal_id}}.reztrip.com/search" tabindex="0" title="Book Now">Book Now</a> </div>
+    {% include components/booking-widget %}
     <!-- <section id="booking" class="collapsed">
       <form action="" method="post" target="_blank">
         <fieldset>
@@ -131,3 +132,5 @@
   </div>
 </header>
 <!-- ./header -->
+
+{% include exclusive-offer-banner.html %}
