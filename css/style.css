@@ -350,11 +350,11 @@ body {
 	position: absolute;
 	left: 0;
 	top: 0;
-	padding: 23px 0 0 24px;
+	padding: 18px 0 0 16px;
 	margin-left: 15px;
 	background: #fff;
-	width: 280px;
-	height: 119px;
+	width: 270px;
+	height: 109px;
 	border-bottom-left-radius: 4px;
 	border-bottom-right-radius: 4px;
 	box-shadow: 0 2px 1px -1px rgba(0,0,0,0.33)
@@ -649,11 +649,12 @@ body {
 	display: inherit;
 	right: 0;
 	top: 0;
-	padding: 23px 10px;
+	margin-top: 11px;
+	padding: 10px;
 	line-height: 19px;
     border-radius: 0;
     text-decoration: none;
-}
+ }
 }
  @media (min-width: 1080px) {
 #booking {
@@ -828,6 +829,11 @@ body {
 	background: #fff;
 	text-decoration: none;
 }
+
+
+
+
+
 /* Carousel  */
 .carousel-control {
 	width: 10%;
@@ -3131,7 +3137,79 @@ font-family: 'Muli Light';
 	max-width: 100%;
 	transform: translate(-50%, -50%);
 	 background: rgb(87, 191, 241,0.7);
+
 }
+
+.slider-baner-carasoul #top_banner_offer, .slider-baner-carasoul   .ttweb-booking-button {
+  display: none;
+}
+.slider-baner-carasoul.ttweb-component--processed > * {
+  display: block;
+}
+.slider-baner-carasoul.ttweb-component--processed #top_banner_offer, .slider-baner-carasoul.ttweb-component--processed .ttweb-booking-button {
+  display: table;
+  margin: 12px auto 20px;
+}
+
+.ttweb-offer {
+  color: white;
+}
+.ttweb-offer .ttweb-cross-out-rate  {
+  display: none;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+@media (max-width: 388px) {
+  .ttweb-offer .ttweb-cross-out-rate {
+    padding-left: 0 !important;
+  }
+}
+.ttweb-offer .ttweb-cross-out-rate--user-dates {
+    display: inline-block;
+}
+
+.ttweb-offer .ttweb-cross-out-rate__actual {
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-right: 5px;
+}
+
+
+.ttweb-offer .ttweb-cross-out-rate__crossout {
+    display: none;
+}
+.ttweb-offer .ttweb-selected-dates--default-dates + .ttweb-booking-button {
+  display: none;
+}
+.ttweb-offer .ttweb-selected-dates--user-dates + .ttweb-booking-button + #top_banner_offer {
+  display: none;
+}
+.ttweb-offer .ttweb-selected-dates {
+    margin-left: 5px;
+    margin-right: 24px;
+    display: none;
+}
+.ttweb-offer .ttweb-selected-dates--user-dates {
+      display: inline-block;
+      font-family: inherit;
+      font-weight: bold;
+}
+
+@media (max-width: 768px) {
+}
+
+
+.slider-baner-carasoul.ttweb-component--processed .ttweb-offer--unavailable .ttweb-cross-out-rate, .slider-baner-carasoul.ttweb-component--processed .ttweb-offer--unavailable .ttweb-selected-dates, .slider-baner-carasoul.ttweb-component--processed .ttweb-offer--unavailable .ttweb-booking-button {
+      display: none;
+}
+.ttweb-offer--unavailable  .ttweb-selected-dates--user-dates + .ttweb-booking-button + #top_banner_offer {
+    display: table;
+}
+
+
+
 .inner-wrap{
 	margin: 0px;
 	padding: 20px;
@@ -3211,7 +3289,6 @@ font-family: 'Muli Light';
 @media (max-width: 375px) {
 	.fury-offer{
 		margin-top: -300px;
-
 	}
 }
 
@@ -3252,4 +3329,213 @@ img.objectfit, .objectfit img {
 .objectfit * {
   width: 100%;
   height: 100%;
+}
+
+/* CP CSS */
+
+.ttweb-banner {
+  background: #0081a2;
+}
+
+.ttweb-banner__book-now-button {
+  background: #fff;
+  color: #0081a2;
+  text-transform: uppercase;
+}
+
+.ttweb-banner__book-now-button:hover {
+  text-decoration: none;
+}
+
+.ttweb-banner__ad-text, .ttweb-cross-out-rate__actual, .ttweb-banner__sample-rate-details {
+  color: #fff !important;
+}
+
+.ttweb-banner__column, .ttweb-banner__column:nth-child(1), .ttweb-banner__sample-rate-details {
+  text-align: center !important;
+}
+
+.ttweb-ota-rate-table__row {
+	 min-width: 19%;
+	 padding-right: 0;
+	 font-size: 14px;
+}
+ @media (min-width: 1200px) {
+	 .ttweb-ota-rate-table__row {
+		 padding-right: 10px;
+	}
+	 .ttweb-ota-rate-table__row:last-child {
+		 padding-right: 0;
+	}
+}
+ @media (min-width: 991px) and (max-width: 1200px) {
+	 .ttweb-ota-rate-table__row {
+		 min-width: 48%;
+	}
+}
+ @media (min-width: 991px) and (max-width: 1200px) {
+	 .ttweb-ota-rate-table__label {
+		 width: 45%;
+		 text-align: center;
+	}
+}
+ .ttweb-ota-rate-table__cost {
+	 padding: 4px 0 4px 5px;
+}
+ @media (min-width: 991px) and (max-width: 1200px) {
+	 .ttweb-ota-rate-table__cost {
+		 width: 45%;
+		 text-align: center;
+	}
+}
+ @media (min-width: 991px) and (max-width: 1200px) {
+	 .ttweb-ota-rate-table__cost span {
+		 text-align: center;
+	}
+}
+ .ttweb-calendar-month .ttweb-calendar-month__grid .ttweb-day--in-selection {
+	 background-color: #0081a2;
+}
+ .ttweb-booking-widget a.ttweb-booking-widget__submit {
+	 background-color: #0081a2;
+}
+ .ttweb-slide-out-widget__header {
+	 background-color: #0081a2;
+}
+ @media all and (min-width: 1200px) and (-ms-high-contrast: none) {
+	 *::-ms-backdrop, :last-child.ttweb-ota-rate-table__row {
+		 padding-right: 20px;
+	}
+}
+
+.special-banner-bar {
+  max-width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #0081a2;
+}
+.special-banner-bar a, .special-banner-bar p {
+  display: inline-block;
+  margin: 0 15px;
+}
+.special-banner-bar p {
+  padding-bottom: 0;
+  margin: 0 8px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.3rem;
+  color: #eee;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+  vertical-align: middle;
+}
+@media (max-width: 767px) {
+  .special-banner-bar p {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+}
+.special-banner-bar a {
+  margin: 0 10px;
+  padding: 7px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #0081a2;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.17em;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+@media (max-width: 388px) {
+  .special-banner-bar a {
+    margin-top: 10px;
+  }
+}
+
+.special-banner-bar a:hover {
+  text-decoration: none;
+}
+
+
+.special-banner-bar *,
+.special-banner-bar #top_banner_offer,
+.special-banner-bar #top_banner_offer_dynamic {
+  display: none;
+}
+.special-banner-bar.ttweb-component--processed  *,
+.special-banner-bar.ttweb-component--processed #top_banner_offer,
+.special-banner-bar.ttweb-component--processed #top_banner_offer_dynamic {
+  display: inline-block;
+}
+
+.ttweb-offer {
+  /* font-size: .8rem; */
+}
+.ttweb-offer  .ttweb-cross-out-rate  {
+    display: none;
+    /*font-size: .7rem;
+    font-family: $primary-medium;*/
+    font-weight: normal;
+    padding-left: 12px;
+    border-left: 1px solid transparent;
+    border-color: inherit;
+}
+.ttweb-offer  .ttweb-cross-out-rate--user-dates {
+  display: inline-block;
+}
+
+.ttweb-offer  .ttweb-cross-out-rate__actual {
+  /*font-family: $primary-bold;*/
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-right: 5px;
+}
+
+.ttweb-offer  .ttweb-cross-out-rate__crossout {
+  display: none;
+}
+.ttweb-offer .ttweb-selected-dates--default-dates + .ttweb-booking-button {
+    display: none;
+}
+.ttweb-offer  .ttweb-selected-dates--user-dates + .ttweb-booking-button + #top_banner_offer {
+    display: none;
+}
+.ttweb-offer .ttweb-selected-dates {
+    margin-left: 5px;
+    margin-right: 0;
+    display: none;
+}
+.ttweb-offer .ttweb-selected-dates--user-dates {
+      display: inline-block;
+      font-family: $primary-bold;
+      font-weight: bold;
+}
+
+@media (max-width:  992px) {
+  .ttweb-offer  p.top-banner-message {
+      display: block;
+      margin-bottom: 12px;
+    }
+  .ttweb-offer  .ttweb-booking-button {
+      display: table; // Forces line break but keeps in-line sizing
+      margin: 12px auto 0;
+    }
+  .ttweb-offer  .ttweb-cross-out-rate  {
+      border: none;
+    }
+    .ttweb-offer  .ttweb-cross-out-rate__actual {
+      margin-right: 0;
+    }
+}
+
+
+.ttweb-offer--unavailable .ttweb-cross-out-rate,
+.ttweb-offer--unavailable .ttweb-selected-dates,
+.ttweb-offer--unavailable .ttweb-booking-button {
+      display: none;
+}
+.ttweb-offer--unavailable .ttweb-selected-dates--user-dates + .ttweb-booking-button + #top_banner_offer {
+  display: inline-block;
 }
