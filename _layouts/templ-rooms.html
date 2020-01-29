@@ -22,8 +22,9 @@
           <div class="room-button">[[room.name]]</div>
           </a>
         </div>
-        <div rt3-recent-bookings="recent" style="clear:both" tabindex="0"> <b>[[recent.totalBookings]]</b> Reservations completed in the last 48 hours. <a class="link_to_reztrip_with_search_params button" href="https://themarkerkeywest.reztrip.com/" >Book now</a> </div>
+        <div rt3-recent-bookings="recent" style="clear:both" tabindex="0"> <b>[[recent.totalBookings]]</b> Reservations completed in the last 48 hours. <a class="link_to_reztrip_with_search_params button" href="https://themarkerkeywest.reztrip.com/" target="_blank">Book now</a> </div>
       </div>
+      <!-- sidebar -->
       <div class="col-lg-3 col-md-4 col-sm-4">
         <div class="sidebar-nav">
           <div class="navbar  navbar-default " role="navigation">
@@ -47,6 +48,9 @@
                 </li>
                 <li ng-class="{'active':selectedCat == 'Accessible'}">
                 <a href="{{ 'accommodations/ada-accessible-rooms' | permalink }}">Ada Accessible Rooms</a>
+                </li>
+                <li ng-class="{'active':selectedCat == 'Suites'}">
+                <a href="{{ 'accommodations/suites' | permalink }}">Suites</a>
                 </li>
               </ul>
             </div>
