@@ -3539,3 +3539,81 @@ img.objectfit, .objectfit img {
 .ttweb-offer--unavailable .ttweb-selected-dates--user-dates + .ttweb-booking-button + #top_banner_offer {
   display: inline-block;
 }
+
+/* ====== rfp page  ======== */
+.groups{
+  margin-bottom: 100px;
+}
+.rfp-container {
+  width: auto;
+  max-width: 900px;
+  position: relative;
+}
+.rfp-h2{
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #2c7a8c;
+  letter-spacing: 1px;
+  text-align:center;
+  padding:0 25px 25px;
+}
+.rfp-wrapper {
+    max-width: 570px;
+    margin: 0 auto 50px auto;
+}
+.form-control {
+  border-color: #d9d9d9;
+  border-radius: 0px;
+  height: 48px;
+  box-shadow: none;
+  color: #232525;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 12px;
+  @media(max-width: 767px){
+  height: 48px;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+  :focus {
+    box-shadow: none;
+    border-color:#2c7a8c;
+  }
+  ::-webkit-input-placeholder {
+    font-family: $main-font-light;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-style: normal;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+  font-family: $main-font-light;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-style: normal;
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+  font-family: $main-font-light;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-style: normal;
+  }
+
+  :-ms-input-placeholder {
+  font-family: $main-font-light;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-style: normal;
+  }
+}
+.form-agree {
+  color: #2c7a8c;
+}
+.submit-wrapper {
+  text-align: center;
+}

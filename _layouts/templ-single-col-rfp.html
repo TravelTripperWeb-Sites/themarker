@@ -1,0 +1,104 @@
+{% include tmp-head.html %}
+<body class="privacy">
+{% include tmp-nav.html %}
+
+<!-- Inner Carousel Carousel  -->
+<div id="innerCarousel" class="carousel slide carousel-fade" data-ride="carousel" role="listbox">
+  {% region innerbanner %} <a class="left carousel-control" href="#innerCarousel" data-slide="prev" title="Previous"> <span class="left" aria-hidden="true"></span> </a> <a class="right carousel-control" href="#innerCarousel" data-slide="next" title="Next"> <span class="right" aria-hidden="true"></span> </a>
+</div>
+<!-- /.Inner Carousel Carousel -->
+
+<div id="main"></div>
+
+<!-- Inner wrapper -->
+<div id="inner-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 page-content single-col"> {% region contenteditor %} </div>
+    </div>
+  </div>
+</div>
+
+<!-- styled rfp form -->
+<section class="groups rfp">
+  <div class="container no-padding">
+    <h2 class="rfp-h2">Request For Proposal</h2>
+    <div class="rfp-wrapper">
+      <div class="contact-form">
+        <form action="https://submit.jotform.com/submit/200283869028156/" method="post" name="form_200283869028156" id="200283869028156" accept-charset="utf-8" autocomplete="off">
+          <input type="hidden" name="formID" value="200283869028156" title="hidden" aria-label="hidden" />
+          <!-- full name -->
+          <div class="two-fields-holder">
+            <div class="col-sm-6 no-padding">
+              <div class="form-group right-space">
+                <input type="text" class="form-control" id="input_3" name="q3_fullName" placeholder="Full Name" title="Full Name" aria-label="Full Name" required>
+              </div>
+            </div>
+            <!-- phone number  -->
+            <div class="col-sm-6 no-padding">
+              <div class="form-group left-space">
+                <input type="text" class="form-control" id="input_5" name="q5_phoneNumber" placeholder="Phone Number" title="Phone Number" aria-label="Phone Number" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="two-fields-holder">
+            <!-- email -->
+            <div class="col-sm-6 no-padding">
+              <div class="form-group right-space">
+                <input type="text" class="form-control " id="input_4" name="q4_email" placeholder="Email" title="Email" aria-label="Email">
+              </div>
+            </div>
+            <!-- requested dates -->
+            <div class="col-sm-6 no-padding">
+              <div class="form-group left-space">
+                <input type="text" class="form-control"  id="input_13" name="q13_requestedDates" placeholder="Requested Dates" title="Requested Dates" aria-label="Requested Dates">
+              </div>
+            </div>
+          </div>
+
+          <div class="two-fields-holder">
+            <!-- # of guests -->
+            <div class="col-sm-6 no-padding">
+              <div class="form-group right-space">
+                <input type="text" class="form-control" id="input_15" name="q15_numberOf" placeholder="Number of Guests" title="Number of Guests" aria-label="Number of Guests">
+              </div>
+            </div>
+            <!-- Additional Information  -->
+            <div class="col-sm-6 no-padding">
+              <div class="form-group left-space">
+                <input type="text" class="form-control" id="input_12" name="q12_additionalInformation" placeholder="Comments" title="Comments" aria-label="Comments" required>
+              </div>
+            </div>
+          </div>
+
+          <!-- agree to privacy policy -->
+          <div class="two-fields-holder">
+            <div class="col-sm-12 no-padding">
+              <div class="form-group">
+                <div class="agree">
+                  <input type="checkbox" aria-label="Press Spacebar to Agree to the Terms of Service & Privacy Policy" class="form-check-input" name="q16_iAgree[]" id="agree" value="Agree" required>
+                  <label class="form-check-label" for="agree">I agree to the <a class="form-agree" href="/terms-of-use/" target="_blank">Terms of Service</a> and <a class="form-agree" href="/privacy/" target="_blank">Privacy Policy</a>.</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- submit button -->
+          <div class="submit-wrapper">
+            <button type="submit" id="input_2" class="btn-offer-gallery" title="Submit" aria-label="Submit">Submit</button>
+          </div>
+        <!-- end form -->
+        </form>
+
+        <!-- script -->
+        <script type="text/javascript">
+          JotForm.ownerView = true;
+        </script>
+        <!-- end script -->
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include tmp-footer.html %}
