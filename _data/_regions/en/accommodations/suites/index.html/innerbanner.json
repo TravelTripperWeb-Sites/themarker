@@ -1,6 +1,1 @@
-[
-  {
-    "content": "<div class=\"carousel-inner\">\n<div class=\"item\" style=\"background-image: url('//res.cloudinary.com/traveltripperweb/image/upload/c_limit,f_auto,h_2500,q_auto,w_2500/v1580313497/hiyxck8ukhnupu7wnn3k.jpg');\">&nbsp;</div>\n<div class=\"item active\" style=\"background-image: url('//res.cloudinary.com/traveltripperweb/image/upload/c_limit,f_auto,h_2500,q_auto,w_2500/v1580313493/v25dlutne9g5toasfyis.jpg');\">&nbsp;</div>\n<div class=\"item\" style=\"background-image: url('//res.cloudinary.com/traveltripperweb/image/upload/c_limit,f_auto,h_2500,q_auto,w_2500/v1580313487/luirl0fusaoeho44vjnu.jpg');\">&nbsp;</div>\n</div>",
-    "_template": "html"
-  }
-]
+[{"_template":"html","content":"  <div class=\"carousel-inner\">\n   \n      <div class=\"item active\" style=\"background-image:url(//res.cloudinary.com/traveltripperweb/image/upload/c_limit,f_auto,h_2500,q_auto,w_2500/v1580313497/hiyxck8ukhnupu7wnn3k.jpg)\" role=\"option\"> \n    </div>\n    <div class=\"item\" style=\"background-image:url(//res.cloudinary.com/traveltripperweb/image/upload/c_limit,f_auto,h_2500,q_auto,w_2500/v1580313493/v25dlutne9g5toasfyis.jpg)\" role=\"option\"> \n    </div>\n    <div class=\"item\" style=\"background-image:url(//res.cloudinary.com/traveltripperweb/image/upload/c_limit,f_auto,h_2500,q_auto,w_2500/v1580313487/luirl0fusaoeho44vjnu.jpg)\" role=\"option\"> \n    </div>\n  </div>\n"}]
