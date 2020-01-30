@@ -3347,7 +3347,7 @@ img.objectfit, .objectfit img {
   text-decoration: none;
 }
 
-.ttweb-banner__ad-text, .ttweb-cross-out-rate__actual, .ttweb-banner__sample-rate-details {
+.ttweb-banner__ad-text, .ttweb-banner .ttweb-cross-out-rate__actual, .ttweb-banner__sample-rate-details {
   color: #fff !important;
 }
 
