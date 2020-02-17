@@ -1,0 +1,73 @@
+---
+title_localized:
+  en: Key West Hotel | Accessibility Statement
+label_localized:
+  en: accessibility
+layout_localized:
+  en:
+permalink_localized:
+  en: /sustainability/
+meta_description_localized:
+  en: ''
+meta_keywords_localized:
+  en: ''
+published_localized:
+  en: true
+---
+{% include tmp-head.html %}
+
+<body class="specials" rt3-special-rates="special">
+  {% include tmp-nav.html %}
+  <!-- Inner Carousel Carousel  -->
+  <div id="innerCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <!-- Indicators -->
+
+    <div class="carousel-inner" role="listbox">
+      <div class="item active" style="background-image:url(/assets/images/sustainability-banner.jpg)"> </div>
+    </div>
+    <!-- /.Inner Carousel Carousel -->
+
+    <!-- Inner wrapper -->
+    <div id="inner-wrapper">
+      <div class="container">
+        <div class="row">
+          <div>
+            <div class="col-lg-12 col-md-12 col-sm-12 page-content single-col">
+              {% regionblock sustainability_header, type:header %}
+              <h1>Our Commitment to Sustainability</h1>
+              {% endregionblock %}
+              <br>
+              <div class="special-list special-article">
+
+                <div class="special-description">
+                  {% regionblock sustainability_content, type:text %}
+                <ul>
+                  <li>Use large refillable shampoo/conditioner/body wash bottles in our showers – save over 611790 grams of plastic a year</li>
+                  <li>We offer reef safe sunscreen at our three pools</li>
+                  <li>We offer Key West Aloe Products in our guestrooms: The products contain no parabens, phthalates, petrol-derived ingredients mineral oil, urea, DES, TEA or propylene glycol.</li>
+                  <li>Participate in the<a href="https://floridadep.gov/osi/green-lodging" target="_blank"> Green Lodging Program</a></li>
+                  <li>We offer low flow toilets</li>
+                  <li>We utilize power saving LED light bulbs</li>
+                  <li>We Recycle</li>
+                  <li>20% of rooms have installed environmental management system</li>
+                  <li>We use paper straws and biodegradable disposable products/li>
+                  <li>Towel rehang program</li>
+                  <li>Sheets changed after 3 days in stay over rooms</li>
+                  <li>We participate in annual Green Commute Challenge</li>
+                  <li>Dive in with Deep Eddy reusable welcome cocktail cup to reduce our carbon footprint on single use plastic</li>
+                </ul>
+                  {% endregionblock %}
+
+                </div>
+                <nav>
+
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.Inner wrapper -->
+
+    {% include tmp-footer.html %}
