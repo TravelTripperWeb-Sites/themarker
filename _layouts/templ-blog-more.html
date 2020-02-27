@@ -24,7 +24,22 @@
           <p class="h3" tabindex="0"><!--{{blog.categories}} &nbsp; | &nbsp;  -->{{blog.date  |  date: "%m/%d/%Y"}}</p>
           <div class="special-list special-article blog-article">
             <p><img  src="{{blog.blogimage.url}}"  alt="{{blog.title}}" title="{{blog.title}}"></p>
-            <div class="special-description blog-description" tabindex="0"> {{blog.more_content}} <!-- <img  src="{{blog.map.url}}" alt="Location"> --> </div>
+            <div class="special-description blog-description" tabindex="0">
+              {{blog.more_content}}
+
+              <!-- Append Native Ads into Blog content -->
+              {% assign content = blog.more_content | split: '</p>' %}
+              {% assign halfpost = content.size | divided_by: 2 %}
+              {% for part in content %}
+                {% if part != ''%}
+                 <p>{{ part | replace: '<p>', ''}}</p>
+                {% endif %}
+                {% if forloop.index == halfpost %}
+                  {% include native-ad.html %}
+                {% endif %}
+              {% endfor %}
+
+             </div>
             <br>
             <div class="posted" tabindex="0">Posted on <strong>{{blog.date  |  date: "%m/%d/%Y"}}</strong></div>
           </div>
@@ -34,5 +49,27 @@
   </div>
 </div>
 <!-- /.Inner wrapper -->
+
+<!-- Promo section -->
+<article id="promos">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <h3 class="h3" tabindex="0">Featured Specials</h3>
+      </div>
+      <div class="col-sm-4 social-links ">
+        <iframe src="https://www.facebook.com/plugins/like.php?locale=en_US&href=https://www.themarkerkeywest.com/&send=false&layout=button_count&show_faces=false&action=like&colorscheme=light&height=20" class="social-button facebook-like" title="Like" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20" title="Facebook Share" tabindex="-1"></iframe>
+        <iframe src="https://plusone.google.com/_/+1/fastbutton?bsv&annotation=bubble&size=medium&hl=en-US&url=https://www.themarkerkeywest.com/" class="social-button google-plus" title="+1" allowtransparency="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="20" title="Twitter Share" tabindex="-1"></iframe>
+      </div>
+    </div>
+    <div id="owl-promo" class="owl-carousel" rt3-special-rates= "offers">
+      <article class="item" ng-repeat="offer in offers.special_rates"><a class='thumbnail' ng-show="[[offer.lead_photo_url.thumb_yankee_jumbo != '']]" title="[[offer.rate_plan_name]]"><img ng-src="[[offer.lead_photo_url.thumb_yankee_jumbo]] "  title="[[offer.rate_plan_name]]" alt="[[offer.rate_plan_name]]"></a>
+        <h4 class="h4"><a ng-href="/special/special-more/#[[offer.rate_plan_code]]">[[offer.rate_plan_name]]</a></h4>
+        <p tabindex="0">[[offer.short_description]]</p>
+        <a class='button'  ng-href=special/special-more/#[[offer.rate_plan_code]]>Read More</a></article>
+    </div>
+  </div>
+</article>
+<!-- /.Promo section -->
 
 {% include tmp-footer.html %}
