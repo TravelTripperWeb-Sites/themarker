@@ -3571,6 +3571,7 @@ img.objectfit, .objectfit img {
 	 left: 50%;
 	 width: 90%;
 	 transform: translate(-50%, -50%);
+   line-height: normal;
 }
  .native-ads a:hover {
 	 text-shadow: 0 1px 5px rgba(0, 0, 0, .8);
