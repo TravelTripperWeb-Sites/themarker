@@ -2276,6 +2276,17 @@
     "git_file_name": "_assets/image_data/blog1.jpg.json"
   },
   {
+    "name": "Marker Conference Room Spec Sheet 1",
+    "content_type": "application/pdf",
+    "date_added": "2020-03-12-091645",
+    "format": null,
+    "url": "//res.cloudinary.com/traveltripperweb/raw/upload/v1584019005/hvegfftkgsfxy7uiniz7.pdf",
+    "url_raw": "//res.cloudinary.com/traveltripperweb/raw/upload/v1584019005/hvegfftkgsfxy7uiniz7.pdf",
+    "resource_type": "raw",
+    "size": 1453139,
+    "git_file_name": "_assets/image_data/Marker-Conference-Room-Spec-Sheet-1.pdf.json"
+  },
+  {
     "name": "trumanwhitehouse",
     "file_name": "trumanwhitehouse.png",
     "file_type": "image/png",
