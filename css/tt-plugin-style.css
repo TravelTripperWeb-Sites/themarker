@@ -1,4 +1,5 @@
 .ttw-versatile {
+  display: none;
   position: relative;
   z-index: 9999;
   box-sizing: border-box;

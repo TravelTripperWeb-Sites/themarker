@@ -201,22 +201,7 @@ function getIp(data){
 <script>window.cookieConsentConfig = {location: false}</script>
 {% include reztrip/setup-ttweb-plugins.html %}
 <script>
-  function showHideOfferPopup() {
-    var arrivalDate   = ttwebHotel.UserData.globalSearchParams.arrivalDate;
-    var departureDate = ttwebHotel.UserData.globalSearchParams.departureDate;
-    if(arrivalDate && departureDate) {
-      let momentArrival   = moment(arrivalDate);
-      let momentDeparture = moment(departureDate);
-      console.log('arrival- ',momentArrival.isBetween('2020-04-06', '2020-05-15', null, [], 'departure- ', momentDeparture.isBetween('2020-04-06', '2020-05-15', null, []));
-      if(momentArrival.isBetween('2020-04-06', '2020-05-15', null, []) && momentDeparture.isBetween('2020-04-06', '2020-05-15', null, [])) {
-        $(".ttw-versatile").show();
-      } else {
-        $(".ttw-versatile").hide();
-      }
 
-    }
-  }
-  ttwebHotel.UserData.onUpdateSearch(showHideOfferPopup);
 
 </script>
 <script>
@@ -279,8 +264,24 @@ function getIp(data){
     });
     popup.init();
 
+    function showHideOfferPopup() {
+      var arrivalDate   = ttwebHotel.UserData.globalSearchParams.arrivalDate;
+      var departureDate = ttwebHotel.UserData.globalSearchParams.departureDate;
+      if(arrivalDate && departureDate) {
+        let momentArrival   = moment(arrivalDate);
+        let momentDeparture = moment(departureDate);
+        console.log('arrival- ',momentArrival.isBetween('2020-04-06', '2020-05-15', null, []), 'departure- ', momentDeparture.isBetween('2020-04-06', '2020-05-15', null, []));
+        if(momentArrival.isBetween('2020-04-06', '2020-05-15', null, []) && momentDeparture.isBetween('2020-04-06', '2020-05-15', null, [])) {
+          $(".ttw-versatile").show();
+        } else {
+          $(".ttw-versatile").hide();
+        }
+
+      }
+    }
+    ttwebHotel.UserData.onUpdateSearch(showHideOfferPopup);
     setTimeout(function() {
-      $(".ttw-versatile").hide();
+      // $(".ttw-versatile").hide();
       showHideOfferPopup();
     }, 2000);
 </script>
