@@ -201,6 +201,24 @@ function getIp(data){
 <script>window.cookieConsentConfig = {location: false}</script>
 {% include reztrip/setup-ttweb-plugins.html %}
 <script>
+  function showHideOfferPopup() {
+    var arrivalDate   = ttwebHotel.UserData.globalSearchParams.arrivalDate;
+    var departureDate = ttwebHotel.UserData.globalSearchParams.departureDate;
+    if(arrivalDate && departureDate) {
+      let momentArrival   = moment(arrivalDate);
+      let momentDeparture = moment(departureDate);
+      if(momentArrival.isBetween('2020-04-06', '2020-05-15', null, []) && momentDeparture.isBetween('2020-04-06', '2020-05-15', null, [])) {
+        $(".ttw-versatile").show();
+      } else {
+        $(".ttw-versatile").hide();
+      }
+
+    }
+  }
+  ttwebHotel.UserData.onUpdateSearch(showHideOfferPopup);
+
+</script>
+<script>
   setTimeout(function() {
     /* set focus to book now button wehn user close the booking widget by mouse click
        as by plugin based booking widget's close event, focus is shifting at page link at bottom
@@ -259,6 +277,7 @@ function getIp(data){
       customVisible: true
     });
     popup.init();
+    showHideOfferPopup();
 </script>
 {% endif %}
 
