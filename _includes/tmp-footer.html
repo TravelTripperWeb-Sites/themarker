@@ -244,6 +244,24 @@ function getIp(data){
 
 </script>
 
+<!-- Versatile Popup -->
+{% if site.data.versatile-popup.publish == 'true' %}
+<script src="/js/tt-plugin.min.js"></script>
+<script>
+   {% assign versatile = site.data.versatile-popup %}
+  var popup = new ttPlugin.versatileCard({
+      header: '{{ versatile.title }}',
+      body: '<p>{{ versatile.body }}</p>',
+      footer: '<a href="{{ versatile.cta_link }}" target="_blank">{{ versatile.cta_text }}</a>',
+      backgroundImage: '{{ versatile.background_image_url }}',
+      showOnLoad: true,
+      globalName: 'vs-popup',
+      customVisible: true
+    });
+    popup.init();
+</script>
+{% endif %}
+
 <!-- Kipsu Integration -->
 <script>
   if(sessionStorage.ip_add == '162.251.177.162' || sessionStorage.ip_add == '162.251.177.163' ) {
@@ -258,6 +276,5 @@ function getIp(data){
     document.body.appendChild( s );
   }
 </script>
-
 </body>
 </html>

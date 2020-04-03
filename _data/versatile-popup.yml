@@ -1,0 +1,20 @@
+---
+title:  LIMITED TIME OFFER
+body: Lorem ipsum dolor sit amet
+cta_text: Book Now
+cta_link: '#'
+background_image_url: https://cdn.traveltripper.io/assets/5242/original/hotel-banner-2.jpg
+publish: 'true'
+__EDITABLE_FIELDS__:
+  title:
+    type: string
+  body:
+    type: string
+  cta_text:
+    type: string
+  cta_link:
+    type: string
+  background_image_url:
+    type: string
+  publish:
+    type: boolean
