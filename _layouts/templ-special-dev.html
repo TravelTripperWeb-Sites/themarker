@@ -28,7 +28,7 @@
               <h3 class="h3"><a href="{{ 'special/special-more' | permalink }}#[[item.rate_plan_code]]">[[item.rate_plan_name]]</a></h3>
               <p class="thumbnail" ng-show="item.images.length > 0"><a href="{{ 'special/special-more' | permalink }}#[[item.rate_plan_code]]" title="[[item.rate_plan_name]]" tabindex="-1"><img ng-src="[[item.images[0].thumb_yankee_large]]"  alt="[[item.rate_plan_name]]"  title="[[item.rate_plan_name]]"></a></p>
               <p ng-bind-html="item.short_description | renderHTMLCorrectly" tabindex="0"></p>
-              <nav><a href="{{ 'special/special-more' | permalink }}#[[item.rate_plan_code]]" class="button">Read More</a> <a href="[[item.promo_url]]" class="button" target="_blank" >Book Package Online</a> </nav>
+              <nav><a href="{{ 'special/special-more' | permalink }}#[[item.rate_plan_code]]" class="button">Read More</a> <a ng-href="[[item.promo_url]]" class="button" target="_blank" >Book Package Online</a> </nav>
             </li>
           </ul>
         </div>
