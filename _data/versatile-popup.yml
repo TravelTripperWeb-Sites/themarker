@@ -1,9 +1,10 @@
 ---
-title:  LIMITED TIME OFFER
-body: Lorem ipsum dolor sit amet
+title: Exclusive Offer!
+body: 'Stay 1 night, receive 20% off<br/>Stay 2 nights, receive 25% off <br/>Stay
+  3+ nights, receive 30% off <br/>Stay dates: now through March 2021'
 cta_text: Book Now
-cta_link: '#'
-background_image_url: https://cdn.traveltripper.io/assets/5242/original/hotel-banner-2.jpg
+cta_link: https://themarkerkeywest.reztrip.com/ext/promoRate?property=728&mode=b&pm=true&sr=515933&vr=3
+background_image_url: "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,f_auto,h_2500,q_auto,w_2500/v1586954470/wekqgxj9ha8igjajecxz.jpg"
 publish: 'true'
 __EDITABLE_FIELDS__:
   title:
