@@ -21,7 +21,7 @@
   left: 15px;
   display: none;
   width: 100%;
-  max-width: 220px;
+  max-width: 240px;
   background-color: #ffffff;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 7px 7px 0 0;
@@ -86,7 +86,7 @@
   left: 0;
   z-index: 0;
   content: '';
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .ttw-versatile__body p {

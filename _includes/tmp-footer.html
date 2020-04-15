@@ -270,8 +270,8 @@ function getIp(data){
       if(arrivalDate && departureDate) {
         let momentArrival   = moment(arrivalDate);
         let momentDeparture = moment(departureDate);
-        console.log('arrival- ',momentArrival.isBetween('2020-04-06', '2020-05-15', null, []), 'departure- ', momentDeparture.isBetween('2020-04-06', '2020-05-15', null, []));
-        if(momentArrival.isBetween('2020-04-06', '2020-05-15', null, []) && momentDeparture.isBetween('2020-04-06', '2020-05-15', null, [])) {
+        console.log('arrival- ',momentArrival.isBetween('2020-04-06', '2020-09-30', null, []), 'departure- ', momentDeparture.isBetween('2020-04-06', '2020-09-30', null, []));
+        if(momentArrival.isBetween('2020-04-06', '2020-09-30', null, []) && momentDeparture.isBetween('2020-04-06', '2020-09-30', null, [])) {
           $(".ttw-versatile").show();
         } else {
           $(".ttw-versatile").hide();
