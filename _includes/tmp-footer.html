@@ -201,6 +201,10 @@ function getIp(data){
 <script>window.cookieConsentConfig = {location: false}</script>
 {% include reztrip/setup-ttweb-plugins.html %}
 <script>
+
+
+</script>
+<script>
   setTimeout(function() {
     /* set focus to book now button wehn user close the booking widget by mouse click
        as by plugin based booking widget's close event, focus is shifting at page link at bottom
@@ -244,6 +248,45 @@ function getIp(data){
 
 </script>
 
+<!-- Versatile Popup -->
+{% if site.data.versatile-popup.publish == 'true' %}
+<script src="/js/tt-plugin.min.js"></script>
+<script>
+   {% assign versatile = site.data.versatile-popup %}
+  var popup = new ttPlugin.versatileCard({
+      header: '{{ versatile.title }}',
+      body: '<p>{{ versatile.body }}</p>',
+      footer: '<a href="{{ versatile.cta_link }}" target="_blank">{{ versatile.cta_text }}</a>',
+      backgroundImage: '{{ versatile.background_image_url }}',
+      showOnLoad: true,
+      globalName: 'vs-popup',
+      customVisible: true
+    });
+    popup.init();
+
+    function showHideOfferPopup() {
+      var arrivalDate   = ttwebHotel.UserData.globalSearchParams.arrivalDate;
+      var departureDate = ttwebHotel.UserData.globalSearchParams.departureDate;
+      if(arrivalDate && departureDate) {
+        let momentArrival   = moment(arrivalDate);
+        let momentDeparture = moment(departureDate);
+        console.log('arrival- ',momentArrival.isBetween('2020-04-06', '2020-09-30', null, []), 'departure- ', momentDeparture.isBetween('2020-04-06', '2020-09-30', null, []));
+        if(momentArrival.isBetween('2020-04-06', '2020-09-30', null, []) && momentDeparture.isBetween('2020-04-06', '2020-09-30', null, [])) {
+          $(".ttw-versatile").show();
+        } else {
+          $(".ttw-versatile").hide();
+        }
+
+      }
+    }
+    ttwebHotel.UserData.onUpdateSearch(showHideOfferPopup);
+    setTimeout(function() {
+      // $(".ttw-versatile").hide();
+      showHideOfferPopup();
+    }, 2000);
+</script>
+{% endif %}
+
 <!-- Kipsu Integration -->
 <script>
   if(sessionStorage.ip_add == '162.251.177.162' || sessionStorage.ip_add == '162.251.177.163' ) {
@@ -258,6 +301,5 @@ function getIp(data){
     document.body.appendChild( s );
   }
 </script>
-
 </body>
 </html>
