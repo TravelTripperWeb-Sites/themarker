@@ -105,7 +105,6 @@
 
 .ttw-versatile__footer {
   display: block;
-  padding: 7.5px;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
@@ -116,6 +115,8 @@
 }
 
 .ttw-versatile__footer a {
+  display: block;
+  padding: 7.5px;
   width: 100%;
   color: #ffffff;
 }
