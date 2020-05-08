@@ -1,6 +1,9 @@
+{%comment%}
+{% include components/conversion-plus-banner %}
+{% endcomment %}
 
 
-
+{%comment%}
 {% assign banner = site.data.exclusive_offer_banner %}
 {% if banner.publish == true and banner.title !='' and banner.title %}
 <section class="special-banner-bar" ttweb-component="Offer" data-tt-rate-code="{{ banner.rate_code }}">
@@ -11,3 +14,36 @@
   <a href="{{ banner.button_link }}" title="{{ banner.button_title }}" target="_blank" class="white-btn" id="top_banner_offer">{{ banner.button_title }}</a>
 </section>
 {% endif %}
+{% endcomment %}
+
+{% assign temp_banner_url = "https://themarkerkeywest.reztrip.com/ext/promoRate?property=728&mode=b&pm=true&sr=515933&vr=3" %}
+
+<div class="temp-banner  {% if page.url != "/" %}no-padd{% endif %}">
+  <div class="inner-banner">
+    <div class="column">
+      <p>
+        <strong>20% Off</strong>
+        <br/>
+        Stay 1 Night
+      </p>
+    </div>
+    <div class="column">
+      <p>
+        <strong>25% Off</strong>
+        <br/>
+        Stay 2 Nights
+      </p>
+    </div>
+    <div class="column">
+      <p>
+        <strong>30% Off</strong>
+        <br/>
+        Stay 3+ Nights
+      </p>
+    </div>
+    <div class="last-column">
+      <span><strong>Only</strong> when you</span>
+      <a class="ttweb-booking-button" href="{{temp_banner_url}}">Click Here</a>
+    </div>
+  </div>
+</div>

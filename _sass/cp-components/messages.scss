@@ -1,0 +1,173 @@
+
+.ttweb-conversion-plus-message {
+  z-index: 1000;
+  left: auto;
+  bottom: 125px;
+  right: -110%;
+  display: block;
+  transition: right 1s;
+  &--show {
+    right: 1rem;    
+  }
+  border: none;
+  border-radius: 0;
+  background: $message-background;
+  padding: 24px;
+  .ttweb-cp-message {
+    &__message {
+      background: white;
+      padding: 32px 68px;
+      color: black;
+    }
+    &__button {
+      margin-top: 24px;
+      line-height: 1em;
+      font-size: 14px;
+      color: $message-button-text;
+      background: transparent;
+      a {
+        font-family: $cp-brand-font;
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: .2em;
+        line-height: 1.3em;
+        color: $message-button-text;
+        line-height: 1em;
+        em {
+          font-style: normal;
+          text-decoration: underline;
+        }
+        &:after {
+          display: inline-block;
+          content: "";
+          width: 0; 
+          height: 0; 
+          border-top: .5em solid transparent;
+          border-bottom: .5em solid transparent;
+          border-left: .5em solid $message-button-text;
+          top: 2px;
+          position: relative;
+          left: 5px;
+          
+        };
+      }
+    }    
+  }
+  &__close {
+    background: none;
+    color: $message-button-text;
+    right: auto;
+    font-size: 24px;
+    top: 0;
+    left: 0;
+    padding: 0;
+    line-height: 1em;
+  }
+  
+  &.stay-more-save-more {
+    max-height: none;
+    max-width: 90%;    
+    text-align: center;
+    text-transform: uppercase;
+    
+    .ttweb-cp-message {
+      &__message { 
+        h4 {
+          font-size: 14px;
+          line-height: 1.285em;
+          margin-top: 32px;
+          font-family: $cp-brand-font;
+          font-weight: 500;
+          letter-spacing: 0.88px;
+          color: black;
+        }
+        h3 {
+          color: black;
+          font-size: 36px;
+          line-height: 1em;
+          padding-top: .44em;
+          padding-bottom: .333em;
+          margin-bottom: .9em;
+          font-family: $cp-brand-font;
+          font-weight: 500;
+          letter-spacing: 1px;
+          border-top: 1px solid black;
+          border-bottom: 1px solid black;
+        }
+        .columns {
+          display: flex;
+          justify-content: space-between;
+        }
+        p {
+          color: black;
+          font-size: 14px;
+          font-family: $cp-brand-font;
+          font-weight: 700;
+          letter-spacing: 0;
+          line-height: 1.143em;
+          margin-right: 2em;
+          margin-bottom: 0;
+          padding-bottom: 0;
+          
+          &:last-child {
+            margin-right: 0;
+          }
+          strong {
+            display: block;
+            font-family: $cp-brand-font;
+            font-weight: 100;
+            font-size: 30px;
+            font-weight: 300;
+            letter-spacing: 0.56px;
+            line-height: 1.27em;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+    //Rendered width = 637
+    //Center it for width < 637 + 5+ 5
+    @media(max-width: 650px) {
+      width: calc(100% - 20px);
+      max-width: none;
+      .ttweb-cp-message {
+        &__message { 
+          padding: 36px 24px;
+          h4 {
+            font-size: 12px;
+          }
+          h3 {
+            font-size: 24px;
+            line-height: 1.2em;
+          }
+          .columns {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+          }
+          p {
+            font-size: 12px;
+            strong {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    @media(max-width: 480px) {
+      .ttweb-cp-message {
+        &__message { 
+          .columns {
+            flex-direction: column;
+          }
+          p {
+            margin: 5px 0;
+          }
+        }
+      }
+    }
+    
+  }
+  
+}
+
