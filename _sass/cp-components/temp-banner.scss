@@ -51,8 +51,7 @@
       strong {
         font-family: $cp-brand-font;
         font-weight: 700;
-      }
-      
+      }      
     }
     a.ttweb-booking-button {
 //      color: black;
@@ -107,4 +106,16 @@
   
   
 
+}
+
+
+@media (min-width: 1181px) {
+  .temp-banner {
+    .inner-banner {
+      .last-column {
+        width: 100%;
+        justify-content: center;      
+      }
+    }
+  }
 }
