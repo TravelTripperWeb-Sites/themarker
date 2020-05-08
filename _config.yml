@@ -55,14 +55,14 @@ exclude:
 - sitemap.json
 - tmp
 i18n_dir:
-- _ttio_templates/no-bedrock-cp/_locales
+- _ttio_templates/conversion-plus/_locales
 - _locales
 layouts_dir:
-- _ttio_templates/no-bedrock-cp/_layouts
+- _ttio_templates/conversion-plus/_layouts
 - _layouts
 data_dir:
-- _ttio_templates/no-bedrock-cp/_data
+- _ttio_templates/conversion-plus/_data
 - _data
 includes_dir:
 - _includes
-- _ttio_templates/no-bedrock-cp/_includes
+- _ttio_templates/conversion-plus/_includes

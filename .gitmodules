@@ -1,3 +1,6 @@
 [submodule "_plugins"]
 	path = _plugins
 	url = https://github.com/TravelTripperWeb/cms-jekyll-plugins
+[submodule "_ttio_templates/conversion-plus"]
+	path = _ttio_templates/conversion-plus
+	url = https://github.com/TravelTripperWeb/_ttio_templates-conversion-plus.git
