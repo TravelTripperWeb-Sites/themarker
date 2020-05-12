@@ -11,7 +11,7 @@
   "button_url": "https://themarkerkeywest.reztrip.com/ext/promoRate?property=728&mode=b&pm=true&sr=515933&vr=3",
   "button_target": "_blank",
   "button_text_localized": {
-    "en": "Only when you <em>click here</em>"
+    "en": "Only  when  you <em>click here</em>"
   },
   "delay": 2,
   "custom_classes": "stay-more-save-more"
