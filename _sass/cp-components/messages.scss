@@ -2,12 +2,12 @@
 .ttweb-conversion-plus-message {
   z-index: 1000;
   left: auto;
-  bottom: 100px;
+  bottom: 50px;
   right: -110%;
   display: block;
   transition: right 1s;
-  @media(max-width: 767px) {
-    bottom: 80px;
+  @media(max-width: 1200px) {
+    bottom: 60px;
   }
   &--show {
     right: 1rem;
