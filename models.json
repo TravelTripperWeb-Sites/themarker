@@ -652,11 +652,7 @@
     }
   ],
   "mobile_only_offer": [
-    {
-      "name": "Book Early Now And Save More!",
-      "title": "Book Early Now And Save More!",
-      "file": "mobile_only_offer1.json"
-    }
+
   ],
   "specials": [
 

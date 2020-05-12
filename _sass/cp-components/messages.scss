@@ -1,33 +1,40 @@
 
 .ttweb-conversion-plus-message {
-  z-index: 1000;
-  left: auto;
-  bottom: 50px;
   right: -110%;
+  bottom: 70px;
+  left: auto;
+  z-index: 9998;
   display: block;
   transition: right 1s;
-  @media(max-width: 1200px) {
-    bottom: 60px;
-  }
+  box-shadow: -1px -1px 6px 3px rgba(0,0,0,.25);
   &--show {
-    right: 1rem;
+    right: 10px;
   }
   border: none;
   border-radius: 0;
   background: $message-background;
-  padding: 24px;
+  padding: 30px 30px 12px;
+
+  @media(max-width: 650px) {
+    padding: 24px 24px 12px;
+  }
+
   .ttweb-cp-message {
     &__message {
       background: white;
       padding: 32px 68px;
       color: black;
     }
+
     &__button {
-      margin-top: 24px;
-      line-height: 1em;
+      margin-top: 10px;
       font-size: 14px;
+      line-height: 1em;
       color: $message-button-text;
       background: transparent;
+
+      
+
       a {
         font-family: $cp-brand-font;
         font-weight: 500;
@@ -36,35 +43,47 @@
         line-height: 1.3em;
         color: $message-button-text;
         line-height: 1em;
+
         em {
           font-style: normal;
           text-decoration: underline;
+          &:after {
+            display: inline-block;
+            content: "";
+            width: 0;
+            height: 0;
+            border-top: .5em solid transparent;
+            border-bottom: .5em solid transparent;
+            border-left: .5em solid $message-button-text;
+            top: 2px;
+            position: relative;
+            left: 5px;
+          }
         }
-        &:after {
-          display: inline-block;
-          content: "";
-          width: 0;
-          height: 0;
-          border-top: .5em solid transparent;
-          border-bottom: .5em solid transparent;
-          border-left: .5em solid $message-button-text;
-          top: 2px;
-          position: relative;
-          left: 5px;
 
-        };
+        @media(max-width: 650px) {
+          margin: 12px auto 0;
+          a {
+            font-size: 14px;
+          }
+        }
       }
     }
   }
+
   &__close {
-    background: none;
-    color: $message-button-text;
-    right: auto;
-    font-size: 24px;
     top: 0;
+    right: auto;
     left: 0;
     padding: 0;
+    font-size: 30px;
     line-height: 1em;
+    color: $message-button-text;
+    background: none;
+
+    @media(max-width: 650px) {
+      font-size: 24px;
+    }
   }
 
   &.stay-more-save-more {
@@ -130,8 +149,9 @@
     }
     //Rendered width = 637
     //Center it for width < 637 + 5+ 5
-    @media(max-width: 650px) {
+    @media(max-width:650px) {
       width: calc(100% - 20px);
+      max-width: 500px;
       max-width: none;
       .ttweb-cp-message {
         &__message {
@@ -167,9 +187,14 @@
             margin: 5px 0;
           }
         }
+        &__button {
+          a {
+            em {
+              display: block;
+            }
+          }
+        }
       }
     }
-
   }
-
 }
