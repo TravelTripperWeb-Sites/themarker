@@ -1,0 +1,17 @@
+$cp-brand-font: "Helvetica Neue";
+$cp-brand-color: #0081a2;
+$cp-brand-inverse: white;
+
+$temp-banner-background: $cp-brand-color;
+$temp-banner-text: $cp-brand-inverse;
+
+$temp-banner-button-background: $cp-brand-inverse;
+$temp-banner-buttoner-text: $cp-brand-color;
+
+$message-background: $cp-brand-color;
+$message-button-text: $cp-brand-inverse;
+
+@import './banner';
+@import './booking-widget';
+@import './messages';
+@import './temp-banner';
