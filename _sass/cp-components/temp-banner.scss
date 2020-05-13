@@ -9,6 +9,10 @@
 //  &.no-padd {
 //    padding: 0;
 //  }
+  @media(min-width: 1181px) {
+    margin-top: 40px;
+  }
+
   .inner-banner {
     text-align: center;
     background: $temp-banner-background;
