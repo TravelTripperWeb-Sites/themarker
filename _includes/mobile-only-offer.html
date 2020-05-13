@@ -1,7 +1,7 @@
 <!--Mobile only offer code here-->
 
 {% assign mobile_only_offer = site.data._models.mobile_only_offer %}
-
+{% if mobile_only_offer and mobile_only_offer[0] %}
 <section class="mobile-only-offer">
 	<div class="container">
 		<div class="close" id="kill">X</div>
@@ -17,5 +17,5 @@
 		</div>
 	</div>
 </section>
-
+{% endif %}
 
