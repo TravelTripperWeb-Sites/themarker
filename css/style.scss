@@ -3592,3 +3592,9 @@ img.objectfit, .objectfit img {
 }
 
 @import 'cp-components/all';
+
+@media(min-width: 768px) {
+  .static-content .h1 {
+    margin-bottom: 20px;
+  }
+}
