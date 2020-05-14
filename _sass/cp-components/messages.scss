@@ -9,6 +9,7 @@
   box-shadow: -1px -1px 6px 3px rgba(0,0,0,.25);
   
   &__tab-content {
+    z-index: 9998;
     box-shadow: -1px -1px 6px 3px rgba(0,0,0,.25);
     left: auto;
     bottom: auto;
