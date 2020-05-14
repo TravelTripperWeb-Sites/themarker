@@ -1,12 +1,54 @@
-
 .ttweb-conversion-plus-message {
   right: -110%;
   bottom: 70px;
+  
   left: auto;
   z-index: 9998;
   display: block;
   transition: right 1s;
   box-shadow: -1px -1px 6px 3px rgba(0,0,0,.25);
+  
+  &__tab-content {
+    box-shadow: -1px -1px 6px 3px rgba(0,0,0,.25);
+    left: auto;
+    bottom: auto;
+    transform: rotate(-90deg) translateX(50%);
+    transform-origin: 100% 100%;
+    top: 50%;
+    padding: 12px 12px 12px 24px;
+    cursor: pointer;
+    
+    display: block;
+    right: 0;
+    transition: opacity .25s;
+    opacity: 0;
+    &--show {
+      right: 0;
+      opacity: 1;  
+      transition: right 1s,  opacity .25s;  
+    }
+    background: $message-background;
+    color: $message-button-text;
+    &:before {
+      display: inline-block;
+      content: "";
+      width: 0;
+      height: 0;
+      border-right: .5em solid transparent;
+      border-bottom: .5em solid $message-button-text;
+      border-left: .5em solid transparent;
+      bottom: 2px;
+      position: relative;
+      right: 8px;
+    }
+    p {
+      color: $message-button-text;
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  
   &--show {
     right: 10px;
   }
