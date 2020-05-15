@@ -1,0 +1,15 @@
+crs_source: reztrip #or rvng or synxis - must be all lowercase
+root_path: https://rt3api-prd.ttaws.com
+_hotel_id: KEYMRK #SNBOX #KEY24N #HODE NYCSTW
+_portal_id: themarkerkeywest #sandbox #demo
+
+# # rvng fields
+# crs_source: rvng
+# channel_code: 'CONVERSIONPLUS'
+# chain_code: 'CP'
+# hotel_code: '161499569'
+# whm_hotel_code: '139722'
+# booking_engine_url: 'https://bookings.hotel850svb.com'
+
+
+__EDITABLE_FIELDS__: []
