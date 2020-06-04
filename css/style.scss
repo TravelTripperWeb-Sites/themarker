@@ -42,7 +42,7 @@ a {
 	transition: color 200ms;
 }
 body {
-	padding-top: 68px;
+	padding-top: 108px;
 	color: #464646;
 }
 legend {
@@ -81,9 +81,45 @@ body {
   color: #0081a2;
 }
 .main-nav.navbar-default {
-	height: 65px;
+	height: 125px;
+  @media (min-width: 1020px){
+    height: 95px;
+  }
 	border-bottom: 0px;
 	background: #fff;
+
+  .covid-banner{
+    background-color:black;
+    color:white;
+    text-align:center;
+
+    p{
+      padding: 3px;
+      margin:0px;
+
+      .updates{
+        font-size:1.6rem;
+      }
+
+      a{
+        color:white;
+        text-decoration:underline;
+
+        img{
+          width:20px;
+        }
+      }
+
+      .free-cancel{
+        @media (max-width: 768px){
+          display: block;
+        }
+
+      }
+
+    }
+  }
+
 }
 .nav-wrapper .phone-number {
 	font-size: 0em;
@@ -421,6 +457,32 @@ body {
 .navbar-default .main-menu.navbar-nav >li> a:hover, .navbar-default .main-menu.navbar-nav > li> a.active {
 	color: #2c7a8c;
 	background: none;
+}
+.navbar-default{
+  .covid-banner{
+    background-color:black;
+    color:white;
+    text-align:center;
+
+    p{
+      padding: 3px;
+      margin:0px;
+
+      .updates{
+        font-size:1.6rem;
+      }
+
+      a{
+        color:white;
+        text-decoration:underline;
+
+        img{
+          width:20px;
+        }
+      }
+
+    }
+  }
 }
 .nav-wrapper .dropdown-menu {
 	border: none;
